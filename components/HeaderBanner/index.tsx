@@ -21,7 +21,6 @@ function HeaderBanner() {
           </Link>
         </div>
         <h5 className='flex gap-x-2 ic text-center text-sm ml-0 lg:ml-20'>
-          <Discount />
           Persian platform in USA
         </h5>
         <div className='hidden lg:flex gap-x-4 ic'>

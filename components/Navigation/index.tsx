@@ -53,11 +53,6 @@ const Navigation = () => {
                 About
               </Link>
             </li>
-            <li>
-              <Link href={"#"}>
-                Contact us
-              </Link>
-            </li>
           </ul>
         </div>
         <Link className='hidden lg:flex bg-white-shade-3 p-4 jcc aic rounded-full' href={"#"}>

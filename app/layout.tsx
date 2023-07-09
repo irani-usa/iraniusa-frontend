@@ -6,6 +6,7 @@ import { Outfit } from 'next/font/google'
 
 import HeaderBanner from '@/components/HeaderBanner'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({
         <HeaderBanner />
         <Navigation/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
