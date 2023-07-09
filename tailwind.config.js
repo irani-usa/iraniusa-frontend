@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     "colors": {
       "primary": "#04366a",
-      "bg-blue": "#011223",
-      "bg-white": "#ffffff",
+      "blue": "#011223",
+      "white": "#ffffff",
       "red": "#520017",
       "black": "#000000",
       "green": "#58bd7d",
@@ -71,13 +71,27 @@ module.exports = {
         "21": "#0d0d0d"
       }
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
     extend: {
+      fontFamily: {
+        opensans: ['var(--font-opensans)'],
+        outfit: ['var(--font-outfit)'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-    },
+    }
   },
   plugins: [],
 }

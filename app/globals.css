@@ -15,7 +15,43 @@
   }
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb))
+}
+
+
+.jc {
+  @apply justify-center
+}
+
+.jb {
+  @apply justify-between
+}
+
+
+.ic {
+  @apply items-center
+}
+
+.navigation li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  transition:all .1s ease-in-out;
+}
+
+.navigation li.active {
+  color: #111;
+  border-bottom: 3px solid black;
+}
+
+.navigation li:hover {
+  color: #111;
+  border-bottom: 3px solid black;
 }
