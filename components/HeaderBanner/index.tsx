@@ -1,7 +1,7 @@
 
 import Discount from '@/components/Icons/Outline/Discount'
 import { Facebook, WhatsApp, Youtube } from '@/components/Icons/Socials'
-import { Mail, Phone } from '@/components/Icons/Solid'
+import { Mail, PhoneS } from '@/components/Icons/Solid'
 
 import Link from 'next/link'
 
@@ -29,7 +29,7 @@ function HeaderBanner() {
             unreal@outlook.com
           </Link>
           <Link className='flex ic gap-x-2 text-sm' href={"#"}>
-            <Phone />
+            <PhoneS />
             (+49) 71112196760
           </Link>
         </div>

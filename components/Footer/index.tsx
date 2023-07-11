@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Logo from '../Logo'
-import { Phone } from '../Icons/Solid'
+import Phone from '../Icons/Outline/Phone'
 
 const Footer = () => {
     return (

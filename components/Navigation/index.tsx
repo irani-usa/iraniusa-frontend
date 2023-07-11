@@ -1,8 +1,9 @@
 
 import React from 'react'
 import Logo from '../Logo'
-import { Hamburger, User } from '../Icons/Solid'
+import { User } from '../Icons/Solid'
 import Link from 'next/link'
+import HamburgerNav from '../Hamburger'
 
 const Navigation = () => {
   return (
@@ -58,7 +59,7 @@ const Navigation = () => {
         <Link className='hidden lg:flex bg-white-shade-3 p-4 jcc aic rounded-full' href={"#"}>
           <User classes={''} />
         </Link>
-        <Hamburger classes="flex lg:hidden" />
+        <HamburgerNav/>
       </div>
     </nav>
   )

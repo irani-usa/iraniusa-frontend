@@ -8,6 +8,8 @@ import HeaderBanner from '@/components/HeaderBanner'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
+import MenuProvider from '@/context/MenuProvider'
+
 const openSans = Open_Sans({
   subsets: ['latin'],
   variable: '--font-opensans',
@@ -30,10 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en" className=''>
       <body className={`${openSans.variable} ${outfit.variable}`}>
-        <HeaderBanner />
-        <Navigation/>
-        {children}
-        <Footer/>
+        <MenuProvider>
+          <HeaderBanner />
+          <Navigation />
+          {children}
+          <Footer />
+        </MenuProvider>
       </body>
     </html>
   )
