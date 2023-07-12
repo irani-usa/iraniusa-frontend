@@ -12,7 +12,7 @@ const OverlayMenu = () => {
 
   const OverlayClasses = classNames('block lg:hidden w-full h-full transition-all fixed top-0 z-10', {
     'left-0': menuVisibilty.menu,
-    '-left-96 sm:-left-[900px]': !menuVisibilty.menu,
+    '-left-[1200px]': !menuVisibilty.menu,
   })
   return (
     <section className={OverlayClasses}>

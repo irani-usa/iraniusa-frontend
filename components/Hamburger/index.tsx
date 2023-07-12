@@ -20,7 +20,7 @@ const HamburgerNav = () => {
     })
 
     return (
-        <div>
+        <div className='block lg:hidden'>
             <input onClick={handleMenu} type="checkbox" id="menu" className="menu visuallyHidden" />
             <label htmlFor="menu">
                 <div className={HamburgerClasses}>
