@@ -1,5 +1,4 @@
 
-import Discount from '@/components/Icons/Outline/Discount'
 import { Facebook, WhatsApp, Youtube } from '@/components/Icons/Socials'
 import { Mail, PhoneS } from '@/components/Icons/Solid'
 

@@ -1,22 +1,34 @@
+"use client"
 
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+
 import Logo from '../Logo'
 import Phone from '../Icons/Outline/Phone'
+import Mail from '../Icons/Outline/Mail'
+import Location from '../Icons/Outline/Location'
 
 const Footer = () => {
+
+    const [countriesTime, setCountriesTime] = useState([
+        { newyork: "00:00" },
+        { stockholm: "00:00" },
+        { losangles: "00:00" },
+        { dubai: "00:00" },
+    ])
+
     return (
         <footer className='w-full mt-32'>
-            <div className='flex items-center w-full h-20'>
-                <ul className='navigation container h-full font-opensans font-medium text-white-shade-8 border-b border-white-shade-4  flex gap-x-8'>
+            <div className='flex items-center w-full h-20 overflow-x-scroll lg:overflow-x-auto'>
+                <ul className='navigation container h-full font-opensans font-medium text-white-shade-8 border-b border-white-shade-4 flex gap-x-8'>
                     <li className='active'>NewYork,USA</li>
                     <li>Stockholm,sweden</li>
                     <li>Dubai,UEA</li>
-                    <li>Tehran,iran</li>
+                    <li className='pr-6'>Tehran,iran</li>
                 </ul>
             </div>
-            <section className='container flex flex-col lg:flex-row py-10'>
-                <div className='flex flex-col w-full lg:w-1/2 gap-y-6 text-white-shade-10'>
+            <section className='container flex flex-col mb-10 lg:mb-0 lg:flex-row py-10'>
+                <div className='flex flex-col w-full mb-10 lg:mb-0 lg:w-1/2 gap-y-6 text-white-shade-10'>
                     <Logo width={70} height={40} />
                     <p className='text-lg lg:text-base max-w-md'>
                         Our goal is not only to provide travel opportunities, but to strengthen the unity of nations and introduce the art and culture of the destination country: you would see the lifestyle of the people, hear their stories and...
@@ -34,7 +46,7 @@ const Footer = () => {
                         </Link>
                         <Link className='flex items-center gap-x-4' href={"#"}>
                             <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
-                                <Phone />
+                                <Mail />
                             </div>
                             <div className='flex flex-col'>
                                 <span>Contact us at</span>
@@ -43,7 +55,7 @@ const Footer = () => {
                         </Link>
                         <Link className='flex items-center gap-x-4' href={"#"}>
                             <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
-                                <Phone />
+                                <Location />
                             </div>
                             <div className='flex flex-col'>
                                 <span>Address</span>
@@ -69,7 +81,7 @@ const Footer = () => {
                     <div className='grid grid-cols-2 lg:flex lg:gap-x-8 mt-6'>
                         <div className='flex flex-col items-center gap-y-4'>
                             <span className='text-white-shade-10'>
-                                12:45
+                                {countriesTime[0].newyork}
                             </span>
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="100" height="100" rx="50" fill="#FAFAFA" />
@@ -81,7 +93,7 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col items-center gap-y-4'>
                             <span className='text-white-shade-10'>
-                                12:45
+                                {countriesTime[1].stockholm}
                             </span>
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="100" height="100" rx="50" fill="#FAFAFA" />
@@ -93,7 +105,7 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col items-center gap-y-4'>
                             <span className='text-white-shade-10'>
-                                12:45
+                                {countriesTime[2].losangles}
                             </span>
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="100" height="100" rx="50" fill="#FAFAFA" />
@@ -105,7 +117,7 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col items-center gap-y-4'>
                             <span className='text-white-shade-10'>
-                                12:45
+                                {countriesTime[3].dubai}
                             </span>
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="100" height="100" rx="50" fill="#FAFAFA" />
@@ -118,11 +130,11 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-            <div className='container flex justify-between my-6'>
+            <div className='container flex flex-col gap-y-8 lg:flex-row justify-between my-6'>
                 <ul className='flex gap-x-9 text-white-shade-10 font-opensans font-medium'>
                     <li>
                         <Link href={"#"}>
-                            FAQ & help
+                            FAQ 
                         </Link>
                     </li>
                     <li>
@@ -137,7 +149,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <span className='text-white-shade-10 font-opensans font-medium'>
-                © All Rights Reserved for USX.PRO
+                    © All Rights Reserved for USX.PRO
                 </span>
             </div>
         </footer>
