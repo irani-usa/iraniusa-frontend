@@ -19,7 +19,7 @@ const Footer = () => {
 
     return (
         <footer className='w-full mt-32'>
-            <div className='flex items-center w-full h-20 overflow-x-scroll lg:overflow-x-auto'>
+            <div className='flex items-center w-full h-20 no-scroll overflow-x-scroll lg:overflow-x-auto'>
                 <ul className='navigation container h-full font-opensans font-medium text-white-shade-8 border-b border-white-shade-4 flex gap-x-8'>
                     <li className='active'>NewYork,USA</li>
                     <li>Stockholm,sweden</li>

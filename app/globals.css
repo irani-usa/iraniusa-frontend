@@ -124,6 +124,9 @@ body {
   width: 41px;
 }
 
-
-
-
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll{
+  scrollbar-width: none;
+}
