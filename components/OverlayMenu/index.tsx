@@ -16,12 +16,54 @@ const OverlayMenu = () => {
   })
   return (
     <section className={OverlayClasses}>
-      <div className="w-full h-full bg-white text-black">
+      <div className="w-full h-full bg-white text-black bg-cover" style={{ backgroundImage: `url('/images/menu/overlay-background.png')` }}>
         <div className="container h-24">
           <Link href={"/"}>
             <Logo width={80} height={200} />
           </Link>
         </div>
+        <ul className="container flex flex-col items-center gap-y-6 font-opensans text-xl font-medium text-white-shade-10 mt-20">
+          <li className="font-semibold text-black">
+            <Link href={"#"}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              Event
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              Financial market
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              ADS reservation
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              Music player
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              Plans
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              About
+            </Link>
+          </li>
+        </ul>
       </div>
     </section>
   )
