@@ -50,10 +50,10 @@ const page = () => {
         It’s also referred to by other names such as terms of service (ToS) and terms of use (ToU). Even though they have different names, in fact – there is no difference. Any of these three terms (sometimes even referred to as user agreement) basically refer to the same document.
         </p>
       </div>
-      <div className='bg-red/10 flex flex-col gap-y-7 items-center py-5 px-5 my-11 rounded-3xl lg:flex-row lg:items-start lg:gap-x-3 lg:text-left lg:px-6  lg:py-8'>
-        <Warning width='100px' />
-        <p className='text-red font-semibold text-lg text-center'>
-        When drafted properly, it allows you to maintain ownership and control over your website, products and services, and can help in maintaining a positive and pleasant relationship with your users as they will be aware of what constitutes acceptable behavior.
+      <div className='bg-[#ff383822] flex flex-col gap-y-7 items-center py-5 px-5 my-11 rounded-3xl lg:flex-row lg:items-start lg:gap-x-6 lg:py-12'>
+        <Warning width='140px' />
+        <p className='text-[#FF3838] font-semibold text-lg  text-left lg:text-xl'>
+        When drafted properly, it allows you to maintain ownership and control over your website,  products and services, and can help in maintaining a positive and pleasant relationship with your users as they will be aware of what constitutes acceptable behavior.
         </p>
       </div>
       <div className='py-5'>
