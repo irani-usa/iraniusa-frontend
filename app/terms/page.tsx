@@ -55,6 +55,7 @@ const page = () => {
         <p className='text-[#FF3838] font-semibold text-lg  text-left lg:text-xl'>
         When drafted properly, it allows you to maintain ownership and control over your website,  products and services, and can help in maintaining a positive and pleasant relationship with your users as they will be aware of what constitutes acceptable behavior.
         </p>
+        
       </div>
       <div className='py-5'>
        <h1 className='text-blue text-xl font-bold py-12 font-opensans lg:text-2xl lg:font-bold'>Are Terms and Conditions Required by Law?</h1>
