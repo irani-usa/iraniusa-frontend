@@ -130,3 +130,24 @@ body {
 .no-scroll{
   scrollbar-width: none;
 }
+.boreered{
+  border: 1px solid #E6E6E6;
+}
+.contact{
+  display: hidden;
+}
+@media only screen and (min-width:900px){
+  .contact{
+    position: relative;
+  }
+  .contact::before{
+    content: "";
+    position: absolute;
+    top: 450px;
+    width:830px;
+    height: 400px;
+    background-color:#FAFAFA;
+    z-index: -1;
+    border-radius: 25px;
+  }
+}
