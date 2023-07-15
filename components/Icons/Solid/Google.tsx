@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Google = () => {
+ const Google = () => {
   return (
     <svg width="22" height="21" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18.5 9.74165C18.5 9.13788 18.447 8.55733 18.3485 8H10.5V11.2937H14.9848C14.7917 12.358 14.2045 13.2598 13.322 13.8636V16H16.0152C17.5909 14.5177 18.5 12.3348 18.5 9.74165Z" fill="black"/>
@@ -11,3 +11,5 @@ export const Google = () => {
     
   )
 }
+
+export default Google
