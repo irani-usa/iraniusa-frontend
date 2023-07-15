@@ -51,7 +51,7 @@ const page = () => {
             <Input id={'city'} inputType={'text'} placeHolder={'Newyourk'} classes={'w-full'} label={'City'} iconComp={<Location />} />
           </div>
           <Textarea id={'message'} placeHolder={'Hi, unfortunately i cant have access to my acc please check if there is any prob there'} classes={'w-full'} label={'Message'} />
-          <Button content={'Send message'} classes={''} />
+          <Button content={'Send message'} classes={'py-6'} />
         </div>
       </section>
     </>

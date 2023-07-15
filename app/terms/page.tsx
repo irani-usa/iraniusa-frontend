@@ -6,8 +6,8 @@ const page = () => {
   return (
    <>
     <OverlayMenu />
-    <section className='container py-8'>
-        <h1 className='text-black font-bold text-2xl py-5 lg:text-5xl lg:py-28'>Terms & privacy policy</h1>
+    <section className='container font-opensans py-8'>
+        <h1 className='text-black font-bold font-outfit text-2xl py-5 lg:text-5xl lg:py-28'>Terms & privacy policy</h1>
       <div className='py-4'>
       <h3 className='text-primary-shade-10 text-xl font-bold py-10 font-opensans lg:text-2xl lg:font-bold'>What are Terms and Conditions?</h3>
         <p className='text-white-shade-9 text-lg font-medium font-opensans'>
