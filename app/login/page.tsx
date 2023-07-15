@@ -1,9 +1,7 @@
 import Button from '@/components/Button'
 import Input from '@/components/Forms/Input'
-import Dots from '@/components/Icons/Outline/Dots'
-import Email from '@/components/Icons/Outline/Email'
-import Password from '@/components/Icons/Outline/Password'
-import { Apple, Facebook2, Google } from '@/components/Icons/Solid'
+import { Dots , Email,Password} from '@/components/Icons/Outline/'
+import { Google , Facebook2,Apple} from '@/components/Icons/Solid/'
 import OverlayMenu from '@/components/OverlayMenu'
 import React from 'react'
 
