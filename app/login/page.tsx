@@ -1,9 +1,13 @@
+
+import React from 'react'
+
 import Button from '@/components/Button'
 import Input from '@/components/Forms/Input'
+
 import { Dots , Email,Password} from '@/components/Icons/Outline/'
 import { Google , Facebook2,Apple} from '@/components/Icons/Solid/'
+
 import OverlayMenu from '@/components/OverlayMenu'
-import React from 'react'
 
 const page = () => {
   return (
