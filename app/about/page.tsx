@@ -140,9 +140,9 @@ const page = () => {
         </div>
       </div>
       <div className="w-full bg-blue pt-12 my-28 lg:pt-0">
-        <div className="container lg:flex gap-x-44 items-center">
+        <div className="container lg:flex gap-x-64 items-center">
           <div className="">
-            <h1 className="text-white font-outfit text-2xl font-medium lg:font-semibold ">Have a question? Our team is happy to assist you</h1>
+            <h1 className="text-white font-outfit text-2xl font-medium lg:font-semibold lg:text-3xl">Have a question? Our team is happy to assist you</h1>
             <p className="text-white-shade-8 font-opensans py-7">
             Ask about our platform, pricing, implementation or anything else. Our highly trained reps are standing by. Ready to help 
             </p>
@@ -158,15 +158,15 @@ const page = () => {
               y1="0.5"
               x2="514"
               y2="0.500045"
-              stroke="#04366a"
+              stroke="#022040"
             />
           </svg>
-          <div className="flex flex-col items-center lg:flex-row gap-x-5">
-            <Button content={"Contact us"} classes={"bg-white py-3 my-7 text-black "} />
-            <h1 className="text-white font-opensans">Or email us:unreal@outlook.com</h1>
+          <div className="flex flex-col items-center lg:flex-row gap-x-5 lg:mt-7">
+            <Button content={"Contact us"} classes={"bg-white py-3 my-7 text-black lg:my-0 "} />
+            <h1 className="text-white font-opensans">OrEmailUs:unreal@outlook.com</h1>
           </div>
           </div>
-          <img src="images/about/man.webp" alt="man" className=" w-1/2 hidden lg:flex"/>
+          <img src="images/about/man.webp" alt="man" className="w-1/2 h-[500px] hidden lg:flex"/>
         </div>
         <img src="images/about/man.webp" alt="man" className="mt-24 lg:hidden"/>
       </div>
