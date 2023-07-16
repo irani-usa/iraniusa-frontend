@@ -22,7 +22,7 @@ const page = () => {
           trained reps are standing by. Ready to help
         </p>
         <div className='flex flex-col gap-y-4 lg:flex-row gap-x-7'>
-          <div className='flex gap-x-3 items-center font-opensans py-2 px-2 rounded-full boreered lg:pr-24'>
+          <div className='flex gap-x-3 items-center font-opensans py-2 px-2 rounded-full bordered lg:pr-24'>
             <div className='bg-orange/10 py-5 rounded-full px-5'>
               <Message />
             </div>
@@ -31,7 +31,7 @@ const page = () => {
               <h2 className='text-black font-semibold text-lg'>unreal@outlook.com</h2>
             </div>
           </div>
-          <div className='flex gap-x-3 items-center font-opensans py-2 px-2 rounded-full   boreered lg:pr-28'>
+          <div className='flex gap-x-3 items-center font-opensans py-2 px-2 rounded-full   bordered lg:pr-28'>
             <div className='bg-green/10 py-5 rounded-full px-5'>
               <Call />
             </div>
