@@ -91,7 +91,7 @@ const page = () => {
         <p className="font-opensans text-white-shade-9 text-left text-lg py-3">
         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
-        <div className="flex w-full gap-x-7 overflow-x-scroll py-10 no-scroll">
+        <div className="flex w-full gap-x-7 overflow-x-scroll py-10 no-scroll lg:justify-center">
         <Infobox content={"+200k"} info={"Users"} classes={"bg-white-shade-3 text-black"} />
         <Infobox content={"+1000"} info={"Jobs"} classes={"bg-white-shade-3 text-black"} />
         <Infobox content={"+200k"} info={"Users"} classes={"bg-white-shade-3 text-black"} />
