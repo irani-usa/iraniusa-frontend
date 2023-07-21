@@ -5,13 +5,11 @@ import Input from "@/components/Forms/Input";
 
 import { Email, Password } from "@/components/Icons/Outline/";
 
-import OverlayMenu from "@/components/OverlayMenu";
 import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <OverlayMenu />
       <section className="container py-12 lg:flex justify-between">
         <section className="lg:w-[420px]">
           <div className=" w-20 h-20 items-center justify-center bordered flex rounded-xl  mx-auto mb-6">
@@ -41,7 +39,8 @@ const page = () => {
             Back to login page
           </Link>
         </section>
-        <div className="w-2/4 h-[100vh] bg-orange rounded-2xl hidden lg:flex"></div>
+        <div className="w-2/4 h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.jpg')` }}>
+        </div>
       </section>
     </>
   );
