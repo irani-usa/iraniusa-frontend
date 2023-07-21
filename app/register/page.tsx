@@ -95,7 +95,7 @@ const page = () => {
             <Link href="/login" className="text-white-shade-8"> Login</Link>
           </h1>
         </section>
-        <div className="w-96 h-96 bg-orange rounded-2xl hidden lg:flex"></div>
+        <div className="w-2/4 h-[100vh] bg-orange rounded-2xl hidden lg:flex"></div>
       </section>
     </>
   );
