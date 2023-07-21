@@ -10,14 +10,16 @@ interface FinancialProps {
     price:string,
     found:string,
     iconComp:React.ReactNode,
+    info:boolean,
 }
 
 
 const Financial: React.FC<FinancialProps> = (props) => {
   return (
     <>
-      <section className={`${props.classes}bg-blue flex flex-col h-auto w-full p-4 my-5 rounded-3xl gap-y-4 `}>
-        <div className="flex justify-between items-center">
+<section className="relative">
+<section className={`${props.classes}bg-blue flex flex-col h-auto w-full p-4 my-5 rounded-3xl gap-y-4 `}>
+        <div className="flex justify-between gap-x-12 items-center">
           <div className="flex items-center gap-x-3">
             <div className={`${props.frame} bg-white p-3 rounded-full`}>
               {props.iconComp}
@@ -68,6 +70,13 @@ const Financial: React.FC<FinancialProps> = (props) => {
             </div>
         </div>
       </section>
+      { props.info &&       <div className="p-4 bg-white-shade-2 bordered rounded-full absolute top-[142px]  left-[125px]">
+        <svg width="14" height="14" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.00014 6.60001C6.47514 6.60001 5.95014 6.39751 5.55264 6.00001L0.662637 1.11001C0.445137 0.892511 0.445137 0.532511 0.662637 0.315011C0.880137 0.097511 1.24014 0.097511 1.45764 0.315011L6.34764 5.20501C6.70764 5.56501 7.29264 5.56501 7.65264 5.20501L12.5426 0.315011C12.7601 0.097511 13.1201 0.097511 13.3376 0.315011C13.5551 0.532511 13.5551 0.892511 13.3376 1.11001L8.44764 6.00001C8.05014 6.39751 7.52514 6.60001 7.00014 6.60001Z" fill="#011223"/>
+</svg>
+        </div>}
+
+</section>
     </>
   );
 };
