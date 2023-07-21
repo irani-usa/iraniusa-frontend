@@ -34,8 +34,8 @@ const page = () => {
         <div className="p-5 rounded-2xl border-[1px] border-white-shade-4 shadow-lg lg:p-8 lg:rounded-3xl lg:mt-12">
             <div className="flex items-center justify-between">
             <h1 className="text-black text-4xl font-outfit font-bold lg:text-3xl">Fiat and Spot</h1>
-             <div className="w-full h-auto p-5 border-2 border-white-shade-4 rounded-3xl  items-center justify-between hidden lg:flex lg:w-2/12">
-          <span className="text-white-shade-10 font-opensans font-medium">
+             <div className="w-full h-auto p-5 border-2 border-white-shade-4 rounded-2xl  items-center gap-x-5 hidden lg:flex lg:w-48 ">
+          <span className="text-white-shade-10 font-opensans font-bold">
             Fiat and Spot
           </span>
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
