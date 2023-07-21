@@ -59,11 +59,11 @@ const Financial: React.FC<FinancialProps> = (props) => {
         </div>
         <div className="flex items-center justify-between">
             <div className="flex flex-col items-start">
-                <h1 className="font-opensans text-white-shade-6 font-medium">{props.content}</h1>
-                <h1 className="font-opensans text-white-shade-6 font-medium">{props.content2}</h1>
+                <h1 className="font-opensans text-white-shade-11 font-medium">{props.content}</h1>
+                <h1 className="font-opensans text-white-shade-11 font-medium">{props.content2}</h1>
             </div>
             <div  className="flex flex-col items-end">
-                <h1 className="font-opensans text-white-shade-6 font-medium">{props.price}</h1>
+                <h1 className="font-opensans text-white-shade-11 font-medium">{props.price}</h1>
                 <h1 className="font-opensans text-green font-medium">{props.found}</h1>
             </div>
         </div>
