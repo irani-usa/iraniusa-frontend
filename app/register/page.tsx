@@ -6,13 +6,11 @@ import Input from "@/components/Forms/Input";
 import { Dots, Email, Password } from "@/components/Icons/Outline/";
 import { Google, Facebook2, Apple } from "@/components/Icons/Solid/";
 
-import OverlayMenu from "@/components/OverlayMenu";
 import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <OverlayMenu />
       <section className="container py-16 lg:flex justify-between">
         <section className="lg:w-[420px]">
           <h1 className="text-black text-2xl font-semibold font-outfit">

@@ -1,3 +1,6 @@
+"use client"
+
+import {usePathname, useSearchParams} from 'next/navigation'
 
 import './globals.css'
 
@@ -19,16 +22,49 @@ const outfit = Outfit({
   variable: '--font-outfit',
 })
 
-export const metadata = {
-  title: 'IRANI USA',
-  description: 'By WSA/RIV',
-}
+// export const metadata = {
+//   title: 'IRANI USA',
+//   description: 'By WSA/RIV',
+// }
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  const pathname = usePathname()
+
+  if (pathname == '/login') {
+    return (
+      <html lang="en" className=''>
+        <body className={`${openSans.variable} ${outfit.variable}`}>
+          {children}
+        </body>
+      </html>
+    )
+  }
+
+  if (pathname == '/register') {
+    return (
+      <html lang="en" className=''>
+        <body className={`${openSans.variable} ${outfit.variable}`}>
+          {children}
+        </body>
+      </html>
+    )
+  }
+
+  if (pathname == '/forget-password') {
+    return (
+      <html lang="en" className=''>
+        <body className={`${openSans.variable} ${outfit.variable}`}>
+          {children}
+        </body>
+      </html>
+    )
+  }
+
   return (
     <html lang="en" className=''>
       <body className={`${openSans.variable} ${outfit.variable}`}>
