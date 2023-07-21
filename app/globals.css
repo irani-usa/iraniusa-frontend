@@ -151,3 +151,25 @@ body {
     border-radius: 25px;
   }
 }
+
+
+.dropdown,
+.dropdown * {
+  z-index: 10;
+}
+
+.dropdown-content .item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content .item:hover {
+  background: #fcfcfc;
+}
+
+button {
+  z-index: -1;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}

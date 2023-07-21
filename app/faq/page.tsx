@@ -3,6 +3,7 @@ import React from 'react'
 
 import InputWithBtn from '@/components/Forms/InputWithBtn'
 import FAQList from '@/components/FAQ/FAQList'
+import DropDown from '@/components/Forms/DropDown'
 
 const page = () => {
     return (
@@ -44,6 +45,7 @@ const page = () => {
             Have any question about platform or us? check the most frequently questions down below
             </p>
             <InputWithBtn placeHolder={'Search your question'} classes={''} btnContent={'Search'}/>
+            <DropDown/>
             <FAQList/>
         </section>
     )
