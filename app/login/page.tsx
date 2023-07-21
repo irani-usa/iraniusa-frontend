@@ -88,7 +88,9 @@ const page = () => {
             <Link href="/register" className="text-white-shade-8">register for free</Link>
           </h1>
         </section>
-        <div className="w-2/4 h-[100vh] bg-orange rounded-2xl hidden lg:flex"></div>
+        <div className="w-2/4 h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/login-background.jpg')` }}>
+
+        </div>
       </section>
     </>
   );
