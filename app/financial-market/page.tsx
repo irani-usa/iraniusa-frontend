@@ -53,8 +53,8 @@ const page = () => {
         </div>
          <div className="lg:flex items-center gap-x-4">
          <div>
-         <Financial content={"Total shares"} content2={"Total return"} classes={"bg-blue lg:w-[300px] "} title={"Apple"} price={"$310,40"} found={"-1,10%"} iconComp={<Apple/>} frame={""} /> 
-         <Financial content={"Price"} content2={"24h%"} classes={"bg-transparent text-black border-[1px] border-white-shade-4 lg:my-0"} frame={"border-[1.5px] border-white-shade-4"} title={"BTC"} price={"$36,641.20"} found={"+6.04%"} iconComp={<Btc />} />
+         <Financial content={"Total shares"} content2={"Total return"} classes={"bg-blue lg:w-[300px] "} title={"Apple"} price={"$310,40"} found={"-1,10%"} iconComp={<Apple />} frame={""} info={false} /> 
+         <Financial content={"Price"} content2={"24h%"} classes={"bg-transparent text-black border-[1px] border-white-shade-4 lg:my-0"} frame={"border-[1.5px] border-white-shade-4"} title={"BTC"} price={"$36,641.20"} found={"+6.04%"} iconComp={<Btc />} info={false} />
         </div>
         <img src="/images/financial/chart.webp" className="w-full lg:w-[280px] lg:h-[325px]" alt="" />
          </div>
