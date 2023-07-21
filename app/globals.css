@@ -152,3 +152,27 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+
+.dropdown,
+.dropdown * {
+  z-index: 10;
+}
+
+.dropdown-content .item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content .item:hover {
+  background: #fcfcfc;
+}
+
+button {
+  z-index: -1;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+>>>>>>> 09a53962d265cfd826c6835997c3d05a35dcf42b
