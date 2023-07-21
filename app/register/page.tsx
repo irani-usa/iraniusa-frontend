@@ -7,6 +7,7 @@ import { Dots, Email, Password } from "@/components/Icons/Outline/";
 import { Google, Facebook2, Apple } from "@/components/Icons/Solid/";
 
 import OverlayMenu from "@/components/OverlayMenu";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -89,8 +90,9 @@ const page = () => {
               <Dots />
             </div>
           </section>
-          <h1 className="text-black font-opensans py-8 font-medium text-center">
-            Dont have account? register for free
+          <h1 className="text-black font-opensans py-8 font-medium text-lg text-center">
+            Do you have account? 
+            <Link href="/login" className="text-white-shade-8"> Login</Link>
           </h1>
         </section>
         <div className="w-96 h-96 bg-orange rounded-2xl hidden lg:flex"></div>

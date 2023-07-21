@@ -6,6 +6,7 @@ import Input from "@/components/Forms/Input";
 import { Email, Password } from "@/components/Icons/Outline/";
 
 import OverlayMenu from "@/components/OverlayMenu";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -36,9 +37,9 @@ const page = () => {
               classes={"bg-blue py-4 lg:bg-black"}
             />
           </form>
-          <h1 className="text-black font-opensans font-medium text-lg text-center">
+          <Link href='/login' className="block text-black font-opensans font-medium text-lg text-center">
             Back to login page
-          </h1>
+          </Link>
         </section>
         <div className="w-96 h-96 bg-orange rounded-2xl hidden lg:flex"></div>
       </section>

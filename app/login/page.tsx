@@ -7,6 +7,7 @@ import { Dots, Email, Password } from "@/components/Icons/Outline/";
 import { Google, Facebook2, Apple } from "@/components/Icons/Solid/";
 
 import OverlayMenu from "@/components/OverlayMenu";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -40,9 +41,9 @@ const page = () => {
             <h3 className="text-[#DE000D] font-opensans font-semibold text-sm py-2">
               password should be at least 8 characters{" "}
             </h3>
-            <h3 className="text-[#2E81FF] font-opensans font-semibold text-end text-base py-4  lg:text-black">
+            <Link href="/forget-password" className="block text-[#2E81FF] cursor-pointer font-opensans font-semibold text-end text-base py-4  lg:text-black">
               Forgot password
-            </h3>
+            </Link>
             <Button
               content={"Log in"}
               classes={"bg-blue py-4 my-2 lg:bg-black"}
@@ -86,7 +87,7 @@ const page = () => {
           </section>
           <h1 className="text-black font-opensans py-8 font-medium text-lg text-center">
             registrera dig gratis?{" "}
-            <span className="text-white-shade-8">register for free</span>
+            <Link href="/register" className="text-white-shade-8">register for free</Link>
           </h1>
         </section>
         <div className="w-96 h-96 bg-orange rounded-2xl hidden lg:flex"></div>
