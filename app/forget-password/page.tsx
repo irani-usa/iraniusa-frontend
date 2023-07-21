@@ -39,7 +39,7 @@ const page = () => {
             Back to login page
           </Link>
         </section>
-        <div className="w-2/4 h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.jpg')` }}>
+        <div className="w-2/4 h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.webp')` }}>
         </div>
       </section>
     </>
