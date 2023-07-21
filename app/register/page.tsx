@@ -37,7 +37,7 @@ const page = () => {
               label={"Password"}
               iconComp={<Password />}
             />
-            <h3 className="text-[#DE000D] font-opensans font-semibold text-sm">
+            <h3 className="text-[#DE000D] font-opensans font-semibold text-sm py-2">
               password should be at least 8 characters{" "}
             </h3>
             <Input
