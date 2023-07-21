@@ -1,6 +1,6 @@
 "use client"
 
-import {usePathname, useSearchParams} from 'next/navigation'
+import {usePathname} from 'next/navigation'
 
 import './globals.css'
 
@@ -22,10 +22,6 @@ const outfit = Outfit({
   variable: '--font-outfit',
 })
 
-// export const metadata = {
-//   title: 'IRANI USA',
-//   description: 'By WSA/RIV',
-// }
 
 export default function RootLayout({
   children,

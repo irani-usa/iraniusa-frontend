@@ -29,7 +29,7 @@ const page = () => {
               />
             </svg>
           </div>
-          <div className="p-5 rounded-2xl border-[1px] border-white-shade-4 shadow-lg lg:p-8 lg:rounded-3xl lg:mt-12">
+          <div className="p-5 rounded-2xl border-[1px] border-white-shade-4 shadow-soft-shadow z-50 lg:p-8 lg:rounded-3xl lg:mt-12">
             <div className="flex items-center justify-between">
               <h1 className="text-black text-4xl font-outfit font-bold lg:text-3xl">
                 Fiat and Spot
