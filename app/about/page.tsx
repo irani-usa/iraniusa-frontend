@@ -133,10 +133,10 @@ const page = () => {
             />
           </svg>
         </h1>
-        <div className="flex gap-x-7 py-8 lg:gap-x-28 lg:py-10">
-          <img src="images/about/revlogo.webp" className="w-24 lg:w-44" alt="" />
-          <img src="images/about/revlogo.webp" className="w-24 lg:w-44" alt="" />
-          <img src="images/about/revlogo.webp" className="w-24 lg:w-44" alt="" />
+        <div className="flex items-center gap-x-7 py-8 lg:gap-x-48 lg:py-10">
+          <img src="images/about/maxilogo.webp" className="w-24 lg:w-32" alt="" />
+          <img src="images/about/revlogo.webp" className="w-24 lg:w-32 lg:h-16" alt="" />
+          <img src="images/about/ahlenslogo.webp" className="w-24 lg:w-32 " alt="" />
         </div>
       </div>
       <div className="w-full bg-blue pt-9 my-28 lg:pt-0">
