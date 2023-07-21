@@ -15,7 +15,7 @@ const Navigation = () => {
           </Link>
           <ul className='navigation hidden h-full lg:flex items-center gap-x-10 text-white-shade-10 font-opensans font-medium'>
             <li className='active'>
-              <Link href={"#"}>
+              <Link href={"/"}>
                 Home
               </Link>
             </li>
@@ -30,7 +30,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link href={"#"}>
+              <Link href={"/financial-market"}>
                 Financial market
               </Link>
             </li>
@@ -50,13 +50,13 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link href={"#"}>
+              <Link href={"/about"}>
                 About
               </Link>
             </li>
           </ul>
         </div>
-        <Link className='hidden lg:flex bg-white-shade-3 p-4 jcc aic rounded-full' href={"#"}>
+        <Link className='hidden lg:flex bg-white-shade-3 p-4 jcc aic rounded-full' href={"/login"}>
           <User classes={''} />
         </Link>
         <HamburgerNav/>
