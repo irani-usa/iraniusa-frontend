@@ -6,16 +6,22 @@ import Input from "@/components/Forms/Input";
 import { Email, Password } from "@/components/Icons/Outline/";
 
 import Link from "next/link";
+import Logo from "@/components/Logo";
 
 const page = () => {
   return (
     <>
-      <section className="container py-12 lg:flex justify-between">
-        <section className="lg:w-[420px]">
+      <section className="container py-12 lg:flex justify-between ">
+        <div className="flex flex-col gap-y-20">
+        <div className="hidden lg:flex ">
+          <Logo width={90} height={90} />
+          </div>
+          <section className="lg:w-[420px]">
+          
           <div className=" w-20 h-20 items-center justify-center bordered flex rounded-xl  mx-auto mb-6">
             <Password />
           </div>
-          <h1 className="text-black text-2xl text-center font-semibold font-outfit">
+          <h1 className="text-black text-3xl text-center font-bold font-outfit">
             Forgot password?
           </h1>
           <h2 className="text-white-shade-8 text-center text-lg py-2 font-opensans">
@@ -39,7 +45,10 @@ const page = () => {
             Back to login page
           </Link>
         </section>
-        <div className="w-2/4 h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.webp')` }}>
+        
+        </div>
+
+        <div className="w-2/4 h-[120vh] bg-cover rounded-3xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.webp')` }}>
         </div>
       </section>
     </>

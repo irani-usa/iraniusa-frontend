@@ -7,13 +7,17 @@ import { Dots, Email, Password } from "@/components/Icons/Outline/";
 import { Google, Facebook2, Apple } from "@/components/Icons/Solid/";
 
 import Link from "next/link";
+import Logo from "@/components/Logo";
 
 const page = () => {
   return (
     <>
       <section className="container py-16 lg:flex justify-between">
         <section className="lg:w-[420px]">
-          <h1 className="text-black text-2xl font-semibold font-outfit">
+        <div className="hidden lg:flex">
+          <Logo width={90} height={90} />
+          </div>
+          <h1 className="text-black text-2xl font-semibold font-outfit mt-12">
             Welcome back 👋🏻{" "}
           </h1>
           <h2 className="text-white-shade-8  text-lg py-2 font-opensans">
@@ -88,7 +92,7 @@ const page = () => {
             <Link href="/register" className="text-white-shade-8">register for free</Link>
           </h1>
         </section>
-        <div className="w-2/4 h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/login-background.webp')` }}>
+        <div className="w-[580px] h-[135vh] bg-cover rounded-3xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/login-background.webp')` }}>
 
         </div>
       </section>
