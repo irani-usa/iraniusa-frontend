@@ -1,5 +1,4 @@
 import React from "react";
-import { Apple } from "../Icons/Solid";
 
 interface FinancialProps {
   content: string,
