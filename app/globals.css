@@ -51,6 +51,12 @@ body {
   border-bottom: 3px solid black;
 }
 
+.navigation li.normal {
+  border-bottom: none;
+}
+
+
+
 .navigation li:hover {
   color: #111;
   border-bottom: 3px solid black;
