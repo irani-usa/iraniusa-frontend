@@ -48,7 +48,7 @@ const page = () => {
 
         </div>
 
-        <div className="w-2/4 h-[120vh] bg-cover rounded-3xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.webp')` }}>
+        <div className="w-2/4 max-h-[100vh] bg-cover rounded-3xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.webp')` }}>
         </div>
       </section>
     </>

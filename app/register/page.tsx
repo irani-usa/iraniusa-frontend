@@ -97,7 +97,7 @@ const page = () => {
             <Link href="/login" className="text-white-shade-8"> Login</Link>
           </h1>
         </section>
-        <div className="w-[580px] h-[135vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/register-background.webp')` }}>
+        <div className="w-[580px] max-h-[100vh] bg-cover rounded-2xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/register-background.webp')` }}>
         </div>
       </section>
     </>
