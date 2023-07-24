@@ -7,7 +7,7 @@ import Email from '@/components/Icons/Outline/Email'
 import Location from '@/components/Icons/Outline/Location'
 import Message from '@/components/Icons/Outline/Message'
 import { User } from '@/components/Icons/Solid'
-import OverlayMenu from '@/components/OverlayMenu'
+import OverlayMenu from '@/components/Layout/OverlayMenu'
 import React from 'react'
 
 const page = () => {

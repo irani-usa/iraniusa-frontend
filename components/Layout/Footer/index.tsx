@@ -3,10 +3,10 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-import Logo from '../Logo'
-import Phone from '../Icons/Outline/Phone'
-import Mail from '../Icons/Outline/Mail'
-import Location from '../Icons/Outline/Location'
+import Logo from '../../Logo'
+import Phone from '../../Icons/Outline/Phone'
+import Mail from '../../Icons/Outline/Mail'
+import Location from '../../Icons/Outline/Location'
 
 const Footer = () => {
 
@@ -134,7 +134,7 @@ const Footer = () => {
                 <ul className='flex gap-x-9 text-white-shade-10 font-opensans font-medium'>
                     <li>
                         <Link href={"#"}>
-                            FAQ 
+                            FAQ
                         </Link>
                     </li>
                     <li>

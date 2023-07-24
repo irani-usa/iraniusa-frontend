@@ -5,7 +5,7 @@ interface InfoProps {
     classes:string,
 }
 
-const Infobox: React.FC<InfoProps> = (props) => {
+const InfoBox: React.FC<InfoProps> = (props) => {
   return (
     <div className={`${props.classes} py-14 px-20 rounded-2xl gap-y-3 flex flex-col items-center justify-center text-black`}>
         <h1 className='text-4xl font-outfit font-bold'>{props.content}</h1>
@@ -14,4 +14,4 @@ const Infobox: React.FC<InfoProps> = (props) => {
   )
 }
 
-export default Infobox
+export default InfoBox

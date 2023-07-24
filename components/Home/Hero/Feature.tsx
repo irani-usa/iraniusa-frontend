@@ -1,7 +1,7 @@
 
 import React from 'react'
 import FeatureCard from './FeatureCard'
-import { CoffeeShop, Furniture, Liquor, Resturant } from '../Icons/Outline'
+import { CoffeeShop, Furniture, Liquor, Resturant } from '../../Icons/Outline'
 
 const Feature = () => {
     return (
@@ -12,6 +12,6 @@ const Feature = () => {
             <FeatureCard icon={<CoffeeShop />} title={'Coffee Shop'} value={'+1K'} />
         </section>
     )
-} 
+}
 
 export default Feature

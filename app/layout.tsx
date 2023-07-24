@@ -1,15 +1,15 @@
 "use client"
 
-import {usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 import './globals.css'
 
 import { Open_Sans } from 'next/font/google'
 import { Outfit } from 'next/font/google'
 
-import HeaderBanner from '@/components/HeaderBanner'
-import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer'
+import HeaderBanner from '@/components/Layout/HeaderBanner'
+import Navigation from '@/components/Layout/Navigation'
+import Footer from '@/components/Layout/Footer'
 
 import MenuProvider from '@/context/MenuProvider'
 

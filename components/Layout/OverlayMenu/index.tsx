@@ -3,7 +3,7 @@
 import { MenuContext } from "@/context/MenuProvider"
 import classNames from 'classnames';
 import { useContext } from "react";
-import Logo from "../Logo";
+import Logo from "../../Logo";
 import Link from "next/link";
 
 const OverlayMenu = () => {

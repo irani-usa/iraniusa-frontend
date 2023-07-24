@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 import { usePathname } from 'next/navigation'
 
-import Logo from '../Logo'
-import { User } from '../Icons/Solid'
+import Logo from '../../Logo'
+import { User } from '../../Icons/Solid'
 import HamburgerNav from '../Hamburger'
 
 const Navigation = () => {
