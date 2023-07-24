@@ -1,4 +1,6 @@
+
 import React from 'react'
+
 interface InfoProps {
     content: string,
     info:string,
