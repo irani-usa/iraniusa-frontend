@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "@/components/Button";
+import Button from "@/components/Forms/Button";
 import Input from "@/components/Forms/Input";
 
 import { Dots, Email, Password } from "@/components/Icons/Outline/";
@@ -14,8 +14,8 @@ const page = () => {
     <>
       <section className="container py-16 lg:flex justify-between">
         <section className="lg:w-[420px]">
-        <div className="hidden lg:flex ">
-          <Logo width={90} height={90} />
+          <div className="hidden lg:flex ">
+            <Logo width={90} height={90} />
           </div>
           <h1 className="text-black text-2xl font-bold font-outfit mt-12">
             Welcome to Irani USA 👋🏻

@@ -2,7 +2,7 @@
 import React from 'react'
 
 import TitleWithStar from '../TitleWithStar'
-import ToursCard from '../Tours/ToursCard'
+import ToursCard from './ToursCard'
 
 const ToursSearch = () => {
   return (

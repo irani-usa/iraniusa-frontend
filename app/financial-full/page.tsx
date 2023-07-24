@@ -1,7 +1,7 @@
 import React from "react";
 
 import Financial from "@/components/Financial";
-import FinancialInfo from "@/components/FinancialInfo";
+import FinancialInfo from "@/components/Financial/Info";
 
 import { Google, Game, Oil, Dollar, Btc } from "@/components/Icons/Solid";
 

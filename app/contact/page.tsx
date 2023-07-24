@@ -1,5 +1,5 @@
 
-import Button from '@/components/Button'
+import Button from '@/components/Forms/Button'
 import Input from '@/components/Forms/Input'
 import Textarea from '@/components/Forms/Textarea'
 import Call from '@/components/Icons/Outline/Call'

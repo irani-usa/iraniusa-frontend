@@ -1,9 +1,9 @@
 
-import FinancialSummery from "@/components/FinancialSummery";
+import FinancialSummery from "@/components/Financial/Summery";
 import Hero from "@/components/Hero";
 import OverlayMenu from "@/components/OverlayMenu";
 import StampBG from "@/components/StampBG";
-import ToursSearch from "@/components/ToursSearch";
+import ToursSearch from "@/components/Tours/ToursSearch";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <OverlayMenu />
       <Hero />
       <StampBG />
-      <FinancialSummery/>
-      <ToursSearch/>
+      <FinancialSummery />
+      <ToursSearch />
     </>
   )
 }
