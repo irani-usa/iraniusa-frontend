@@ -89,7 +89,8 @@ module.exports = {
       "boxShadow": {
         "drop-shadow": "46px 23px 73px 0px rgba(0,0,0,0.05)",
         "drop-2": "0px 4px 29px 0px rgba(0,0,0,0.15)",
-        "soft-shadow": "0px 119px 130px 0px rgba(0,0,0,0.03)"
+        "soft-shadow": "0px 119px 130px 0px rgba(0,0,0,0.03)",
+        "card": "101px 66px 141px 0px rgba(0, 0, 0, 0.12)"
        },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

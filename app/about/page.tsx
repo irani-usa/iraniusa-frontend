@@ -4,7 +4,6 @@ import Star from "@/components/Icons/Solid/Star";
 
 import OverlayMenu from "@/components/OverlayMenu";
 import Infobox from "@/components/Info";
-import Button from "@/components/Button";
 
 const page = () => {
   return (
