@@ -4,13 +4,14 @@ import Financial from "@/components/Financial";
 import FinancialInfo from "@/components/Financial/Info";
 
 import { Google, Game, Oil, Dollar, Btc } from "@/components/Icons/Solid";
+import TockenList from "@/components/Tocken/TockenList";
 
 const page = () => {
   return (
     <>
       <section className="container py-5">
         <div className="flex flex-col gap-y-4">
-          <div className="w-full h-auto p-5 bg-white-shade-2 border-2 border-white-shade-4 rounded-xl flex items-center justify-between lg:hidden">
+          <div className="w-full h-auto p-5 bg-white-shade-2 border border-white-shade-4 rounded-xl flex items-center justify-between lg:hidden">
             <span className="text-black font-opensans font-medium">
               Fiat and Spot
             </span>
@@ -29,7 +30,7 @@ const page = () => {
               />
             </svg>
           </div>
-          <div className="p-5 rounded-2xl border-[1px] border-white-shade-4 shadow-soft-shadow z-50 lg:p-8 lg:rounded-3xl lg:mt-12">
+          <div className="p-5 rounded-2xl border border-white-shade-3 shadow-soft-shadow z-50 lg:p-8 lg:rounded-3xl lg:mt-12 mb-4">
             <div className="flex items-center justify-between">
               <h1 className="text-black text-4xl font-outfit font-bold lg:text-3xl">
                 Fiat and Spot
@@ -135,6 +136,9 @@ const page = () => {
             info={true}
           />
         </div>
+      </section>
+      <section className="container py-10">
+          <TockenList/>
       </section>
     </>
   );
