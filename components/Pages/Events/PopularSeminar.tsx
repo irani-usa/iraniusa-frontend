@@ -18,7 +18,7 @@ const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
           {props.organizer}
         </h1>
         <div>
-          <h1>
+          <h1 className="text-black">
             <svg
               width="17"
               height="17"
