@@ -1,7 +1,7 @@
 import React from "react";
 
-import Financial from "@/components/Financial";
-import FinancialInfo from "@/components/Financial/Info";
+import Financial from "@/components/Pages/Financial";
+import FinancialInfo from "@/components/Pages/Financial/Info";
 
 import { Google, Game, Oil, Dollar, Btc } from "@/components/Icons/Solid";
 import TockenList from "@/components/Tocken/TockenList";
@@ -138,7 +138,7 @@ const page = () => {
         </div>
       </section>
       <section className="container py-10">
-          <TockenList/>
+        <TockenList />
       </section>
     </>
   );

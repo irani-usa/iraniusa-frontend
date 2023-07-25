@@ -4,7 +4,7 @@ import React from "react";
 import Star from "@/components/Icons/Solid/Star";
 
 import OverlayMenu from "@/components/Layout/OverlayMenu";
-import Infobox from "@/components/About/InfoBox";
+import Infobox from "@/components/Pages/About/InfoBox";
 
 const page = () => {
   return (

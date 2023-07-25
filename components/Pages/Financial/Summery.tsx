@@ -2,10 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Star from '../Icons/Solid/Star'
+import Star from '../../Icons/Solid/Star'
 import Financial from '.'
 
-import { Btc, Dollar, Game, Google, Oil } from '../Icons/Solid'
+import { Btc, Dollar, Game, Google, Oil } from '../../Icons/Solid'
 
 const FinancialSummery = () => {
   return (

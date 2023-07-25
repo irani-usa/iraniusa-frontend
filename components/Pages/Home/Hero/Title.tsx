@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Separator from '../../Separator'
+import Separator from '../../../Separator'
 
 const Title = () => {
   return (

@@ -4,7 +4,7 @@ import Star from "@/components/Icons/Solid/Star";
 import OverlayMenu from "@/components/Layout/OverlayMenu";
 
 import Image from "next/image";
-import Financial from "@/components/Financial";
+import Financial from "@/components/Pages/Financial";
 import { Apple } from "@/components/Icons/Solid";
 import Btc from "@/components/Icons/Solid/Btc";
 

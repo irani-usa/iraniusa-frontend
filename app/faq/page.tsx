@@ -2,7 +2,7 @@
 import React from 'react'
 
 import InputWithBtn from '@/components/Forms/InputWithBtn'
-import FAQList from '@/components/FAQ/FAQList'
+import FAQList from '@/components/Pages/FAQ/FAQList'
 import DropDown from '@/components/Forms/DropDown'
 
 const page = () => {
