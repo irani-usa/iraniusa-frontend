@@ -6,7 +6,7 @@ const AboutCompany = () => {
     <>
       <section className="container">
         <section>
-            <div className="flex flex-col gap-y-5 mt-32">
+            <div className="flex flex-col gap-y-5 mt-32 lg:gap-y-2">
               <h1 className="text-black font-outfit text-xl font-bold lg:text-5xl">
                 Who we are?
               </h1>
@@ -14,7 +14,7 @@ const AboutCompany = () => {
                 Get to know about What we actually do here
               </p>
             </div>
-            <section className="lg:flex items-center gap-x-5 py-10">
+            <section className="flex flex-col gap-y-7 lg:flex-row items-center gap-x-5 py-10">
             <section className="flex flex-col gap-y-5 mt-5">
               <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:p-8">
                 <div className="flex items-center justify-center bg-[#0085FF33] px-4 py-4 lg:p-9 rounded-full ">
