@@ -24,12 +24,12 @@ const OverlayMenu = () => {
         </div>
         <ul className="container flex flex-col items-center gap-y-6 font-opensans text-xl font-medium text-white-shade-10 mt-20">
           <li className="font-semibold text-black">
-            <Link href={"#"}>
+            <Link href={"/"}>
               Home
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/events"}>
               Event
             </Link>
           </li>
@@ -39,7 +39,7 @@ const OverlayMenu = () => {
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/financial-market"}>
               Financial market
             </Link>
           </li>
@@ -59,7 +59,7 @@ const OverlayMenu = () => {
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/about"}>
               About
             </Link>
           </li>
