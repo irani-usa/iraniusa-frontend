@@ -3,17 +3,18 @@ import React from "react";
 import Image from "next/image";
 
 interface PopularSeminarProps {
-    content: string;
-    people: string;
-    organizer: string;
-    date: string;
-    city: string;
+    content: string,
+    people: string,
+    organizer: string,
+    date: string,
+    city: string,
+    classes:string,
 }
 
 const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
     return (
         <>
-            <div className="border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between  gap-x-4 lg:gap-x-8">
+            <div className={`${props.classes} border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between  gap-x-4 lg:gap-x-8`}>
                 <div className="flex flex-col gap-y-4 py-7">
                     <h1 className="text-black font-semibold font-opensans text-lg">
                         {props.content}
