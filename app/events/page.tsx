@@ -112,7 +112,7 @@ const page = () => {
                 organizer={"Mohammad ghaem"}
                 date={"11/7/16"}
                 city={"Washington DC"}
-              />{" "}
+              />
             </div>
             <div className="hidden lg:flex w-2/3">
               <PopularSeminar
@@ -121,7 +121,16 @@ const page = () => {
                 organizer={"Mohammad ghaem"}
                 date={"11/7/16"}
                 city={"Washington DC"}
-              />{" "}
+              />
+            </div>
+            <div className="hidden lg:flex w-2/3">
+              <PopularSeminar
+                content={"How to start from scratch"}
+                people={"70-100"}
+                organizer={"Mohammad ghaem"}
+                date={"11/7/16"}
+                city={"Washington DC"}
+              />
             </div>
           </div>
           <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
@@ -161,14 +170,14 @@ const page = () => {
             </div>
           </section>
         </div>
-    
+
       </section>
-     <section className="container">
-     <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
-     <h1 className="text-black text-xl font-semibold py-4">
-     Upcoming events
-            </h1>
-     </section>
+      <section className="container">
+        <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
+        <h1 className="text-black text-xl font-semibold py-4">
+          Upcoming events
+        </h1>
+      </section>
     </>
   );
 };
