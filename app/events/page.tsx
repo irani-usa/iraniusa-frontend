@@ -1,5 +1,7 @@
 import OverlayMenu from "@/components/Layout/OverlayMenu";
+import PopularConcert from "@/components/Pages/Events/PopularConcert";
 import PopularSeminar from "@/components/Pages/Events/PopularSeminar";
+import UpcomingEvent from "@/components/Pages/Events/UpcomingEvent";
 import React from "react";
 
 const page = () => {
@@ -105,12 +107,13 @@ const page = () => {
             </div>
           </div>
           <div className="flex overflow-x-scroll w-full no-scroll gap-x-5 mt-7 lg:mt-3">
-            <div className="w-full  lg:w-2/3">
+          
               <PopularSeminar
                 content={"How to start from scratch"}
                 people={"70-100"}
                 organizer={"Mohammad ghaem"}
                 date={"11/7/16"}
+<<<<<<< HEAD
                 city={"Washington DC"}
               />
             </div>
@@ -132,6 +135,18 @@ const page = () => {
                 city={"Washington DC"}
               />
             </div>
+=======
+                city={"Washington DC"} classes={"w-full  lg:w-2/3"}/>
+         
+      
+              <PopularSeminar
+              content={"How to start from scratch"}
+              people={"70-100"}
+              organizer={"Mohammad ghaem"}
+              date={"11/7/16"}
+              city={"Washington DC"} classes={"hidden lg:flex w-2/3"}       />
+         
+>>>>>>> ab354eb80aff5e8f75f7bad6a03006dc994fb810
           </div>
           <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -178,6 +193,70 @@ const page = () => {
           Upcoming events
         </h1>
       </section>
+<<<<<<< HEAD
+=======
+     <section className="container">
+     <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
+     <h1 className="text-black text-xl font-semibold py-4 lg:py-7">
+     Upcoming events
+            </h1>
+            <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
+           <div className="flex flex-col gap-y-11 py-4">
+             <UpcomingEvent buttonn={"Sold Out"} classes={""}  />
+             <UpcomingEvent buttonn={"Book now"} classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"}  />
+             <UpcomingEvent buttonn={"Book now"} classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"}  />
+           </div>
+     </section>
+     <section className="container py-7">
+     <div className="flex items-center justify-between">
+     <h1 className="text-black text-xl font-bold py-7 font-outfit">
+     Popular concerts
+            </h1>
+            <h1 className="text-white-shade-11 font-opensans font-semibold">See all</h1>
+     </div>
+     <div className="lg:flex gap-x-6">
+      <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={""} price={"$67"} />
+      <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} />
+      <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} />
+     </div>
+     <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
+            <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+              <svg
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </section>
+     </section>
+>>>>>>> ab354eb80aff5e8f75f7bad6a03006dc994fb810
     </>
   );
 };
