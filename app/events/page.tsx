@@ -113,29 +113,6 @@ const page = () => {
                 people={"70-100"}
                 organizer={"Mohammad ghaem"}
                 date={"11/7/16"}
-<<<<<<< HEAD
-                city={"Washington DC"}
-              />
-            </div>
-            <div className="hidden lg:flex w-2/3">
-              <PopularSeminar
-                content={"How to start from scratch"}
-                people={"70-100"}
-                organizer={"Mohammad ghaem"}
-                date={"11/7/16"}
-                city={"Washington DC"}
-              />
-            </div>
-            <div className="hidden lg:flex w-2/3">
-              <PopularSeminar
-                content={"How to start from scratch"}
-                people={"70-100"}
-                organizer={"Mohammad ghaem"}
-                date={"11/7/16"}
-                city={"Washington DC"}
-              />
-            </div>
-=======
                 city={"Washington DC"} classes={"w-full  lg:w-2/3"}/>
          
       
@@ -146,7 +123,6 @@ const page = () => {
               date={"11/7/16"}
               city={"Washington DC"} classes={"hidden lg:flex w-2/3"}       />
          
->>>>>>> ab354eb80aff5e8f75f7bad6a03006dc994fb810
           </div>
           <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -185,16 +161,8 @@ const page = () => {
             </div>
           </section>
         </div>
-
+    
       </section>
-      <section className="container">
-        <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
-        <h1 className="text-black text-xl font-semibold py-4">
-          Upcoming events
-        </h1>
-      </section>
-<<<<<<< HEAD
-=======
      <section className="container">
      <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
      <h1 className="text-black text-xl font-semibold py-4 lg:py-7">
@@ -256,7 +224,6 @@ const page = () => {
             </div>
           </section>
      </section>
->>>>>>> ab354eb80aff5e8f75f7bad6a03006dc994fb810
     </>
   );
 };
