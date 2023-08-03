@@ -13,5 +13,10 @@ import Sort from "./Sort";
 import Currency from "./Currency";
 
 import Star from "./Star";
+import Gem from "./Gem";
+import Crown from "./Crown"
+import Music from "./Music";
 
-export { Dots, Email, Password, Search, Resturant, Liquor, Furniture, CoffeeShop, Sort, Currency, Star }
+
+
+export { Dots, Email, Password, Search, Resturant, Liquor, Furniture, CoffeeShop, Sort, Currency, Star ,Gem,Music,Crown }

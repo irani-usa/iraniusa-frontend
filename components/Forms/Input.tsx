@@ -1,6 +1,5 @@
 
 import React from 'react'
-import OverlayMenu from '../Layout/OverlayMenu'
 
 interface InputProps {
     id: string,
