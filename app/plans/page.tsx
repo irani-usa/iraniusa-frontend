@@ -13,11 +13,12 @@ import Button from '@/components/Forms/Button'
 
 const page = () => {
   return (
-
     <section className='container'>
 
       <OverlayMenu />
 
+    <section className='container'>
+      <OverlayMenu />
       <div className='flex flex-col justify-center items-center py-8 gap-y-8'>
         <Separator classes={''} />
         <h1 className='font-outfit text-2xl text-black font-semibold'>Ready to get started?</h1>
@@ -33,6 +34,13 @@ const page = () => {
         <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
          
+      <section className='lg:flex gap-x-4 items-center w-full overflow-x-scroll no-scroll'>
+        <PlanCard content={'Professional'} price={'Free'} theme={'bg-[#FF9900]'} iconComp={<Gem />} classes={''} />
+        <PlanCard content={'Artists & Events'} price={'Free'} theme={'bg-[#7E00E0]'} iconComp={<Music />} classes={'hidden lg:inline'} />
+        <PlanCard content={'Business Platinum'} price={'Free'} theme={'bg-[#C100E0]'} iconComp={<Crown />} classes={'hidden lg:inline'} />
+        <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+
             <svg
               width="8"
               height="14"
@@ -52,6 +60,8 @@ const page = () => {
           </div>
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
           
+          </div>
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
             <svg
               width="8"
               height="14"

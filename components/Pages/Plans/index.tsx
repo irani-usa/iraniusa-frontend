@@ -57,7 +57,9 @@ const PlanCard: React.FC<PlanCardProps> = (props) => {
         <li className="text-white-shade-8 flex items-center gap-x-2"><div className="p-1 bg-white-shade-4 rounded-full"></div>Level Blog</li>
         </ul>
       </div>
-      <button type="button" className={`${props.theme} m-4 w-[337px] py-3 font-opensans font-medium rounded-md`}>Choose plan</button>
+<div className="p-3">
+<button type="button" className={`${props.theme}  w-full py-3 font-opensans font-medium rounded-md`}>Choose plan</button>
+</div>
     </div>
   );
 };
