@@ -10,4 +10,6 @@ import Game from "./Game";
 import Oil from "./Oil";
 import Btc from "./Btc";
 import Dollar from "./Dollar";
-export {Mail , PhoneS, Hamburger, User , Google,Facebook2 ,Apple , Game,Oil,Btc,Dollar}
+import Verified from "./Verified";
+
+export {Verified, Mail , PhoneS, Hamburger, User , Google,Facebook2 ,Apple , Game,Oil,Btc,Dollar}

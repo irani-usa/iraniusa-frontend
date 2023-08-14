@@ -6,6 +6,7 @@ import PlanInfo from "@/components/Pages/Home/PlanInfo";
 import StampBG from "@/components/StampBG";
 import ToursSearch from "@/components/Pages/Home/Tours/ToursSearch";
 import AboutCompany from "@/components/Pages/Home/AboutCompany";
+import SmallBannerList from "@/components/Pages/Home/SmallBannerList";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       <OverlayMenu />
       <Hero />
       <StampBG />
-      <FinancialSummery />
       <ToursSearch />
+      <FinancialSummery />
+      <SmallBannerList/>
       <PlanInfo />
       <AboutCompany />
     </>
