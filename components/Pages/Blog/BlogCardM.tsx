@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface BlogCardMProps {
@@ -8,7 +9,8 @@ interface BlogCardMProps {
 const BlogCardM: React.FC<BlogCardMProps> = (props) => {
   return (
     <>
-    <div className={`${props.classes} rounded-2xl border-[1.5px] border-white-shade-3`}>
+    <Link href={"#"}>
+    <div className={`${props.classes} rounded-2xl border-[1.5px] border-white-shade-3 hover:shadow-card transition-all duration-300`}>
     <Image className='w-full rounded-t-2xl' src={'/images/blog/UsaFlag.webp'} width={300} height={300} alt={''} />
        <div className='flex flex-col gap-y-4'>
        <h1 className='px-6 pt-6  text-black text-xl font-outfit font-semibold'>Exploring Shirez Canyon in the Heart of Zagros Mountains</h1>
@@ -26,6 +28,7 @@ const BlogCardM: React.FC<BlogCardMProps> = (props) => {
        </div>
        </div>
     </div>
+    </Link>
     </>
   )
 }

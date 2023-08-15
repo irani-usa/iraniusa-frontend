@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface BlogCardProps {
@@ -7,11 +8,12 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = (props) => {
     return (
         <>
-            <div className={`${props.classes} border-[1.5px] border-white-shade-3 rounded-2xl p-1`}>
+         <Link href={'#'}>
+         <div className={`${props.classes} border-[1.5px] border-white-shade-3 rounded-2xl p-1 hover:shadow-card transition-all duration-300`}>
                 <div className='flex flex-col gap-y-5 p-5'>
                     <span className='w-[105px] h-8 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg'>3 min read</span>
                     <h1 className='text-black text-xl font-outfit font-semibold'>Exploring Shirez Canyon in the Heart of Zagros Mountains</h1>
-                    <p className='font-opensans text-white-shade-11 font-medium'>Go from Figma to code in minimum <br /> amount  of time using Locofy. Take your <br /> design to real world with Locofy's AI <br /> powered plugin.</p>
+                    <p className='font-opensans text-white-shade-11 font-medium lg:text-sm'>Go from Figma to code in minimum <br /> amount  of time using Locofy. Take your <br /> design to real world with Locofy's AI <br /> powered plugin.</p>
                     <div>
                         <div className='flex items-center gap-x-5 py-5 lg:py-0 lg:pt-7'>
                             <div className='flex items-center gap-x-3'>
@@ -42,8 +44,8 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
                     </div>
                 </div>
                 <img className='lg:hidden'  src="/images/blog/blogCard (2).webp" alt="" />
-                <img className='hidden lg:flex w-60 h-60'  src="/images/blog/blogCard (1).webp" alt="" />
-            </div>
+                <div className="w-full bg-cover rounded-2xl" style={{ backgroundImage: "url('/images/blog/blogCard (1).webp')" }}></div>
+            </div></Link>
         </>
     )
 }

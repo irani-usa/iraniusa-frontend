@@ -11,6 +11,7 @@ import LawyarsCard from '@/components/Pages/Blog/LawyarsCard'
 import PopularUser from '@/components/Pages/Blog/PopulerUser'
 import Tag from '@/components/Pages/Blog/Tag'
 import Separator from '@/components/Separator'
+import Link from 'next/link'
 
 const page = () => {
     return (
@@ -39,8 +40,8 @@ const page = () => {
                         <div className='w-16 bg-black h-full rounded-xl'></div>
                     </div>
                 </div>
-                <div className='lg:flex container items-start gap-x-2'>
-                    <section className='pr-5'>
+                <div className='lg:flex container lg:items-start gap-x-2'>
+                    <section className='pr-5 '>
                         <div className='flex flex-col gap-y-6 py-14'>
                             <h1 className='text-black text-xl font-semibold font-outfit'>Lawyars pick</h1>
                             <div className='flex flex-col gap-y-6 lg:flex-row gap-x-6'>
@@ -51,7 +52,18 @@ const page = () => {
                         <div>
                             <div className='lg:flex items-center gap-x-6'>
                                 <BlogCardM classes={''} />
-                                <BlogCardM classes={'hidden lg:inline'} />
+                                <BlogCardM classes={'hidden lg:block'} />
+                            </div>
+                            <div className='hidden  lg:flex flex-col gap-y-6 py-14'>
+                            <h1 className='text-black text-xl font-semibold font-outfit'>Lawyars pick</h1>
+                            <div className='flex flex-col gap-y-6 lg:flex-row gap-x-6'>
+                                <LawyarsCard />
+                                <LawyarsCard />
+                            </div>
+                        </div>
+                        <div className='hidden lg:flex items-center gap-x-6'>
+                                <BlogCardM classes={''} />
+                                <BlogCardM classes={'hidden lg:block'} />
                             </div>
                             <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
                                 <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -100,8 +112,11 @@ const page = () => {
                                         Log in to your account or create one and start posting and get viral
                                     </p>
                                     <div className="flex items-center gap-x-14">
-                                        <h3 className="bg-white w-2/4 py-4 text-black text-center text-lg font-medium font-opensans rounded-2xl lg:w-44">Sign up</h3>
-                                        <h3 className="font-opensans  text-center ">Log in</h3>
+                                      <Link className='w-2/4' href={'/register'} >
+                                      <h3 className="bg-white  py-4 text-black text-center text-lg font-medium font-opensans rounded-2xl lg:w-44">Sign up</h3>
+                                      </Link>
+                                       <Link href={'/login'}>
+                                       <h3 className="font-opensans  text-center ">Log in</h3></Link>
                                     </div>
                                 </div>
                                 <img src="images/blog/Girl.webp" className="rounded-b-3xl mt-10 lg:hidden" />
@@ -117,7 +132,7 @@ const page = () => {
                             </section>
                         </div>
                     </section>
-                    <hr className='h-screen w-[1.5px] bg-green' />
+                    <hr className='h-[400px] w-[1.5px] bg-white-shade-4 hidden lg:flex' />
                     <section className='pl-6'>
                         <div>
                             <h1 className='text-black text-xl font-semibold font-outfit'>Categories</h1>
