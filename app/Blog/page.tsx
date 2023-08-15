@@ -41,7 +41,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className='lg:flex container lg:items-start gap-x-2'>
-                    <section className='pr-5 '>
+                    <section className='lg:pr-5 '>
                         <div className='flex flex-col gap-y-6 py-14'>
                             <h1 className='text-black text-xl font-semibold font-outfit'>Lawyars pick</h1>
                             <div className='flex flex-col gap-y-6 lg:flex-row gap-x-6'>
