@@ -1,9 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 const PopularUser = () => {
   return (
     <>
-      <div className=' py-10 pl-7 pr-28 w-3/4 flex gap-x-6 rounded-3xl border-white-shade-4 border-[1.5px]'>
+ <Link className='w-3/4' href={"#"}>
+ <div className=' py-10 pl-7 pr-28  flex gap-x-6 rounded-3xl border-white-shade-4 border-[1.5px]'>
         <img className='w-14' src="/images/blog/User.webp" alt="" />
         <div className='flex flex-col items-start gap-y-1'>
           <span className='text-black text-lg font-opensans font-semibold flex items-center
@@ -17,7 +19,7 @@ const PopularUser = () => {
             Coffee shop
           </span>
         </div>
-      </div>
+      </div></Link>
     </>
   )
 }
