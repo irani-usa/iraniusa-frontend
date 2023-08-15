@@ -1,11 +1,13 @@
-import React from 'react'
 
+import React from 'react'
 
 import { Crown, Music, Gem } from '@/components/Icons/Outline'
 
 import OverlayMenu from '@/components/Layout/OverlayMenu'
+
 import PlanCard from '@/components/Pages/Plans'
 import Separator from '@/components/Separator'
+
 import Input from '@/components/Forms/Input'
 import Button from '@/components/Forms/Button'
 
@@ -17,7 +19,7 @@ const page = () => {
         <Separator classes={''} />
         <h1 className='font-outfit text-2xl text-black font-semibold'>Ready to get started?</h1>
       </div>
-      <section className='lg:flex gap-x-4 items-center justify-between w-full overflow-x-scroll no-scroll'>
+      <section className='lg:flex gap-x-4 items-center w-full overflow-x-scroll no-scroll'>
         <PlanCard content={'Professional'} price={'Free'} theme={'bg-[#FF9900]'} iconComp={<Gem />} classes={''} />
         <PlanCard content={'Artists & Events'} price={'Free'} theme={'bg-[#7E00E0]'} iconComp={<Music />} classes={'hidden lg:inline'} />
         <PlanCard content={'Business Platinum'} price={'Free'} theme={'bg-[#C100E0]'} iconComp={<Crown />} classes={'hidden lg:inline'} />
@@ -65,11 +67,11 @@ const page = () => {
         </div>
         <div className='flex  flex-col gap-y-4 lg:flex-row lg:bg-white-shade-3 lg:px-1
    lg:items-center rounded-2xl lg:justify-between lg:w-2/4'>
-          <Input id={'Email'} inputType={'email'} placeHolder={'Your email'} classes={'lg:h-auto lg:pb-3'} label={''} iconComp={undefined} />
-          <Button content={'Submit'} classes={'bg-black h-16 lg:w-40'} />
-        </div>
-      </div>
-    </section>
+                  <Input id={'Email'} inputType={'email'} placeHolder={'Your email'} classes={'lg:h-auto lg:pb-3'} label={''} iconComp={undefined} />
+                  <Button content={'Submit'} classes={'bg-black h-16 lg:w-40'} />
+                </div>
+              </div>
+          </section>
   )
 }
 
