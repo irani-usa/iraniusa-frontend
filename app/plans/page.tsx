@@ -17,7 +17,7 @@ const page = () => {
         <Separator classes={''} />
         <h1 className='font-outfit text-2xl text-black font-semibold'>Ready to get started?</h1>
       </div>
-      <section className='lg:flex gap-x-4 items-center w-full overflow-x-scroll no-scroll'>
+      <section className='lg:flex gap-x-4 items-center justify-between w-full overflow-x-scroll no-scroll'>
         <PlanCard content={'Professional'} price={'Free'} theme={'bg-[#FF9900]'} iconComp={<Gem />} classes={''} />
         <PlanCard content={'Artists & Events'} price={'Free'} theme={'bg-[#7E00E0]'} iconComp={<Music />} classes={'hidden lg:inline'} />
         <PlanCard content={'Business Platinum'} price={'Free'} theme={'bg-[#C100E0]'} iconComp={<Crown />} classes={'hidden lg:inline'} />
