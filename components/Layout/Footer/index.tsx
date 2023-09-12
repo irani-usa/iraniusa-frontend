@@ -46,7 +46,7 @@ const Footer = () => {
                         </Link>
                         <Link className='flex items-center gap-x-4' href={"#"}>
                             <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
-                                <Mail classes={'fill-black'} />
+                                <Mail classes={''} />
                             </div>
                             <div className='flex flex-col'>
                                 <span>Contact us at</span>
