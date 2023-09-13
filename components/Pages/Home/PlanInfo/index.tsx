@@ -1,6 +1,7 @@
 
+import Card from '@/components/Pages/Home/PlanInfo/Card'
 import React from 'react'
-import Card from './Card'
+
 
 const PlanInfo = () => {
   return (

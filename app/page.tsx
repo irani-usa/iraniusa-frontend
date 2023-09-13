@@ -7,6 +7,7 @@ import StampBG from "@/components/StampBG";
 import ToursSearch from "@/components/Pages/Home/Tours/ToursSearch";
 import AboutCompany from "@/components/Pages/Home/AboutCompany";
 import SmallBannerList from "@/components/Pages/Home/SmallBannerList";
+import LargeBannerList from "@/components/Pages/Home/LargeBanner.tsx";
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
       <OverlayMenu />
       <Hero />
       <StampBG />
+      <LargeBannerList />
       <ToursSearch />
       <FinancialSummery />
-      <SmallBannerList/>
+      <SmallBannerList />
       <PlanInfo />
       <AboutCompany />
     </>
