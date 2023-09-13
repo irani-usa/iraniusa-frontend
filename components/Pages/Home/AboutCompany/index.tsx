@@ -6,21 +6,21 @@ const AboutCompany = () => {
     <>
       <section className="container">
         <section>
-            <div className="flex flex-col gap-y-5 mt-32 lg:gap-y-2">
-              <h1 className="text-black font-outfit text-xl font-bold lg:text-5xl">
-                Who we are?
-              </h1>
-              <p className="font-opensans text-white-shade-9 text-base lg:text-lg">
-                Get to know about What we actually do here
-              </p>
-            </div>
-            <section className="flex flex-col gap-y-7 lg:flex-row items-center gap-x-5 py-10">
-            <section className="flex flex-col gap-y-5 mt-5">
+          <div className="flex flex-col gap-y-5 mt-32 lg:gap-y-2">
+            <h1 className="text-black font-outfit text-xl font-bold lg:text-5xl">
+              Who we are?
+            </h1>
+            <p className="font-opensans text-white-shade-9 text-base lg:text-lg">
+              Get to know about What we actually do here
+            </p>
+          </div>
+          <section className="flex flex-col gap-y-7 lg:flex-row items-center gap-x-5 py-10">
+            <section className="w-7/12 flex flex-col gap-y-5 mt-5 h-[400px]">
               <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:p-8">
                 <div className="flex items-center justify-center bg-[#0085FF33] px-4 py-4 lg:p-9 rounded-full ">
-                  <svg 
-                    width="16"
-                    height="17"
+                  <svg
+                    width="30"
+                    height="30"
                     viewBox="0 0 12 13"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const AboutCompany = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-opensans text-white-shade-11 text-sm lg:text-base">
+                <p className="font-opensans text-white-shade-11 text-sm lg:text-lg">
                   is simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s, when an unknown printer took a galley of type
@@ -43,8 +43,8 @@ const AboutCompany = () => {
               <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col gap-y-4 items-start lg:items-start lg:flex-row lg:gap-x-5 lg:p-8">
                 <div className="flex items-center justify-center bg-[#FF7A0033] px-4 py-4 rounded-full lg:p-9">
                   <svg
-                    width="16"
-                    height="16"
+                    width="30"
+                    height="30"
                     viewBox="0 0 14 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const AboutCompany = () => {
                     />
                   </svg>
                 </div>
-                <p className="font-opensans text-white-shade-11 text-sm lg:text-base">
+                <p className="font-opensans text-white-shade-11 text-sm lg:text-lg">
                   is simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s, when an unknown printer took a galley of type
@@ -69,8 +69,8 @@ const AboutCompany = () => {
                 </p>
               </div>
             </section>
-            <Image className="w-full" src={"/images/home/AboutCompany.webp"} alt={"AboutCompany"} width={100} height={100} />
-            </section>
+            <section className="w-5/12 bg-no-repeat bg-center bg-cover h-[400px] rounded-3xl" style={{ backgroundImage: `url('/images/home/About.png')` }}></section>
+          </section>
         </section>
       </section>
     </>
