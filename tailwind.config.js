@@ -85,6 +85,7 @@ module.exports = {
       fontFamily: {
         opensans: ['var(--font-opensans)'],
         outfit: ['var(--font-outfit)'],
+        vazirmatn: ['var(--font-vazirmatn)'],
       },
       "boxShadow": {
         "drop-shadow": "46px 23px 73px 0px rgba(0,0,0,0.05)",

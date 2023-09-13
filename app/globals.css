@@ -24,6 +24,9 @@ body {
   background: rgb(var(--background-rgb))
 }
 
+Link:active {
+  color: blue !important;
+}
 
 .jc {
   @apply justify-center
