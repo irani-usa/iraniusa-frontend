@@ -1,10 +1,14 @@
 
 import React from 'react'
 
-const StampBG = () => {
+interface StampBGProps {
+    classes: string,
+}
+
+const StampBG: React.FC<StampBGProps> = (props) => {
     return (
 
-        <section className='w-full h-40 lg:h-52 flex items-center justify-center my-16 bg-cover' style={{ backgroundImage: `url('/images/home/flag-background.png')` }}>
+        <section className={`${props.classes} w-full h-40 lg:h-52 flex items-center justify-center my-16 bg-cover `} style={{ backgroundImage: `url('/images/home/flag-background.png')` }}>
             <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M54 40L57.703 48.9032L67.3148 49.6738L59.9917 55.9468L62.229 65.3262L54 60.3L45.771 65.3262L48.0083 55.9468L40.6852 49.6738L50.297 48.9032L54 40Z" fill="white" />
                 <path d="M9.24625 62.9542C9.38149 63.5855 9.30385 64.1191 9.01334 64.5549C8.71986 64.9888 8.25012 65.275 7.60412 65.4133C6.941 65.5553 6.38442 65.5018 5.93437 65.2526C5.48433 65.0035 5.19745 64.5902 5.07375 64.0128C4.95895 63.4769 5.03099 63.0187 5.28986 62.6383C5.54873 62.2578 5.96324 62.0066 6.53338 61.8845L6.99952 61.7846L7.57901 64.4897C7.97035 64.3931 8.25097 64.2217 8.42087 63.9755C8.58833 63.7297 8.633 63.4246 8.5549 63.06C8.50353 62.8202 8.4338 62.6023 8.34573 62.4061C8.25468 62.2081 8.13112 62.0017 7.97506 61.7869L8.67611 61.6367C8.82151 61.8257 8.93808 62.0234 9.02581 62.2298C9.11353 62.4362 9.18701 62.6777 9.24625 62.9542ZM5.72708 63.8729C5.78579 64.1469 5.91983 64.3485 6.12921 64.4777C6.33807 64.6045 6.61229 64.6481 6.95189 64.6086L6.55718 62.7661C6.223 62.8428 5.98704 62.9778 5.8493 63.1711C5.70911 63.3649 5.66837 63.5988 5.72708 63.8729Z" fill="white" />
