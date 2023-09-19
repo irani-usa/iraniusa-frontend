@@ -10,6 +10,7 @@ import Btc from "@/components/Icons/Solid/Btc";
 import FinancialCard from "@/components/Pages/Financial/Card";
 import Chart from "@/components/Pages/Financial/Chart";
 import Table from "@/components/Pages/Financial/Table";
+import StampBG from "@/components/StampBG";
 
 const page = () => {
   return (
@@ -64,50 +65,53 @@ const page = () => {
       </section>
       <section>
         <div className="container lg:hidden">
-   <Chart />
-   <div className="mt-14">
-    <div className="flex items-center justify-between py-7">
-      <h1 className="font-outfit text-black font-semibold text-lg">Crypto Currency</h1>
-      <span className="font-opensans text-white-shade-11">See all</span>
-    </div>
-   <Chart />
-   </div>
-      <div className="mt-14">
-    <div className="flex items-center justify-between py-7">
-      <h1 className="font-outfit text-black font-semibold text-lg">Crypto Currency</h1>
-      <span className="font-opensans text-white-shade-11">See all</span>
-    </div>
-   <Chart />
-   </div>
-   <div className="mt-14">
-    <div className="flex items-center justify-between py-7">
-      <h1 className="font-outfit text-black font-semibold text-lg">Commodities</h1>
-      <span className="font-opensans text-white-shade-11">See all</span>
-    </div>
-   <Chart />
-   </div>
-   <div className="mt-14">
-    <div className="flex items-center justify-between py-7">
-      <h1 className="font-outfit text-black font-semibold text-lg">Fiat Currency</h1>
-      <span className="font-opensans text-white-shade-11">See all</span>
-    </div>
-   <Chart />
-   </div>
-   <div className="mt-14">
-    <div className="flex items-center justify-between py-7">
-      <h1 className="font-outfit text-black font-semibold text-lg">Stock Market</h1>
-      <span className="font-opensans text-white-shade-11">See all</span>
-    </div>
-   <Chart />
-   </div>
+          <Chart />
+          <div className="flex justify-center items-center">
+            <StampBG classes={"h-[280px] rounded-[20px]"} />
+          </div>
+          <div className="mt-14">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-lg">Crypto Currency</h1>
+              <span className="font-opensans text-white-shade-11">See all</span>
+            </div>
+            <Chart />
+          </div>
+          <div className="mt-14">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-lg">Crypto Currency</h1>
+              <span className="font-opensans text-white-shade-11">See all</span>
+            </div>
+            <Chart />
+          </div>
+          <div className="mt-14">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-lg">Commodities</h1>
+              <span className="font-opensans text-white-shade-11">See all</span>
+            </div>
+            <Chart />
+          </div>
+          <div className="mt-14">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-lg">Fiat Currency</h1>
+              <span className="font-opensans text-white-shade-11">See all</span>
+            </div>
+            <Chart />
+          </div>
+          <div className="mt-14">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-lg">Stock Market</h1>
+              <span className="font-opensans text-white-shade-11">See all</span>
+            </div>
+            <Chart />
+          </div>
         </div>
         <div className="container hidden lg:flex">
           <div className="w-full flex flex-col">
-          <div className="flex items-center justify-between py-7">
-      <h1 className="font-outfit text-black font-semibold text-2xl">Crypto Currency</h1>
-      <span className="font-opensans text-white-shade-11 font-medium">See all</span>
-    </div>
-    <Table />
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-2xl">Crypto Currency</h1>
+              <span className="font-opensans text-white-shade-11 font-medium">See all</span>
+            </div>
+            <Table />
           </div>
         </div>
       </section>
