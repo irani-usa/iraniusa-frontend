@@ -55,7 +55,11 @@ const professinal = () => {
             </div>
 
           </div>
+<<<<<<< HEAD
+          <div className='w-full bg-cover bg-center h-[410px] -z-10 rounded-t-full relative flex items-center justify-center mt-16' style={{ backgroundImage: `url('/images/profile/round.png')` }}>
+=======
           <div className='w-full bg-cover h-[410px] -z-10 rounded-t-full relative flex items-center justify-center mt-16' style={{ backgroundImage: `url('/images/profile/round.png')` }}>
+>>>>>>> 3bfd389a93d8a5d9277e4ccd5683d83ade5eecde
             <div className='absolute bg-white top-[360px] border-white-shade-3 border-[1.5px] z-10 p-3 rounded-xl'>
               <h1 className='text-black font-outfit font-semibold text-2xl'>10+</h1>
               <span className='text-white-shade-9 font-opensans'>Years of experience</span>
@@ -70,8 +74,13 @@ const professinal = () => {
           <div className='mt-10'>
             <span className='text-black font-opensans font-semibold'>Based in Los angless</span>
             <div className='flex items-center flex-col gap-y-4 mt-9'>
+<<<<<<< HEAD
+              <div className='bg-cover bg-center w-full h-[180px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/cart.png')` }}></div>
+              <div className='bg-cover bg-center w-full h-[180px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/card.png')` }}></div>
+=======
               <div className='bg-cover bg-center w-full h-[220px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/cart.png')` }}></div>
               <div className='bg-cover bg-center w-full h-[220px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/card.png')` }}></div>
+>>>>>>> 3bfd389a93d8a5d9277e4ccd5683d83ade5eecde
             </div>
           </div>
         </div>
@@ -91,17 +100,90 @@ const professinal = () => {
       <div className='container'>
         <h1 className='text-black text-start text-[26px] font-outfit font-semibold'>Educations</h1>
         <p className='font-opensans text-white-shade-9 text-start mt-6'>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+<<<<<<< HEAD
+        <div className='grid grid-cols-2 items-center gap-y-7 gap-x-8 mt-10'>
+          <div className='flex flex-col items-start'>
+=======
         <div className='grid grid-cols-2 items-center gap-y-7 justify-start gap-x-8 flex-wrap flex-shrink mt-10'>
           <div className='flex w-full flex-col items-start'>
+>>>>>>> 3bfd389a93d8a5d9277e4ccd5683d83ade5eecde
             <h1 className='text-black font-semibold font-opensans text-lg'>Product designer</h1>
             <h3 className='text-white-shade-9 font-opensans font-medium'>RMIT University</h3>
             <span className='text-white-shade-9 font-opensans font-medium'>2021</span>
           </div>
+<<<<<<< HEAD
+          <div className='flex flex-col items-start'>
+=======
           <div className='flex w-full flex-col items-start'>
+>>>>>>> 3bfd389a93d8a5d9277e4ccd5683d83ade5eecde
             <h1 className='text-black font-semibold font-opensans text-lg'>Product designer</h1>
             <h3 className='text-white-shade-9 font-opensans font-medium'>RMIT University</h3>
             <span className='text-white-shade-9 font-opensans font-medium'>2021</span>
           </div>
+<<<<<<< HEAD
+
+        </div>
+      </div>
+      <hr className='w-full h-[2px] bg-white-shade-4 my-10' />
+      <div className='container'>
+        <h1 className='text-black text-center text-[26px] font-outfit font-semibold'>Gallery</h1>
+        <div className='grid grid-cols-2 items-center justify-start gap-x-6 gap-y-6 flex-wrap flex-shrink mt-9'>
+          <div className='bg-cover bg-center w-full h-[200px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/cart.png')` }}></div>
+          <div className='bg-cover bg-center w-full h-[200px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/card.png')` }}></div>
+          <div className='bg-cover bg-center w-full h-[200px] rounded-2xl' style={{ backgroundImage: `url('/images/profile/card.png')` }}></div>
+        </div>
+      </div>
+      <hr className='w-full h-[2px] bg-white-shade-4 my-10' />
+      <div className='container'>
+        <h1 className='text-black text-center text-[26px] font-outfit font-semibold'>Contact</h1>
+        <p className='font-opensans text-white-shade-9 text-center mt-6'>
+          is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        </p>
+        <div className='flex flex-col gap-y-9 mt-6'>
+          <Link className='flex items-center gap-x-4 font-opensans' href={"#"}>
+            <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3549 5H13.6452C15.1154 4.99999 16.2799 4.99998 17.1912 5.12251C18.1292 5.24861 18.8883 5.5143 19.487 6.11299C20.0857 6.71169 20.3514 7.47084 20.4775 8.40878C20.6 9.32015 20.6 10.4847 20.6 11.9549V12.0451C20.6 13.5153 20.6 14.6798 20.4775 15.5912C20.3514 16.5292 20.0857 17.2883 19.487 17.887C18.8883 18.4857 18.1292 18.7514 17.1912 18.8775C16.2799 19 15.1154 19 13.6452 19H10.3549C8.88469 19 7.72018 19 6.80881 18.8775C5.87087 18.7514 5.11171 18.4857 4.51302 17.887C3.91433 17.2883 3.64864 16.5292 3.52253 15.5912C3.4 14.6798 3.40001 13.5153 3.40002 12.0451V11.9549C3.40001 10.4847 3.4 9.32015 3.52253 8.40878C3.64864 7.47084 3.91433 6.71169 4.51302 6.11299C5.11171 5.5143 5.87087 5.24861 6.80881 5.12251C7.72018 4.99998 8.88468 4.99999 10.3549 5ZM6.9687 6.31181C6.16383 6.42002 5.70012 6.62296 5.36155 6.96152C5.02298 7.30009 4.82004 7.76381 4.71183 8.56868C4.6013 9.39081 4.60003 10.4745 4.60003 12C4.60003 13.5255 4.6013 14.6092 4.71183 15.4313C4.82004 16.2362 5.02298 16.6999 5.36155 17.0385C5.70012 17.377 6.16383 17.58 6.9687 17.6882C7.79084 17.7987 8.87457 17.8 10.4 17.8H13.6C15.1255 17.8 16.2092 17.7987 17.0313 17.6882C17.8362 17.58 18.2999 17.377 18.6385 17.0385C18.9771 16.6999 19.18 16.2362 19.2882 15.4313C19.3988 14.6092 19.4 13.5255 19.4 12C19.4 10.4745 19.3988 9.39081 19.2882 8.56868C19.18 7.76381 18.9771 7.30009 18.6385 6.96152C18.2999 6.62295 17.8362 6.42002 17.0313 6.31181C16.2092 6.20127 15.1255 6.2 13.6 6.2H10.4C8.87457 6.2 7.79084 6.20127 6.9687 6.31181ZM6.73909 8.41589C6.95123 8.16132 7.32957 8.12693 7.58414 8.33907L9.31125 9.77833C10.0576 10.4003 10.5758 10.8307 11.0133 11.1121C11.4368 11.3845 11.724 11.4759 12 11.4759C12.2761 11.4759 12.5633 11.3845 12.9868 11.1121C13.4242 10.8307 13.9424 10.4003 14.6888 9.77833L16.4159 8.33907C16.6705 8.12693 17.0488 8.16132 17.261 8.41589C17.4731 8.67046 17.4387 9.04879 17.1841 9.26093L15.4269 10.7253C14.7179 11.3162 14.1431 11.7951 13.6359 12.1214C13.1075 12.4612 12.5929 12.6759 12 12.6759C11.4072 12.6759 10.8926 12.4612 10.3642 12.1214C9.85692 11.7951 9.2822 11.3162 8.57311 10.7253L6.81591 9.26093C6.56135 9.04879 6.52695 8.67046 6.73909 8.41589Z" fill="black" />
+              </svg>
+
+            </div>
+            <div className='flex flex-col'>
+              <span className='text-white-shade-9 font-medium'>E-mail</span>
+              <span className='text-black font-semibold'>unreal@outlook.com</span>
+            </div>
+          </Link>
+          <Link className='flex items-center gap-x-4' href={"#"}>
+            <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.17386 4.87352C7.15481 3.84077 8.77739 4.03426 9.58826 5.18113L10.597 6.60791C11.2456 7.52525 11.1908 8.80058 10.4168 9.61552L10.2209 9.82175C10.2204 9.82318 10.2198 9.82472 10.2192 9.82639C10.2088 9.85548 10.1827 9.94811 10.2084 10.1239C10.2618 10.4883 10.5431 11.2289 11.6853 12.4313C12.831 13.6376 13.5259 13.9218 13.848 13.9741C13.9869 13.9967 14.0596 13.9771 14.0827 13.9689L14.4096 13.6248C15.1087 12.8888 16.1985 12.7439 17.0773 13.2497L18.6057 14.1294C19.912 14.8813 20.2161 16.7207 19.1721 17.8198L18.0357 19.0162C17.681 19.3897 17.1973 19.7084 16.5997 19.7674C15.1406 19.9114 11.7605 19.7238 8.21699 15.9932C4.91046 12.512 4.28232 9.48411 4.20291 8.00473L4.73579 7.97613L4.20291 8.00473C4.16368 7.27379 4.4895 6.64684 4.91818 6.19552L6.17386 4.87352ZM8.60843 5.8739C8.19855 5.29418 7.4622 5.25959 7.04393 5.69995L5.78825 7.02194C5.52314 7.30106 5.38404 7.62097 5.40119 7.94041C5.46602 9.14827 5.98616 11.9021 9.08706 15.1668C12.3384 18.5898 15.3338 18.6865 16.4818 18.5732C16.7088 18.5508 16.9424 18.4248 17.1656 18.1898L18.302 16.9934C18.7923 16.4772 18.6638 15.5474 18.0071 15.1694L16.4787 14.2897C16.0685 14.0536 15.5881 14.1266 15.2797 14.4512L14.9153 14.8348L14.4936 14.4342C14.9153 14.8348 14.9148 14.8354 14.9142 14.836L14.9131 14.8372L14.9107 14.8396L14.9057 14.8448L14.8942 14.8561C14.8859 14.8641 14.8764 14.8728 14.8657 14.8823C14.8442 14.9011 14.8176 14.9226 14.7856 14.9453C14.7215 14.9908 14.6361 15.0407 14.5282 15.0833C14.3074 15.1704 14.0158 15.2171 13.6556 15.1586C12.9536 15.0446 12.0335 14.5404 10.8152 13.2578C9.59332 11.9713 9.12568 11.0116 9.02111 10.2979C8.96788 9.93462 9.01048 9.64374 9.08864 9.42409C9.12708 9.31607 9.17246 9.22994 9.21432 9.16453C9.23519 9.13191 9.25508 9.1046 9.27267 9.08238C9.28146 9.07127 9.28968 9.06143 9.29716 9.05282L9.30782 9.04083L9.3127 9.03553L9.31503 9.03304L9.31616 9.03184C9.31671 9.03126 9.31726 9.03068 9.7426 9.43466L9.31727 9.03067L9.54672 8.7891C9.90315 8.41385 9.95493 7.77834 9.61722 7.30069L8.60843 5.8739Z" fill="black" />
+                <path d="M13.0073 3.90426C13.0603 3.57714 13.3695 3.35524 13.6966 3.4082C13.7169 3.41208 13.782 3.42425 13.8162 3.43186C13.8844 3.44706 13.9797 3.47047 14.0984 3.50505C14.3358 3.5742 14.6675 3.68812 15.0656 3.87063C15.8626 4.23604 16.9233 4.87524 18.0239 5.97588C19.1245 7.07652 19.7637 8.13717 20.1291 8.93419C20.3117 9.33229 20.4256 9.66397 20.4947 9.90139C20.5293 10.0201 20.5527 10.1153 20.5679 10.1836C20.5755 10.2177 20.5811 10.2451 20.585 10.2654L20.5896 10.2903C20.6425 10.6175 20.4226 10.9395 20.0955 10.9924C19.7693 11.0452 19.4621 10.8244 19.4078 10.4988C19.4061 10.4901 19.4015 10.4666 19.3966 10.4445C19.3867 10.4002 19.3697 10.3299 19.3426 10.237C19.2885 10.0511 19.1944 9.77483 19.0383 9.43429C18.7265 8.75405 18.1657 7.8147 17.1754 6.82441C16.1851 5.83412 15.2457 5.27332 14.5655 4.96146C14.2249 4.80533 13.9487 4.71131 13.7628 4.65717C13.6699 4.6301 13.5531 4.60329 13.5088 4.59343C13.1832 4.53917 12.9545 4.23043 13.0073 3.90426Z" fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1885 6.66188C13.2796 6.34326 13.6116 6.15877 13.9303 6.2498L13.7654 6.82672C13.9303 6.2498 13.9306 6.24988 13.9308 6.24996L13.9314 6.25013L13.9326 6.25049L13.9353 6.25127L13.9415 6.25312L13.9573 6.25805C13.9694 6.26191 13.9845 6.26693 14.0024 6.2733C14.0384 6.28605 14.0858 6.30418 14.1441 6.32915C14.2606 6.3791 14.4199 6.45623 14.6155 6.572C15.0071 6.80375 15.5416 7.18869 16.1696 7.81667C16.7976 8.44464 17.1825 8.97919 17.4143 9.37076C17.53 9.56637 17.6072 9.72563 17.6571 9.84217C17.6821 9.90042 17.7002 9.9479 17.713 9.98383C17.7193 10.0018 17.7244 10.0169 17.7282 10.0289L17.7332 10.0448L17.735 10.051L17.7358 10.0536L17.7361 10.0548L17.7363 10.0554C17.7364 10.0557 17.7365 10.056 17.1596 10.2208L17.7365 10.056C17.8275 10.3746 17.643 10.7067 17.3244 10.7977C17.0085 10.888 16.6793 10.7074 16.585 10.3937L16.5821 10.3851C16.5778 10.3731 16.569 10.3494 16.5541 10.3149C16.5245 10.2458 16.4709 10.1328 16.3816 9.98195C16.2032 9.68056 15.881 9.22516 15.3211 8.66519C14.7611 8.10523 14.3057 7.78307 14.0043 7.60469C13.8534 7.5154 13.7405 7.46172 13.6714 7.43212C13.6368 7.41731 13.6132 7.40848 13.6011 7.40422L13.5925 7.40126C13.2789 7.30696 13.0983 6.9778 13.1885 6.66188Z" fill="black" />
+              </svg>
+
+            </div>
+            <div className='flex flex-col'>
+              <span className='text-white-shade-9 font-medium'>Call</span>
+              <span className='text-black font-semibold'>(603) 555-0123</span>
+            </div>
+          </Link>
+          <Link className='flex items-center gap-x-4' href={"#"}>
+            <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.7129 6.39846C19.1275 7.84146 19.9998 9.8181 19.9998 11.9985C19.9998 14.2047 19.1067 16.2024 17.6623 17.6496M6.39976 17.7116C4.91867 16.2597 3.99976 14.2364 3.99976 11.9985C3.99976 9.78644 4.89753 7.7841 6.34858 6.33594" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.4276 8.83596C16.2764 9.6478 16.7997 10.7599 16.7997 11.9865C16.7997 13.2278 16.2639 14.3517 15.3972 15.1659M8.63971 15.2008C7.75105 14.3839 7.19971 13.2456 7.19971 11.9865C7.19971 10.742 7.73837 9.61552 8.609 8.80078" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12.0004" cy="11.9984" r="1.6" stroke="black" stroke-width="1.5" />
+              </svg>
+
+            </div>
+            <div className='flex flex-col'>
+              <span className='text-white-shade-9 font-medium'>Website</span>
+              <span className='text-black font-semibold'>byjason.com</span>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <hr className='w-full h-[2px] bg-white-shade-4 my-10' />
+=======
         </div>
       </div>
       <hr className='w-full h-[2px] bg-white-shade-4 my-10' />
@@ -167,6 +249,7 @@ const professinal = () => {
         </div>
       </section>
 
+>>>>>>> 3bfd389a93d8a5d9277e4ccd5683d83ade5eecde
     </section>
 
   )

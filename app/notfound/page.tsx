@@ -13,8 +13,7 @@ const page = () => {
             </p>
            <Link className='text-white bg-black py-4  px-14 font-opensans rounded-2xl' href={'/'}>Back to homepage</Link>
         </div>
-        <img className='lg
-        w-1/2' src="/Images/404/404.webp" alt="" />
+        <img className='w-full lg:w-1/2' src="/Images/404/404.webp" alt="" />
     </section>
   )
 }
