@@ -24,7 +24,7 @@ const Job = () => {
                         <li>Personnel management.</li>
                     </ol>
                 </div>
-                <div className='w-full h-80 bg-cover bg-center rounded-3xl my-3' style={{ backgroundImage: `url('/images/profile/desk.png')` }}>
+                <div className='w-full h-80 bg-cover bg-center rounded-3xl my-3 lg:h-64' style={{ backgroundImage: `url('/images/profile/desk.png')` }}>
 
                 </div>
             </div>

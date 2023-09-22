@@ -2,7 +2,7 @@ import React from "react";
 
 const UserTitle = () => {
   return (
-   <section className="absolute left-5 lg:left-[430px] top-[160px]  lg:top-16">
+   <section className="absolute left-5 lg:left-[430px] top-[160px]  lg:top-32 lg:flex lg:gap-x-4">
      <div className=" flex flex-col gap-y-2  lg:gap-y-0 ">
       <h1 className="flex items-center gap-x-3 text-black font-outfit font-semibold text-xl lg:ml-2">
         Amin gholami <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +31,8 @@ const UserTitle = () => {
         </span>
       </div>
     </div>
-    <div className="flex items-center gap-x-5 mt-7">
-      <span className="text-black font-opensans font-bold flex items-center gap-x-2">Blog level <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="flex items-center gap-x-5 mt-7 lg:flex-col lg:mt-0 lg:border-l border-white-shade-4 lg:pl-4" >
+      <span className="text-black font-opensans font-bold flex items-center gap-x-2 lg:text-lg">Blog level <svg className="lg:hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_807_8512)">
 <path d="M2.46013 7.04031L4.73263 4.1228C4.88263 3.9353 5.07764 3.77781 5.28764 3.67281C5.50514 3.56781 5.73764 3.51531 5.97764 3.50781H11.8126C12.0526 3.50781 12.2926 3.56031 12.5026 3.67281C12.7201 3.77781 12.9076 3.9353 13.0576 4.1228L15.3301 7.04031C15.5401 7.31781 15.6451 7.65531 15.6301 8.00031C15.6151 8.34531 15.4801 8.6828 15.2476 8.9303L9.39014 15.2753C9.32264 15.3428 9.24764 15.4028 9.15764 15.4403C9.06764 15.4778 8.97763 15.5003 8.88013 15.5003C8.78263 15.5003 8.69264 15.4778 8.60264 15.4403C8.51264 15.4028 8.43764 15.3428 8.37014 15.2753L2.52014 8.9303C2.28764 8.6753 2.15264 8.34531 2.13764 8.00031C2.12264 7.65531 2.22764 7.31031 2.43764 7.04031H2.46013Z" stroke="#391AF7" stroke-width="1.5" stroke-miterlimit="10"/>
 <path d="M11.9023 8.60156L10.4023 10.1016" stroke="#391AF7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -44,14 +44,14 @@ const UserTitle = () => {
 </defs>
 </svg>
 </span>
-<span className="font-opensans text-green flex items-center gap-x-2 font-medium">
+<span className="font-opensans text-green flex items-center gap-x-2 font-medium lg:text-lg">
 <svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="3" cy="3.5" r="3" fill="#58BD7D"/>
 </svg>
  Active
 </span>
     </div>
-    <div className="flex items-center gap-x-7 py-4">
+    <div className="flex items-center gap-x-7 py-4 lg:hidden">
       <div className="flex items-center gap-x-4">
         <span className="text-black font-opensans text-lg font-semibold">11.2 k</span> 
       <span className="text-white-shade-8 font-outfit text-lg font-medium flex items-center gap-x-2"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

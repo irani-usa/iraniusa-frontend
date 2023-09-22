@@ -1,4 +1,4 @@
-import Navigation from '@/components/Profile/general/Navigation'
+import Navigation from '@/components/Profile/Professional/Pro/Navigation'
 import AboutMe from '@/components/Profile/Professional/Pro/AboutMe'
 import Educations from '@/components/Profile/Professional/Pro/Educations'
 import Experinces from '@/components/Profile/Professional/Pro/Experinces'
@@ -14,6 +14,7 @@ import Avatar from '@/components/Profile/Professional/Pro/Avatar'
 import HardSkills from '@/components/Profile/Professional/Pro/HardSkills'
 import Project from '@/components/Profile/Professional/Pro/Project'
 import Blog from '@/components/Profile/Professional/Pro/Blog'
+
 
 const page = () => {
   return (
