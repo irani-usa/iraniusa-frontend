@@ -39,7 +39,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className='w-full h-[400px] bg-center bg-cover rounded-t-full relative my-7 lg:w-96' style={{ backgroundImage: `url('/images/profile/round.png')` }}>
-        <div className='flex flex-col p-4 gap-y-2 border border-white-shade-3 bg-white w-[186px] h-[95px] absolute rounded-2xl -bottom-8 left-1/4 lg:top-[90px] lg:-left-36 lg:w-[220px] lg:h-[110px]'>
+        <div className='flex flex-col p-4 gap-y-2 border border-white-shade-3 bg-white w-[186px] h-[95px] absolute rounded-2xl -bottom-8 left-1/4 lg:top-[95px] lg:-left-36 lg:w-[220px] lg:h-[110px]'>
           <h1 className='text-black text-2xl font-bold font-outfit lg:text-3xl'>+10</h1>
           <span className='font-opensans font-medium text-white-shade-9 lg:text-lg'>Years of experience</span>
         </div>

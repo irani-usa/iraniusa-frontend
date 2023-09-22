@@ -14,7 +14,7 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-        <div className='w-full border-white-shade-4 relative'>
+        <div className='w-full relative'>
             <Cover/>
         </div>
         <div className='container flex relative -top-[100px] left-0 p-10 mb-20'>
