@@ -3,11 +3,12 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center gap-y-7  py-9">
-      <h1 className="text-2xl font-outfit font-bold text-center lg:text-[35px] text-black">
+    <div className="w-full   border-white-shade-4 border-b pb-10   py-9">
+     <div className='container flex flex-col gap-y-7 items-center'>
+     <h1 className="text-2xl font-outfit font-bold text-center lg:text-[35px] text-black">
         Product designer with 10 years of  experience
       </h1>
-      <p className="text-center text-white-shade-9 font-opensans max-w-sm">
+      <p className="text-center text-white-shade-9 font-opensans ">
         is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
       </p>
       <div className="flex items-center justify-center gap-x-6">
@@ -43,7 +44,7 @@ const AboutMe = () => {
           <span className='font-opensans font-medium text-white-shade-9'>Years of experience</span>
         </div>
       </div>
-      <div className="mt-7 border-white-shade-4 border-b pb-10">
+      <div className="mt-7">
            <h1 className="text-2xl text-black font-outfit font-bold">Who am i?</h1>
            <p className="text-white-shade-9 mt-7 font-opensans ">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
            <div className="mt-16">
@@ -54,6 +55,7 @@ const AboutMe = () => {
            </div>
            </div>
         </div>
+     </div>
     </div>
   )
 }
