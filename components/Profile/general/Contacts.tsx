@@ -64,7 +64,7 @@ const Contacts = () => {
     <h1 className="text-[26px] font-outfit font-bold text-black text-center">Contact</h1>
         <p className="text-white-shade-9 text-center font-opensans ">is simply dummy text of the printing and typesetting industry. Lorem Ipsum  </p>
         <section>
-        <div className='flex  flex-col gap-y-4 mt-6'>
+        <div className='flex  flex-col gap-y-4 mt-6 lg:flex-row lg:justify-center lg:gap-x-14 lg:pt-5 lg:pb-16'>
                         <Link className='flex items-center gap-x-4' href={"#"}>
                             <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
                             <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@ const Contacts = () => {
                             <div className='flex flex-col font-opensans'>
                          
                          <span className='text-white-shade-9'>E-mail</span>
-                         <span className='text-black text-lg font-semibold'>
+                         <span className='text-black text-lg font-semibold lg:text-xl'>
                          unreal@outlook.com
                          </span>
                      </div>
@@ -90,7 +90,7 @@ const Contacts = () => {
                             <div className='flex flex-col font-opensans'>
                          
                          <span className='text-white-shade-9'>Call</span>
-                         <span className='text-black text-lg font-semibold'>
+                         <span className='text-black text-lg font-semibold lg:text-xl'>
                          (603) 555-0123
                          </span>
                      </div>
@@ -107,7 +107,7 @@ const Contacts = () => {
                             <div className='flex flex-col font-opensans'>
                          
                                 <span className='text-white-shade-9'>Website</span>
-                                <span className='text-black text-lg font-semibold'>
+                                <span className='text-black text-lg font-semibold lg:text-xl'>
                                 byjason.com
                                 </span>
                             </div>

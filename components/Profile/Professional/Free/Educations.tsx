@@ -21,9 +21,9 @@ const Educations = () => {
     </div>
       </div>
       <div className='hidden flex-col gap-y-6 lg:flex'>
-        <h1 className="text-[26px] font-outfit font-bold text-black">Educations</h1>
+        <h1 className="text-[26px] font-outfit font-bold text-black lg:text-3xl">Educations</h1>
         <p className=" text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-    <div className='grid grid-cols-2 items-center '>
+    <div className='grid grid-cols-2 items-center lg:mt-6 lg:grid-cols-3'>
     <div className='flex flex-col w-full'>
           <h1 className="text-lg font-medium text-black">Product designer</h1>
           <span className="text-white-shade-9 font-medium">RMIT University</span>
