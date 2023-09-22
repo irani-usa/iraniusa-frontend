@@ -11,6 +11,9 @@ import OverlayMenu from '@/components/Layout/OverlayMenu'
 import Company from '@/components/Profile/Professional/Pro/Company'
 import Job from '@/components/Profile/Professional/Pro/Job'
 import Avatar from '@/components/Profile/Professional/Pro/Avatar'
+import HardSkills from '@/components/Profile/Professional/Pro/HardSkills'
+import Project from '@/components/Profile/Professional/Pro/Project'
+import Blog from '@/components/Profile/Professional/Pro/Blog'
 
 const page = () => {
   return (
@@ -32,8 +35,11 @@ const page = () => {
               <Experinces />
               <Company />
               <Job />
+              <HardSkills />
+              <Project />
               <Educations />
               <Gallery />
+              <Blog />
             <Social />
           </section>
       </section>
