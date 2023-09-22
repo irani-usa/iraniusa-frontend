@@ -9,6 +9,7 @@ import UserTitle from '@/components/Profile/general/UserTitle'
 import React from 'react'
 import OverlayMenu from '@/components/Layout/OverlayMenu'
 import Company from '@/components/Profile/Professional/Pro/Company'
+import Job from '@/components/Profile/Professional/Pro/Job'
 
 const page = () => {
   return (
@@ -26,6 +27,7 @@ const page = () => {
               <AboutMe />
               <Experinces />
               <Company />
+              <Job />
               <Educations />
               <Gallery />
             <Social />
