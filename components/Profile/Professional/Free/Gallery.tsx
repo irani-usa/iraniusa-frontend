@@ -4,7 +4,7 @@ import React from 'react'
 const Gallery = () => {
   return (
 <section className='w-full border-white-shade-4 border-b py-8'>
-      <div className='container '>
+      <div className='container  lg:px-0'>
         <h1 className="text-[26px] font-outfit text-center font-bold text-black">Gallery</h1>
         <div className='grid grid-cols-2 items-center gap-x-5 gap-y-4 mt-9'>
          
@@ -14,6 +14,7 @@ const Gallery = () => {
           </div>
        
       </div>
+    
     </section>
   )
 }
