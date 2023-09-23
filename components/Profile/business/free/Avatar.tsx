@@ -11,7 +11,7 @@ const Avatar = () => {
             ></div>
             <div className="flex items-center gap-x-2 absolute top-[115px] right-[4%]">
                
-                <Link href={"#"} className="bg-blue hidden lg:flex font-opensans py-2 rounded-xl lg:rounded-2xl px-6 lg:py-3 lg:px-10 hover:cursor-pointer" type="button">Contact</Link>
+                <Link href={"#"} className="bg-blue hidden lg:flex font-opensans rounded-2xl px-16 py-4  hover:cursor-pointer" type="button">Contact</Link>
             </div>
         </>
     );
