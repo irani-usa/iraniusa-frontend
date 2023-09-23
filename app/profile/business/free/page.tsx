@@ -1,7 +1,11 @@
+import Company from '@/components/Profile/business/free/Company'
 import Avatar from '@/components/Profile/business/free/Avatar'
 import Cover from '@/components/Profile/business/free/Cover'
 import UserTitle from '@/components/Profile/business/free/UserTitle'
 import React from 'react'
+import Exprince from '@/components/Profile/business/free/Exprince'
+import Gallery from '@/components/Profile/business/free/Gallery'
+import Contacts from '@/components/Profile/business/free/Contacts'
 
 const page = () => {
   return (
@@ -15,6 +19,14 @@ const page = () => {
             <UserTitle/>
         </div>
        </div>
+       <section>
+        <section>
+            <Company />
+            <Exprince />
+            <Gallery />
+            <Contacts />
+        </section>
+       </section>
     </section>
   )
 }

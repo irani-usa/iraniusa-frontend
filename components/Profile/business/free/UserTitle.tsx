@@ -2,7 +2,7 @@ import React from "react";
 
 const UserTitle = () => {
   return (
-   <section className="absolute left-5 lg:left-[430px] top-[160px]  lg:top-32 lg:flex lg:gap-x-4">
+   <section className="absolute left-5 lg:left-[33%] top-[160px]  lg:top-32 lg:flex lg:gap-x-4">
      <div className=" flex flex-col gap-y-2  lg:gap-y-0 ">
       <h1 className=" text-black font-outfit font-semibold text-xl lg:ml-2">
         Amin gholami 
