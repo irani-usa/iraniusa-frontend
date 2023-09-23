@@ -43,10 +43,10 @@ const Company = () => {
                     <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl">Feel the comfort with <br /> newst shoes and sweaters </h1>
                     <p className=" text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                     <div className="mt-5 pb-5">
-                        <Link className="bg-blue text-white py-4 px-8 font-medium rounded-2xl" href={"#"}>About us</Link>
+                        <Link className="bg-blue text-white py-4 px-8 font-medium rounded-2xl lg:px-12" href={"#"}>About us</Link>
                         <Link className="py-4 px-8 font-medium text-white-shade-10" href={"#"}>Our products</Link>
                     </div>
-                    <div className="hidden lg:flex items-center w-full gap-x-3 mt-10">
+                    <div className="hidden lg:flex items-center w-full gap-x-2 mt-10">
                 <div className="flex flex-col items-center gap-x-3 ">
                     <h1 className="text-black text-3xl font-bold">200+</h1>
                     <span className="text-white-shade-9 ">Happy Customers</span>
