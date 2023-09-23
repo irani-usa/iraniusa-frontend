@@ -4,7 +4,7 @@ import React from 'react'
 
 const Contacts = () => {
   return (
-    <section className='py-9'>
+    <section className='border-b border-white-shade-4 py-9 lg:pt-14'>
     <div className='container flex flex-col  gap-y-5 lg:hidden'>
     <h1 className="text-[26px] font-outfit font-bold text-black text-center">Contact</h1>
         <p className="text-white-shade-9 text-center font-opensans ">is simply dummy text of the printing and typesetting industry. Lorem Ipsum  </p>
