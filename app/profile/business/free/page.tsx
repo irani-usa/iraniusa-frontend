@@ -6,6 +6,7 @@ import React from 'react'
 import Exprince from '@/components/Profile/business/free/Exprince'
 import Gallery from '@/components/Profile/business/free/Gallery'
 import Contacts from '@/components/Profile/business/free/Contacts'
+import Navigation from '@/components/Profile/business/free/Navigation'
 
 const page = () => {
   return (
@@ -19,8 +20,9 @@ const page = () => {
             <UserTitle/>
         </div>
        </div>
-       <section>
-        <section>
+       <section className='lg:flex lg:container'>
+       <Navigation/>
+        <section className='lg:border-l  lg:border-white-shade-4 lg:pl-6'>
             <Company />
             <Exprince />
             <Gallery />
