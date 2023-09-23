@@ -21,7 +21,7 @@ const page = () => {
     <section>
         <OverlayMenu />
         <div className='w-full relative'>
-            <Cover/>
+            <Cover background={'/images/profile/Cover.png'}/>
         </div>
         <div className='w-full container flex relative -top-[100px] left-0 p-10 mb-40'>
             <Avatar/>

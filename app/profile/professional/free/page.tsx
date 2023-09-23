@@ -15,11 +15,11 @@ const page = () => {
     <section>
       <OverlayMenu />
         <div className='w-full relative'>
-            <Cover/>
+            <Cover background={'/images/profile/Cover.png'}/>
         </div>
         <div className='container flex relative -top-[100px] left-0 p-10 mb-20'>
-            <Avatar/>
-            <UserTitle/>
+            <Avatar background={'/images/profile/Prof.png'}/>
+            <UserTitle fullname={'Amin gholami'} jobtitle={'Product designer'} city={'Los angles'}/>
         </div>
         <div className='w-full h-1  lg:border-t border-white-shade-4'>
 

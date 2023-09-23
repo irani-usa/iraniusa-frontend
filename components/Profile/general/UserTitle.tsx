@@ -1,13 +1,20 @@
 import React from "react";
+interface UserTitleProps {
+  fullname:string,
+  jobtitle:string,
+  city:string,
+}
 
-const UserTitle = () => {
+const UserTitle: React.FC<UserTitleProps> = (props) => {
   return (
-    <div className="absolute left-5  lg:left-[33%] top-24  lg:top-16 flex flex-col gap-y-2 mt-16 lg:gap-y-0 ">
-      <h1 className="text-black font-outfit font-semibold text-xl lg:ml-2">
-        Amin gholami
+    <div className="absolute left-5  lg:left-[33%] top-24 lg:items-center lg:top-16 flex flex-col gap-y-2 mt-16 lg:gap-y-0 ">
+      <h1 className="text-black font-outfit font-semibold text-xl ">
+      {props.fullname}
       </h1>
+      <span className="hidden lg:flex font-medium text-white-shade-9 font-opensans text-lg">{props.jobtitle}</span>
+
       <div className="w-full flex items-center font-medium gap-x-6 text-white-shade-9 font-opensans lg:text-lg">
-        <span>Product designer</span>
+        <span className="lg:hidden">{props.jobtitle}</span>
         <span className="flex items-center gap-x-2 lg:hidden">
           <svg
             width="14"
@@ -23,7 +30,7 @@ const UserTitle = () => {
               fill="#A6A6A6"
             />
           </svg>
-          Los angles
+          {props.city}
         </span>
       </div>
     </div>

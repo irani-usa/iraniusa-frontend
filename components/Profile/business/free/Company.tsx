@@ -5,8 +5,8 @@ const Company = () => {
     return (
         <section className="w-full border-b border-white-shade-4 py-8">
             <section className="container lg:px-0">
-            <div className="bg-[#1E2C35] p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2">
-                <div className="bg-white p-6 flex flex-col gap-y-5 rounded-3xl lg:w-[100%]">
+            <div className="bg-[#1E2C35] p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto">
+                <div className="bg-white p-6 flex flex-col gap-y-5 rounded-3xl lg:w-1/2">
                     <svg
                         width="80"
                         height="17"
@@ -42,26 +42,26 @@ const Company = () => {
                     </svg>
                     <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl">Feel the comfort with <br /> newst shoes and sweaters </h1>
                     <p className=" text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                    <div className="mt-5 pb-5">
+                    <div className="flex items-center mt-5 pb-5">
                         <Link className="bg-blue text-white py-4 px-8 font-medium rounded-2xl lg:px-12" href={"#"}>About us</Link>
                         <Link className="py-4 px-8 font-medium text-white-shade-10" href={"#"}>Our products</Link>
                     </div>
-                    <div className="hidden lg:flex items-center w-full gap-x-2 mt-10">
+                    <div className="hidden lg:flex items-start w-full gap-x-1 mt-10">
                 <div className="flex flex-col items-center gap-x-3 ">
                     <h1 className="text-black text-3xl font-bold">200+</h1>
-                    <span className="text-white-shade-9 ">Happy Customers</span>
+                    <span className="text-white-shade-9 text-center">Happy Customers</span>
                 </div>
                 <div className="flex flex-col items-center gap-x-3">
                     <h1 className="text-black text-3xl font-bold">100k+</h1>
-                    <span className="text-white-shade-9 ">Varients</span>
+                    <span className="text-white-shade-9 text-center">Varients</span>
                 </div>
                 <div className="flex flex-col items-center gap-x-3">
                     <h1 className="text-black text-3xl font-bold">92%</h1>
-                    <span className="text-white-shade-9 ">Satisfied Customers</span>
+                    <span className="text-white-shade-9 text-center">Satisfied Customers</span>
                 </div>
             </div>
                 </div>
-                <div className="w-full h-[195px] bg-cover bg-center lg:h-[70vh]" style={{ backgroundImage: `url('/images/profile/business/card.png')` }}>
+                <div className="w-full h-[195px] bg-cover bg-center lg:h-full lg:w-1/2" style={{ backgroundImage: `url('/images/profile/business/card.png')` }}>
 
                 </div>
             </div>

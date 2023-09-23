@@ -1,6 +1,6 @@
 import Company from '@/components/Profile/business/free/Company'
 import Avatar from '@/components/Profile/business/free/Avatar'
-import Cover from '@/components/Profile/business/free/Cover'
+import Cover from '@/components/Profile/general/Cover'
 import UserTitle from '@/components/Profile/business/free/UserTitle'
 import React from 'react'
 import Exprince from '@/components/Profile/business/free/Exprince'
@@ -13,7 +13,7 @@ const page = () => {
     <section>
        <div className='w-full border-b border-white-shade-4'>
        <div className='w-full relative'>
-            <Cover/>
+            <Cover background={'/images/profile/business/cover.png'}/>
         </div>
         <div className='w-full container flex relative -top-[100px] left-0 p-10 mb-20'>
             <Avatar/>
