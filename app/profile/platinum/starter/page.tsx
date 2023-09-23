@@ -1,12 +1,12 @@
-import Company from '@/components/Profile/business/free/Company'
-import Avatar from '@/components/Profile/business/free/Avatar'
-import Cover from '@/components/Profile/business/free/Cover'
-import UserTitle from '@/components/Profile/business/free/UserTitle'
+import Company from '@/components/Profile/business/starter/Company'
+import Avatar from '@/components/Profile/business/starter/Avatar'
+import Cover from '@/components/Profile/business/starter/Cover'
+import UserTitle from '@/components/Profile/business/starter/UserTitle'
 import React from 'react'
-import Exprince from '@/components/Profile/business/free/Exprince'
-import Gallery from '@/components/Profile/business/free/Gallery'
-import Contacts from '@/components/Profile/business/free/Contacts'
-import Navigation from '@/components/Profile/business/free/Navigation'
+import Exprince from '@/components/Profile/business/starter/Exprince'
+import Gallery from '@/components/Profile/business/starter/Gallery'
+import Contacts from '@/components/Profile/business/starter/Contacts'
+import Navigation from '@/components/Profile/business/starter/Navigation'
 
 const page = () => {
   return (
@@ -20,7 +20,7 @@ const page = () => {
             <UserTitle/>
         </div>
        </div>
-       <section className='lg:flex lg:container'>
+       <section className='relative top-0 left-0 lg:flex lg:container'>
        <Navigation/>
         <section className='lg:border-l  lg:border-white-shade-4 lg:pl-6'>
             <Company />
