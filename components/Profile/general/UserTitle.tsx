@@ -2,7 +2,7 @@ import React from "react";
 
 const UserTitle = () => {
   return (
-    <div className="absolute left-5 lg:left-[430px] top-24  lg:top-16 flex flex-col gap-y-2 mt-16 lg:gap-y-0 ">
+    <div className="absolute left-5  lg:left-[33%] top-24  lg:top-16 flex flex-col gap-y-2 mt-16 lg:gap-y-0 ">
       <h1 className="text-black font-outfit font-semibold text-xl lg:ml-2">
         Amin gholami
       </h1>
