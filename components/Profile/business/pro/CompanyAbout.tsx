@@ -37,9 +37,9 @@ const CompanyAbout = () => {
         View Profile
       </Link>
     </div>
-    <section className='flex flex-col gap-y-5 py-5'>
-    <div className='w-full h-48 rounded-2xl bg-white-shade-4'></div>
-    <div className='w-full h-48 rounded-2xl bg-white-shade-4'></div>
+    <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5'>
+    <div style={{ backgroundImage: `url('/images/profile/business/about.png')` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-4 lg:h-44'></div>
+    <div style={{ backgroundImage: `url('/images/profile/business/about.png')` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-2 lg:h-44'></div>
   </section>
   </div>
   </section>
