@@ -4,9 +4,9 @@ import React from 'react'
 
 const Social = () => {
   return (
-<div className=' w-full border-white-shade-4 border-b pb-8'>
+<div className=' w-full border-white-shade-4 border-b pb-8 lg:pb-12'>
     <div className='container flex flex-col lg:items-center gap-y-6 mt-8 lg:px-0'>
-    <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl"> Socials</h1>
+    <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl lg:mt-9"> Socials</h1>
           <p className="text-center text-lg text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
        <section className='grid grid-cols-4 gap-y-4 mt-7 lg:grid-cols-6 lg:w-[500px] gap-x-5'>
         <div className='w-[70px] h-[70px] flex items-center justify-center border border-white-shade-4 rounded-full '>
@@ -43,7 +43,7 @@ const Social = () => {
         </div>
         
        </section>
-       <div className='flex  flex-col gap-y-4 mt-6 lg:flex-row lg:gap-x-12'>
+       <div className='flex  flex-col gap-y-4 mt-6 lg:flex-row lg:gap-x-12 lg:pt-10'>
                         <Link className='flex items-center gap-x-4' href={"#"}>
                             <div className='flex justify-center items-center w-14 h-14 border border-white-shade-5 rounded-full'>
                             <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
