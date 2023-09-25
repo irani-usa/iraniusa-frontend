@@ -17,11 +17,11 @@ const page = () => {
   return (
    <section>
             <OverlayMenu />
-            <div className='w-full border-b border-white-shade-4 pb-24'>
+            <div className='w-full border-b border-white-shade-4 pb-24 lg:pb-0'>
        <div className='w-full relative'>
             <Cover background={'/images/profile/A&E/cover.png'}/>
         </div>
-        <div className='w-full container flex relative -top-[100px] left-0 p-10 mb-20'>
+        <div className='w-full container flex relative -top-[100px] left-0 p-10 mb-20 lg:mb-10'>
             <Avatar  />
             <UserTitle />
         </div>
