@@ -10,7 +10,7 @@ const SideMenu = () => {
             </Link>
             <div className='flex flex-col mt-16'>
                 <span className='text-white-shade-8'>Menu</span>
-                <Link className='text-white bg-primaty-tint-4' href={"/"}>Edit profile</Link>
+                <Link className='p-6 bg-primary-tint-4 text-white' href={"/"}>Edit profile</Link>
             </div>
         </nav>
     )
