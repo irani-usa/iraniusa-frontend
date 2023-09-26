@@ -5,15 +5,18 @@ const Team = () => {
   return (
     <section className=" border-b border-white-shade-4 pb-7">
     <div className="container lg:px-0 ">
-        <h1 className="text-black font-bold text-2xl font-outfit mt-7">
+        <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-center lg:text-3xl">
         Our team members
         </h1>
-        <section className='grid grid-cols-2 items-center gap-x-5'>
-          <MembersCard background={'/images/profile/business/member.png'} fullname={'Tom hanks'} job={'Front-end developer'} />
-          <MembersCard background={'/images/profile/business/member.png'} fullname={'Tom hanks'} job={'Front-end developer'} />
+        <section className='grid grid-cols-2 items-center gap-x-5 lg:flex lg:items-center lg:py-11'>
+          <MembersCard background={'/images/profile/business/member.png'} fullname={'Tom hanks'} job={'Front-end developer'} class={'hidden lg:flex'} />
+          <MembersCard background={'/images/profile/business/member.png'} fullname={'Tom hanks'} job={'Front-end developer'} class={''} />
+          <MembersCard background={'/images/profile/business/member.png'} fullname={'Tom hanks'} job={'Front-end developer'} class={''} />
+          <MembersCard background={'/images/profile/business/member.png'} fullname={'Tom hanks'} job={'Front-end developer'} class={'hidden lg:flex'} />
+          <button type="button" className='hidden lg:flex h-56 bg-white-shade-2 text-white-shade-8 text-2xl font-semibold px-4 rounded-lg items-center justify-center'>+21</button>
         </section>
             
-        <section className="flex justify-center gap-x-3 mt-9 pb-3 lg:hidden">
+        <section className="flex justify-center gap-x-3 mt-9 pb-3 lg:hidden  cursor-pointer" >
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
               <svg
                 width="8"
@@ -31,7 +34,7 @@ const Team = () => {
                 />
               </svg>
             </div>
-            <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <div  className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
               <svg
                 width="8"
                 height="14"

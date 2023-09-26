@@ -62,18 +62,18 @@ const Company = () => {
                 Our products
               </Link>
             </div>
-            <div className=" grid grid-cols-2 lg:grid-cols-3 items-center w-full gap-x-2 lg:mt-10 gap-y-6">
+            <div className=" grid grid-cols-2 lg:grid-cols-3 items-start w-full lg:mt-10 gap-y-6">
               <div className="flex flex-col lg:items-center gap-x-3 ">
                 <h1 className="text-black text-3xl font-bold">200+</h1>
-                <span className="text-white-shade-9 ">Happy Customers</span>
+                <span className="text-white-shade-9 text-center">Happy Customers</span>
               </div>
               <div className="flex flex-col lg:items-center gap-x-3">
                 <h1 className="text-black text-3xl font-bold">100k+</h1>
-                <span className="text-white-shade-9 ">Varients</span>
+                <span className="text-white-shade-9  text-center">Varients</span>
               </div>
               <div className="flex flex-col lg:items-center gap-x-3">
                 <h1 className="text-black text-3xl font-bold">92%</h1>
-                <span className="text-white-shade-9 ">Satisfied Customers</span>
+                <span className="text-white-shade-9  text-center">Satisfied Customers</span>
               </div>
             </div>
           </div>

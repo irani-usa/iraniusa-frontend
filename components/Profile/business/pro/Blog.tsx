@@ -5,12 +5,14 @@ const Blog = () => {
   return (
     <div className=' w-full border-white-shade-4 border-b pb-8'>
     <div className='container flex flex-col gap-y-6 mt-8 lg:px-0'>
-    <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">My Blog</h1>
+    <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">Blog</h1>
           <p className="text-center text-lg text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
-     
-         <BlogCardM classes={'lg:w-[43%]'} />
-    
+     <section className='lg:py-10 lg:grid lg:grid-cols-2 w-full lg:gap-x-6'>
+        
+     <BlogCardM classes={'lg:w-full'} />
+     <BlogCardM classes={'lg:w-full hidden lg:flex lg:flex-col'} /> 
           
+     </section>
           <section className="flex justify-center gap-x-3 mt-7 pb-3 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
               <svg
