@@ -1,8 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
 
-const page = () => {
+import React from 'react'
+import Link from 'next/link'
+
+
+export default function Custom404() {
   return (
     <section className='container flex flex-col gap-y-14 lg:flex-row-reverse lg:items-center lg:justify-between lg:mt-24'>
         <div className='mt-8'>
@@ -18,4 +19,3 @@ const page = () => {
   )
 }
 
-export default page
