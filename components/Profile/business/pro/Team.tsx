@@ -4,7 +4,7 @@ import MembersCard from './MembersCard'
 const Team = () => {
   return (
     <section className=" border-b border-white-shade-4 pb-7">
-    <div className="container lg:px-0 ">
+    <div className="container lg:pl-5 ">
         <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-center lg:text-3xl">
         Our team members
         </h1>

@@ -4,7 +4,7 @@ import React from 'react'
 const Blog = () => {
   return (
     <div className=' w-full border-white-shade-4 border-b pb-8'>
-    <div className='container flex flex-col gap-y-6 mt-8 lg:px-0'>
+    <div className='container flex flex-col gap-y-6 mt-8 lg:pl-5'>
     <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">Blog</h1>
           <p className="text-center text-lg text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
      <section className='lg:py-10 lg:grid lg:grid-cols-2 w-full lg:gap-x-6'>

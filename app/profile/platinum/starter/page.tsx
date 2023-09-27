@@ -7,6 +7,7 @@ import Exprince from '@/components/Profile/business/starter/Exprince'
 import Gallery from '@/components/Profile/business/starter/Gallery'
 import Contacts from '@/components/Profile/business/starter/Contacts'
 import Navigation from '@/components/Profile/business/starter/Navigation'
+import About from '@/components/Profile/business/starter/About'
 
 const page = () => {
   return (
@@ -20,10 +21,11 @@ const page = () => {
             <UserTitle/>
         </div>
        </div>
-       <section className='relative top-0 left-0 lg:flex lg:container'>
+       <section className='relative top-0 left-0 lg:flex lg:pl-[110px]'>
        <Navigation/>
-        <section className='lg:border-l  lg:border-white-shade-4 lg:pl-6'>
+        <section className='lg:border-l  lg:border-white-shade-4 '>
             <Company />
+            <About />
             <Exprince />
             <Gallery />
             <Contacts />

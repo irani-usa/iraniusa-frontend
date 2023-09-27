@@ -3,8 +3,8 @@ import React from "react";
 
 const Company = () => {
   return (
-    <section className="w-full border-b border-white-shade-4 py-8">
-      <section className="container lg:px-0">
+    <section className="w-full border-b border-white-shade-4 py-8 lg:pt-2">
+      <section className="container lg:px-2 w-full">
         <div className="bg-[#1E2C35] p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto">
           <div className="bg-white p-6 flex flex-col gap-y-5 rounded-3xl lg:w-1/2">
             <svg

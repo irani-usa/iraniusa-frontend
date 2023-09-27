@@ -30,10 +30,11 @@ const page = () => {
             <UserTitle />
         </div>
        </div>
-       <section  className='flex lg:container'>
+       <section  className='flex lg:pl-[110px]'>
         <Navigation />
-        <section  className='lg:border-l lg:border-white-shade-4 lg:pl-6'>
-            <Company />
+      
+        <section  className='lg:border-l lg:border-white-shade-4'>
+        <Company />
             <CompanyAbout />
             <Services />
             <Values />

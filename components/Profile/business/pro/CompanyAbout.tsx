@@ -4,7 +4,7 @@ import React from 'react'
 const CompanyAbout = () => {
   return (
     <section className=" border-b border-white-shade-4 ">
-    <div className="container lg:px-0 py-7 flex flex-col gap-y-6">
+    <div className="container lg:pl-5 py-7 flex flex-col gap-y-6">
     <h1 className="text-black font-bold text-2xl font-outfit mt-5">
       What is our company all about?
     </h1>
