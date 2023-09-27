@@ -4,7 +4,7 @@ import SCard from './SCard'
 const Services = () => {
     return (
         <section className=" border-b border-white-shade-4 pb-7 lg:pb-10">
-            <div className="container lg:px-0 ">
+            <div className="container lg:pl-5 ">
             <div className='lg:flex lg:items-center lg:justify-between lg:mt-9'>
         <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl">
        Our Services
