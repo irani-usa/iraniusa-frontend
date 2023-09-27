@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import OverlayMenu from "@/components/Layout/OverlayMenu";
@@ -109,22 +108,23 @@ const page = () => {
             </div>
           </div>
           <div className="flex overflow-x-scroll w-full no-scroll gap-x-5 mt-7 lg:mt-3">
+            <PopularSeminar
+              content={"How to start from scratch"}
+              people={"70-100"}
+              organizer={"Mohammad ghaem"}
+              date={"11/7/16"}
+              city={"Washington DC"}
+              classes={"w-full  lg:w-2/3"}
+            />
 
             <PopularSeminar
               content={"How to start from scratch"}
               people={"70-100"}
               organizer={"Mohammad ghaem"}
               date={"11/7/16"}
-              city={"Washington DC"} classes={"w-full  lg:w-2/3"} />
-
-
-            <PopularSeminar
-              content={"How to start from scratch"}
-              people={"70-100"}
-              organizer={"Mohammad ghaem"}
-              date={"11/7/16"}
-              city={"Washington DC"} classes={"hidden lg:flex w-2/3"} />
-
+              city={"Washington DC"}
+              classes={"hidden lg:flex w-2/3"}
+            />
           </div>
           <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -163,7 +163,6 @@ const page = () => {
             </div>
           </section>
         </div>
-
       </section>
       <section className="container">
         <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
@@ -173,8 +172,14 @@ const page = () => {
         <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
         <div className="flex flex-col gap-y-11 py-4">
           <UpcomingEvent buttonn={"Sold Out"} classes={""} />
-          <UpcomingEvent buttonn={"Book now"} classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"} />
-          <UpcomingEvent buttonn={"Book now"} classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"} />
+          <UpcomingEvent
+            buttonn={"Book now"}
+            classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"}
+          />
+          <UpcomingEvent
+            buttonn={"Book now"}
+            classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"}
+          />
         </div>
       </section>
       <section className="container py-7">
@@ -182,12 +187,41 @@ const page = () => {
           <h1 className="text-black text-xl font-bold py-7 font-outfit">
             Popular concerts
           </h1>
-          <h1 className="text-white-shade-11 font-opensans font-semibold">See all</h1>
+          <h1 className="text-white-shade-11 font-opensans font-semibold">
+            See all
+          </h1>
         </div>
         <div className="lg:flex gap-x-6">
+<<<<<<< HEAD
           <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={""} price={"$67"} background={"/images/events/shadmehr.webp"} />
           <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} background={"/images/events/shadmehr.webp"} />
           <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} background={"/images/events/shadmehr.webp"} />
+=======
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={""}
+            price={"$67"}
+          />
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={"hidden lg:flex"}
+            price={"$67"}
+          />
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={"hidden lg:flex"}
+            price={"$67"}
+          />
+>>>>>>> 57d549dce2e68c3ff7230b2291c761ed5c64a0b5
         </div>
         <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import OverlayMenu from '@/components/Layout/OverlayMenu'
 import Avatar from '@/components/Profile/A&E/starter/Avatar'
 import Cover from '@/components/Profile/general/Cover'
@@ -59,5 +60,12 @@ const page = () => {
    </section>
   )
 }
+=======
+import React from "react";
 
-export default page
+const page = () => {
+  return <div>page</div>;
+};
+>>>>>>> 57d549dce2e68c3ff7230b2291c761ed5c64a0b5
+
+export default page;
