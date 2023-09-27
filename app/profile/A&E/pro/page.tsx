@@ -7,10 +7,18 @@ import Concert from '@/components/Profile/A&E/starter/Concert'
 import Platform from '@/components/Profile/A&E/starter/Platform'
 import About from '@/components/Profile/A&E/starter/About'
 import Tracks from '@/components/Profile/A&E/starter/Tracks'
-import Gallery from '@/components/Profile/A&E/starter/Gallery'
+import Gallery from '@/components/Profile/A&E/pro/Gallery'
 import Social from '@/components/Profile/Professional/Pro/Social'
 import Donate from '@/components/Profile/A&E/starter/Donate'
 import Navigation from '@/components/Profile/general/Navigation'
+import Upcoming from '@/components/Profile/A&E/pro/Upcoming'
+import Steream from '@/components/Profile/A&E/pro/Steream'
+import Ticket from '@/components/Profile/A&E/pro/Ticket'
+import Albums from '@/components/Profile/A&E/pro/Albums'
+import Labels from '@/components/Profile/A&E/pro/Labels'
+import Hskills from '@/components/Profile/A&E/pro/Hskills'
+import Educations from '@/components/Profile/Professional/Free/Educations'
+import Blog from '@/components/Profile/A&E/pro/Blog'
 
 
 const page = () => {
@@ -32,8 +40,18 @@ const page = () => {
           <Concert />
           <Platform />
           <About />
+          <Upcoming />
           <Tracks />
+          <Steream artist={'Siavash'} />
+          <Ticket />
+          <Albums />
+          <Labels />
+          <Hskills />
+          <div className='lg:pl-5'>
+          <Educations />
+          </div>
           <Gallery />
+          <Blog />
           <Social />
           <Donate />
         </section>

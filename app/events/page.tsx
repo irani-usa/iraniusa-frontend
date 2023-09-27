@@ -185,9 +185,9 @@ const page = () => {
           <h1 className="text-white-shade-11 font-opensans font-semibold">See all</h1>
         </div>
         <div className="lg:flex gap-x-6">
-          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={""} price={"$67"} />
-          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} />
-          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} />
+          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={""} price={"$67"} background={"/images/events/shadmehr.webp"} />
+          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} background={"/images/events/shadmehr.webp"} />
+          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} background={"/images/events/shadmehr.webp"} />
         </div>
         <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
