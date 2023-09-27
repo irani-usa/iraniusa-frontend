@@ -11,7 +11,7 @@ interface AvatarProps {
 const Song: React.FC<AvatarProps> = (props) =>  {
   return (
     <section className={`${props.class} flex flex-col max-w-[70%] gap-y-5 lg:w-[35%]`}>
-      <div   style={{ backgroundImage: `url(${props.background})` }}className='bg-center bg-cover w-full h-80 rounded-3xl'></div>
+      <div   style={{ backgroundImage: `url(${props.background})` }} className='bg-center bg-cover w-full h-80 rounded-3xl'></div>
       <section className='flex items-center justify-between'>
         <div className='flex flex-col gap-y-1 items-start'>
           <span className='text-black font-outfit text-lg font-semibold lg:text-xl'>{props.trackname}</span>
