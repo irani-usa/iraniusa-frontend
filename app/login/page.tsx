@@ -43,7 +43,10 @@ const page = () => {
             <h3 className="text-[#DE000D] font-opensans font-semibold text-sm py-2">
               password should be at least 8 characters{" "}
             </h3>
-            <Link href="/forget-password" className="block text-[#2E81FF] cursor-pointer font-opensans font-semibold text-end text-base py-4  lg:text-black">
+            <Link
+              href="/forget-password"
+              className="block text-[#2E81FF] cursor-pointer font-opensans font-semibold text-end text-base py-4  lg:text-black"
+            >
               Forgot password
             </Link>
             <Button
@@ -89,12 +92,17 @@ const page = () => {
           </section>
           <h1 className="text-black font-opensans py-8 font-medium text-lg text-center">
             registrera dig gratis?{" "}
-            <Link href="/register" className="text-white-shade-8">register for free</Link>
+            <Link href="/register" className="text-white-shade-8">
+              register for free
+            </Link>
           </h1>
         </section>
-        <div className="w-[580px] max-h-[100vh] bg-cover rounded-3xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/login-background.webp')` }}>
-
-        </div>
+        <div
+          className="w-[580px] max-h-[100vh] bg-cover rounded-3xl hidden lg:flex"
+          style={{
+            backgroundImage: `url('/images/auth/login-background.webp')`,
+          }}
+        ></div>
       </section>
     </>
   );

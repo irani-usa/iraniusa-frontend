@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import Star from "@/components/Icons/Solid/Star";
@@ -46,11 +45,25 @@ const page = () => {
           </svg>
         </h1>
         <p className="font-opensans text-white-shade-9 text-center text-lg py-3">
-          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500sis simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500sis simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
         </p>
         <div className="flex flex-col gap-y-5 lg:flex-row lg:gap-x-5 lg:mt-16">
-          <img src="images/about/conversetaion.webp" className="rounded-3xl lg:w-[680px] lg:h-[220px]" alt="conversetaion" />
-          <img src="images/about/freedom.webp" className="rounded-3xl lg:w-[400px] lg:h-[220px]" alt="freedom" />
+          <img
+            src="images/about/conversetaion.webp"
+            className="rounded-3xl lg:w-[680px] lg:h-[220px]"
+            alt="conversetaion"
+          />
+          <img
+            src="images/about/freedom.webp"
+            className="rounded-3xl lg:w-[400px] lg:h-[220px]"
+            alt="freedom"
+          />
         </div>
       </div>
       <div className="container flex flex-col items-center py-10">
@@ -89,13 +102,35 @@ const page = () => {
           </svg>
         </h1>
         <p className="font-opensans text-white-shade-9 text-left text-lg py-3">
-          is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500sis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500sis simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500sis simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
         </p>
         <div className="flex flex-row-reverse w-full gap-x-7 overflow-x-scroll py-10 no-scroll lg:justify-between">
-          <Infobox content={"+200k"} info={"Users"} classes={"bg-blue text-white"} />
-          <Infobox content={"+200k"} info={"Users"} classes={"bg-white-shade-3 text-black"} />
-          <Infobox content={"+1000"} info={"Jobs"} classes={"bg-white-shade-3 text-black"} />
-          <Infobox content={"+200k"} info={"Users"} classes={"bg-white-shade-3 text-black"} />
+          <Infobox
+            content={"+200k"}
+            info={"Users"}
+            classes={"bg-blue text-white"}
+          />
+          <Infobox
+            content={"+200k"}
+            info={"Users"}
+            classes={"bg-white-shade-3 text-black"}
+          />
+          <Infobox
+            content={"+1000"}
+            info={"Jobs"}
+            classes={"bg-white-shade-3 text-black"}
+          />
+          <Infobox
+            content={"+200k"}
+            info={"Users"}
+            classes={"bg-white-shade-3 text-black"}
+          />
         </div>
       </div>
       <div className="container flex flex-col items-center">
@@ -134,17 +169,32 @@ const page = () => {
           </svg>
         </h1>
         <div className="flex items-center gap-x-7 py-8 lg:gap-x-48 lg:py-10">
-          <img src="images/about/maxilogo.webp" className="w-24 lg:w-32" alt="" />
-          <img src="images/about/revlogo.webp" className="w-24 lg:w-32 lg:h-16" alt="" />
-          <img src="images/about/ahlenslogo.webp" className="w-24 lg:w-32 " alt="" />
+          <img
+            src="images/about/maxilogo.webp"
+            className="w-24 lg:w-32"
+            alt=""
+          />
+          <img
+            src="images/about/revlogo.webp"
+            className="w-24 lg:w-32 lg:h-16"
+            alt=""
+          />
+          <img
+            src="images/about/ahlenslogo.webp"
+            className="w-24 lg:w-32 "
+            alt=""
+          />
         </div>
       </div>
       <div className="w-full bg-blue pt-9 my-28 lg:pt-0">
         <div className="container lg:flex gap-x-60 items-center">
           <div>
-            <h1 className="text-white font-outfit text-2xl font-medium lg:font-semibold lg:text-3xl">Have a question? Our team is happy to assist you</h1>
+            <h1 className="text-white font-outfit text-2xl font-medium lg:font-semibold lg:text-3xl">
+              Have a question? Our team is happy to assist you
+            </h1>
             <p className="text-white-shade-8 font-opensans py-7">
-              Ask about our platform, pricing, implementation or anything else. Our highly trained reps are standing by. Ready to help
+              Ask about our platform, pricing, implementation or anything else.
+              Our highly trained reps are standing by. Ready to help
             </p>
             <svg
               width="full"
@@ -162,13 +212,25 @@ const page = () => {
               />
             </svg>
             <div className="lg:flex items-center gap-x-3">
-              <h3 className="bg-white w-full py-4 text-black text-center text-lg font-medium font-opensans rounded-2xl my-7 lg:w-44">Contact Us</h3>
-              <h3 className="font-opensans  text-center ">Or email us:unreal@outlook.com</h3>
+              <h3 className="bg-white w-full py-4 text-black text-center text-lg font-medium font-opensans rounded-2xl my-7 lg:w-44">
+                Contact Us
+              </h3>
+              <h3 className="font-opensans  text-center ">
+                Or email us:unreal@outlook.com
+              </h3>
             </div>
           </div>
-          <img src="images/about/man.webp" alt="man" className="w-1/2 h-[500px] hidden lg:flex" />
+          <img
+            src="images/about/man.webp"
+            alt="man"
+            className="w-1/2 h-[500px] hidden lg:flex"
+          />
         </div>
-        <img src="images/about/man.webp" alt="man" className="mt-24 lg:hidden" />
+        <img
+          src="images/about/man.webp"
+          alt="man"
+          className="mt-24 lg:hidden"
+        />
       </div>
     </>
   );

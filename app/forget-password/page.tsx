@@ -17,7 +17,6 @@ const page = () => {
             <Logo width={90} height={90} />
           </div>
           <section className="lg:w-[420px]">
-
             <div className=" w-20 h-20 items-center justify-center bordered flex rounded-xl  mx-auto mb-6">
               <Password />
             </div>
@@ -41,15 +40,21 @@ const page = () => {
                 classes={"bg-blue py-4 lg:bg-black"}
               />
             </form>
-            <Link href='/login' className="block text-black font-opensans font-medium text-lg text-center">
+            <Link
+              href="/login"
+              className="block text-black font-opensans font-medium text-lg text-center"
+            >
               Back to login page
             </Link>
           </section>
-
         </div>
 
-        <div className="w-2/4 max-h-[100vh] bg-cover rounded-3xl hidden lg:flex" style={{ backgroundImage: `url('/images/auth/forget-background.webp')` }}>
-        </div>
+        <div
+          className="w-2/4 max-h-[100vh] bg-cover rounded-3xl hidden lg:flex"
+          style={{
+            backgroundImage: `url('/images/auth/forget-background.webp')`,
+          }}
+        ></div>
       </section>
     </>
   );
