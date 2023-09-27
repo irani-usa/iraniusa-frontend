@@ -192,11 +192,6 @@ const page = () => {
           </h1>
         </div>
         <div className="lg:flex gap-x-6">
-<<<<<<< HEAD
-          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={""} price={"$67"} background={"/images/events/shadmehr.webp"} />
-          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} background={"/images/events/shadmehr.webp"} />
-          <PopularConcert content={"Shadmehr aghili"} concert={"Dumbarton concerts"} date={"11/7/16"} city={"Washington DC"} classes={"hidden lg:flex"} price={"$67"} background={"/images/events/shadmehr.webp"} />
-=======
           <PopularConcert
             content={"Shadmehr aghili"}
             concert={"Dumbarton concerts"}
@@ -204,6 +199,7 @@ const page = () => {
             city={"Washington DC"}
             classes={""}
             price={"$67"}
+            background={"/images/events/shadmehr.webp"}
           />
           <PopularConcert
             content={"Shadmehr aghili"}
@@ -212,6 +208,7 @@ const page = () => {
             city={"Washington DC"}
             classes={"hidden lg:flex"}
             price={"$67"}
+            background={"/images/events/shadmehr.webp"}
           />
           <PopularConcert
             content={"Shadmehr aghili"}
@@ -220,8 +217,8 @@ const page = () => {
             city={"Washington DC"}
             classes={"hidden lg:flex"}
             price={"$67"}
+            background={"/images/events/shadmehr.webp"}
           />
->>>>>>> 57d549dce2e68c3ff7230b2291c761ed5c64a0b5
         </div>
         <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
