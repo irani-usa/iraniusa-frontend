@@ -110,7 +110,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
             </div>
           </div>
           <h1
-            className={`${props.classes} w-32 h-12 text-center text-lg text-[#F10000] font-semibold hidden lg:flex items-center justify-center`}
+            className={`${props.classes} w-36 h-12 text-center text-lg text-[#F10000] font-semibold hidden lg:flex items-center justify-center`}
           >
             {props.buttonn}
           </h1>
