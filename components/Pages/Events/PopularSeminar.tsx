@@ -9,6 +9,7 @@ interface PopularSeminarProps {
   date: string;
   city: string;
   classes: string;
+  background:string,
 }
 
 const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
@@ -152,14 +153,8 @@ const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
             Book now
           </button>
         </div>
-        <Image
-          className="rounded-tr-3xl rounded-br-3xl"
-          src={"/images/events/seminar.webp"}
-          alt={""}
-          width={100}
-          height={100}
-        />
-      </div>
+   <div className="rounded-tr-3xl rounded-br-3xl w-[110px] bg-center bg-cover"  style={{ backgroundImage:  `url(${props.background})` }}></div>
+      </div> 
     </>
   );
 };

@@ -1,9 +1,14 @@
-import Image from "next/image";
+
 import React from "react";
 
 interface UpcomingEventProps {
   buttonn: string;
   classes: string;
+  background:string,
+  date:string,
+  artist:string,
+  location:string,
+  hour:string,
 }
 
 const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
@@ -13,23 +18,18 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
         <div className="hidden lg:flex flex-col items-center w-60">
           <h1 className="text-white-shade-9 font-normal text-lg">Date</h1>
           <h1 className="text-white-shade-9 font-medium text-3xl ">
-            5 may 2023
+           {props.date}
           </h1>
         </div>
-        <Image
-          className="lg:h-40 lg:w-60 lg:ml-5"
-          src={"/images/events/Shadmehr.webp"}
-          alt={"Shadmehr"}
-          width={170}
-          height={170}
-        />
+        <div className="w-[320px] h-[220px] rounded-2xl lg:rounded-2xl lg:h-40 lg:w-60 lg:ml-5 bg-cover"  style={{ backgroundImage:  `url(${props.background})` }}></div>
+
         <div className="flex  gap-y-3 lg:flex-row lg:justify-between lg:items-center w-full">
           <div className="flex flex-col items-start gap-y-3">
             <h3 className="flex items-center justify-center text-black font-opensans font-medium py-2 w-28 border-[1px] border-white-shade-4 rounded-full">
               Concerts
             </h3>
             <h1 className="text-black font-outfit font-bold text-xl">
-              Shadmehr aghili - live in newyork
+           {props.artist}
             </h1>
             <div className="flex flex-col gap-y-3 lg:flex-row lg:gap-x-4 lg:pt-3">
               <h1 className="text-white-shade-9 flex items-center font-opensans gap-x-2">
@@ -47,7 +47,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
                     fill="#A6A6A6"
                   />
                 </svg>
-                Newyork
+               {props.location}
               </h1>
               <h1 className="text-white-shade-9 flex items-center font-opensans gap-x-2">
                 <svg
@@ -64,7 +64,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
                     fill="#B3B3B3"
                   />
                 </svg>
-                22:10
+                {props.hour}
               </h1>
               <h1 className="text-white-shade-9 flex items-center font-opensans gap-x-2 lg:hidden">
                 <svg
@@ -105,12 +105,12 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
                     fill="#A6A6A6"
                   />
                 </svg>
-                5 may 2023
+                {props.date}
               </h1>
             </div>
           </div>
           <h1
-            className={`${props.classes} w-32 h-12 text-center text-lg text-[#F10000] font-semibold hidden lg:flex items-center justify-center`}
+            className={`${props.classes} w-36 h-12 text-center text-lg text-[#F10000] font-semibold hidden lg:flex items-center justify-center`}
           >
             {props.buttonn}
           </h1>
