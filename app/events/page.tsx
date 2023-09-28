@@ -169,15 +169,13 @@ const page = () => {
         </h1>
         <hr className=" w-full h-[1.5px] bg-white-shade-4  hidden lg:flex" />
         <div className="flex flex-col gap-y-11 py-4">
-          <UpcomingEvent buttonn={"Sold Out"} classes={""} />
+          <UpcomingEvent buttonn={"Sold Out"} classes={""} background={"/images/events/Shadmehr.webp"} date={"5 may 2023"} artist={"Shadmehr aghili - live in newyork"} location={"Newyork"} hour={"22:10"} />
           <UpcomingEvent
             buttonn={"Book now"}
-            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"}
-          />
+            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"} background={"/images/events/Shadmehr.webp"} date={"5 may 2023"} artist={"Shadmehr aghili - live in newyork"} location={"Newyork"} hour={"22:10"}          />
           <UpcomingEvent
             buttonn={"Book now"}
-            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"}
-          />
+            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"} background={"/images/events/Shadmehr.webp"} date={"5 may 2023"} artist={"Shadmehr aghili - live in newyork"} location={"Newyork"} hour={"22:10"}          />
         </div>
       </section>
       <section className="container py-7">
