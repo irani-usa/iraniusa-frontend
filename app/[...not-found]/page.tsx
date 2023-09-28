@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Custom404() {
+export default function NotFoundPage() {
   return (
     <section className="container flex flex-col gap-y-14 lg:flex-row-reverse lg:items-center lg:justify-between lg:mt-24">
       <div className="mt-8">

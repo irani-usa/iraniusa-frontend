@@ -55,6 +55,8 @@ export default function RootLayout({
     )
   }
 
+
+
   if (pathname == '/forget-password') {
     return (
       <html lang="en" className=''>
@@ -67,6 +69,16 @@ export default function RootLayout({
 
 
   if (pathname == '/dashboard/professinal') {
+    return (
+      <html lang="en" className=''>
+        <body className={`${openSans.variable} ${outfit.variable}`}>
+          {children}
+        </body>
+      </html>
+    )
+  }
+
+  if (pathname == '/_error') {
     return (
       <html lang="en" className=''>
         <body className={`${openSans.variable} ${outfit.variable}`}>
