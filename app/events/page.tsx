@@ -114,8 +114,7 @@ const page = () => {
               organizer={"Mohammad ghaem"}
               date={"11/7/16"}
               city={"Washington DC"}
-              classes={"w-full  lg:w-2/3"}
-            />
+              classes={"w-full  lg:w-2/3"} background={"/images/events/seminar.webp"}            />
 
             <PopularSeminar
               content={"How to start from scratch"}
@@ -123,8 +122,7 @@ const page = () => {
               organizer={"Mohammad ghaem"}
               date={"11/7/16"}
               city={"Washington DC"}
-              classes={"hidden lg:flex w-2/3"}
-            />
+              classes={"hidden lg:flex w-2/3"} background={"/images/events/seminar.webp"}            />
           </div>
           <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -169,16 +167,16 @@ const page = () => {
         <h1 className="text-black text-xl font-semibold py-4 lg:py-7">
           Upcoming events
         </h1>
-        <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
+        <hr className=" w-full h-[1.5px] bg-white-shade-4  hidden lg:flex" />
         <div className="flex flex-col gap-y-11 py-4">
           <UpcomingEvent buttonn={"Sold Out"} classes={""} />
           <UpcomingEvent
             buttonn={"Book now"}
-            classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"}
+            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"}
           />
           <UpcomingEvent
             buttonn={"Book now"}
-            classes={"text-black w-full py-4 bg-[#0112231A] rounded-2xl"}
+            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"}
           />
         </div>
       </section>
