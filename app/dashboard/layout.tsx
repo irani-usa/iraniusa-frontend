@@ -1,6 +1,10 @@
-import Header from "@/components/Dashboard/Layout/Header";
-import SideMenu from "@/components/Dashboard/Layout/SideMenu";
-import Unsupportable from "@/components/Dashboard/Layout/unsupportable";
+
+import React from "react";
+import {
+  Main,
+  SideMenu,
+  Unsupportable,
+} from "@/components/Dashboard/Layout";
 
 export default function DashboardLayout({
   children,
@@ -10,13 +14,10 @@ export default function DashboardLayout({
   return (
     <>
       <Unsupportable />
-      <main className="hidden lg:flex w-full">
+      <section className="hidden lg:flex w-full">
         <SideMenu />
-        <section className="flex flex-col w-4/5 h-screen">
-          <Header />
-          <main>{children}</main>
-        </section>
-      </main>
+        <Main insideElement={children} />
+      </section>
     </>
   );
 }
