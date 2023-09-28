@@ -1,19 +1,91 @@
-import React from 'react'
-import Logo from './Logo'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
+
+import Logo from "./Logo";
+
+import {
+  Book,
+  Connected,
+  Exit,
+  Profile,
+  Reserve,
+  Support,
+  Verified,
+} from "../Icons";
 
 const SideMenu = () => {
-    return (
-        <nav className='flex flex-col w-1/5 h-screen py-8 px-12 border-r border-white-shade-4'>
-            <Link href={"/"}>
-                <Logo />
-            </Link>
-            <div className='flex flex-col mt-16'>
-                <span className='text-white-shade-8'>Menu</span>
-                <Link className='p-6 bg-primary-tint-4 text-white' href={"/"}>Edit profile</Link>
+  return (
+    <>
+      <nav className="flex flex-col w-1/5 h-screen py-8  border-r border-white-shade-4">
+        <Link href={"/"} className="px-12">
+          <Logo />
+        </Link>
+        <div className="w-full border-b py-4 border-[#EDEDED] mt-4">
+          <div className="px-12">
+            <span className="inline-block mb-6 text-white-shade-8">Menu</span>
+            <div className="flex flex-col gap-y-2 font-medium">
+              <Link
+                className="flex items-center gap-x-2 px-6 py-4 bg-primary-tint-4 text-white text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Profile />
+                Edit profile
+              </Link>
+              <Link
+                className="flex items-center gap-x-2 py-4  text-white-shade-8 text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Reserve />
+                ADS reservation
+              </Link>
+              <Link
+                className="flex items-center gap-x-2 py-4  text-white-shade-8 text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Connected />
+                My ads
+              </Link>
+              <Link
+                className="flex items-center gap-x-2 py-4  text-white-shade-8 text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Book />
+                Blog
+              </Link>
+              <Link
+                className="flex items-center gap-x-2 py-4  text-white-shade-8 text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Verified />
+                Verify
+              </Link>
             </div>
-        </nav>
-    )
-}
+          </div>
+        </div>
+        <div className="w-full mt-8">
+          <div className="px-12">
+            <span className="inline-block mb-6 text-white-shade-8">Menu</span>
+            <div className="flex flex-col gap-y-2 font-medium">
+              <Link
+                className="flex items-center gap-x-2 py-4 text-white-shade-8 text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Support />
+                Help
+              </Link>
+              <Link
+                className="flex items-center gap-x-2 py-4 text-[#DE000D] text-lg rounded-2xl"
+                href={"/"}
+              >
+                <Exit />
+                Log out
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
+};
 
-export default SideMenu
+export default SideMenu;
