@@ -10,8 +10,8 @@ const ProfileBox = () => {
         }}
       ></div>
       <div className="flex flex-col gap-y-3">
-        <h4 className="text-black font-outfit text-lg">Amin gholami</h4>
-        <span className="text-white-shade-11">Product designer</span>
+        <h4 className="text-black font-semibold font-outfit text-lg">Amin gholami</h4>
+        <span className="text-white-shade-11 font-medium">Product designer</span>
       </div>
     </section>
   );
