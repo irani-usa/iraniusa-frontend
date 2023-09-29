@@ -1,7 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
 
-const About = () => {
+interface AboutProps {
+  about:string,
+  city:string,
+  name:string,
+  job:string,
+  cover:string,
+}
+
+
+const About: React.FC<AboutProps> = (props) =>  {
   return (
  <section className=' border-b border-white-shade-4 py-8 '>
      <div className='container lg:pl-6'>
@@ -10,24 +19,22 @@ const About = () => {
             What is our company all about?
           </h1>
           <p className=" text-white-shade-9  font-opensans">
-            Adidas has more than 20 years of experience in athletics industry
-            through designing shoes and clothes also more than 20 collaborations
-            wordwide{" "}
+          {props.about}
           </p>
           <p className="text-lg text-black font-semibold font-opensans mt-4 lg:mt-0">
-            Based in Los angless
+          Based in {props.city}
           </p>
 
           <div className=" flex items-center gap-x-7">
             <div className="flex items-center gap-x-4">
-              <div
-                className="bg-cover bg-center w-14 h-14 rounded-full lg:w-20 lg:h-20"
-                style={{ backgroundImage: `url('/images/blog/User.webp')` }}
-              ></div>
+            <div
+          className="bg-cover bg-center w-14 h-14 rounded-full lg:w-20 lg:h-20"
+          style={{ backgroundImage: `url(${props.cover})` }}
+        ></div>
               <h1 className="text-black font-semibold text-lg font-opensans flex flex-col items-start gap-y-2 lg:text-xl lg:font-bold">
-                Jason todd
+              {props.name}
                 <span className="font-opensans text-white-shade-8 font-normal text-sm">
-                  Founder
+                {props.job}
                 </span>
               </h1>
             </div>
