@@ -7,12 +7,10 @@ const Blog = () => {
     <div className='container flex flex-col gap-y-6 mt-8 lg:pl-5'>
     <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">Blog</h1>
           <p className="text-center text-lg text-white-shade-9  font-opensans">is simply dummy text of the printing and typesetting industry. Lorem Ipsum </p>
-     <section className='lg:py-10 lg:grid lg:grid-cols-2 w-full lg:gap-x-6'>
-        
-     <BlogCardM classes={'lg:w-full'} />
-     <BlogCardM classes={'lg:w-full hidden lg:flex lg:flex-col'} /> 
+  
+     <BlogCardM classes={"lg:my-10 lg:w-[42%]"} readingTime={"3 min read"} title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"} summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"} author={"Anna Rosé"} publish={"Posted just now"} avatar={""} cover={"/images/blog/UsaFlag.webp"} info={false} view={'29'} isview={true} like={'29'} cm={'12'} />
           
-     </section>
+     
           <section className="flex justify-center gap-x-3 mt-7 pb-3 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
               <svg
