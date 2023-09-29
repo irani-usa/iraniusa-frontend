@@ -1,9 +1,15 @@
 import Link from "next/link";
 import React from "react";
 
-const Contacts = () => {
+interface ContactsProps {
+  email:string,
+  call:string,
+  web:string,
+}
+
+const Contacts: React.FC<ContactsProps> = (props) =>  {
   return (
-    <section className="py-9">
+    <section className="py-9 border-b border-white-shade-4">
       <div className="container flex flex-col  gap-y-5 lg:hidden">
         <h1 className="text-[26px] font-outfit font-bold text-black text-center">
           Contact
@@ -34,7 +40,7 @@ const Contacts = () => {
               <div className="flex flex-col font-opensans">
                 <span className="text-white-shade-9">E-mail</span>
                 <span className="text-black text-lg font-semibold">
-                  unreal@outlook.com
+                  {props.email}
                 </span>
               </div>
             </Link>
@@ -58,7 +64,7 @@ const Contacts = () => {
               <div className="flex flex-col font-opensans">
                 <span className="text-white-shade-9">Call</span>
                 <span className="text-black text-lg font-semibold">
-                  (603) 555-0123
+                {props.call}
                 </span>
               </div>
             </Link>
@@ -97,7 +103,7 @@ const Contacts = () => {
               <div className="flex flex-col font-opensans">
                 <span className="text-white-shade-9">Website</span>
                 <span className="text-black text-lg font-semibold">
-                  byjason.com
+                {props.web}
                 </span>
               </div>
             </Link>
