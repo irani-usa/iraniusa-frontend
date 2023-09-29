@@ -1,13 +1,13 @@
-import Button from "@/components/Forms/Button";
-import Input from "@/components/Forms/Input";
-import Textarea from "@/components/Forms/Textarea";
-import Call from "@/components/Icons/Outline/Call";
-import Email from "@/components/Icons/Outline/Email";
-import Location from "@/components/Icons/Outline/Location";
-import Message from "@/components/Icons/Outline/Message";
-import { User } from "@/components/Icons/Solid";
-import OverlayMenu from "@/components/Layout/OverlayMenu";
 import React from "react";
+
+import {Button,Input,Textarea} from "@/components/Forms/index";
+
+
+import {Call,Email,Location,Message} from "@/components/Icons/Outline/index";
+
+import { User } from "@/components/Icons/Solid";
+
+import OverlayMenu from "@/components/Layout/OverlayMenu";
 
 const page = () => {
   return (

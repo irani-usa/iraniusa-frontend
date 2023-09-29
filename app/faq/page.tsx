@@ -1,8 +1,8 @@
 import React from "react";
 
-import InputWithBtn from "@/components/Forms/InputWithBtn";
+import {InputWithBtn,DropDown} from "@/components/Forms/index";
+
 import FAQList from "@/components/Pages/FAQ/FAQList";
-import DropDown from "@/components/Forms/DropDown";
 
 const page = () => {
   return (

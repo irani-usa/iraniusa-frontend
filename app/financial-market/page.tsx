@@ -4,12 +4,13 @@ import Star from "@/components/Icons/Solid/Star";
 import OverlayMenu from "@/components/Layout/OverlayMenu";
 
 import Image from "next/image";
-import Financial from "@/components/Pages/Financial";
+
 import { Apple } from "@/components/Icons/Solid";
+
 import Btc from "@/components/Icons/Solid/Btc";
-import FinancialCard from "@/components/Pages/Financial/Card";
-import Chart from "@/components/Pages/Financial/Chart";
-import Table from "@/components/Pages/Financial/Table";
+
+import {Chart,FinancialCard,Financial,Table} from "@/components/Pages/Financial/index";
+
 import StampBG from "@/components/StampBG";
 
 const page = () => {
@@ -19,7 +20,7 @@ const page = () => {
       <section className="container py-10 lg:flex lg:justify-between lg:items-start lg:mt-12">
         <div className="flex flex-col gap-y-5 lg:mt-5">
           <h1 className="flex gap-x-2 font-opensans items-center text-white-shade-9 text-lg">
-            <Star />
+            <Star  />
             <svg
               width="25"
               height="1.5"

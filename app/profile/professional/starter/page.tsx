@@ -17,23 +17,22 @@ const page = () => {
       <div className="w-full relative">
         <Cover background={"/images/profile/Cover.png"} />
       </div>
-      <div className="container flex relative -top-[100px] left-0 p-10 mb-20">
-        <Avatar background={"/images/profile/Prof.png"} />
+      <div className="container flex relative -top-[100px] left-0 p-10 mb-20 lg:mb-9">
+        <Avatar background={"/images/profile/Prof.png"} Contact={false} />
         <UserTitle
           fullname={"Amin gholami"}
           jobtitle={"Product designer"}
-          city={"Los angles"}
-        />
+          city={"Los angles"} isPro={false} blogLevel={""} follower={""} following={""}        />
       </div>
-      <div className="w-full h-1  lg:border-t border-white-shade-4"></div>
+      <div className="w-full h-1  border-t border-white-shade-4"></div>
       <section className="flex lg:container">
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6">
-          <AboutMe />
-          <Experinces />
-          <Educations />
-          <Gallery />
-          <Contacts />
+          <AboutMe title={"Product designer with 10 years of  experience"} aboutexprnce={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} about={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/round.png"} exp={"+10"} city={"Los Angelas"} img={"/images/profile/cart.png"} img2={"/images/profile/card.png"} />
+          <Experinces exprince={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />
+          <Educations desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"} eTitle={"Product designer"} eUniversity={"RMIT University"} eDate={"2021"} />
+          <Gallery img1={"/images/profile/card.png"} img2={"/images/profile/card.png"} img3={"/images/profile/card.png"} />
+          <Contacts email={"unreal@outlook.com"} call={"(603) 555-0123"} web={"byjason.com"} />
         </section>
       </section>
     </section>

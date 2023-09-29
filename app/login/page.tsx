@@ -1,7 +1,7 @@
 import React from "react";
 
-import Button from "@/components/Forms/Button";
-import Input from "@/components/Forms/Input";
+import {Button,Input} from "@/components/Forms/index";
+
 
 import { Dots, Email, Password } from "@/components/Icons/Outline/";
 import { Google, Facebook2, Apple } from "@/components/Icons/Solid/";

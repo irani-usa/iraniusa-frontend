@@ -7,8 +7,7 @@ import OverlayMenu from "@/components/Layout/OverlayMenu";
 import PlanCard from "@/components/Pages/Plans";
 import Separator from "@/components/Separator";
 
-import Input from "@/components/Forms/Input";
-import Button from "@/components/Forms/Button";
+import {Button,Input} from "@/components/Forms/index";
 
 const page = () => {
   return (
