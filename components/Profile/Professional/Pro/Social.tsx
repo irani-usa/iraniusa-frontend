@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const Social = () => {
+interface SocialProps {
+  email:string,
+  call:string,
+  web:string,
+}
+
+const Social: React.FC<SocialProps> = (props) =>  {
   return (
     <div className=" w-full border-white-shade-4 border-b pb-8 lg:pb-12">
       <div className="container flex flex-col lg:items-center gap-y-6 mt-8 lg:px-0">
@@ -223,7 +229,7 @@ const Social = () => {
             <div className="flex flex-col font-opensans">
               <span className="text-white-shade-9 lg:text-lg">E-mail</span>
               <span className="text-black text-lg font-semibold lg:text-xl">
-                unreal@outlook.com
+                {props.email}
               </span>
             </div>
           </Link>
@@ -247,7 +253,7 @@ const Social = () => {
             <div className="flex flex-col font-opensans">
               <span className="text-white-shade-9 lg:text-lg">Call</span>
               <span className="text-black text-lg font-semibold lg:text-xl">
-                (603) 555-0123
+              {props.call}
               </span>
             </div>
           </Link>
@@ -286,7 +292,7 @@ const Social = () => {
             <div className="flex flex-col font-opensans">
               <span className="text-white-shade-9 lg:text-lg">Website</span>
               <span className="text-black text-lg font-semibold lg:text-xl">
-                byjason.com
+              {props.web}
               </span>
             </div>
           </Link>
