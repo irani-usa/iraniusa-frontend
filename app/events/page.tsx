@@ -2,7 +2,11 @@ import React from "react";
 
 import OverlayMenu from "@/components/Layout/OverlayMenu";
 
-import {PopularSeminar,UpcomingEvent,PopularConcert} from "@/components/Pages/Events/index";
+import {
+  PopularSeminar,
+  UpcomingEvent,
+  PopularConcert,
+} from "@/components/Pages/Events/index";
 
 const page = () => {
   return (
@@ -113,7 +117,9 @@ const page = () => {
               organizer={"Mohammad ghaem"}
               date={"11/7/16"}
               city={"Washington DC"}
-              classes={"w-full  lg:w-2/3"} background={"/images/events/seminar.webp"}            />
+              classes={"w-full  lg:w-2/3"}
+              background={"/images/events/seminar.webp"}
+            />
 
             <PopularSeminar
               content={"How to start from scratch"}
@@ -121,7 +127,9 @@ const page = () => {
               organizer={"Mohammad ghaem"}
               date={"11/7/16"}
               city={"Washington DC"}
-              classes={"hidden lg:flex w-2/3"} background={"/images/events/seminar.webp"}            />
+              classes={"hidden lg:flex w-2/3"}
+              background={"/images/events/seminar.webp"}
+            />
           </div>
           <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -168,13 +176,33 @@ const page = () => {
         </h1>
         <hr className=" w-full h-[1.5px] bg-white-shade-4  hidden lg:flex" />
         <div className="flex flex-col gap-y-11 py-4">
-          <UpcomingEvent buttonn={"Sold Out"} classes={""} background={"/images/events/Shadmehr.webp"} date={"5 may 2023"} artist={"Shadmehr aghili - live in newyork"} location={"Newyork"} hour={"22:10"} />
+          <UpcomingEvent
+            buttonn={"Sold Out"}
+            classes={""}
+            background={"/images/events/Shadmehr.webp"}
+            date={"5 may 2023"}
+            artist={"Shadmehr aghili - live in newyork"}
+            location={"Newyork"}
+            hour={"22:10"}
+          />
           <UpcomingEvent
             buttonn={"Book now"}
-            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"} background={"/images/events/Shadmehr.webp"} date={"5 may 2023"} artist={"Shadmehr aghili - live in newyork"} location={"Newyork"} hour={"22:10"}          />
+            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"}
+            background={"/images/events/Shadmehr.webp"}
+            date={"5 may 2023"}
+            artist={"Shadmehr aghili - live in newyork"}
+            location={"Newyork"}
+            hour={"22:10"}
+          />
           <UpcomingEvent
             buttonn={"Book now"}
-            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"} background={"/images/events/Shadmehr.webp"} date={"5 may 2023"} artist={"Shadmehr aghili - live in newyork"} location={"Newyork"} hour={"22:10"}          />
+            classes={"text-black  py-4 bg-[#0112231A] rounded-2xl"}
+            background={"/images/events/Shadmehr.webp"}
+            date={"5 may 2023"}
+            artist={"Shadmehr aghili - live in newyork"}
+            location={"Newyork"}
+            hour={"22:10"}
+          />
         </div>
       </section>
       <section className="container py-7">
@@ -193,59 +221,65 @@ const page = () => {
             date={"11/7/16"}
             city={"Washington DC"}
             classes={""}
-            price={"$67"} background={"/images/events/shadmehr.webp"}          />
+            price={"$67"}
+            background={"/images/events/shadmehr.webp"}
+          />
           <PopularConcert
             content={"Shadmehr aghili"}
             concert={"Dumbarton concerts"}
             date={"11/7/16"}
             city={"Washington DC"}
             classes={"hidden lg:flex"}
-            price={"$67"} background={"/images/events/shadmehr.webp"}          />
+            price={"$67"}
+            background={"/images/events/shadmehr.webp"}
+          />
           <PopularConcert
             content={"Shadmehr aghili"}
             concert={"Dumbarton concerts"}
             date={"11/7/16"}
             city={"Washington DC"}
             classes={"hidden lg:flex"}
-            price={"$67"} background={"/images/events/shadmehr.webp"}          />
-        </div >
-  <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
-    <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
-      <svg
-        width="8"
-        height="14"
-        viewBox="0 0 8 14"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
-          stroke="black"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </div>
-    <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
-      <svg
-        width="8"
-        height="14"
-        viewBox="0 0 8 14"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
-          stroke="black"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </div>
-  </section>
-      </section >
+            price={"$67"}
+            background={"/images/events/shadmehr.webp"}
+          />
+        </div>
+        <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </section>
+      </section>
     </>
   );
 };

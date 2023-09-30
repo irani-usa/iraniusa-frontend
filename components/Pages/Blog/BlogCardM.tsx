@@ -102,7 +102,7 @@ const BlogCardM: React.FC<BlogCardMProps> = (props) => {
     </div>
     </Link>
     </>
-  )
-}
+  );
+};
 
-export default BlogCardM
+export default BlogCardM;

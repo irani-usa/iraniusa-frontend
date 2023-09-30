@@ -22,8 +22,16 @@ const page = () => {
         <Cover background={"/images/profile/Cover.png"} />
       </div>
       <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-40 lg:mb-9">
-        <Avatar background={"/images/profile/Prof.png"} Contact={true}  />
-        <UserTitle fullname={"Amin gholami"} jobtitle={"Product designer"} city={"Product designer"} isPro={true} blogLevel={"Active"} follower={"11.2 k"} following={"23"} />
+        <Avatar background={"/images/profile/Prof.png"} Contact={true} />
+        <UserTitle
+          fullname={"Amin gholami"}
+          jobtitle={"Product designer"}
+          city={"Product designer"}
+          isPro={true}
+          blogLevel={"Active"}
+          follower={"11.2 k"}
+          following={"23"}
+        />
       </div>
       <div className="w-full h-1 border-t border-white-shade-4"></div>
       <section className="flex lg:container">
