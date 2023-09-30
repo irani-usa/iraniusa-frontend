@@ -1,14 +1,10 @@
-import OverlayMenu from "@/components/Layout/OverlayMenu";
-import AboutMe from "@/components/Profile/Professional/Free/AboutMe";
-import Educations from "@/components/Profile/Professional/Free/Educations";
-import Experinces from "@/components/Profile/Professional/Free/Experinces";
-import Gallery from "@/components/Profile/Professional/Free/Gallery";
-import Avatar from "@/components/Profile/general/Avatar";
-import Contacts from "@/components/Profile/general/Contacts";
-import Cover from "@/components/Profile/general/Cover";
-import Navigation from "@/components/Profile/general/Navigation";
-import UserTitle from "@/components/Profile/general/UserTitle";
 import React from "react";
+
+import OverlayMenu from "@/components/Layout/OverlayMenu";
+
+import {AboutMe,Educations,Experinces,Gallery} from "@/components/Profile/Professional/Free/index";
+
+import {Avatar,Cover,Contacts,Navigation,UserTitle} from "@/components/Profile/general/index";
 
 const page = () => {
   return (

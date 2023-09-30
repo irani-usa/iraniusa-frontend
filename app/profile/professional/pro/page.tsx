@@ -1,7 +1,6 @@
 import Navigation from "@/components/Profile/Professional/Pro/Navigation";
-import AboutMe from "@/components/Profile/Professional/Pro/AboutMe";
+import {AboutMe,Experinces} from "@/components/Profile/Professional/Free/index";
 import Educations from "@/components/Profile/Professional/Pro/Educations";
-import Experinces from "@/components/Profile/Professional/Pro/Experinces";
 import Gallery from "@/components/Profile/Professional/Pro/Gallery";
 import Social from "@/components/Profile/Professional/Pro/Social";
 import Cover from "@/components/Profile/general/Cover";
@@ -30,8 +29,8 @@ const page = () => {
       <section className="flex lg:container">
         <Navigation />
         <section className="lg:border-l lg:border-white-shade-4 lg:pl-6">
-          <AboutMe />
-          <Experinces />
+        <AboutMe title={"Product designer with 10 years of  experience"} aboutexprnce={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} about={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/round.png"} exp={"+10"} city={"Los Angelas"} img={"/images/profile/cart.png"} img2={"/images/profile/card.png"} />
+        <Experinces exprince={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />
           <Company />
           <Job />
           <HardSkills />
@@ -39,7 +38,7 @@ const page = () => {
           <Educations />
           <Gallery />
           <Blog />
-          <Social />
+          <Social  email={"unreal@outlook.com"} call={"(603) 555-0123"} web={"byjason.com"} />
         </section>
       </section>
     </section>
