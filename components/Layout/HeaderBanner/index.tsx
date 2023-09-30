@@ -25,7 +25,7 @@ function HeaderBanner() {
         <div className='hidden lg:flex gap-x-4 ic'>
           <Link className='flex ic gap-x-2 text-sm' href={"#"}>
             <Mail />
-            unreal@outlook.com
+            Info@iraniusa.com
           </Link>
           <Link className='flex ic gap-x-2 text-sm' href={"#"}>
             <PhoneS />
