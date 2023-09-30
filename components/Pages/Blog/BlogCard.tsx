@@ -3,6 +3,15 @@ import React from "react";
 
 interface BlogCardProps {
   classes: string;
+  readingTime:string,
+  title:string,
+  summery:string,
+  author:string,
+  publish:string,
+  avatar:string,
+  cover:string,
+  cm:string,
+  like:string,
 }
 
 const BlogCard: React.FC<BlogCardProps> = (props) => {
@@ -10,28 +19,26 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
     <>
       <Link href={"#"}>
         <div
-          className={`${props.classes} border-[1.5px] border-white-shade-3 rounded-2xl p-1 hover:shadow-card transition-all duration-300`}
+          className={`${props.classes} border-[1.5px] border-white-shade-3 rounded-2xl p-1 hover:shadow-card transition-all duration-300 `}
         >
-          <div className="flex flex-col gap-y-5 p-5">
-            <span className="w-[105px] h-8 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg">
-              3 min read
+          <div className="flex flex-col gap-y-5 p-5 lg:w-2/3">
+            <span className="w-[105px] h-10 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg">
+            {props.readingTime}
             </span>
-            <h1 className="text-black text-xl font-outfit font-semibold">
-              Exploring Shirez Canyon in the Heart of Zagros Mountains
+            <h1 className="text-black text-xl font-outfit font-semibold lg:max-w-sm lg:text-2xl">
+             {props.title}
             </h1>
-            <p className="font-opensans text-white-shade-11 font-medium lg:text-sm">
-              Go from Figma to code in minimum <br /> amount of time using
-              Locofy. Take your <br /> design to real world with Locofy's AI{" "}
-              <br /> powered plugin.
+            <p className="font-opensans text-white-shade-11 font-medium  lg:max-w-xs">
+           {props.summery}
             </p>
             <div>
               <div className="flex items-center gap-x-5 py-5 lg:py-0 lg:pt-7">
                 <div className="flex items-center gap-x-3">
                   <img className="w-10" src="/images/blog/User.webp" alt="" />
                   <h1 className="text-black font-semibold font-opensans flex flex-col items-start">
-                    Anna Rosé
+                    {props.author}
                     <span className="font-opensans text-sm text-white-shade-9 font-normal">
-                      Posted just now
+                      {props.publish}
                     </span>
                   </h1>
                 </div>
@@ -63,7 +70,7 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
                         fill="black"
                       />
                     </svg>
-                    120
+                   {props.cm}
                   </span>
                   <span className="text-black flex items-center gap-x-2 font-opensans font-semibold">
                     <svg
@@ -80,20 +87,19 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
                         fill="black"
                       />
                     </svg>
-                    2k
+                  {props.like}
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <img
-            className="lg:hidden"
-            src="/images/blog/blogCard (2).webp"
-            alt=""
-          />
           <div
-            className="w-full bg-cover rounded-2xl"
-            style={{ backgroundImage: "url('/images/blog/blogCard (1).webp')" }}
+            className="w-full  bg-cover bg-center rounded-2xl lg:hidden h-44"
+            style={{ backgroundImage:  `url(${props.cover})` }}
+          ></div>
+          <div
+            className="w-72  bg-cover bg-center rounded-2xl"
+            style={{ backgroundImage:  `url(${props.cover})` }}
           ></div>
         </div>
       </Link>

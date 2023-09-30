@@ -1,9 +1,8 @@
 import React from "react";
 
 import OverlayMenu from "@/components/Layout/OverlayMenu";
-import PopularConcert from "@/components/Pages/Events/PopularConcert";
-import PopularSeminar from "@/components/Pages/Events/PopularSeminar";
-import UpcomingEvent from "@/components/Pages/Events/UpcomingEvent";
+
+import {PopularSeminar,UpcomingEvent,PopularConcert} from "@/components/Pages/Events/index";
 
 const page = () => {
   return (

@@ -1,19 +1,29 @@
 import Link from "next/link";
 import React from "react";
 
-const Bloggers = () => {
+interface BloggersProps {
+  classes: string;
+  name: string,
+  job: string,
+  avatar: string,
+  cm: string,
+  like: string,
+}
+
+const Bloggers: React.FC<BloggersProps> = (props) => {
   return (
     <>
       <Link href={"#"}>
         <div className="flex items-center justify-between">
           <div className="w-full flex gap-x-4 rounded-3xl ">
-            <img className="w-14" src="/images/blog/User.webp" alt="" />
+            <div className='w-14 h-14 rounded-full bg-cover bg-center ml-7' style={{ backgroundImage: `url(${props.avatar})` }}>
+            </div>
             <div className="flex flex-col items-start gap-y-1">
               <span
                 className="text-black text-lg font-opensans font-semibold flex items-center
             gap-x-3"
               >
-                Darkcafé
+                {props.name}
                 <svg
                   width="14"
                   height="14"
@@ -28,14 +38,14 @@ const Bloggers = () => {
                 </svg>
               </span>
               <span className="text-white-shade-7 font-opensans">
-                Coffee shop
+                {props.job}
               </span>
             </div>
           </div>
           <div className="flex items-center gap-x-3">
             <span className="text-black flex items-center gap-x-2 font-opensans font-semibold">
               <button type="button">
-                {" "}
+
                 <svg
                   width="22"
                   height="22"
@@ -63,7 +73,7 @@ const Bloggers = () => {
                   />
                 </svg>
               </button>
-              120
+              {props.cm}
             </span>
             <span className="text-black flex items-center gap-x-2 font-opensans font-semibold">
               <button type="button">
@@ -82,7 +92,7 @@ const Bloggers = () => {
                   />
                 </svg>
               </button>
-              2k
+              {props.like}
             </span>
           </div>
         </div>

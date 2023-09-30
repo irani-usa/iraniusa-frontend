@@ -9,7 +9,7 @@ const Values = () => {
         <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl">
         The core company values
         </h1>
-        <section className="flex justify-center gap-x-3 mt-9 pb-3 lg:hidden  cursor-pointer">
+        <section className="lg:flex justify-center gap-x-3 mt-9 pb-3 hidden  cursor-pointer">
             <div  className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
               <svg
                 width="8"

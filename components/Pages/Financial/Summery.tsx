@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import Star from '../../Icons/Solid/Star'
-import Financial from '.'
+import Financial from './Financial'
 
 import { Btc, Dollar, Game, Google, Oil } from '../../Icons/Solid'
 
@@ -12,7 +12,7 @@ const FinancialSummery = () => {
     <section className='container my-36'>
       <div className='flex flex-col gap-y-8 lg:flex-row justify-between w-full border-b-2 border-white-shade-2'>
         <div className='order-2 lg:order-2 w-9/12 h-full flex flex-col items-start gap-y-4 pb-5'>
-          <Star />
+          <Star content={''} />
           <h3 className='text-xl lg:text-3xl leading-8 text-black font-semibold font-outfit text-center'>
             Financial markets
           </h3>

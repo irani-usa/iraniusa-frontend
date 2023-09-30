@@ -1,7 +1,6 @@
 import React from "react";
 
-import Financial from "@/components/Pages/Financial";
-import FinancialInfo from "@/components/Pages/Financial/Info";
+import {Financial,FinancialInfo} from "@/components/Pages/Financial/index";
 
 import { Google, Game, Oil, Dollar, Btc } from "@/components/Icons/Solid";
 import TockenList from "@/components/Tocken/TockenList";
