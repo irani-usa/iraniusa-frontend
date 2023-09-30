@@ -3,7 +3,6 @@ import React from "react";
 
 const Blog = () => {
   return (
-
     <div className=" w-full border-white-shade-4 border-b pb-8">
       <div className="container flex flex-col gap-y-6 mt-8 lg:px-0">
         <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">
@@ -13,9 +12,22 @@ const Blog = () => {
           is simply dummy text of the printing and typesetting industry. Lorem
           Ipsum{" "}
         </p>
-        
-        <BlogCardM classes={"lg:w-[43%]"} />
-        <BlogCardM classes={"lg:w-[43%]"} />
+
+        <BlogCardM
+          classes={"lg:w-[43%]"}
+          readingTime={""}
+          title={""}
+          summery={""}
+          author={""}
+          publish={""}
+          avatar={""}
+          cover={""}
+          info={false}
+          isview={true}
+          view={""}
+          like={""}
+          cm={""}
+        />
 
         <section className="flex justify-center gap-x-3 mt-7 pb-3 lg:hidden">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
