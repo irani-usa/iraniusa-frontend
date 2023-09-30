@@ -7,9 +7,9 @@ const Title = () => {
     <div className='flex flex-col items-center'>
       <Separator classes="my-10 lg:mt-16" />
       <h1 className='text-xl lg:text-3xl leading-8 text-black font-semibold font-outfit text-center'>
-        find your best choice among
+        Businesses and Professionals 
         <br />
-        thousand of awesome sevices
+        from Thousands of Services
       </h1>
     </div>
   )
