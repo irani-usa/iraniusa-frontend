@@ -36,7 +36,7 @@ const PlanCard: React.FC<PlanCardProps> = (props) => {
   const FeatureListClasses = classNames(
     "[&>*:nth-child(odd)] relative top-0 left-0 w-5/6 h-16 flex gap-x-6 p-2 justify-evenly text-center items-center font-medium text-xl bg-white-shade-3 rounded-2xl before:contents-[''] before:absolute before:top-1/2 before:-translate-y-1/2  before:h-[80%] before:bg-white before:rounded-2xl before:z-20 tranitaion-all duration-500 before:tranitaion-all before:duration-500",
     {
-      "before:left-[130px]  before:w-5/12": isPro,
+      "before:left-[55%]  before:w-5/12": isPro,
       "before:left-2  before:w-5/12": !isPro,
     }
   );

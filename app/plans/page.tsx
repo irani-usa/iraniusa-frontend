@@ -148,7 +148,7 @@ const page = () => {
           Ready to get started?
         </h1>
       </div>
-      <section className="lg:flex gap-x-4  w-full overflow-x-scroll no-scroll">
+      <section className="flex flex-col lg:flex-row gap-x-4 gap-y-6 w-full overflow-x-scroll no-scroll">
         {plansList.map((plan) => {
           return <PlanCard planData={plan} />;
         })}
