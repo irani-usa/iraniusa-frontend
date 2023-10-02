@@ -116,14 +116,14 @@ const PlanCard: React.FC<PlanCardProps> = (props) => {
         </ul>
         <Link
           href={"/"}
-          className="w-11/12 text-center py-4 text-lg bg-[#E5E7E9] rounded-3xl"
+          className="w-11/12 text-center py-4 text-lg bg-[#E5E7E9] rounded-3xl hover:bg-black hover:text-white transition-all duration-300"
         >
           Choose Plan
         </Link>
       </div>
       <span
         onClick={openCardHandler}
-        className="z-[1000] inline-block p-6 -mt-10 bg-white rounded-full border border-white-shade-4"
+        className="z-[1000] inline-block p-6 -mt-10 bg-white rounded-full border border-white-shade-4 hover:cursor-pointer hover:deep-shadow"
       >
         {open && <ArrowUp />}
         {!open && <ArrowDown />}
