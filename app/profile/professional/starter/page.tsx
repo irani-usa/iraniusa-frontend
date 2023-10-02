@@ -57,11 +57,7 @@ const page = () => {
               "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
             }
           />
-          <Gallery
-            img1={"/images/profile/card.png"}
-            img2={"/images/profile/card.png"}
-            img3={"/images/profile/card.png"}
-          />
+          <Gallery />
           <Contacts
             email={"unreal@outlook.com"}
             call={"(603) 555-0123"}

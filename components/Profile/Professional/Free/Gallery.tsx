@@ -1,28 +1,22 @@
+import React from "react";
+import GalleryItem from "./GalleryItem";
 
-import React from 'react'
-
-interface GalleryProps {
-  img1:string,
-  img2:string,
-  img3:string,
-}
-
-const Gallery: React.FC<GalleryProps> = (props) => {
+const Gallery = () => {
   return (
-<section className='w-full border-white-shade-4 border-b py-8'>
-      <div className='container  lg:px-0'>
-        <h1 className="text-[26px] font-outfit text-center font-bold text-black lg:text-3xl">Gallery</h1>
-        <div className='grid grid-cols-2 items-center gap-x-5 gap-y-4 mt-9 lg:grid-cols-3 py-8'>
-         
-          <div className='w-full h-[220px] bg-center bg-cover rounded-2xl lg:h-[190px]' style={{ backgroundImage:`url(${props.img1})`}}></div>
-                 <div className='w-full h-[220px] bg-center bg-cover rounded-2xl lg:h-[190px]' style={{ backgroundImage:`url(${props.img2})`}}></div>
-                 <div className='w-full h-[220px] bg-center bg-cover rounded-2xl lg:h-[190px]' style={{ backgroundImage:`url(${props.img3})`}}></div>
-          </div>
-       
+    <section className="w-full border-white-shade-4 border-b py-8">
+      <div className="container  lg:px-0">
+        <h1 className="text-[26px] font-outfit text-center font-bold text-black lg:text-3xl">
+          Gallery (New!)
+        </h1>
+        <div className="grid grid-cols-2 items-center gap-x-5 gap-y-4 mt-9 lg:grid-cols-3 py-8">
+          <GalleryItem no={1} imgUrl={"/images/profile/card.png"} />
+          <GalleryItem no={2} imgUrl={"/images/profile/card.png"} />
+          <GalleryItem no={3} imgUrl={"/images/profile/card.png"} />
+          <GalleryItem no={4} imgUrl={"/images/profile/card.png"} />
+        </div>
       </div>
-    
     </section>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;
