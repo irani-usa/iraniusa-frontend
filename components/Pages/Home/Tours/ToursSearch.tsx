@@ -1,7 +1,6 @@
 
 import React from 'react'
 
-import TitleWithStar from '../../../TitleWithStar'
 import ToursCard from './ToursCard'
 
 const ToursSearch = () => {

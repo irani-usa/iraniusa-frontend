@@ -1,5 +1,5 @@
 import React from "react";
-import NormallBanner from "@/components/AdsBanner/NormalBanner";
+import NormallBanner from "@/components/Banners/NormalBanner";
 
 const NormalBannerList = () => {
   return (

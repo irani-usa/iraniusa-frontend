@@ -1,4 +1,3 @@
-
 import Password from "./Password";
 import Email from "./Email";
 import Dots from "./Dots";
@@ -14,12 +13,36 @@ import Currency from "./Currency";
 import Message from "./Message";
 import Location from "./Location";
 
-
 import Star from "./Star";
 import Gem from "./Gem";
-import Crown from "./Crown"
+import Crown from "./Crown";
 import Music from "./Music";
 import Call from "./Call";
 
+// Sused in plan sections
+import Diamonds from "./Diamonds";
+import ArrowUp from "./ArrowUp";
+import ArrowDown from "./ArrowDown";
 
-export {Call,Location,Message, Dots, Email, Password, Search, Resturant, Liquor, Furniture, CoffeeShop, Sort, Currency, Star ,Gem,Music,Crown }
+export {
+  ArrowDown,
+  ArrowUp,
+  Diamonds,
+  Call,
+  Location,
+  Message,
+  Dots,
+  Email,
+  Password,
+  Search,
+  Resturant,
+  Liquor,
+  Furniture,
+  CoffeeShop,
+  Sort,
+  Currency,
+  Star,
+  Gem,
+  Music,
+  Crown,
+};
