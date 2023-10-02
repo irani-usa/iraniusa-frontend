@@ -143,7 +143,7 @@ const page = () => {
     <section className="container">
       <OverlayMenu />
       <div className="flex flex-col justify-center items-center py-8 gap-y-8">
-        <Separator classes={""} />
+        <Separator />
         <h1 className="font-outfit text-2xl text-black font-semibold">
           Ready to get started?
         </h1>
