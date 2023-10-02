@@ -8,7 +8,7 @@ const page = () => {
       style={{ backgroundImage: `url('/images/admin/admin-background.png')` }}
     >
       <h1 className="font-semibold text-5xl text-black">Admins login</h1>
-      <p className="text-white-shade-10 max-w-md text-center">
+      <p className="text-white-shade-10 max-w-sm text-center">
         Admins only. Log in for system management. Regular users, use standard
         login.
       </p>
