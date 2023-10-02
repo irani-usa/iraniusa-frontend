@@ -30,7 +30,91 @@ const page = () => {
         },
         {
           title: "Pro",
-          pricing: "$100",
+          pricing: "$49",
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Galley",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked whit ",
+            "Followers Instagram",
+            "What is my job about",
+            "My hard Skills",
+            "What is my job about",
+            "Project i have done",
+            "My soft skills ",
+            "Courses i finished",
+            "My blog",
+            "Socials",
+            "Level Blog",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Business Platinum",
+      subTitle: "No credit card required",
+      types: [
+        {
+          title: "Starter",
+          pricing: "Free",
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Galley",
+            "Company's experiences ",
+            "Educations ",
+            "Contact",
+            "Companies i worked whit ",
+          ],
+        },
+        {
+          title: "Pro",
+          pricing: "$99",
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Galley",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked whit ",
+            "Followers Instagram",
+            "What is my job about",
+            "My hard Skills",
+            "What is my job about",
+            "Project i have done",
+            "My soft skills ",
+            "Courses i finished",
+            "My blog",
+            "Socials",
+            "Level Blog",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Artist & Events",
+      subTitle: "No credit card required",
+      types: [
+        {
+          title: "Starter",
+          pricing: "Free",
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Galley",
+            "Company's experiences ",
+            "Educations ",
+            "Contact",
+            "Companies i worked whit ",
+          ],
+        },
+        {
+          title: "Pro",
+          pricing: "$199",
           features: [
             "Profile Pic",
             "Who am i + 2 Pic",
@@ -64,7 +148,7 @@ const page = () => {
           Ready to get started?
         </h1>
       </div>
-      <section className="lg:flex gap-x-4 items-center w-full overflow-x-scroll no-scroll">
+      <section className="lg:flex gap-x-4  w-full overflow-x-scroll no-scroll">
         {plansList.map((plan) => {
           return <PlanCard planData={plan} />;
         })}
