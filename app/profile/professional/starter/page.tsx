@@ -54,9 +54,6 @@ const page = () => {
             }
           />
           <Gallery
-            img1={"/images/profile/card.png"}
-            img2={"/images/profile/card.png"}
-            img3={"/images/profile/card.png"}
           />
           <Contacts
             email={"unreal@outlook.com"}

@@ -144,7 +144,7 @@ const page = () => {
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"} info={undefined} isview={undefined} view={""} like={""} cm={""}                />
+                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
@@ -153,7 +153,7 @@ const page = () => {
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"} info={undefined} isview={undefined} view={""} like={""} cm={""}                />
+                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
               </div>
               <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
                 <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">

@@ -172,9 +172,7 @@ const AboutMe: React.FC<AboutMeProps> = (props) =>{
             Who am i?
           </h1>
           <p className="text-white-shade-9 mt-7 font-opensans lg:text-lg">
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s,
+          {props.about}
           </p>
           <div className="mt-16 lg:mt-6">
             <p className="text-lg text-black font-semibold font-opensans">
