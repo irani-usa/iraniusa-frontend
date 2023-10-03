@@ -1,6 +1,6 @@
 import React from "react";
 
-import SmallBanner from "@/components/AdsBanner/SmallBanner";
+import SmallBanner from "@/components/Banners/SmallBanner";
 import OverlayMenu from "@/components/Layout/OverlayMenu";
 import Separator from "@/components/Separator";
 

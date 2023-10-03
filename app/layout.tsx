@@ -45,6 +45,16 @@ export default function RootLayout({
     )
   }
 
+  if (pathname == '/admin-login') {
+    return (
+      <html lang="en" className=''>
+        <body className={`${openSans.variable} ${outfit.variable} ${vazirmatn.variable}`}>
+          {children}
+        </body>
+      </html>
+    )
+  }
+
   if (pathname == '/register') {
     return (
       <html lang="en" className=''>

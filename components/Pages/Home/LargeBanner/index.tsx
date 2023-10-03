@@ -1,5 +1,5 @@
 import React from "react";
-import LargeBanner from "@/components/AdsBanner/LargeBanner";
+import LargeBanner from "@/components/Banners/LargeBanner";
 
 const LargeBannerList = () => {
   return (

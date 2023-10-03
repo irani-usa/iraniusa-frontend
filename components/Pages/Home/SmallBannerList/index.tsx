@@ -1,5 +1,5 @@
 import React from "react";
-import SmallBanner from "@/components/AdsBanner/SmallBanner";
+import SmallBanner from "@/components/Banners/SmallBanner";
 
 const SmallBannerList = () => {
   return (
