@@ -25,6 +25,21 @@ const Project: React.FC<ProjectProps> = (props) => {
           <Skillsitem title={'Speech in public'} />
           <Skillsitem title={'Creativity, Responsible'} />
           <Skillsitem title={'Team player'} />
+          <Skillsitem title={'Speech in public'} />
+          <Skillsitem title={'Creativity, Responsible'} />
+          <Skillsitem title={'Team player'} />
+          <Skillsitem title={'Speech in public'} />
+          <Skillsitem title={'Creativity, Responsible'} />
+          <Skillsitem title={'Team player'} />
+          <Skillsitem title={'Speech in public'} />
+          <Skillsitem title={'Creativity, Responsible'} />
+          <Skillsitem title={'Team player'} />
+          <Skillsitem title={'Speech in public'} />
+          <Skillsitem title={'Creativity, Responsible'} />
+          <Skillsitem title={'Team player'} />
+          <Skillsitem title={'Speech in public'} />
+          <Skillsitem title={'Creativity, Responsible'} />
+          <Skillsitem title={'Team player'} />
           
             </ul>
     </div>

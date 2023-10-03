@@ -46,7 +46,7 @@ const page = () => {
           <Educations courseabout={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} educationabout={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />
           <Gallery />
           <Blog desc={"is simply dummy text of the printing and typesetting industry. LoremIpsum"} />
-          <Social  email={"unreal@outlook.com"} call={"(603) 555-0123"} web={"byjason.com"} />
+          <Social  email={"unreal@outlook.com"} call={"(603) 555-0123"} web={"byjason.com"} desc={"is simply dummy text of the printing and typesetting industry. LoremIpsum"} />
         </section>
       </section>
     </section>
