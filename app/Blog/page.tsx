@@ -22,7 +22,7 @@ const page = () => {
       <OverlayMenu />
       <section>
         <div className="container py-10 flex flex-col items-center gap-y-5 bg-white-shade-2">
-          <Separator classes={""} />
+          <Separator />
           <div className="py-10 w-full bg-white-shade-6 rounded-xl "></div>
         </div>
         <div className="container flex flex-col gap-y-6 py-14">

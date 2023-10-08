@@ -1,44 +1,49 @@
-
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 interface BlogCardMProps {
   classes: string;
-  readingTime:string,
-  title:string,
-  summery:string,
-  author:string,
-  publish:string,
-  avatar:string,
-  cover:string,
-  info:Boolean ,
-  isview:Boolean,
-  view:string,
-  like:string,
-  cm:string,
+  readingTime: string;
+  title: string;
+  summery: string;
+  author: string;
+  publish: string;
+  avatar: string;
+  cover: string;
+  info: Boolean;
+  isview: Boolean;
+  view: string;
+  like: string;
+  cm: string;
 }
 
-  
 const BlogCardM: React.FC<BlogCardMProps> = (props) => {
   return (
     <>
-    <Link className={`${props.classes} w-full lg:w-[50%]`} href={"#"}>
-    <div className="rounded-2xl border-[1.5px] border-white-shade-3 hover:shadow-card transition-all duration-300">
-    <div
+      <Link className={`${props.classes} w-full lg:w-[50%]`} href={"#"}>
+        <div className="rounded-2xl border-[1.5px] border-white-shade-3 hover:shadow-card transition-all duration-300">
+          <div
             className="w-full h-60 bg-cover bg-center rounded-t-2xl"
-            style={{ backgroundImage:  `url(${props.cover})` }}
+            style={{ backgroundImage: `url(${props.cover})` }}
           ></div>
-       <div className='flex flex-col gap-y-4'>
-       <h1 className='px-6 pt-6  text-black text-xl font-outfit font-semibold lg:max-w-sm'>{props.title}</h1>
-      { props.info && <p className='px-6  font-opensans text-white-shade-10 font-medium lg:max-w-sm'>{props.summery}...</p>}
-      {props.isview && <div className='flex items-center gap-x-7 font-medium px-6 py-3'>
-        <span className='text-green flex items-center gap-x-2'>
-          <div className='w-4 h-4 rounded-full flex items-center justify-center border border-green'>
-            <div className='w-1 h-1 rounded-full border border-green'></div>
-          </div>
-        {props.view} views
-        </span>
-        <div className="flex items-center gap-x-7">
+          <div className="flex flex-col gap-y-4">
+            <h1 className="px-6 pt-6  text-black text-xl font-outfit font-semibold lg:max-w-sm">
+              {props.title}
+            </h1>
+            {props.info && (
+              <p className="px-6  font-opensans text-white-shade-10 font-medium lg:max-w-sm">
+                {props.summery}...
+              </p>
+            )}
+            {props.isview && (
+              <div className="flex items-center gap-x-7 font-medium px-6 py-3">
+                <span className="text-green flex items-center gap-x-2">
+                  <div className="w-4 h-4 rounded-full flex items-center justify-center border border-green">
+                    <div className="w-1 h-1 rounded-full border border-green"></div>
+                  </div>
+                  {props.view} views
+                </span>
+                <div className="flex items-center gap-x-7">
                   <span className="text-black flex items-center gap-x-4 font-opensans font-semibold">
                     <svg
                       width="22"
@@ -66,7 +71,7 @@ const BlogCardM: React.FC<BlogCardMProps> = (props) => {
                         fill="black"
                       />
                     </svg>
-                   {props.cm}
+                    {props.cm}
                   </span>
                   <span className="text-black flex items-center gap-x-4 font-opensans font-semibold">
                     <svg
@@ -83,24 +88,29 @@ const BlogCardM: React.FC<BlogCardMProps> = (props) => {
                         fill="black"
                       />
                     </svg>
-                  {props.like}
+                    {props.like}
                   </span>
                 </div>
-        </div>}
-       <hr className='h-[1.5px] bg-white-shade-4 w-full' />
-       <div className='px-6 pb-6 flex items-center justify-between'>
-       <div className='flex items-center gap-x-3'>
-                                <img className='w-10' src="/images/blog/User.webp" alt="" />
-                                <h1 className='text-black font-semibold font-opensans flex flex-col items-start'>
-                                    {props.author}
-                                    <span className='font-opensans text-sm text-white-shade-9 font-normal'>{props.publish}</span>
-                                </h1>
-                            </div>
-                            <span className='w-[105px] h-8 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg'>{props.readingTime}</span>
-       </div>
-       </div>
-    </div>
-    </Link>
+              </div>
+            )}
+            <hr className="h-[1.5px] bg-white-shade-4 w-full" />
+            <div className="px-6 pb-6 flex items-center justify-between">
+              <div className="flex items-center gap-x-3">
+                <img className="w-10" src="/images/blog/User.webp" alt="" />
+                <h1 className="text-black font-semibold font-opensans flex flex-col items-start">
+                  {props.author}
+                  <span className="font-opensans text-sm text-white-shade-9 font-normal">
+                    {props.publish}
+                  </span>
+                </h1>
+              </div>
+              <span className="w-[105px] h-8 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg">
+                {props.readingTime}
+              </span>
+            </div>
+          </div>
+        </div>
+      </Link>
     </>
   );
 };
