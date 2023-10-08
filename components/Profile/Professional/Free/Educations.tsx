@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Education from "./Education";
+import Education from "../../general/Education";
 
 interface EducationsProps {
   desc: string;

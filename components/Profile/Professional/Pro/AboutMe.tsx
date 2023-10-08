@@ -1,16 +1,26 @@
 import React from "react";
 
-const AboutMe = () => {
+
+interface AboutMeProps {
+  title:string,
+  aboutexprnce:string,
+  about:string,
+  cover:string,
+  exp:string,
+  city:string,
+  img:string,
+  img2:string,
+}
+
+const AboutMe: React.FC<AboutMeProps> = (props) =>{
   return (
     <div className="w-full   border-white-shade-4 border-b pb-10   py-9">
       <div className="container flex flex-col gap-y-7 items-center lg:px-0">
-        <h1 className="text-2xl font-outfit font-bold text-center lg:text-[35px] text-black">
-          Product designer with 10 years of <br /> experience
+        <h1 className="text-2xl font-outfit font-bold text-center lg:text-[35px] text-black max-w-xl">
+        {props.title}
         </h1>
         <p className="text-center text-white-shade-9 font-opensans lg:max-w-lg">
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the
-          1500s,
+        {props.aboutexprnce}
         </p>
         <div className="flex items-center justify-center gap-x-6 lg:flex-col gap-y-3 lg:hidden">
           <div className="border border-white-shade-3 bg-white-shade-2 py-8 px-6 rounded-2xl lg:px-11 lg:py-7">
@@ -80,11 +90,11 @@ const AboutMe = () => {
         </div>
         <div
           className="w-full h-[400px] bg-center bg-cover rounded-t-full relative my-7 lg:w-96"
-          style={{ backgroundImage: `url('/images/profile/round.png')` }}
+          style={{ backgroundImage: `url(${props.cover})` }}
         >
           <div className="flex flex-col p-4 gap-y-2 border border-white-shade-3 bg-white w-[186px] h-[95px] absolute rounded-2xl -bottom-8 left-1/4 lg:top-[90px] lg:-left-36 lg:w-[220px] lg:h-[110px]">
             <h1 className="text-black text-2xl font-bold font-outfit lg:text-3xl">
-              +10
+            {props.exp}
             </h1>
             <span className="font-opensans font-medium text-white-shade-9 lg:text-lg">
               Years of experience
@@ -162,13 +172,11 @@ const AboutMe = () => {
             Who am i?
           </h1>
           <p className="text-white-shade-9 mt-7 font-opensans lg:text-lg">
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s,{" "}
+         {props.about}
           </p>
           <div className="mt-16 lg:mt-6">
             <p className="text-lg text-black font-semibold font-opensans">
-              Based in Los angless
+              Based in {props.city}
             </p>
             <div className="mt-8 flex flex-col gap-y-5 lg:flex-row lg:gap-x-6">
               <div

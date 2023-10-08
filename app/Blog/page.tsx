@@ -94,17 +94,12 @@ const page = () => {
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
-                  title={
-                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
-                  }
-                  summery={
-                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
-                  }
+                  title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"}
+                  summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"}
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"}
-                />
+                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
@@ -144,31 +139,21 @@ const page = () => {
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
-                  title={
-                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
-                  }
-                  summery={
-                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
-                  }
+                  title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"}
+                  summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"}
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"}
-                />
+                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
-                  title={
-                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
-                  }
-                  summery={
-                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
-                  }
+                  title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"}
+                  summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"}
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"}
-                />
+                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
               </div>
               <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
                 <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
