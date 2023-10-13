@@ -18,7 +18,7 @@ import Albums from "@/components/Profile/A&E/pro/Albums";
 import Labels from "@/components/Profile/A&E/pro/Labels";
 import Hskills from "@/components/Profile/A&E/pro/Hskills";
 import Educations from "@/components/Profile/Professional/Free/Educations";
-import Blog from "@/components/Profile/A&E/pro/Blog";
+import Blog from "@/components/Profile/general/Blog";
 
 const page = () => {
   return (
@@ -36,9 +36,9 @@ const page = () => {
       <section className="lg:flex lg:pl-[110px]">
         <Navigation />
         <section className="lg:border-l lg:border-white-shade-4 ">
-          <Concert />
+        <Concert cover={"/images/profile/A&E/bg.png"} Musicname={"Ashegh"} date={"September 4, 2020"} artist={" Siavash ghomeyshi"} job={" Artist and song writer"} />
           <Platform />
-          <About />
+          <About about={"Siavash Ghomayshi is an Iranian musician, singer and song writer. Siavash studied music in London where he got his master's degree. He left Iran in 1978 and now lives in Los Angeles."} artist={"siavash ghomeyshi"} city={"Los angless"} />
           <Upcoming />
           <Tracks />
           <Steream artist={"Siavash"} />
@@ -47,14 +47,16 @@ const page = () => {
           <Labels />
           <Hskills />
           <div className="lg:pl-5">
-            <Educations />
+            <Educations desc={""} />
           </div>
           <Gallery />
-          <Blog />
-          <Social />
-          <Donate />
+          <Blog title={"My blog"} desc={"desc"} classes={"lg:pl-5"} />
+          <Social desc={"desc"} />
+          <Donate artist={"siavash"} />
         </section>
       </section>
     </section>
   );
 };
+
+export default page;

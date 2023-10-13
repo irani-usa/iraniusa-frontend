@@ -1,5 +1,6 @@
 import React from 'react'
 import Jobitems from './Jobitems'
+import Sectiontitle from '../../general/Sectiontitle'
 
 interface JobProps {
     jobabout:string,
@@ -10,7 +11,7 @@ const Job: React.FC<JobProps> = (props) => {
     return (
         <div className=' w-full border-white-shade-4 border-b pb-8'>
             <div className='container flex flex-col gap-y-6 mt-8 lg:px-0'>
-                <h1 className="text-[26px] font-outfit font-bold text-black lg:text-3xl">What is my job about?</h1>
+            <Sectiontitle title={"What is my job about?"} />
                 <div className="text-white-shade-9 font-opensans lg:max-w-lg flex flex-col gap-y-8">
                     <p >
                    {props.jobabout}

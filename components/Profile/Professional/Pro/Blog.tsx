@@ -1,6 +1,9 @@
-import BlogCardM from "@/components/Pages/Blog/BlogCardM";
 import React from "react";
-import Arrowbtn from "../../general/Arrowbtn";
+
+
+import BlogCardM from "@/components/Pages/Blog/BlogCardM";
+
+import {Arrowbtn,Sectiontitle} from "../../general/index";
 
 interface BlogProps {
   desc:string,
@@ -11,9 +14,7 @@ const Blog: React.FC<BlogProps> = (props) => {
   return (
     <div className=" w-full border-white-shade-4 border-b pb-8">
       <div className="container flex flex-col gap-y-6 mt-8 lg:px-0">
-        <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">
-          My Blog
-        </h1>
+        <Sectiontitle title={"My Blog"} />
         <p className="text-center text-lg text-white-shade-9  font-opensans">
        {props.desc}
         </p>

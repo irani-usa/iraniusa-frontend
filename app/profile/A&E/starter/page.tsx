@@ -28,13 +28,13 @@ const page = () => {
       <section className="lg:flex lg:pl-[110px]">
         <Navigation />
         <section className="lg:border-l lg:border-white-shade-4 ">
-          <Concert />
+          <Concert cover={"/images/profile/A&E/bg.png"} Musicname={"Ashegh"} date={"September 4, 2020"} artist={" Siavash ghomeyshi"} job={" Artist and song writer"} />
           <Platform />
-          <About />
+          <About about={"Siavash Ghomayshi is an Iranian musician, singer and song writer. Siavash studied music in London where he got his master's degree. He left Iran in 1978 and now lives in Los Angeles."} artist={"siavash ghomeyshi"} city={"Los angless"} />
           <Tracks />
           <Gallery />
-          <Social />
-          <Donate />
+          <Social desc={"desc"} />
+          <Donate artist={"siavash"} />
         </section>
       </section>
     </section>

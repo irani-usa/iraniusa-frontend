@@ -2,6 +2,7 @@ import React from 'react'
 import Projectitem from './Projectitem'
 import Arrowbtn from '../../general/Arrowbtn'
 import Skillsitem from './Skillsitem'
+import { Sectiontitle } from '../../general'
 
 interface ProjectProps {
   softskillabout:string,
@@ -11,7 +12,7 @@ const Project: React.FC<ProjectProps> = (props) => {
   return (
     <div className=' w-full border-white-shade-4 border-b pb-8'>
     <div className='container flex flex-col gap-y-6 mt-8 lg:px-0'>
-    <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl">projects Completed</h1>
+    <Sectiontitle title={'projects Completed'} />
           <section className='lg:flex items-center gap-x-32'>
  
          <Projectitem title={'Upsket (device management)'} skill={'UI/UX design'} cover={'/images/profile/Project.png'} />

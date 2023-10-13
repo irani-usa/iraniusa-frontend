@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import Honor from "./Honor";
 
 interface CompanyProps {
   logo:string,
@@ -38,18 +39,9 @@ const Company: React.FC<CompanyProps> = (props) =>  {
               </Link>
             </div>
             <div className="hidden lg:flex items-center w-full gap-x-2 mt-10">
-              <div className="flex flex-col items-center gap-x-3 ">
-                <h1 className="text-black text-3xl font-bold">200+</h1>
-                <span className="text-white-shade-9 ">Happy Customers</span>
-              </div>
-              <div className="flex flex-col items-center gap-x-3">
-                <h1 className="text-black text-3xl font-bold">100k+</h1>
-                <span className="text-white-shade-9 ">Varients</span>
-              </div>
-              <div className="flex flex-col items-center gap-x-3">
-                <h1 className="text-black text-3xl font-bold">92%</h1>
-                <span className="text-white-shade-9 ">Satisfied Customers</span>
-              </div>
+              <Honor title={"200+"} content={"Happy Customers"} />
+              <Honor title={"100k+"} content={"Varients"} />
+              <Honor title={"92%"} content={"Satisfied Customers"} />
             </div>
           </div>
           <div

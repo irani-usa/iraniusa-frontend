@@ -10,7 +10,7 @@ import Values from "@/components/Profile/business/pro/Values";
 import Team from "@/components/Profile/business/pro/Team";
 import Exprince from "@/components/Profile/business/starter/Exprince";
 import Gallery from "@/components/Profile/business/pro/Gallery";
-import Blog from "@/components/Profile/business/pro/Blog";
+import Blog from "@/components/Profile/general/Blog";
 import Frequent from "@/components/Profile/business/pro/Frequent";
 import Social from "@/components/Profile/Professional/Pro/Social";
 import Contact from "@/components/Profile/business/pro/Contact";
@@ -40,9 +40,9 @@ const page = () => {
           <Team />
           <Exprince exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide"} />
           <Gallery img1={"/images/profile/business/photo.png"} img2={"/images/profile/business/photo.png"} img3={"/images/profile/business/photo.png"} img4={"/images/profile/business/photo.png"} />
-          <Blog />
+          <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum"} classes={"lg:pl-5"} />
           <Frequent />
-          <Social email={"unreal@outlook.com"} call={"(603) 555-0123"} web={"byjason.com"} />
+          <Social  desc={"description"} />
           <Contact />
           <Terms />
         </section>
