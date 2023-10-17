@@ -21,11 +21,11 @@ const About: React.FC<AboutProps> = (props) =>  {
           <p className=" text-white-shade-9  font-opensans">
           {props.about}
           </p>
-          <p className="text-lg text-black font-semibold font-opensans mt-4 lg:mt-0">
+          <p className="text-lg text-black font-semibold font-opensans mt-2 lg:mt-0">
           Based in {props.city}
           </p>
 
-          <div className=" flex items-center gap-x-7">
+          <div className=" flex items-center gap-x-7 mt-2 lg:mt-0">
             <div className="flex items-center gap-x-4">
             <div
           className="bg-cover bg-center w-14 h-14 rounded-full lg:w-20 lg:h-20"
