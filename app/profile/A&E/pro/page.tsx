@@ -33,7 +33,7 @@ const page = () => {
           <UserTitle />
         </div>
       </div>
-      <section className="lg:flex lg:pl-[110px]">
+      <section className="lg:flex lg:container lg:pr-0">
         <Navigation />
         <section className="lg:border-l lg:border-white-shade-4 ">
         <Concert cover={"/images/profile/A&E/bg.png"} Musicname={"Ashegh"} date={"September 4, 2020"} artist={" Siavash ghomeyshi"} job={" Artist and song writer"} />

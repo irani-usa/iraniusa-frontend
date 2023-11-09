@@ -16,10 +16,10 @@ const page = () => {
           </h3>
           <p className="text-white-shade-9 text-lg font-medium font-opensans">
             Terms and conditions outline what users can and cannot do with your
-            website,{" "}
+            website,
             <span className="text-primary-shade-10">
               products, and services.
-            </span>{" "}
+            </span>
             They lay out the rules to protect you in case of misuse and enable
             you to take action if it becomes necessary.
           </p>

@@ -7,6 +7,7 @@ interface AboutProps {
   name:string,
   job:string,
   cover:string,
+  title:string,
 }
 
 
@@ -16,7 +17,7 @@ const About: React.FC<AboutProps> = (props) =>  {
      <div className='container lg:pl-6'>
       <div className="py-7 flex flex-col gap-y-6 lg:">
           <h1 className="text-black font-bold text-2xl font-outfit mt-5">
-            What is our company all about?
+            {props.title}
           </h1>
           <p className=" text-white-shade-9  font-opensans">
           {props.about}

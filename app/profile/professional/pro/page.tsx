@@ -33,7 +33,7 @@ const page = () => {
         <section className="lg:border-l lg:border-white-shade-4 lg:pl-6">
         <AboutMe title={"Product designer with 10 years of  experience"} aboutexprnce={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} about={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/round.png"} exp={"+10"} city={"Los Angelas"} img={"/images/profile/cart.png"} img2={"/images/profile/card.png"} />
         <Experinces exprince={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />
-          < Company />
+          < Company title={"Company i worked with"} />
           <Job jobabout={"     Digital product designers work in a delicate space that straddles the line between programmer and artist, embracing aspects of both realms . How do I become a digital product designer?  Becoming a digital product designer typically requires a strong portfolio or track record as a developer."} jobcover={"/images/profile/desk.png"} />
           <HardSkills />
           <Project softskillabout={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />

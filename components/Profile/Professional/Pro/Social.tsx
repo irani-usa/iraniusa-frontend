@@ -14,7 +14,7 @@ const Social: React.FC<SocialProps> = (props) => {
   return (
     <div className=" w-full border-white-shade-4 border-b pb-8 lg:pb-12">
       <div className="container flex flex-col lg:items-center gap-y-6 mt-8 lg:px-0">
-       <Sectiontitle title={"Social"} />
+       <Sectiontitle title={"Social"} classes={""} />
         <p className="text-center text-lg text-white-shade-9  font-opensans">
           {props.desc}
         </p>

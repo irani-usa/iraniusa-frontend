@@ -9,7 +9,7 @@ import { Apple } from "@/components/Icons/Solid";
 
 import Btc from "@/components/Icons/Solid/Btc";
 
-import {Chart,FinancialCard,Financial,Table} from "@/components/Pages/Financial/index";
+import {Chart,Financial,Table} from "@/components/Pages/Financial/index";
 
 import StampBG from "@/components/StampBG";
 

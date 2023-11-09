@@ -120,6 +120,7 @@ const page = () => {
                   cm={""}
                 />
               </div>
+             
               <div className="flex flex-col gap-y-6 py-14">
                 <h1 className="text-black text-xl font-semibold font-outfit">
                   Lawyars pick

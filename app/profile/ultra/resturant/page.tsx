@@ -34,11 +34,11 @@ const page = () => {
         />
       </div>
       <div className="w-full h-1 border-t border-white-shade-4"></div>
-     <section className='lg:flex lg:pl-[110px]'>
+     <section className='lg:flex lg:container lg:pr-0'>
       <Navigation />
      <section className='lg:border-l lg:border-white-shade-4 '>
        <Intro logo={'/images/profile/business/logo.png'} title={'The taste that makes you feel awesome'} desc={'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys'} cover={'/images/profile/ultra/Cover.png'} />
-       <About about={'Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide '} city={'Los angless'} name={'Jason todd'} job={'Founder'} cover={'/images/blog/User.webp'} />
+       <About about={'Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide '} city={'Los angless'} name={'Jason todd'} job={'Founder'} cover={'/images/blog/User.webp'} title={'Who we are?'} />
        <Team />
        <Menu title={'Special menu'} />
        <MainMenu title={'Main Menu'} />

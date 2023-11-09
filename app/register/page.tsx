@@ -95,7 +95,7 @@ const page = () => {
           <h1 className="text-black font-opensans py-8 font-medium text-lg text-center">
             Do you have account?
             <Link href="/login" className="text-white-shade-8">
-              {" "}
+              
               Login
             </Link>
           </h1>

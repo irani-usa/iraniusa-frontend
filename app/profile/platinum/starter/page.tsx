@@ -25,7 +25,7 @@ const page = () => {
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 ">
           <Company logo={"/images/profile/business/logo.png"} title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/card.png"}/>
-          <About about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} city={"Los Angelas"} name={"Jason todd"} job={"Founder"} cover={"/images/blog/User.webp"} />
+          <About about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} city={"Los Angelas"} name={"Jason todd"} job={"Founder"} cover={"/images/blog/User.webp"} title={"Who we are?"} />
           <Exprince exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} />
           <Gallery/>
           <Contacts desc={"description"} />
