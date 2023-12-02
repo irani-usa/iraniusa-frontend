@@ -10,6 +10,11 @@ import Verified from "./Verified";
 import Support from "./Support";
 import Exit from "./Exit";
 
+import Delete from "./Delete";
+import AddImage from "./AddImage";
+
+
+
 export {
   Search,
   Notification,
@@ -20,4 +25,6 @@ export {
   Verified,
   Support,
   Exit,
+  Delete,
+  AddImage
 };

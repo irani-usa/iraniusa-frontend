@@ -19,7 +19,14 @@ const Navigation = () => {
     { value: "About", slug: "/about" },
   ]);
 
-  const pathname = usePathname();
+  const currentRoute = usePathname();
+
+  const linkStyle =
+    "h-full flex items-center hover:cursor-pointer transitaion-all";
+  const activeStyle =
+    linkStyle +
+    "text-black border-b-4 border-black";
+  const nonActiveStyle = linkStyle + " border-b-none text-white-shade-8";
 
   return (
     <nav className="w-full h-24 border-b border-white-shade-4">
@@ -28,11 +35,15 @@ const Navigation = () => {
           <Link href={"/"}>
             <Logo width={80} height={200} />
           </Link>
-          <ul className="navigation hidden h-full lg:flex items-center gap-x-10 text-white-shade-10 font-opensans font-medium">
+          <ul className="navigation hidden h-full lg:flex items-center gap-x-10 text-black font-opensans font-medium">
             {menuItems.map((link) => {
-              const isActive = pathname.startsWith(link.slug);
               return (
-                <li key={link.slug} className={isActive ? "active" : "normal"}>
+                <li
+                  key={link.slug}
+                  className={
+                    currentRoute === link.slug ? activeStyle : nonActiveStyle
+                  }
+                >
                   <Link href={link.slug}>{link.value}</Link>
                 </li>
               );
