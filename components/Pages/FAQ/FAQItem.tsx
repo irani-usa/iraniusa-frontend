@@ -7,7 +7,7 @@ interface FAQItemProps {
     content: string,
 }
 
-const FAQItem: React.FC<FAQItemProps> = (props) => {
+const FAQItem:React.FC<FAQItemProps> = (props) => {
 
     const [isActive, setIsActive] = useState(false);
 

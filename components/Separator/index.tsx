@@ -1,9 +1,14 @@
 import React from "react";
 import Achaemenes from "../Symbols/Achaemenes";
 
-const Separator = () => {
+interface SeparatorProps {
+  classes: string,
+
+}
+
+const Separator:React.FC<SeparatorProps> = (props) => {
   return (
-    <div className="w-1/2 flex gap-x-4 justify-center items-center border">
+    <div className={`${props.classes} w-1/2 flex gap-x-4 justify-center items-center border`}>
       <svg
         width="129"
         height="1"
