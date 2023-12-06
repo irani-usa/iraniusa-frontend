@@ -198,3 +198,217 @@ Link:hover , button:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #011223;
 }
+
+
+.btn-flashing-animation {
+  border: 0;
+  cursor: pointer;
+  background: -moz-linear-gradient(
+    -45deg,
+    #011223 0%,
+    #011223 40%,
+    #ffffff 50%,
+    #011223 60%,
+    #011223 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, #011223),
+    color-stop(40%, #011223),
+    color-stop(50%, #ffffff),
+    color-stop(60%, #011223),
+    color-stop(100%, #011223)
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #011223 0%,
+    #011223 40%,
+    #ffffff 50%,
+    #011223 60%,
+    #011223 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    #011223 0%,
+    #ff6e00 40%,
+    #ffffff 50%,
+    #011223 60%,
+    #011223 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    #011223 0%,
+    #011223 40%,
+    #ffffff 50%,
+    #011223 60%,
+    #011223 100%
+  );
+  background: linear-gradient(
+    135deg,
+    #011223 0%,
+    #011223 40%,
+    #ffffff 50%,
+    #011223 60%,
+    #011223 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011223', endColorstr='#011223',GradientType=1 );
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: 300%;
+}
+.btn-flashing-animation {
+  animation: light 1s;
+  -webkit-animation: light 1s;
+}
+
+.lablel-flashing-animation {
+  border: 0;
+  cursor: pointer;
+  background: -moz-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, #0d4f94),
+    color-stop(40%, #0d4f94),
+    color-stop(50%, #ffffff),
+    color-stop(60%, #0d4f94),
+    color-stop(100%, #0d4f94)
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #1964b4 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: linear-gradient(
+    135deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0D4F94', endColorstr='#0D4F94',GradientType=1 );
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: 300%;
+}
+.lablel-flashing-animation {
+  animation: light 1s;
+  -webkit-animation: light 1s;
+  animation-delay: 3s;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: ease-in-out;
+}
+
+.lablel-flashing-animation-hover {
+  border: 0;
+  cursor: pointer;
+  background: -moz-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, #0d4f94),
+    color-stop(40%, #0d4f94),
+    color-stop(50%, #ffffff),
+    color-stop(60%, #0d4f94),
+    color-stop(100%, #0d4f94)
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: -o-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #1964b4 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: -ms-linear-gradient(
+    -45deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  background: linear-gradient(
+    135deg,
+    #0d4f94 0%,
+    #0d4f94 40%,
+    #ffffff 50%,
+    #0d4f94 60%,
+    #0d4f94 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0D4F94', endColorstr='#0D4F94',GradientType=1 );
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: 300%;
+}
+.lablel-flashing-animation-hov {
+  animation: light 1s;
+  -webkit-animation: light 1s;
+}
+
+@keyframes light {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@-webkit-keyframes light {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}

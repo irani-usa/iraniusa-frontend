@@ -4,8 +4,7 @@ import Star from "@/components/Pages/About/Star";
 
 import OverlayMenu from "@/components/Layout/OverlayMenu";
 
-import {Stamp,Plan} from "@/components/Pages/About/index";
-
+import { Stamp, Plan } from "@/components/Pages/About/index";
 
 const page = () => {
   return (
@@ -13,37 +12,67 @@ const page = () => {
       <OverlayMenu />
       <div className="w-full bg-blue">
         <div className="container py-12 lg:flex lg:justify-between lg:items-center lg:py-20">
-          <div >
-            <h1 className="text-white text-3xl font-outfit font-bold lg:max-w-lg">List your business in a  platform that is built for  Iranians today, and for  future generations.</h1>
-            <p className="text-white-shade-9 max-w-md mt-7 lg:max-w-md">Find common services and businesses as well as specialized Iranian businesses like Persian Markets, Persian tutors, Persian wedding planners and much more.</p>
+          <div>
+            <h1 className="text-white text-3xl font-outfit font-bold lg:max-w-lg">
+              List your business in a platform that is built for Iranians today,
+              and for future generations.
+            </h1>
+            <p className="text-white-shade-9 max-w-md mt-7 lg:max-w-md">
+              Find common services and businesses as well as specialized Iranian
+              businesses like Persian Markets, Persian tutors, Persian wedding
+              planners and much more.
+            </p>
           </div>
           <div className="mt-7 flex flex-col items-center lg:-mt-14">
             <Stamp />
             <p className="text-white-shade-9 max-w-md mt-7 lg:max-w-sm">
-              Connect to Iranian businesses, professionals, and artist for modern services to strengthen our economic well-being and cultural unity
+              Connect to Iranian businesses, professionals, and artist for
+              modern services to strengthen our economic well-being and cultural
+              unity
             </p>
           </div>
         </div>
       </div>
       <div className="container flex flex-col lg:pt-20 py-12">
-
         <div className="flex items-center gap-x-3">
           <div className="w-full h-[1px] bg-white-shade-4"></div>
           <Star content={"Company"} />
           <div className="w-full h-[1px] bg-white-shade-4"></div>
         </div>
         <p className="font-opensans text-white-shade-9  text-lg py-3 max-w-6xl">
-          ur company is a collection of designers, artists, developers, laborers, legal scholars, and business people with the desire to bring the Iranian community closer together. Our company has engaged the best designers and developers in the industry to create a modern platform to connect Iranian consumers with Iranian businesses, professionals, and artists.
+          ur company is a collection of designers, artists, developers,
+          laborers, legal scholars, and business people with the desire to bring
+          the Iranian community closer together. Our company has engaged the
+          best designers and developers in the industry to create a modern
+          platform to connect Iranian consumers with Iranian businesses,
+          professionals, and artists.
         </p>
         <p className="font-opensans text-white-shade-9  text-lg py-3">
-          Let’s overcome the fear and hesitancy to identify as Iranian businesses and professionals not because of discrimination from the non-Iranian community, but fearing threats and harassment from the regime. Political division, anger, and then fear keeps Iranian people apart to the delight of the regime.
+          Let’s overcome the fear and hesitancy to identify as Iranian
+          businesses and professionals not because of discrimination from the
+          non-Iranian community, but fearing threats and harassment from the
+          regime. Political division, anger, and then fear keeps Iranian people
+          apart to the delight of the regime.
         </p>
         <p className="font-opensans text-white-shade-9  text-lg py-3">
-          Our solution is a business and culture platform designed by regular Iranians where no political, religious, or anti-religious ideology is promoted, even though we are deeply conscious of political events and history. This platform is designed for the conscious support and voluntary investment into our community’s economic and cultural well-being and development.
+          Our solution is a business and culture platform designed by regular
+          Iranians where no political, religious, or anti-religious ideology is
+          promoted, even though we are deeply conscious of political events and
+          history. This platform is designed for the conscious support and
+          voluntary investment into our community’s economic and cultural
+          well-being and development.
         </p>
         <div className="flex flex-col gap-y-5 lg:flex-row lg:gap-x-5 mt-9 lg:mt-16">
-          <div style={{ backgroundImage: `url('images/about/conversetaion.webp')` }} className="rounded-3xl w-full h-44 lg:w-[65%] lg:h-[220px] bg-center bg-cover"></div>
-          <div style={{ backgroundImage: `url('images/about/freedom.webp')` }} className="rounded-3xl  w-full h-44 lg:w-[35%] lg:h-[220px] bg-cover bg-center"></div>
+          <div
+            style={{
+              backgroundImage: `url('images/about/conversetaion.webp')`,
+            }}
+            className="rounded-3xl w-full h-44 lg:w-[65%] lg:h-[220px] bg-center bg-cover"
+          ></div>
+          <div
+            style={{ backgroundImage: `url('images/about/freedom.webp')` }}
+            className="rounded-3xl  w-full h-44 lg:w-[35%] lg:h-[220px] bg-cover bg-center"
+          ></div>
         </div>
       </div>
       <div className="container flex flex-col  py-10">
@@ -53,39 +82,72 @@ const page = () => {
           <div className="w-full h-[1px] bg-white-shade-4"></div>
         </div>
         <p className="font-opensans text-white-shade-9  text-lg py-3 max-w-6xl">
-          We have invested effort, capital, and experience to create the first multi-service platform for the Iranian business, professional, and artist community. Use the Irani.World platforms because you require an online presence that is advanced, dynamic, affordable, and mindful of our cultural heritage. You choose what to share to enable prospective clients to reach you.
+          We have invested effort, capital, and experience to create the first
+          multi-service platform for the Iranian business, professional, and
+          artist community. Use the Irani.World platforms because you require an
+          online presence that is advanced, dynamic, affordable, and mindful of
+          our cultural heritage. You choose what to share to enable prospective
+          clients to reach you.
         </p>
         <p className="font-opensans text-white-shade-9  text-lg py-3 ">
-          With history and heritage in mind, we designed our platforms with deference to our host nations because Iranian/Persian traditions require respect to one’s host. Just as ancient leaders paid tribute to Persian Kings of the past. As ex-pats, we pay respect to our hosts through our design. <br /><br />
-          Moreover, we see ourselves as ancient friends of our hosts not as adversaries. A robust research study recently published in Science magazine concluded that modern European languages such as English, Spanish, German and others originated from over 8100 years ago when the Indo-Iranic people of North Eastern Fertile Crescent, which today encompasses North Western Iran, left Iran for the Eurasian Steppe. <br /><br />
-          More recently, Cyrus the Great’s benevolent rulership, as memorialized by the Greek philosopher Xenophon in his book Cyropedia, became the inspiration for Thomas Jefferson and the founding fathers of the United States of America to establish freedom <br /> <br /> of speech, religion, and political assembly by creating the 1st Amendment to the U.S. constitution, a fundamental tenet of American freedom.Unfortunately, ancient history is not enough to fill the void left in our hearts for the success and prosperity of our people, culture, and nation. We hope this platform brings the Iranian people closer together, to built a reservoir of power and energy, to fuel an Iranian renaissance of economic and cultural success.
+          With history and heritage in mind, we designed our platforms with
+          deference to our host nations because Iranian/Persian traditions
+          require respect to one’s host. Just as ancient leaders paid tribute to
+          Persian Kings of the past. As ex-pats, we pay respect to our hosts
+          through our design. <br />
+          <br />
+          Moreover, we see ourselves as ancient friends of our hosts not as
+          adversaries. A robust research study recently published in Science
+          magazine concluded that modern European languages such as English,
+          Spanish, German and others originated from over 8100 years ago when
+          the Indo-Iranic people of North Eastern Fertile Crescent, which today
+          encompasses North Western Iran, left Iran for the Eurasian Steppe.{" "}
+          <br />
+          <br />
+          More recently, Cyrus the Great’s benevolent rulership, as memorialized
+          by the Greek philosopher Xenophon in his book Cyropedia, became the
+          inspiration for Thomas Jefferson and the founding fathers of the
+          United States of America to establish freedom <br /> <br /> of speech,
+          religion, and political assembly by creating the 1st Amendment to the
+          U.S. constitution, a fundamental tenet of American
+          freedom.Unfortunately, ancient history is not enough to fill the void
+          left in our hearts for the success and prosperity of our people,
+          culture, and nation. We hope this platform brings the Iranian people
+          closer together, to built a reservoir of power and energy, to fuel an
+          Iranian renaissance of economic and cultural success.
         </p>
         <div className="flex flex-row-reverse w-full gap-x-4 overflow-x-scroll py-10 no-scroll ">
           <Plan
             name={"Business Ultra"}
             info={"Users"}
             classes={""}
-            quantity={"+200k"} theme={"bg-[#B80042]"} />
+            quantity={"+200k"}
+            theme={"bg-[#B80042]"}
+          />
           <Plan
             name={"Artists & Events"}
             info={"Users"}
             classes={"hidden lg:flex flex-col"}
-            quantity={"+200k"} theme={"bg-[#9949FF]"} />
+            quantity={"+200k"}
+            theme={"bg-[#9949FF]"}
+          />
           <Plan
             name={"Professional"}
             info={"Users"}
             classes={"hidden lg:flex flex-col"}
-            quantity={"+200k"} theme={"bg-[#9949FF]"} />
+            quantity={"+200k"}
+            theme={"bg-[#9949FF]"}
+          />
           <Plan
             name={"Business Platinum"}
             info={"Users"}
             classes={"hidden lg:flex flex-col"}
-            quantity={"+200k"} theme={"bg-[#1F78FF]"} />
-
+            quantity={"+200k"}
+            theme={"bg-[#1F78FF]"}
+          />
         </div>
       </div>
       <div className="container flex flex-col ">
-
         <div className="flex items-center gap-x-3">
           <div className="w-full h-[1px] bg-white-shade-4"></div>
           <Star content={"Partners"} />
@@ -107,7 +169,6 @@ const page = () => {
             className="w-[110px]  lg:w-52"
             alt=""
           />
-
         </div>
       </div>
       <div className="w-full bg-blue pt-9 my-28 lg:pt-0">

@@ -1,4 +1,3 @@
-
 import FinancialSummery from "@/components/Pages/Financial/Summery";
 import Hero from "@/components/Pages/Home/Hero";
 import OverlayMenu from "@/components/Layout/OverlayMenu";
@@ -9,6 +8,7 @@ import AboutCompany from "@/components/Pages/Home/AboutCompany";
 import SmallBannerList from "@/components/Pages/Home/SmallBannerList";
 import LargeBannerList from "@/components/Pages/Home/LargeBanner";
 import NormalBannerList from "@/components/Pages/Home/NormalBannerList";
+import EventCalendar from "@/components/Pages/Home/EventCalendar";
 
 export default function Home() {
   return (
@@ -17,12 +17,13 @@ export default function Home() {
       <Hero />
       <StampBG />
       <LargeBannerList />
+      <EventCalendar />
       <ToursSearch />
-      <NormalBannerList/>
+      <NormalBannerList />
       <FinancialSummery />
       <SmallBannerList />
       <PlanInfo />
       <AboutCompany />
     </>
-  )
+  );
 }
