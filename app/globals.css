@@ -176,3 +176,25 @@ Link:hover , button:hover {
 .deep-shadow {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.03), 0px 23px 51px 0px rgba(0, 0, 0, 0.03), 0px 92px 92px 0px rgba(0, 0, 0, 0.03), 0px 207px 124px 0px rgba(0, 0, 0, 0.02), 0px 367px 147px 0px rgba(0, 0, 0, 0.00), 0px 574px 161px 0px rgba(0, 0, 0, 0.00);
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #011223;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #011223;
+}

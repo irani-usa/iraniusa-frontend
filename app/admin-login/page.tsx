@@ -3,13 +3,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import classNames from "classnames";
-import Loading from "@/components/Icons/Animated/Loading";
+// import Loading from "@/components/Icons/Animated/Loading";
 
 const page = () => {
   const [showErr, setShowErr] = useState(false);
-
   const ErrBoxClasses = classNames(
-    "transition-all duration-300 ease-in-out absolute bottom-10 w-80 h-52 rounded-3xl bg-white ",
+    "transition-all duration-300 ease-in-out absolute bottom-10 w-80 h-16 rounded-xl bg-white ",
     {
       "left-10": showErr,
       "-left-80": !showErr,
@@ -28,9 +27,9 @@ const page = () => {
           login.
         </p>
         <div className="flex gap-x-3">
-          <div className="transition-all focus-within:border-white-shade-18  focus-within:border-2 flex items-center gap-xfocus-within:border-black-2 w-60 h-16 rounded-3xl border-2 border-white-shade-4 px-4">
+          <div className="transition-all focus-within:border-white-shade-18  focus-within:border-2 flex items-center gap-xfocus-within:border-black-2 w-80 h-16 rounded-2xl border-2 border-white-shade-4 px-4">
             <svg
-              className="w-1/6 pr-2"
+              className="w-1/6 pr border-r border-black/30"
               width="20"
               height="22"
               viewBox="0 0 20 22"
@@ -53,8 +52,8 @@ const page = () => {
               />
             </svg>
             <input
-              type="text"
-              className="group w-5/6 h-full bg-white/0 rounded-3xl border-none focus:outline-none text-black"
+              type="password"
+              className="group w-5/6 ml-3 h-full bg-white/0 rounded-2xl border-none focus:outline-none text-black"
               placeholder="Passcode"
             />
           </div>
@@ -63,12 +62,12 @@ const page = () => {
               setShowErr(!showErr);
             }}
             type="submit"
-            className="inline-flex items-center gap-x-2 px-10 rounded-3xl bg-black text-white hover:bg-white/0 hover:text-black border-2 hover:border-blue transition-all duration-300"
+            className="inline-flex items-center gap-x-2 px-8 rounded-2xl bg-black text-white hover:bg-white/0 hover:text-black border-2 hover:border-blue transition-all duration-300"
           >
-            <Loading/>
+            {/* <Loading/> */}
             Login
           </button>
-        </div>
+        </div> 
         <span className="text-white-shade-10 mt-3">
           Back to
           <Link href={"/login"} className="text-black pl-2">

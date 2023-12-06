@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <OverlayMenu />
       <Hero />
-      <StampBG classes={""} />
+      <StampBG />
       <LargeBannerList />
       <ToursSearch />
       <NormalBannerList/>
