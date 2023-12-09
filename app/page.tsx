@@ -9,6 +9,7 @@ import SmallBannerList from "@/components/Pages/Home/SmallBannerList";
 import LargeBannerList from "@/components/Pages/Home/LargeBanner";
 import NormalBannerList from "@/components/Pages/Home/NormalBannerList";
 import EventCalendar from "@/components/Pages/Home/EventCalendar";
+import PopularWriters from "@/components/Pages/Home/PopularWriters";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <NormalBannerList />
       <FinancialSummery />
       <SmallBannerList />
+      <PopularWriters/>
       <PlanInfo />
       <AboutCompany />
     </>
