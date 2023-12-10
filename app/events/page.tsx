@@ -103,9 +103,9 @@ const page = () => {
                 <path
                   d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
                   stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -143,9 +143,9 @@ const page = () => {
                 <path
                   d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
                   stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -160,9 +160,9 @@ const page = () => {
                 <path
                   d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
                   stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -255,9 +255,9 @@ const page = () => {
               <path
                 d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
                 stroke="black"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
@@ -272,9 +272,9 @@ const page = () => {
               <path
                 d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
                 stroke="black"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>

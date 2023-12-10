@@ -1,14 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-
 interface SocialProps {
-  email:string,
-  call:string,
-  web:string,
+  email: string;
+  call: string;
+  web: string;
 }
 
-const Contacts: React.FC<SocialProps> = (props) =>{
+const Contacts: React.FC<SocialProps> = (props) => {
   return (
     <section className="border-b border-white-shade-4 py-9 lg:pt-14">
       <div className="container flex flex-col  gap-y-5  lg:px-0">
@@ -41,8 +40,7 @@ const Contacts: React.FC<SocialProps> = (props) =>{
               <div className="flex flex-col font-opensans">
                 <span className="text-white-shade-9">E-mail</span>
                 <span className="text-black text-lg font-semibold">
-              
-              {props.email}
+                  {props.email}
                 </span>
               </div>
             </Link>
@@ -66,7 +64,7 @@ const Contacts: React.FC<SocialProps> = (props) =>{
               <div className="flex flex-col font-opensans">
                 <span className="text-white-shade-9">Call</span>
                 <span className="text-black text-lg font-semibold">
-                 {props.call}
+                  {props.call}
                 </span>
               </div>
             </Link>
@@ -82,37 +80,36 @@ const Contacts: React.FC<SocialProps> = (props) =>{
                   <path
                     d="M17.7129 6.39846C19.1275 7.84146 19.9998 9.8181 19.9998 11.9985C19.9998 14.2047 19.1067 16.2024 17.6623 17.6496M6.39976 17.7116C4.91867 16.2597 3.99976 14.2364 3.99976 11.9985C3.99976 9.78644 4.89753 7.7841 6.34858 6.33594"
                     stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M15.4276 8.83596C16.2764 9.6478 16.7997 10.7599 16.7997 11.9865C16.7997 13.2278 16.2639 14.3517 15.3972 15.1659M8.63971 15.2008C7.75105 14.3839 7.19971 13.2456 7.19971 11.9865C7.19971 10.742 7.73837 9.61552 8.609 8.80078"
                     stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <circle
                     cx="12.0004"
                     cy="11.9984"
                     r="1.6"
                     stroke="black"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                   />
                 </svg>
               </div>
               <div className="flex flex-col font-opensans">
                 <span className="text-white-shade-9">Website</span>
                 <span className="text-black text-lg font-semibold">
-                 {props.web}
+                  {props.web}
                 </span>
               </div>
             </Link>
           </div>
         </section>
       </div>
-      
     </section>
   );
 };

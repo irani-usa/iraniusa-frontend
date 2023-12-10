@@ -94,12 +94,22 @@ const page = () => {
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
-                  title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"}
-                  summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"}
+                  title={
+                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
+                  }
+                  summery={
+                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
+                  }
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
+                  cover={"/images/blog/UsaFlag.webp"}
+                  info={true}
+                  isview={false}
+                  view={""}
+                  like={""}
+                  cm={""}
+                />
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
@@ -120,7 +130,7 @@ const page = () => {
                   cm={""}
                 />
               </div>
-             
+
               <div className="flex flex-col gap-y-6 py-14">
                 <h1 className="text-black text-xl font-semibold font-outfit">
                   Lawyars pick
@@ -140,21 +150,41 @@ const page = () => {
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
-                  title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"}
-                  summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"}
+                  title={
+                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
+                  }
+                  summery={
+                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
+                  }
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
+                  cover={"/images/blog/UsaFlag.webp"}
+                  info={true}
+                  isview={false}
+                  view={""}
+                  like={""}
+                  cm={""}
+                />
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
-                  title={"Exploring Shirez Canyon in the Heart of Zagros Mountains"}
-                  summery={"Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"}
+                  title={
+                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
+                  }
+                  summery={
+                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
+                  }
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"} info={true} isview={false} view={""} like={""} cm={""}                />
+                  cover={"/images/blog/UsaFlag.webp"}
+                  info={true}
+                  isview={false}
+                  view={""}
+                  like={""}
+                  cm={""}
+                />
               </div>
               <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
                 <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
@@ -168,9 +198,9 @@ const page = () => {
                     <path
                       d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -185,9 +215,9 @@ const page = () => {
                     <path
                       d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
                       stroke="black"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>

@@ -23,9 +23,9 @@ const Eos = () => {
         <path
           d="M11.5791 12.7888L15.6703 25.6344L9.59985 21.8312L11.5791 12.7888L15.6703 7.19995V11.12L9.59985 21.8312H21.7463L15.6759 11.12V7.19995L19.7663 12.7888L21.7463 21.8312L15.6759 25.6344L19.7663 12.7888"
           stroke="white"
-          stroke-width="0.512"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="0.512"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>

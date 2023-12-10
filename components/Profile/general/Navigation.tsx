@@ -119,27 +119,27 @@ const Navigation = () => {
             className="group-hover:stroke-black"
             d="M17.7333 6.53516C19.7633 6.54646 20.8627 6.63648 21.5799 7.35364C22.4 8.17374 22.4 9.49367 22.4 12.1335V17.7335C22.4 20.3734 22.4 21.6933 21.5799 22.5134C20.7598 23.3335 19.4398 23.3335 16.8 23.3335H11.2C8.56011 23.3335 7.24018 23.3335 6.42008 22.5134C5.59998 21.6933 5.59998 20.3734 5.59998 17.7335V12.1335C5.59998 9.49367 5.59998 8.17374 6.42008 7.35364C7.13723 6.63648 8.23662 6.54646 10.2666 6.53516"
             stroke="#A6A6A6"
-            stroke-width="1.5"
+            strokeWidth="1.5"
           />
           <path
             className="group-hover:stroke-black"
             d="M9.33337 16.334H16.8"
             stroke="#A6A6A6"
-            stroke-width="1.5"
-            stroke-linecap="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
           />
           <path
             className="group-hover:stroke-black"
             d="M9.33337 19.5996H14.4667"
             stroke="#A6A6A6"
-            stroke-width="1.5"
-            stroke-linecap="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
           />
           <path
             className="group-hover:stroke-black"
             d="M10.2667 6.06602C10.2667 5.29282 10.8935 4.66602 11.6667 4.66602H16.3334C17.1066 4.66602 17.7334 5.29282 17.7334 6.06602V6.99935C17.7334 7.77255 17.1066 8.39935 16.3334 8.39935H11.6667C10.8935 8.39935 10.2667 7.77255 10.2667 6.99935V6.06602Z"
             stroke="#A6A6A6"
-            stroke-width="1.5"
+            strokeWidth="1.5"
           />
         </svg>
         Contact me
