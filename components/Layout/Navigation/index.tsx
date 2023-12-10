@@ -51,7 +51,7 @@ const Navigation = () => {
           </ul>
         </div>
         <Link
-          className="hidden lg:flex bg-white-shade-3 p-4 jcc aic rounded-full"
+          className="group hidden lg:flex bg-white-shade-3 p-4 jcc aic rounded-full hover:bg-primary transition-all duration-300"
           href={"/login"}
         >
           <User classes={""} />
