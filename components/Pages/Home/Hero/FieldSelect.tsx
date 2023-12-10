@@ -18,7 +18,7 @@ const FieldSelect = () => {
           Choose your field
         </span>
       </div>
-      <div className="flex flex-col items-center w-full font-medium  text-black rounded-2xl">
+      <div className="flex flex-col items-center w-full font-medium  text-black rounded-3xl">
         <div
           onClick={() => setOpen(!open)}
           className={`bg-white w-full text-xl gap-x-2 font-normal p-2 mt-4 flex items-center justify-center rounded-2xl ${

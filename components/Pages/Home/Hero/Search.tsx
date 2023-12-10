@@ -10,7 +10,7 @@ const Search = () => {
         <FieldSelect />
         <UserSearch />
         <LoactionSelect />
-        <button className="w-1/5 h-full font-opensans text-xl rounded-2xl bg-black text-white flex items-center justify-center border-2 border-black hover:bg-black/0 transition-all duration-300 hover:text-black">
+        <button className="w-1/5 h-full font-opensans text-xl rounded-3xl bg-black text-white flex items-center justify-center border-2 border-black hover:bg-black/0 transition-all duration-300 hover:text-black">
           Search
         </button>
       </div>

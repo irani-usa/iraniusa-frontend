@@ -12,8 +12,8 @@ const NormallBanner: React.FC<NormallBanner> = (props) => {
   return (
     <Link href={'/'} className='flex flex-col items-center justify-center gap-y-5 w-full h-[450px] bg-cover bg-center rounded-2xl hover:cursor-pointer' style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}>
       <div className='flex'>
-        <div className='w-20 h-20 rounded-full bg-cover bg-center' style={{ backgroundImage: `url('/images/avatars/1.jpg')` }}></div>
-        <div className='w-20 h-20 -ml-6 rounded-full bg-cover bg-center' style={{ backgroundImage: `url('/images/avatars/2.jpg')` }}></div>
+        <div className='w-20 h-20 rounded-full bg-cover bg-center' style={{ backgroundImage: `url('/images/avatars/1.png')` }}></div>
+        <div className='w-20 h-20 -ml-6 rounded-full bg-cover bg-center' style={{ backgroundImage: `url('/images/avatars/2.png')` }}></div>
       </div>
       <div className='flex flex-col gap-y-2 justify-center'>
         <h3 className='flex items-center text-white font-opensans font-medium text-2xl text-center'>
