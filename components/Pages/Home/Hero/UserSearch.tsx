@@ -4,10 +4,10 @@ import React from "react";
 
 const UserSearch = () => {
   return (
-    <section className="flex flex-col items-center w-2/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-center w-full lg:w-2/5 h-28 lg:h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Search />
-        <span className="text-white-shade-11 font-normal">
+        <span className="text-white-shade-11 font-normal text-lg lg:text-base">
         Search for specefic person or company
         </span>
       </div>

@@ -13,10 +13,10 @@ const LoactionSelect = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="flex flex-col items-center w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-center w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Location />
-        <span className="text-white-shade-11 font-normal">
+        <span className="text-white-shade-11 font-normal text-xl lg:text-base">
           Location
         </span>
       </div>
