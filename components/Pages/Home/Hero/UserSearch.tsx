@@ -1,16 +1,20 @@
 import { Search } from "@/components/Dashboard/Icons";
-import Field from "@/components/Icons/Outline/Field";
 import React from "react";
 
 const UserSearch = () => {
   return (
-    <section className="flex flex-col items-center w-full lg:w-2/5 h-28 lg:h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
-      <div className="w-full flex gap-x-2 items-center mt-2 px-6">
+    <section className="flex flex-col items-center justify-between w-full lg:w-2/5 h-auto lg:h-full bg-white rounded-3xl p-4 hover:cursor-pointer">
+      <div className="w-full flex gap-x-4 items-center mt-2">
         <Search />
-        <span className="text-white-shade-11 font-normal text-lg lg:text-base">
-        Search for specefic person or company
+        <span className="text-white-shade-11 font-normal text-lg">
+          Search for specefic person or company
         </span>
       </div>
+      <input
+        className="w-full h-16 rounded-2xl bg-white-shade-3 px-4 mt-2 focus:outline-none text-black"
+        type="text"
+        placeholder="Persons,Companies,Jobs"
+      />
     </section>
   );
 };

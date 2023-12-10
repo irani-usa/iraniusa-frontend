@@ -11,17 +11,17 @@ const FieldSelect = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="flex flex-col items-center w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-start w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Field />
-        <span className="text-white-shade-11 font-normal">
+        <span className="text-white-shade-11 font-normal text-lg">
           Choose your field
         </span>
       </div>
-      <div className="flex flex-col items-center w-full font-medium  text-black rounded-3xl">
+      <div className="flex flex-col items-start w-full font-medium  text-black rounded-3xl">
         <div
           onClick={() => setOpen(!open)}
-          className={`bg-white w-full text-xl gap-x-2 font-normal p-2 mt-4 flex items-center justify-center rounded-2xl ${
+          className={`bg-white text-xl gap-x-2 font-normal p-2 mt-4 flex items-center mx-4 rounded-2xl ${
             !selected && ""
           }`}
         >
@@ -34,7 +34,7 @@ const FieldSelect = () => {
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>
         <ul
-          className={`w-52 bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
+          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
             open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
           } `}
         >

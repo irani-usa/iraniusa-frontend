@@ -31,12 +31,12 @@ const LoactionSelect = () => {
             ? selected?.length > 25
               ? selected?.substring(0, 25) + "..."
               : selected
-            : `Las Angles`}
+            : `Los Angles`}
 
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>
         <ul
-          className={`w-52 bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
+          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
             open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
           } `}
         >
@@ -53,7 +53,7 @@ const LoactionSelect = () => {
             <li
               className={`p-2 text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
             >
-              Restaurant
+              Los Angles
             </li>
           </div>
         </ul>
