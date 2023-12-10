@@ -10,6 +10,7 @@ import LargeBannerList from "@/components/Pages/Home/LargeBanner";
 import NormalBannerList from "@/components/Pages/Home/NormalBannerList";
 import EventCalendar from "@/components/Pages/Home/EventCalendar";
 import PopularWriters from "@/components/Pages/Home/PopularWriters";
+import MediumBannerList from "@/components/Pages/Home/MediumBannerList";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <StampBG />
       <LargeBannerList />
       <EventCalendar />
+      <MediumBannerList/>
       <ToursSearch />
       <NormalBannerList />
       <FinancialSummery />

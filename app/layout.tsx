@@ -23,7 +23,7 @@ const outfit = Outfit({
   variable: '--font-outfit',
 })
 const vazirmatn = Vazirmatn({
-  subsets: ['arabic'],
+  subsets: ['latin'],
   variable: '--font-vazirmatn',
 })
 
