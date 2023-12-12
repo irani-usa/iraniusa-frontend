@@ -9,6 +9,7 @@ import {
 } from "@/components/Pages/Events/index";
 import { Button } from "@/components/Forms";
 import Link from "next/link";
+import EventFilter from "@/components/Pages/Events/EventFilter";
 
 const page = () => {
   return (
@@ -126,7 +127,7 @@ const page = () => {
         </div>
       </section>
       <section className="container">
-
+        <EventFilter/>
       </section>
       <div className="container">
         <section
