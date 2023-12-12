@@ -9,14 +9,14 @@ interface PopularSeminarProps {
   date: string;
   city: string;
   classes: string;
-  background:string,
+  background: string;
 }
 
 const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
   return (
     <>
       <div
-        className={`${props.classes} border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between  gap-x-4 lg:gap-x-8`}
+        className={`${props.classes} hover:cursor-pointer group border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between  gap-x-4 lg:gap-x-8`}
       >
         <div className="flex flex-col gap-y-4 py-7">
           <h1 className="text-black font-semibold font-opensans text-lg">
@@ -148,13 +148,16 @@ const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
           </h1>
           <button
             type="button"
-            className="bg-[#0112231A] text-black rounded-2xl py-3 font-semibold"
+            className="bg-[#0112231A] group-hover:bg-black group-hover:text-white transition-all duration-300 text-black rounded-2xl py-3 font-semibold"
           >
             Book now
           </button>
         </div>
-   <div className="rounded-tr-3xl rounded-br-3xl w-[110px] bg-center bg-cover"  style={{ backgroundImage:  `url(${props.background})` }}></div>
-      </div> 
+        <div
+          className="rounded-tr-3xl rounded-br-3xl w-[110px] bg-center bg-cover"
+          style={{ backgroundImage: `url(${props.background})` }}
+        ></div>
+      </div>
     </>
   );
 };

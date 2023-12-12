@@ -415,3 +415,8 @@ Link:hover , button:hover {
     background-position: 0%;
   }
 }
+
+
+nextjs-portal {
+  display: none;
+}

@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 
-
 import { ArrowDown, ArrowUp, Location } from "@/components/Icons/Outline";
+import Stars from "@/components/Icons/Outline/Stars";
 
-const LocationSelect = () => {
+const EventTypeSelect = () => {
   const [inputValue, setInputValue] = useState("");
   const [selected, setSelected] = useState("");
   const [open, setOpen] = useState(false);
@@ -13,10 +13,8 @@ const LocationSelect = () => {
   return (
     <section className="flex flex-col items-center w-full lg:w-1/4 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
-        <Location />
-        <span className="text-white-shade-11 font-normal text-lg">
-          Location
-        </span>
+        <Stars />
+        <span className="text-white-shade-11 font-normal text-lg">Events</span>
       </div>
       <div className="flex flex-col w-full font-medium  text-black rounded-2xl">
         <div
@@ -29,9 +27,9 @@ const LocationSelect = () => {
             ? selected?.length > 25
               ? selected?.substring(0, 25) + "..."
               : selected
-            : `Washington DC`}
+            : `Exhibition`}
 
-          {selected ? <ArrowUp />   : <ArrowDown />}
+          {selected ? <ArrowUp /> : <ArrowDown />}
         </div>
         <ul
           className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
@@ -51,7 +49,7 @@ const LocationSelect = () => {
             <li
               className={`p-2 text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
             >
-              Washington DC
+              Exhibition
             </li>
           </div>
         </ul>
@@ -60,4 +58,4 @@ const LocationSelect = () => {
   );
 };
 
-export default LocationSelect;
+export default EventTypeSelect;

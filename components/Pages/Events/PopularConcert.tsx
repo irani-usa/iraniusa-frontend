@@ -14,7 +14,7 @@ const PopularConcert: React.FC<PopularConcertProps> = (props) => {
   return (
     <>
       <div
-        className={`${props.classes} border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between gap-x-4 lg:gap-x-8 max-w-[380px] w-full`}
+        className={`${props.classes} group hover:cursor-pointer border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between gap-x-4 lg:gap-x-8 lg:w-1/3 w-full`}
       >
         <div className="flex flex-col items-start gap-y-2 py-5">
           <h1 className="text-black font-semibold font-opensans text-lg ">
@@ -121,12 +121,12 @@ const PopularConcert: React.FC<PopularConcertProps> = (props) => {
 
           <button
             type="button"
-            className="bg-[#0112231A] text-black rounded-2xl  py-3 font-semibold w-56 mt-4 "
+            className="bg-[#0112231A] group-hover:bg-black group-hover:text-white transition-all duration-300 text-black rounded-2xl  py-3 font-semibold w-56 mt-4 "
           >
             Book now
           </button>
         </div>
-       <div  style={{ backgroundImage:  `url(${props.background})` }} className="w-24 h-[280px] bg-cover bg-center rounded-tr-3xl rounded-br-3xl">
+       <div  style={{ backgroundImage:  `url(${props.background})` }} className="w-32 h-[280px] bg-cover bg-center rounded-tr-3xl rounded-br-3xl">
         
        </div>
       </div>

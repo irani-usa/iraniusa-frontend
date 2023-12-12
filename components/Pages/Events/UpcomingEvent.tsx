@@ -27,7 +27,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
             <h3 className="flex items-center justify-center text-black font-opensans font-medium py-2 w-28 border-[1px] border-white-shade-4 rounded-full">
               Concerts
             </h3>
-            <h1 className="text-black font-outfit font-bold text-xl">
+            <h1 className="text-black font-outfit font-semibold text-xl">
            {props.artist}
             </h1>
             <div className="flex flex-col gap-y-3 lg:flex-row lg:gap-x-4 lg:pt-3">

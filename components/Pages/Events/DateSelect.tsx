@@ -10,11 +10,11 @@ const DateSelect = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="flex flex-col items-start w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-start w-full lg:w-1/4 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Location />
         <span className="text-white-shade-11 font-normal text-lg">
-          Choose your field
+          Date
         </span>
       </div>
       <div className="flex flex-col items-start w-full font-medium  text-black rounded-3xl">
@@ -28,7 +28,7 @@ const DateSelect = () => {
             ? selected?.length > 25
               ? selected?.substring(0, 25) + "..."
               : selected
-            : `Restaurant`}
+            : `Tue, 09 Aug 2023`}
 
           {selected ? <ArrowUp /> : <ArrowDown />}
         </div>
@@ -50,7 +50,7 @@ const DateSelect = () => {
             <li
               className={`p-2 text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
             >
-              Restaurant
+              Tue, 09 Aug 2023
             </li>
           </div>
         </ul>
