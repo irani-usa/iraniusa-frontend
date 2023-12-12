@@ -5,7 +5,7 @@ const AboutCompany = () => {
     <>
       <section className="container">
         <section>
-          <div className="flex flex-col gap-y-5 mt-32 lg:gap-y-2">
+          <div className="flex flex-col gap-y-5 mt-36 lg:gap-y-2">
             <h1 className="text-black font-outfit text-xl font-bold lg:text-5xl">
               Who we are?
             </h1>
@@ -13,9 +13,9 @@ const AboutCompany = () => {
               Get to know about What we actually do here
             </p>
           </div>
-          <section className="flex flex-col gap-y-7 lg:flex-row items-center gap-x-5 py-10">
-            <section className="w-full lg:w-7/12 flex flex-col gap-y-5 mt-5 h-[400px]">
-              <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:p-8">
+          <section className="flex flex-col gap-y-7 lg:flex-row items-center lg:items-start gap-x-5 py-10">
+            <section className="w-full lg:w-7/12 flex flex-col gap-y-5  h-[400px]">
+              <div className="border-[1px] border-white-shade-4 p-5  rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:p-7 lg:py-6">
                 <div className="w-20 h-20 flex justify-center items-center rounded-full bg-[#C8C8C8]/20 ">
                   <svg
                     width="29"
@@ -47,7 +47,7 @@ const AboutCompany = () => {
                   community.
                 </p>
               </div>
-              <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:p-8">
+              <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:py-7">
                 <div className="w-20 h-20 flex justify-center items-center rounded-full bg-[#C8C8C8]/20 ">
                   <svg
                     width="43"
@@ -67,12 +67,12 @@ const AboutCompany = () => {
                   historical political events in Iran, so we have built a new
                   business and culture platform designed by regular Iranians
                   where no political, religious, or anti-religious ideology
-                  is promoted on our platform.
+                  ispromoted on our platform.
                 </p>
               </div>
             </section>
             <section
-              className="w-5/12 bg-no-repeat bg-center bg-cover h-[400px] rounded-3xl"
+              className="w-full mt-[210px] lg:mt-0 lg:w-5/12 bg-no-repeat bg-center bg-cover h-[400px] rounded-3xl lg:h-[395px]"
               style={{ backgroundImage: `url('/images/home/About.png')` }}
             ></section>
           </section>

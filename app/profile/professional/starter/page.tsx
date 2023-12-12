@@ -55,10 +55,7 @@ const page = () => {
           />
           <Gallery
           />
-          <Contacts
-            email={"unreal@outlook.com"}
-            call={"(603) 555-0123"}
-            web={"byjason.com"}
+          <Contacts desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum "}      
           />
         </section>
       </section>

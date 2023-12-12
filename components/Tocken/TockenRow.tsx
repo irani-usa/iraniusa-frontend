@@ -4,7 +4,7 @@ import { Bitcoin } from '../Icons/Coin'
 
 const TockenRow = () => {
     return (
-        <div className='grid grid-cols-6 text-white-shade-11 py-8'>
+        <div className='lg:grid grid-cols-6 text-white-shade-11 py-8 hidden'>
             <div className="w-full flex items-center gap-x-3">
                 11
             </div>
