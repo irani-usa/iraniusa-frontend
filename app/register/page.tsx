@@ -12,7 +12,7 @@ import Logo from "@/components/Logo";
 const page = () => {
   return (
     <>
-      <section className="container py-16 lg:flex justify-between">
+      <section className="container py-12 lg:flex justify-between h-screen">
         <section className="lg:w-[420px]">
           <div className="hidden lg:flex ">
             <Logo width={90} height={90} />
@@ -95,13 +95,12 @@ const page = () => {
           <h1 className="text-black font-opensans py-8 font-medium text-lg text-center">
             Do you have account?
             <Link href="/login" className="text-white-shade-8">
-              
               Login
             </Link>
           </h1>
         </section>
         <div
-          className="w-[580px] max-h-[100vh] bg-cover rounded-2xl hidden lg:flex"
+          className="w-[580px] h-full bg-cover rounded-2xl hidden lg:flex"
           style={{
             backgroundImage: `url('/images/auth/register-background.webp')`,
           }}
