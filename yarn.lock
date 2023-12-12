@@ -1086,6 +1086,11 @@
   resolved "https://registry.npmjs.org/@next/env/-/env-13.5.4-canary.2.tgz"
   integrity sha512-cmJsg8XC9P+asKaivlxrNiVXoo6TrG13mWhPxTV6/UdP6TzYth8nBknfcmD1iw+EpInJNJ2oV8R2a2nGVlDDGg==
 
+"@next/font@^13.4.3":
+  version "13.5.6"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.5.6.tgz#2659cfbd9298e21c4ff734bb863d139ef6971cb8"
+  integrity sha512-urmUq05uCVJsBqAAJEV+xK5OTTodrSxdiG+351SOSjlWctywdBM6qX+K9pIe3K48RxjfnxlBbXjGyOJAji+pfw==
+
 "@next/swc-darwin-arm64@13.5.4-canary.2":
   version "13.5.4-canary.2"
   resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.5.4-canary.2.tgz"
