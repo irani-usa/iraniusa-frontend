@@ -3,10 +3,10 @@
 import { usePathname } from 'next/navigation'
 
 import './globals.css'
+import localFont from '@next/font/local'
 
 import { Open_Sans } from 'next/font/google'
 import { Outfit } from 'next/font/google'
-import { Vazirmatn } from 'next/font/google'
 
 import HeaderBanner from '@/components/Layout/HeaderBanner'
 import Navigation from '@/components/Layout/Navigation'
@@ -22,8 +22,14 @@ const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-outfit',
 })
-const vazirmatn = Vazirmatn({
-  subsets: ['latin'],
+
+export const vazirmatn = localFont({
+  src: [
+    {
+      path: '../public/fonts/Vazirmatn-Bold.woff2',
+      weight: '200',
+    },
+  ],
   variable: '--font-vazirmatn',
 })
 
@@ -38,7 +44,7 @@ export default function RootLayout({
   if (pathname == '/login') {
     return (
       <html lang="en" className=''>
-        <body className={`${openSans.variable} ${outfit.variable} ${vazirmatn.variable}`}>
+        <body className={`${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
           {children}
         </body>
       </html>

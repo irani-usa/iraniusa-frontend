@@ -8,9 +8,7 @@
   --background-rgb: 256, 256, 256;
 }
 
-.font-vazir {
-  font-family: Vazirmatn, sans-serif;
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {

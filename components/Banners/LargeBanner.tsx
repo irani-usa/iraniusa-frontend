@@ -120,7 +120,7 @@ const LargeBanner = () => {
           />
         </svg>
         <div className="flex flex-col gap-y-3 text-center items-center text-white-shade-8">
-          <h4 className="font-vazirmatn text-3xl">کمک های دولتی دریافت کنید</h4>
+          <h4 className="text-3xl font-vazirmatn">کمک های دولتی دریافت کنید</h4>
           <p className="text-lg font-opensans">
             Medium constructions represent
             <br />
