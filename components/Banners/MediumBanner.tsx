@@ -124,7 +124,7 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
         />
       </svg>
       <div className="flex flex-col gap-y-3 text-center items-center text-white-shade-8">
-        <h4 className="text-xl font-vazirmatn">کمک های دولتی دریافت کنید</h4>
+        <h4 className="text-xl">کمک های دولتی دریافت کنید</h4>
         <p className="text-sm">
           Medium constructions represent innovativeconstruction services
         </p>
