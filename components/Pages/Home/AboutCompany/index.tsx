@@ -14,7 +14,7 @@ const AboutCompany = () => {
             </p>
           </div>
           <section className="flex flex-col gap-y-7 lg:flex-row items-center gap-x-5 py-10">
-            <section className="w-7/12 flex flex-col gap-y-5 mt-5 h-[400px]">
+            <section className="w-full lg:w-7/12 flex flex-col gap-y-5 mt-5 h-[400px]">
               <div className="border-[1px] border-white-shade-4 p-5 rounded-2xl flex flex-col items-start  gap-y-4 lg:flex-row lg:gap-x-5 lg:items-center lg:p-8">
                 <div className="w-20 h-20 flex justify-center items-center rounded-full bg-[#C8C8C8]/20 ">
                   <svg
@@ -62,7 +62,7 @@ const AboutCompany = () => {
                     />
                   </svg>
                 </div>
-                <p className="w-3/4 font-opensans text-white-shade-11 text-sm lg:text-base">
+                <p className="w-full lg:w-3/4 font-opensans text-white-shade-11 text-sm lg:text-base">
                   We are deeply conscious of ongoing political events as well as
                   historical political events in Iran, so we have built a new
                   business and culture platform designed by regular Iranians
