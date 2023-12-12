@@ -1,5 +1,6 @@
 import { Verified } from "@/components/Dashboard/Icons";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Card = () => {
@@ -20,8 +21,26 @@ const Card = () => {
           <span className="text-white-shade-8">Coffee shop</span>
         </div>
       </div>
-      <div className="w-full h-16 bg-[#F3F3F3] rounded-b-2xl -mt-6 -z-20">
-
+      <div className="w-full items-center flex justify-between px-6 gap-x-2 bg-[#F3F3F3] rounded-b-2xl -mt-6 -z-20">
+        <svg
+          width="58"
+          height="8"
+          viewBox="0 0 58 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 7.5L56.75 7.5L50.25 0.999998"
+            stroke="black"
+            stroke-linecap="round"
+          />
+        </svg>
+        <Link className="text-white bg-red font-outfit py-1 px-2 rounded-full" href="/">
+        View Profile
+        </Link>
+        <Link className="text-white bg-black font-outfit py-1 px-2 rounded-full" href="/">
+        View Profile
+        </Link>
       </div>
     </div>
   );
