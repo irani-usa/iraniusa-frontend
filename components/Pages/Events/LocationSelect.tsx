@@ -31,7 +31,7 @@ const LocationSelect = () => {
               : selected
             : `Los Angles`}
 
-          {selected ? <ArrowDown /> : <ArrowUp />}
+          {selected ? <ArrowUp />   : <ArrowDown />}
         </div>
         <ul
           className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
