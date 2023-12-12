@@ -20,7 +20,7 @@ export default function Home() {
       <StampBG />
       <LargeBannerList />
       <EventCalendar />
-      {/* <MediumBannerList/> */}
+      <MediumBannerList/>
       <ToursSearch />
       <NormalBannerList />
       <FinancialSummery />

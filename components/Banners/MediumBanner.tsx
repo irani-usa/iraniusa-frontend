@@ -13,7 +13,7 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
       className="flex flex-col items-center justify-center gap-y-5 w-full h-[400px] bg-cover bg-center rounded-2xl hover:cursor-pointer"
       style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
     >
-      <div className="absolute top-6 right-6 flex flex-col gap-y-6">
+      {/* <div className="absolute top-6 right-6 flex flex-col gap-y-6">
         <Link href={""}>
           <svg
             width="24"
@@ -86,7 +86,7 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
             </defs>
           </svg>
         </Link>
-      </div>
+      </div> */}
       <div className="flex">
         <div
           className="w-20 h-20 rounded-full bg-cover bg-center"
