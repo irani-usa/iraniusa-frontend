@@ -5,7 +5,7 @@ import Card from "./Card";
 
 const PopularWriters = () => {
   return (
-    <section className="container mb-64">
+    <section className="container mt-20">
       <div className="w-full flex flex-col items-center">
         <div className="w-full flex items-center justify-center gap-x-2">
           <div className="w-1/3 h-[1px] bg-white-shade-4"></div>
@@ -17,7 +17,7 @@ const PopularWriters = () => {
           to know them!
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-y-3 lg:grid-cols-4 my-10">
+      <div className="no-scroll overflow-x-scroll flex gap-x-5 gap-y-3 lg:grid-cols-4 my-10">
         <Card />
         <Card />
         <Card />

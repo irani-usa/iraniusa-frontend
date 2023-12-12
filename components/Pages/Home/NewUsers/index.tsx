@@ -6,7 +6,7 @@ import People from './People';
 
 const Monthlynewusers = () => {
   return (
-    <section className="container mb-64">
+    <section className="container mt-24 lg:mt-32">
       <div className="w-full flex flex-col items-center">
         <div className="w-full flex items-center justify-center gap-x-2">
           <div className="w-1/3 h-[1px] bg-white-shade-4"></div>

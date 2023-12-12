@@ -16,7 +16,7 @@ const FinancialSummery = () => {
   const { events } = useDraggable(ref);
 
   return (
-    <section className=" my-36">
+    <section className=" ">
       <div className="container flex flex-col gap-y-8 lg:flex-row justify-between w-full border-b-2 border-white-shade-2">
         <div className="order-2 lg:order-2 w-9/12 h-full flex flex-col items-start gap-y-4 pb-5">
           <Star />

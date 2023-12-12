@@ -5,7 +5,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="w-full h-18">
+    <div className="w-[70%] min-w-[70%]  lg:min-w-[25%] lg:w-full h-18">
       <div className="flex gap-x-5 w-full py-10 px-8 rounded-2xl bg-white border border-white-shade-4 z-20">
         <Image
           src={"/images/avatars/3.png"}
@@ -21,7 +21,7 @@ const Card = () => {
           <span className="text-white-shade-8">Coffee shop</span>
         </div>
       </div>
-      <div className="w-full items-center flex justify-between px-6 gap-x-2 bg-[#F3F3F3] rounded-b-2xl -mt-6 -z-20">
+      <div className="w-full items-center flex justify-between px-6 gap-x-2 bg-[#F3F3F3] rounded-b-2xl -mt-6 -z-20 py-2">
         <svg
           width="58"
           height="8"
