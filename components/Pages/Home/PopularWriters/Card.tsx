@@ -35,7 +35,7 @@ const Card = () => {
             stroke-linecap="round"
           />
         </svg>
-        <Link className="text-white bg-red font-outfit py-1 px-2 rounded-full" href="/">
+        <Link className="text-white bg-red font-outfit py-1 px-2 rounded-full " href="/">
         View Profile
         </Link>
         <Link className="text-white bg-black font-outfit py-1 px-2 rounded-full" href="/">
