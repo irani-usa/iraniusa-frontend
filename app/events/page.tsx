@@ -214,13 +214,27 @@ const page = () => {
             <CircleArrow />
           </h1>
         </div>
-        <div className="lg:pl-5">
+        <div className="lg:pl-5 w-full">
           <div className="flex justify-between items-center">
             <h1 className="text-black text-xl font-semibold">
               Popular seminars
             </h1>
             <div className=" items-center justify-center bg-white-shade-4 py-5 px-6 rounded-full hidden lg:flex">
-              <CircleArrow />
+              <svg
+                width="8"
+                height="15"
+                viewBox="0 0 8 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.39961 13.3333L6.59961 7.50001L1.39961 1.66668"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </div>
           <div className="flex overflow-x-scroll w-full no-scroll gap-x-5 mt-7 lg:mt-3">

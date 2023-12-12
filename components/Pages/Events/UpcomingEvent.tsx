@@ -1,34 +1,38 @@
+import Link from "next/link";
 import React from "react";
 
 interface UpcomingEventProps {
   buttonn: string;
   classes: string;
-  background:string,
-  date:string,
-  artist:string,
-  location:string,
-  hour:string,
+  background: string;
+  date: string;
+  artist: string;
+  location: string;
+  hour: string;
 }
 
 const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
   return (
-    <section className="w-full">
+    <section className="w-full group hover:cursor-pointer">
       <div className="flex gap-x-6 lg:items-center ">
-        <div className="hidden lg:flex flex-col items-center w-60">
-          <h1 className="text-white-shade-9 font-normal text-lg">Date</h1>
-          <h1 className="text-white-shade-9 font-medium text-3xl ">
-           {props.date}
+        <div className="hidden lg:flex flex-col items-center w-60 text-white-shade-9 duration-300 transition-all group-hover:text-black">
+          <h1 className="font-normal text-lg">Date</h1>
+          <h1 className="font-medium text-3xl ">
+            {props.date}
           </h1>
         </div>
-        <div className="w-[320px] h-[220px] rounded-2xl lg:rounded-2xl lg:h-40 lg:w-60 lg:ml-5 bg-cover"  style={{ backgroundImage:  `url(${props.background})` }}></div>
+        <div
+          className="w-[320px] h-[220px] rounded-2xl lg:rounded-2xl lg:h-40 lg:w-60 lg:ml-5 bg-cover"
+          style={{ backgroundImage: `url(${props.background})` }}
+        ></div>
 
         <div className="flex  gap-y-3 lg:flex-row lg:justify-between lg:items-center w-full">
           <div className="flex flex-col items-start gap-y-3">
-            <h3 className="flex items-center justify-center text-black font-opensans font-medium py-2 w-28 border-[1px] border-white-shade-4 rounded-full">
+            <span className="flex items-center justify-center text-black font-opensans font-medium py-2 w-28 border-[1px] border-white-shade-4 transition-all duration-300 group-hover:border-black rounded-full">
               Concerts
-            </h3>
+            </span>
             <h1 className="text-black font-outfit font-semibold text-xl">
-           {props.artist}
+              {props.artist}
             </h1>
             <div className="flex flex-col gap-y-3 lg:flex-row lg:gap-x-4 lg:pt-3">
               <h1 className="text-white-shade-9 flex items-center font-opensans gap-x-2">
@@ -46,7 +50,7 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
                     fill="#A6A6A6"
                   />
                 </svg>
-               {props.location}
+                {props.location}
               </h1>
               <h1 className="text-white-shade-9 flex items-center font-opensans gap-x-2">
                 <svg
@@ -108,11 +112,12 @@ const UpcomingEvent: React.FC<UpcomingEventProps> = (props) => {
               </h1>
             </div>
           </div>
-          <h1
-            className={`${props.classes} w-36 h-12 text-center text-lg text-[#F10000] font-semibold hidden lg:flex items-center justify-center`}
+          <Link
+            href="/"
+            className={`${props.classes} group-hover:bg-black group-hover:text-white duration-300 transition-all w-36 h-12 text-center text-lg text-[#F10000] font-semibold hidden lg:flex items-center justify-center`}
           >
             {props.buttonn}
-          </h1>
+          </Link>
         </div>
       </div>
 
