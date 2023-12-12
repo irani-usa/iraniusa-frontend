@@ -1,7 +1,6 @@
 import React from "react";
 
-import {Button,Input} from "@/components/Forms/index";
-
+import { Button, Input } from "@/components/Forms/index";
 
 import { Dots, Email, Password } from "@/components/Icons/Outline/";
 import { Google, Facebook2, Apple } from "@/components/Icons/Solid/";
@@ -12,13 +11,13 @@ import Logo from "@/components/Logo";
 const page = () => {
   return (
     <>
-      <section className="container py-16 lg:flex justify-between">
+      <section className="container py-12 lg:flex justify-between h-screen">
         <section className="lg:w-[420px]">
           <div className="hidden lg:flex">
             <Logo width={90} height={90} />
           </div>
-          <h1 className="text-black text-2xl font-semibold font-outfit mt-12">
-            Welcome back 👋🏻{" "}
+          <h1 className="text-black text-2xl font-medium font-outfit mt-12">
+            Welcome back 👋🏻
           </h1>
           <h2 className="text-white-shade-8  text-lg py-2 font-opensans">
             Enter your details
@@ -98,11 +97,22 @@ const page = () => {
           </h1>
         </section>
         <div
-          className="w-[580px] max-h-[100vh] bg-cover rounded-3xl hidden lg:flex"
+          className="w-2/4 h-full p-8 bg-cover rounded-3xl hidden lg:flex items-end"
           style={{
             backgroundImage: `url('/images/auth/login-background.webp')`,
           }}
-        ></div>
+        >
+          <div className="flex flex-col gap-y-4 mb-2">
+            <span className="inline-flex justify-center items-center w-72 h-20 font-outfit font-medium text-xl  rounded-full bg-white/10 backdrop-blur-xl">
+              Do games pay streamers?
+            </span>
+            <p className="text-xl text-[#C6C6C6]">
+              Successful streamers can make $3,000 to $5,000 per month from
+              their subscribers, with the top broadcasters earning substantially
+              more.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
