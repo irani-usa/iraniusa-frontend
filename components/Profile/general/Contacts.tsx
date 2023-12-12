@@ -10,7 +10,7 @@ interface ContactsProps {
 const Contacts: React.FC<ContactsProps> = (props) =>  {
   return (
     <section className="py-9 border-b border-white-shade-4">
-      <div className="container flex flex-col  gap-y-5 lg:pl-5">
+      <div className="container flex flex-col  gap-y-5 lg:pl-5 lg:py-11 lg:pb-14">
         <h1 className="text-[26px] font-outfit font-bold text-black text-center">
           Contact
         </h1>
