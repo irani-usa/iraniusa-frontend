@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Button,Input} from "@/components/Forms/index";
+import { Button, Input } from "@/components/Forms/index";
 
 import { Email, Password } from "@/components/Icons/Outline/";
 
@@ -10,7 +10,7 @@ import Logo from "@/components/Logo";
 const page = () => {
   return (
     <>
-      <section className="container py-12 lg:flex justify-between ">
+      <section className="container py-12 lg:flex justify-between h-screen">
         <div className="flex flex-col gap-y-20">
           <div className="hidden lg:flex ">
             <Logo width={90} height={90} />
@@ -47,13 +47,19 @@ const page = () => {
             </Link>
           </section>
         </div>
-
         <div
-          className="w-2/4 max-h-[100vh] bg-cover rounded-3xl hidden lg:flex"
+          className="w-2/4 h-full p-8 bg-cover rounded-3xl hidden lg:flex items-end"
           style={{
-            backgroundImage: `url('/images/auth/forget-background.webp')`,
+            backgroundImage: `url('/images/auth/forget-background.jpg')`,
           }}
-        ></div>
+        >
+          <div className="flex flex-col gap-y-4 mb-2">
+            <span className="inline-flex justify-center items-center w-72 h-20 font-outfit font-medium text-xl  rounded-full bg-white/10 backdrop-blur-xl">Do games pay streamers?</span>
+            <p className="text-xl text-[#C6C6C6]">
+            Successful streamers can make $3,000 to $5,000 per month from their subscribers, with the top broadcasters earning substantially more.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
