@@ -7,11 +7,11 @@ const LargeBanner = () => {
   return (
     <Link
       href={"/"}
-      className="flex p-10 gap-x-3 w-full h-[500px] text-white bg-cover bg-center rounded-3xl hover:cursor-pointer"
+      className="flex flex-col lg:flex-row p-10 gap-x-3 gap-y-6 w-full h-[500px] text-white bg-cover bg-center rounded-3xl hover:cursor-pointer"
       style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
     >
-      <div className="flex flex-col justify-between w-1/4 h-full">
-        <div>
+      <div className="lg:order-1 order-2 flex flex-col justify-between w-full lg:w-1/4 h-full">
+        <div className="hidden lg:block">
           <span className="txert-white font-outfit text-xl font-medium">
             Blog Level
           </span>
@@ -82,7 +82,7 @@ const LargeBanner = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center w-2/4 h-full gap-y-5">
+      <div className="lg:order-2 order-1 flex flex-col items-center w-full lg:w-2/4 h-full gap-y-5">
         <div className="flex">
           <div
             className="w-16 h-16 rounded-full bg-cover bg-center"
@@ -128,7 +128,7 @@ const LargeBanner = () => {
           </p>
         </div>
       </div>
-      <div className="w-1/4 h-full flex flex-col justify-between">
+      <div className="lg:order-3 w-full lg:w-1/4 h-full flex flex-col justify-between">
        
       </div>
     </Link>

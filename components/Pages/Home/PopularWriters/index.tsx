@@ -17,7 +17,10 @@ const PopularWriters = () => {
           to know them!
         </p>
       </div>
-      <div className="grid grid-cols-4 my-10">
+      <div className="grid grid-cols-1 gap-y-3 lg:grid-cols-4 my-10">
+        <Card />
+        <Card />
+        <Card />
         <Card />
       </div>
     </section>

@@ -15,8 +15,8 @@ const EventCalendar = () => {
           A calendar of events and concerts from all around the US
         </p>
       </div>
-      <div className="w-full flex gap-x-4 mt-16">
-        <div className="w-2/3 flex flex-col items-center">
+      <div className="w-full flex flex-col gap-y-6 lg:flex-row gap-x-4 mt-16">
+        <div className="w-full lg:w-2/3 flex flex-col items-center">
           <div
             className="w-full h-80 rounded-3xl bg-center bg-cover"
             style={{
@@ -85,7 +85,7 @@ const EventCalendar = () => {
             </Link>
           </div>
         </div>
-        <div className="w-1/3 h-96 rounded-3xl border border-white-shade-4"></div>
+        <div className="w-full lg:w-1/3 h-96 rounded-3xl border border-white-shade-4"></div>
       </div>
     </section>
   );
