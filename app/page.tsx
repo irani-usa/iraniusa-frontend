@@ -11,6 +11,7 @@ import NormalBannerList from "@/components/Pages/Home/NormalBannerList";
 import EventCalendar from "@/components/Pages/Home/EventCalendar";
 import PopularWriters from "@/components/Pages/Home/PopularWriters";
 import MediumBannerList from "@/components/Pages/Home/MediumBannerList";
+import Monthlynewusers from "@/components/Pages/Home/NewUsers";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <FinancialSummery />
       <SmallBannerList />
       <PopularWriters/>
+      <Monthlynewusers />
       <PlanInfo />
       <AboutCompany />
     </>
