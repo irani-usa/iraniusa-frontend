@@ -5,7 +5,7 @@ import { Currency, Sort } from '../Icons/Outline'
 
 const TockenHead = () => {
     return (
-        <div className='grid grid-cols-6 text-white-shade-11 py-6 border-b border-white-shade-4'>
+        <div className='lg:grid grid-cols-6 text-white-shade-11 py-6 border-b border-white-shade-4 hidden'>
             <div className="w-full flex items-center gap-x-3">
                 #
                 <Sort />

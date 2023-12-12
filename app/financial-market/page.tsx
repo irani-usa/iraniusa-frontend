@@ -170,6 +170,58 @@ const page = () => {
             <Table />
           </div>
         </div>
+        <div className="container hidden lg:flex">
+          <div className="w-full flex flex-col">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-2xl">
+              Precious Metals
+              </h1>
+              <span className="font-opensans text-white-shade-11 font-medium">
+                See all
+              </span>
+            </div>
+            <Table />
+          </div>
+        </div>
+        <div className="container hidden lg:flex">
+          <div className="w-full flex flex-col">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-2xl">
+              Commodities
+              </h1>
+              <span className="font-opensans text-white-shade-11 font-medium">
+                See all
+              </span>
+            </div>
+            <Table />
+          </div>
+        </div>
+        <div className="container hidden lg:flex">
+          <div className="w-full flex flex-col">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-2xl">
+              Fiat Currency
+              </h1>
+              <span className="font-opensans text-white-shade-11 font-medium">
+                See all
+              </span>
+            </div>
+            <Table />
+          </div>
+        </div>
+        <div className="container hidden lg:flex">
+          <div className="w-full flex flex-col">
+            <div className="flex items-center justify-between py-7">
+              <h1 className="font-outfit text-black font-semibold text-2xl">
+              Stock Market
+              </h1>
+              <span className="font-opensans text-white-shade-11 font-medium">
+                See all
+              </span>
+            </div>
+            <Table />
+          </div>
+        </div>
       </section>
     </>
   );

@@ -10,10 +10,10 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
   return (
     <Link
       href={"/"}
-      className="flex flex-col items-center justify-center gap-y-5 w-full h-[400px] bg-cover bg-center rounded-2xl hover:cursor-pointer"
+      className="relative flex flex-col items-center justify-center gap-y-5 w-full h-auto py-9 bg-cover bg-center rounded-3xl hover:cursor-pointer"
       style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
     >
-      {/* <div className="absolute top-6 right-6 flex flex-col gap-y-6">
+      <div className="absolute top-4 right-5 flex flex-col gap-y-4">
         <Link href={""}>
           <svg
             width="24"
@@ -86,25 +86,25 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
             </defs>
           </svg>
         </Link>
-      </div> */}
+      </div>
       <div className="flex">
         <div
-          className="w-20 h-20 rounded-full bg-cover bg-center"
+          className="w-14 h-14 lg:w-20 lg:h-20 rounded-full bg-cover bg-center"
           style={{ backgroundImage: `url('/images/avatars/1.png')` }}
         ></div>
         <div
-          className="w-20 h-20 -ml-6 rounded-full bg-cover bg-center"
+          className="w-14 h-14 lg:w-20 lg:h-20 -ml-6 rounded-full bg-cover bg-center"
           style={{ backgroundImage: `url('/images/avatars/2.png')` }}
         ></div>
       </div>
       <div className="flex flex-col gap-y-2 justify-center">
-        <h3 className="flex items-center text-white font-opensans font-medium text-2xl text-center">
+        <h3 className=" flex items-center text-white font-opensans font-medium lg:text-2xl text-center">
           {props.name}
           <Verified />
         </h3>
       </div>
-      <svg
-        width="298"
+      <svg className="-mt-2"
+        width="240"
         height="12"
         viewBox="0 0 298 12"
         fill="none"
@@ -123,13 +123,13 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
           fill="white"
         />
       </svg>
-      <div className="flex flex-col gap-y-3 text-center items-center text-white-shade-8">
-        <h4 className="text-xl">کمک های دولتی دریافت کنید</h4>
-        <p className="text-sm">
+      <div className="flex flex-col gap-y-3 text-center items-center text-white-shade-8 -mt-3">
+        <h4 className="text-xl lg:text-2xl">کمک های دولتی دریافت کنید</h4>
+        <p >
           Medium constructions represent innovativeconstruction services
         </p>
-        <div className="flex gap-x-3 items-center text-white font-opensans">
-          <div className="flex items-center">
+        <div className="flex flex-col gap-y-3 items-center text-white font-opensans mt-2 lg:flex-row gap-x-5">
+          <div className="flex items-center gap-x-3">
             <svg
               width="23"
               height="23"
@@ -146,7 +146,7 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
             </svg>
             <span>(208) 555-0112</span>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center gap-x-3">
             <svg
               width="23"
               height="23"
