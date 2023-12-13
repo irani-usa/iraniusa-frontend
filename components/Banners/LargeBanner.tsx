@@ -10,7 +10,7 @@ const LargeBanner = () => {
       className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-x-3 gap-y-6 w-full h-auto text-white bg-cover bg-center rounded-3xl hover:cursor-pointer px-6 py-7"
       style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
     >
-      <div className="flex-col justify-between hidden h-[350px]  lg:flex">
+      <div className="flex-col justify-between hidden h-[370px]  lg:flex">
         <div className="hidden lg:block">
           <span className="txert-white font-outfit text-xl font-medium">
             Blog Level
@@ -143,7 +143,7 @@ const LargeBanner = () => {
 
       </div>
      </div>
-     <div className="flex items-end gap-4 py-5 lg:hidden">
+     <div className="flex items-end gap-4 py-7 lg:hidden">
       <div className="flex flex-col gap-2 px-5 rounded-2xl py-3 bg-white/25 backdrop-blur-lg">
         <h1 className="text-[16px]">monthly page visit</h1>
         <span className="text-2xl font-semibold">234K</span>
@@ -233,7 +233,7 @@ const LargeBanner = () => {
           </div>
         </div>
       </div>
-      <div className="flex-col items-end justify-between h-[350px] hidden lg:flex">
+      <div className="flex-col items-end justify-between h-[370px] hidden lg:flex">
       <div className="flex  items-center gap-6 ">
       <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16.4009 8.03292C16.1317 3.44126 11.9596 -0.0974845 7.15419 0.694182C3.84502 1.24043 1.19294 3.92417 0.678362 7.23333C0.377528 9.14917 0.773379 10.9621 1.6363 12.4583L0.931701 15.0788C0.773367 15.6725 1.3196 16.2108 1.90544 16.0446L4.48628 15.3321C5.65794 16.0208 7.02752 16.4167 8.49211 16.4167C12.9571 16.4167 16.6621 12.4821 16.4009 8.03292ZM12.3634 11.445C12.2921 11.5875 12.205 11.7221 12.0942 11.8488C11.8963 12.0625 11.6825 12.2208 11.445 12.3158C11.2075 12.4188 10.9463 12.4663 10.6692 12.4663C10.2654 12.4663 9.83002 12.3713 9.37877 12.1733C8.9196 11.9754 8.46838 11.7142 8.01713 11.3896C7.55796 11.0571 7.13045 10.685 6.71878 10.2813C6.30712 9.86959 5.94293 9.43416 5.61043 8.98291C5.28585 8.53166 5.02461 8.08042 4.83461 7.62917C4.64461 7.17792 4.54962 6.74251 4.54962 6.33085C4.54962 6.06168 4.59712 5.80043 4.69212 5.56293C4.78712 5.31751 4.93755 5.09585 5.1513 4.89793C5.40463 4.6446 5.6817 4.52585 5.97461 4.52585C6.08545 4.52585 6.19626 4.54959 6.29918 4.59709C6.40209 4.64459 6.49711 4.71584 6.56836 4.81876L7.48668 6.11708C7.55793 6.22 7.61335 6.30708 7.64502 6.39417C7.6846 6.48125 7.70044 6.56042 7.70044 6.63958C7.70044 6.73458 7.66879 6.8296 7.61337 6.9246C7.55795 7.0196 7.48668 7.11458 7.39168 7.20958L7.09084 7.52625C7.04334 7.57375 7.02754 7.62126 7.02754 7.68459C7.02754 7.71626 7.03543 7.74792 7.04334 7.77958C7.05918 7.81125 7.06713 7.83501 7.07504 7.85876C7.14629 7.99334 7.27294 8.15958 7.4471 8.36541C7.62919 8.57124 7.81922 8.785 8.02505 8.99083C8.2388 9.20458 8.44463 9.39458 8.65838 9.57666C8.86421 9.75083 9.03835 9.86959 9.17293 9.94084C9.19668 9.94876 9.22045 9.96458 9.2442 9.97249C9.27587 9.98833 9.30754 9.98834 9.34712 9.98834C9.41837 9.98834 9.46589 9.96459 9.51339 9.91709L9.81418 9.61626C9.91709 9.51334 10.0121 9.44209 10.0992 9.39459C10.1942 9.33918 10.2813 9.3075 10.3842 9.3075C10.4634 9.3075 10.5425 9.32333 10.6296 9.36292C10.7167 9.4025 10.8117 9.45001 10.9067 9.52126L12.2209 10.4554C12.3238 10.5267 12.395 10.6138 12.4425 10.7088C12.4821 10.8117 12.5059 10.9067 12.5059 11.0175C12.4584 11.1521 12.4267 11.3025 12.3634 11.445Z" fill="white"/>
@@ -246,7 +246,7 @@ const LargeBanner = () => {
 </svg>
 
       </div>
-      <div className="lg:w-[180px] flex flex-col gap-2 px-5 rounded-2xl py-3 lg:py-4 bg-white/25 backdrop-blur-lg lg:items-center lg:gap-3">
+      <div className="lg:w-[180px] flex flex-col gap-2 px-5 rounded-2xl py-3 lg:py-4 bg-white/20 backdrop-blur-lg lg:items-center lg:gap-3">
         <h1 className="text-[16px] ">monthly page visit</h1>
         <span className="text-2xl font-semibold lg:text-5xl">234K</span>
         <span className="flex items-center gap-1"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
