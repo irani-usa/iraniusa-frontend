@@ -1,6 +1,8 @@
 import React from "react";
 import Star from "../../About/Star";
 import Link from "next/link";
+import { CalHeader } from "./CalHeader";
+import { CalRow } from "./CalRow";
 
 const EventCalendar = () => {
   return (
@@ -85,7 +87,28 @@ const EventCalendar = () => {
             </Link>
           </div>
         </div>
-        <div className="w-full lg:w-1/3 h-96 rounded-3xl border border-white-shade-4"></div>
+        <div className="w-full lg:w-1/3  h-auto rounded-3xl border border-white-shade-4">
+          <div className="w-full py-4 border-b border-white-shade-4">
+            <div className="flex items-center justify-center gap-x-[85px]">
+              <svg className="cursor-pointer" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 13.5L1 7.5L7 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span className="text-white-shade-10 font-medium text-xl">Month year</span>
+              <svg  className="cursor-pointer" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13.5L7 7.5L1 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </div>
+          </div>
+         <div className="flex flex-col  py-4 ">
+       <div className="px-10">
+       <CalHeader />
+       </div>
+        <div className="px-9">
+        <CalRow />
+        </div>
+         </div>
+        </div>
       </div>
     </section>
   );

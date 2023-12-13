@@ -76,7 +76,7 @@ const page = () => {
             <Financial
               content={"Total shares"}
               content2={"Total return"}
-              classes={"bg-blue lg:w-[300px] "}
+              classes={"bg-blue lg:w-[300px] text-white "}
               title={"Apple"}
               price={"$310,40"}
               found={"-1,10%"}

@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  text-rendering: geometricPrecision;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 256, 256, 256;
