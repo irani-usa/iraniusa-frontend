@@ -63,7 +63,7 @@ const Table = () => {
           iconComp={<Btc />}
         />
         <Cardchart
-          name={"Ethereum"}
+          name={"Etheum"}
           sfname={"Eth"}
           price={"36,641.20"}
           hours={"+6.04%"}

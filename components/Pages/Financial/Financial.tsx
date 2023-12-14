@@ -17,7 +17,7 @@ const Financial: React.FC<FinancialProps> = (props) => {
   return (
     <>
       <section className="relative">
-        <section className={`${props.classes}bg-blue flex flex-col h-auto w-full p-4 my-5 rounded-3xl gap-y-4 `}>
+        <section className={`${props.classes} text-white flex flex-col h-auto w-full p-4 my-5 rounded-3xl gap-y-4 `}>
           <div className="flex justify-between gap-x-12 items-center">
             <div className="flex items-center gap-x-3">
               <div className={`${props.frame} bg-white p-3 rounded-full`}>
