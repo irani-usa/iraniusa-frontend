@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 
 import './globals.css'
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 
 import { Open_Sans } from 'next/font/google'
 import { Outfit } from 'next/font/google'
@@ -106,7 +106,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className=''>
-      <body className={`${openSans.variable} ${outfit.variable}`}>
+      <body className={`${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
         <MenuProvider>
           <HeaderBanner />
           <Navigation />
