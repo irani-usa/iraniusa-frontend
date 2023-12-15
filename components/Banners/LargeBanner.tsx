@@ -7,10 +7,10 @@ const LargeBanner = () => {
   return (
     <Link
       href={"/"}
-      className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-x-3 gap-y-6 w-full h-auto text-white bg-cover bg-center rounded-3xl hover:cursor-pointer px-8 py-16"
+      className="flex flex-col lg:flex-row lg:justify-between items-center gap-x-3 gap-y-6 w-full h-auto lg:h-[470px] text-white bg-cover bg-center  rounded-3xl hover:cursor-pointer px-8 py-16"
       style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
     >
-      <div className="flex-col justify-between hidden h-[370px]  lg:flex">
+      <div className="flex-col items-start justify-between hidden h-[370px]  lg:flex">
         <div className="hidden lg:block">
           <span className="txert-white font-outfit text-xl font-medium">
             Blog Level
@@ -28,8 +28,8 @@ const LargeBanner = () => {
             Active
           </span>
         </div>
-        <div className="flex flex-col gap-y-3">
-          <div className="flex items-center gap-x-3 font-opensans font-medium text-lg">
+        <div className="flex flex-col gap-y-3 ">
+          <div className="flex items-center gap-x-3 font-opensans font-medium text-lg lg:text-xl">
             <svg
               width="22"
               height="18"
@@ -46,7 +46,7 @@ const LargeBanner = () => {
             </svg>
             georgia.young@gmail.com
           </div>
-          <div className="flex items-center gap-x-3 font-opensans font-medium text-lg">
+          <div className="flex items-center gap-x-3 font-opensans font-medium text-lg lg:text-xl">
             <svg
               width="18"
               height="22"
@@ -63,7 +63,7 @@ const LargeBanner = () => {
             </svg>
             3517 W. Gray St. Utica
           </div>
-          <div className="flex items-center gap-x-3 font-opensans font-medium text-lg">
+          <div className="flex items-center gap-x-3 font-opensans font-medium text-lg lg:text-xl">
             <svg
               width="18"
               height="18"
@@ -95,8 +95,8 @@ const LargeBanner = () => {
             style={{ backgroundImage: `url('/images/avatars/2.png')` }}
           ></div>
         </div>
-        <div className="flex flex-col gap-y-2 justify-center">
-          <h3 className="flex items-center text-white font-opensans text-lg font-medium lg:text-2xl text-center">
+        <div className="flex items-center flex-col gap-y-2 justify-center">
+          <h3 className="flex items-center text-white font-opensans text-lg font-medium lg:text-3xl text-center">
             Supplemental income
             <Verified />
           </h3>
@@ -123,9 +123,9 @@ const LargeBanner = () => {
         </svg>
         <div className="flex flex-col gap-y-3 text-center items-center text-white-shade-8">
           <h4 className="text-xl lg:text-3xl font-vazirmatn">کمک های دولتی دریافت کنید</h4>
-          <p className="lg:text-lg font-opensans">
+          <p className=" font-opensans">
             Medium constructions represent
-            <br />
+            
             innovativeconstruction services
           </p>
         </div>
@@ -161,7 +161,7 @@ const LargeBanner = () => {
       </span>
       </div>
      </div>
-      <div className=" flex flex-col justify-between w-full lg:w-1/4 h-full  lg:hidden">
+      <div className=" flex flex-col items-center  justify-between w-full lg:w-1/4 h-full  lg:hidden">
         <div className="hidden lg:block">
           <span className="txert-white font-outfit text-xl font-medium">
             Blog Level
@@ -246,7 +246,8 @@ const LargeBanner = () => {
 </svg>
 
       </div>
-      <div className="lg:w-[180px] flex flex-col gap-2 px-5 rounded-2xl py-3 lg:py-4 bg-white/20 backdrop-blur-lg lg:items-center lg:gap-3">
+      <div className="lg:w-[180px] flex flex-col gap-2 px-5 rounded-2xl py-3 lg:py-4
+       bg-white/10 backdrop-blur-2xl lg:items-center lg:gap-3">
         <h1 className="text-[16px] ">monthly page visit</h1>
         <span className="text-2xl font-semibold lg:text-5xl">234K</span>
         <span className="flex items-center gap-1"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,7 +255,7 @@ const LargeBanner = () => {
 </svg>3.4k
 </span>
       </div>
-      <div className="flex flex-col gap-3 lg:flex-row">
+      <div className="flex  flex-col gap-3 lg:flex-row">
       <span className="bg-white text-black flex items-center justify-center rounded-full w-[75px]  py-2 font-medium ">
       Cafés
       </span>
