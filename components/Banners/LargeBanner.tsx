@@ -7,7 +7,7 @@ const LargeBanner = () => {
   return (
     <Link
       href={"/"}
-      className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-x-3 gap-y-6 w-full h-auto text-white bg-cover bg-center rounded-3xl hover:cursor-pointer px-6 py-7"
+      className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-x-3 gap-y-6 w-full h-auto text-white bg-cover bg-center rounded-3xl hover:cursor-pointer px-8 py-16"
       style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
     >
       <div className="flex-col justify-between hidden h-[370px]  lg:flex">

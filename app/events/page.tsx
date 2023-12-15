@@ -7,8 +7,10 @@ import {
   UpcomingEvent,
   PopularConcert,
 } from "@/components/Pages/Events/index";
-import { Button } from "@/components/Forms";
+
 import Link from "next/link";
+import EventFilter from "@/components/Pages/Events/EventFilter";
+import CircleArrow from "@/components/Icons/Outline/CircleArrow";
 
 const page = () => {
   return (
@@ -125,8 +127,8 @@ const page = () => {
           </svg>
         </div>
       </section>
-      <section className="container">
-
+      <section className="flex justify-center container">
+        <EventFilter />
       </section>
       <div className="container">
         <section
@@ -196,68 +198,23 @@ const page = () => {
           >
             <line y1="0.5" x2="300" y2="0.5" stroke="#E6E6E6" />
           </svg>
-          <h1 className="text-white-shade-9 py-5 pl-6 font-opensans text-base flex  items-center pr-3 justify-between">
+          <h1 className="text-white-shade-9 hover:cursor-pointer hover:bg-red hover:text-white transition-all duration-300 py-5 pl-6 font-opensans text-base flex  items-center pr-3 justify-between">
             Concerts
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.99935 18.9583C5.05768 18.9583 1.04102 14.9417 1.04102 9.99999C1.04102 5.05832 5.05768 1.04166 9.99935 1.04166C14.941 1.04166 18.9577 5.05832 18.9577 9.99999C18.9577 14.9417 14.941 18.9583 9.99935 18.9583ZM9.99935 2.29166C5.74935 2.29166 2.29102 5.74999 2.29102 9.99999C2.29102 14.25 5.74935 17.7083 9.99935 17.7083C14.2493 17.7083 17.7077 14.25 17.7077 9.99999C17.7077 5.74999 14.2493 2.29166 9.99935 2.29166Z"
-                fill="#A6A6A6"
-              />
-              <path
-                d="M8.94909 13.5667C8.79075 13.5667 8.63242 13.5083 8.50742 13.3833C8.26576 13.1417 8.26576 12.7417 8.50742 12.5L11.0074 10L8.50742 7.50001C8.26576 7.25834 8.26576 6.85834 8.50742 6.61667C8.74909 6.37501 9.14909 6.37501 9.39076 6.61667L12.3324 9.55834C12.5741 9.80001 12.5741 10.2 12.3324 10.4417L9.39076 13.3833C9.26576 13.5083 9.10742 13.5667 8.94909 13.5667Z"
-                fill="#A6A6A6"
-              />
-            </svg>
+            <CircleArrow />
           </h1>
-          <h1 className="text-white-shade-9 py-5 pl-6 flex  items-center justify-between pr-3 font-opensans text-base">
+          <h1 className="text-white-shade-9 hover:cursor-pointer hover:bg-red hover:text-white transition-all duration-300 py-5 pl-6 font-opensans text-base flex  items-center pr-3 justify-between">
             Conference
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.99935 18.9583C5.05768 18.9583 1.04102 14.9417 1.04102 9.99999C1.04102 5.05832 5.05768 1.04166 9.99935 1.04166C14.941 1.04166 18.9577 5.05832 18.9577 9.99999C18.9577 14.9417 14.941 18.9583 9.99935 18.9583ZM9.99935 2.29166C5.74935 2.29166 2.29102 5.74999 2.29102 9.99999C2.29102 14.25 5.74935 17.7083 9.99935 17.7083C14.2493 17.7083 17.7077 14.25 17.7077 9.99999C17.7077 5.74999 14.2493 2.29166 9.99935 2.29166Z"
-                fill="#A6A6A6"
-              />
-              <path
-                d="M8.94909 13.5667C8.79075 13.5667 8.63242 13.5083 8.50742 13.3833C8.26576 13.1417 8.26576 12.7417 8.50742 12.5L11.0074 10L8.50742 7.50001C8.26576 7.25834 8.26576 6.85834 8.50742 6.61667C8.74909 6.37501 9.14909 6.37501 9.39076 6.61667L12.3324 9.55834C12.5741 9.80001 12.5741 10.2 12.3324 10.4417L9.39076 13.3833C9.26576 13.5083 9.10742 13.5667 8.94909 13.5667Z"
-                fill="#A6A6A6"
-              />
-            </svg>
+            <CircleArrow />
           </h1>
           <h1 className="text-white bg-red  py-5 pl-6   font-opensans text-base">
             seminar
           </h1>
-          <h1 className="text-white-shade-9 py-5 pl-6 flex  items-center justify-between font-opensans text-base pr-3">
+          <h1 className="text-white-shade-9 hover:cursor-pointer hover:bg-red hover:text-white transition-all duration-300 py-5 pl-6 font-opensans text-base flex  items-center pr-3 justify-between">
             exhibition
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.99935 18.9583C5.05768 18.9583 1.04102 14.9417 1.04102 9.99999C1.04102 5.05832 5.05768 1.04166 9.99935 1.04166C14.941 1.04166 18.9577 5.05832 18.9577 9.99999C18.9577 14.9417 14.941 18.9583 9.99935 18.9583ZM9.99935 2.29166C5.74935 2.29166 2.29102 5.74999 2.29102 9.99999C2.29102 14.25 5.74935 17.7083 9.99935 17.7083C14.2493 17.7083 17.7077 14.25 17.7077 9.99999C17.7077 5.74999 14.2493 2.29166 9.99935 2.29166Z"
-                fill="#A6A6A6"
-              />
-              <path
-                d="M8.94909 13.5667C8.79075 13.5667 8.63242 13.5083 8.50742 13.3833C8.26576 13.1417 8.26576 12.7417 8.50742 12.5L11.0074 10L8.50742 7.50001C8.26576 7.25834 8.26576 6.85834 8.50742 6.61667C8.74909 6.37501 9.14909 6.37501 9.39076 6.61667L12.3324 9.55834C12.5741 9.80001 12.5741 10.2 12.3324 10.4417L9.39076 13.3833C9.26576 13.5083 9.10742 13.5667 8.94909 13.5667Z"
-                fill="#A6A6A6"
-              />
-            </svg>
+            <CircleArrow />
           </h1>
         </div>
-        <div className="lg:pl-5">
+        <div className="lg:pl-5 w-full">
           <div className="flex justify-between items-center">
             <h1 className="text-black text-xl font-semibold">
               Popular seminars
@@ -265,17 +222,17 @@ const page = () => {
             <div className=" items-center justify-center bg-white-shade-4 py-5 px-6 rounded-full hidden lg:flex">
               <svg
                 width="8"
-                height="14"
-                viewBox="0 0 8 14"
+                height="15"
+                viewBox="0 0 8 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                  d="M1.39961 13.3333L6.59961 7.50001L1.39961 1.66668"
                   stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </div>
@@ -340,8 +297,7 @@ const page = () => {
         </div>
       </section>
       <section className="container">
-        <hr className=" w-full h-[1.5px] bg-white-shade-4 hidden lg:flex" />
-        <h1 className="text-black text-xl font-semibold py-4 lg:py-7">
+        <h1 className="text-black text-xl font-semibold py-4 lg:py-12">
           Upcoming events
         </h1>
         <hr className=" w-full h-[1.5px] bg-white-shade-4  hidden lg:flex" />

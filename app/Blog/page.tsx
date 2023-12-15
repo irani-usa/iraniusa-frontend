@@ -22,15 +22,32 @@ const page = () => {
       <OverlayMenu />
       <section>
         <div className="container py-10 flex flex-col items-center gap-y-5 bg-white-shade-2">
-          <Separator />
-          <div className="py-10 w-full bg-white-shade-6 rounded-xl "></div>
+          <Separator classes={""} />
+          <div className="py-14 w-1/2 bg-white-shade-3 rounded-2xl">
+
+          </div>
         </div>
         <div className="container flex flex-col gap-y-6 py-14">
-          <h1 className="text-black text-xl font-semibold font-outfit">
+          <h1 className="text-black text-2xl font-medium font-outfit">
             Most popular users/companies
           </h1>
           <div className="no-scroll flex items-center gap-x-5 w-full overflow-x-scroll">
             <PopularUser
+              name={"Darkcafé"}
+              job={"Coffee shop"}
+              avatar={"/images/blog/User.webp"}
+            />
+             <PopularUser
+              name={"Darkcafé"}
+              job={"Coffee shop"}
+              avatar={"/images/blog/User.webp"}
+            />
+             <PopularUser
+              name={"Darkcafé"}
+              job={"Coffee shop"}
+              avatar={"/images/blog/User.webp"}
+            />
+             <PopularUser
               name={"Darkcafé"}
               job={"Coffee shop"}
               avatar={"/images/blog/User.webp"}

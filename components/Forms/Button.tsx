@@ -1,5 +1,4 @@
 
-import React from 'react'
 
 interface ButtonProps {
     content:string,
@@ -8,7 +7,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = (props) => {
   return (
-    <button className={`${props.classes} font-opensans  text-white text-lg font-medium rounded-2xl w-full text-center `}>{props.content}</button>
+    <button className={`${props.classes} font-opensans  text-white text-lg font-medium rounded-2xl w-full text-center border-2 border-black hover:bg-white/0 transition-all duration-300 hover:text-black`}>{props.content}</button>
   )
 }
 
