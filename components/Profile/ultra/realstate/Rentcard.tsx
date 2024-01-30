@@ -17,7 +17,7 @@ interface RentcardProps {
 
 export const Rentcard: React.FC<RentcardProps> = (props) => {
   return (
-    <div className="border border-white-shade-4 w-[275px] rounded-3xl hover:shadow-soft-shadow duration-500 transition-all cursor-pointer">
+    <div className="border border-white-shade-4 w-[275px] min-w-[275px] rounded-3xl hover:shadow-soft-shadow duration-500 transition-all cursor-pointer">
       <div className="p-2">
         <div
           className="w-full bg-center bg-cover h-[200px] rounded-lg flex  justify-center items-start"
