@@ -18,8 +18,8 @@ interface EducationsProps {
 const Educations: React.FC<EducationsProps> = (props) => {
   return (
     <section className='w-full border-white-shade-4 border-b py-8'>
-      <div className='container flex flex-col gap-y-6 lg:px-0'>
-      <Sectiontitle title={"Courses completed"} />
+      <div className=' flex flex-col gap-y-6 lg:px-0'>
+      <Sectiontitle title={"Courses completed"} classes={''} />
         <p className=" text-white-shade-9  font-opensans">{props.courseabout}</p>
 
         <div className='grid grid-cols-1 gap-y-7 mt-6 lg:grid-cols-2'>

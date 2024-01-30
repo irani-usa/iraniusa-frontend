@@ -14,7 +14,7 @@ const PopularConcert: React.FC<PopularConcertProps> = (props) => {
   return (
     <>
       <div
-        className={`${props.classes} group hover:cursor-pointer border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between gap-x-4 lg:gap-x-8 lg:w-1/3 w-full`}
+        className={`${props.classes} group hover:cursor-pointer border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between gap-x-4 lg:gap-x-8 lg:w-1/3   w-full`}
       >
         <div className="flex flex-col items-start gap-y-2 py-5">
           <h1 className="text-black font-semibold font-opensans text-lg ">

@@ -15,7 +15,7 @@ interface CompaniesProps {
 const Companies: React.FC<CompaniesProps> = (props) => {
   return (
     <div className=" w-full border-white-shade-4 border-b pb-8">
-      <div className="container flex flex-col gap-y-6 mt-8 lg:px-0">
+      <div className=" flex flex-col gap-y-6 mt-8 lg:px-0">
       <h1 className=" text-[27px] font-outfit font-bold text-black text-center lg:text-3xl">
         {props.title}
   </h1>

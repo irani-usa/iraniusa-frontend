@@ -10,8 +10,8 @@ interface JobProps {
 const Job: React.FC<JobProps> = (props) => {
     return (
         <div className=' w-full border-white-shade-4 border-b pb-8'>
-            <div className='container flex flex-col gap-y-6 mt-8 lg:px-0'>
-            <Sectiontitle title={"What is my job about?"} />
+            <div className=' flex flex-col gap-y-6 mt-8 lg:px-0'>
+            <Sectiontitle title={"What is my job about?"} classes={''} />
                 <div className="text-white-shade-9 font-opensans lg:max-w-lg flex flex-col gap-y-8">
                     <p >
                    {props.jobabout}

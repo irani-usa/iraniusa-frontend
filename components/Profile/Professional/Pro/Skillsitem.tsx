@@ -6,7 +6,7 @@ interface SkillsitemProps {
 
 const Skillsitem: React.FC<SkillsitemProps> = (props) =>  {
   return (
-    <li>{props.title}</li>
+    <li className='min-w-[100px] lg:w-auto'>{props.title}</li>
   )
 }
 

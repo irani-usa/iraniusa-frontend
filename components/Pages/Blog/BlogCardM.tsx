@@ -96,7 +96,7 @@ const BlogCardM: React.FC<BlogCardMProps> = (props) => {
             <hr className="h-[1.5px] bg-white-shade-4 w-full" />
             <div className="px-6 pb-6 flex items-center justify-between">
               <div className="flex items-center gap-x-3">
-                <img className="w-10" src="/images/blog/User.webp" alt="" />
+                <img className="w-10" src="/images/profile/professional/blog-avatar.svg" alt="" />
                 <h1 className="text-black font-semibold font-opensans flex flex-col items-start">
                   {props.author}
                   <span className="font-opensans text-sm text-white-shade-9 font-normal">

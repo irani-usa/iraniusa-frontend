@@ -7,7 +7,7 @@ interface ArrowbtnProps {
 const Arrowbtn: React.FC<ArrowbtnProps> = (props) => {
   return (
     <section
-      className={`${props.classes} flex justify-center gap-x-3 mt-7 pb-3 cursor-pointer`}
+      className={`${props.classes} flex justify-center gap-x-3  cursor-pointer`}
     >
       <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
         <svg

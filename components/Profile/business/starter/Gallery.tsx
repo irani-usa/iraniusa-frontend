@@ -7,14 +7,14 @@ const Gallery = () => {
   return (
     <section className='w-full border-white-shade-4 border-b py-8 lg:py-11'>
       <div className='container  lg:pl-5'>
-        <Sectiontitle title={'Gallery'} />
+        <Sectiontitle title={'Gallery'} classes={''} />
         <div className='grid grid-cols-2 items-center gap-x-7 gap-y-4 mt-5 lg:grid-cols-3 py-8 lg:pt-10'>
 
-          <Photo background={'/images/profile/business/photo.png'} />
+          <Photo background={'/images/profile/business/Gallery2.png'} />
 
-          <Photo background={'/images/profile/business/photo.png'} />
+          <Photo background={'/images/profile/business/Gallery.png'} />
 
-          <Photo background={'/images/profile/business/photo.png'} />
+          <Photo background={'/images/profile/business/Gallery3.png'} />
 
         </div>
 

@@ -16,19 +16,19 @@ const Team = () => {
             class={"hidden lg:flex"}
           />
           <MembersCard
-            background={"/images/profile/business/member.png"}
+            background={"/images/profile/business/member1.png"}
             fullname={"Tom hanks"}
             job={"Front-end developer"}
             class={""}
           />
           <MembersCard
-            background={"/images/profile/business/member.png"}
+            background={"/images/profile/business/member2.png"}
             fullname={"Tom hanks"}
             job={"Front-end developer"}
             class={""}
           />
           <MembersCard
-            background={"/images/profile/business/member.png"}
+            background={"/images/profile/business/member3.png"}
             fullname={"Tom hanks"}
             job={"Front-end developer"}
             class={"hidden lg:flex"}

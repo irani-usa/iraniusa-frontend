@@ -49,25 +49,25 @@ const Services = () => {
         </div>
         <section className="flex gap-x-5">
           <SCard
-            content={"Lorem Ipsum"}
+            content={"State & local tax"}
             descreption={
-              "Lorem ipsum textLorem ipsum textLorem ipsum textLorem ipsum text"
+              "LWith the support of NKF CPA Firm professionals who monitor laws and regulations that ..."
             }
             iconComp={undefined}
             class={""}
           />
           <SCard
-            content={"Lorem Ipsum"}
+            content={"Audits"}
             descreption={
-              "Lorem ipsum textLorem ipsum textLorem ipsum textLorem ipsum text"
+              "Our auditing services are intended to assist the public by instilling confidence and trust. "
             }
             iconComp={undefined}
             class={"hidden lg:flex"}
           />
           <SCard
-            content={"Lorem Ipsum"}
+            content={"Compilations & Reviews"}
             descreption={
-              "Lorem ipsum textLorem ipsum textLorem ipsum textLorem ipsum text"
+              "NKF CPA Firm Services produces financial accounts based on financial data provided ..."
             }
             iconComp={undefined}
             class={"hidden lg:flex"}
