@@ -5,6 +5,7 @@ import { Star } from '@/components/Icons/Profile/Star'
 import React from 'react'
 
 interface MainitemProps {
+  classes:string;
     image:string,
     title:string,
     desc:string,
@@ -18,7 +19,7 @@ interface MainitemProps {
 
 export const Mainitem: React.FC<MainitemProps> = (props) =>{
   return (
-    <section className='w-full rounded-3xl border border-white-shade-3 p-2 lg:flex lg:p-5 bg-white-shade-2 items-center gap-x-5'>
+    <section className={`${props.classes} cursor-pointer w-full rounded-3xl border border-white-shade-3 p-2 lg:flex lg:p-5 bg-white-shade-2 items-center gap-x-5 hover:shadow-card duration-300 `}>
         <div className='w-full h-[200px] rounded-2xl bg-cover bg-center px-4 py-4 lg:w-[185px] lg:h-[178px]' style={{ backgroundImage: `url(${props.image})` }}>
            { props.islunch && <div className='bg-black/25 py-2  rounded-full backdrop-blur-lg flex justify-center w-[150px]'>
             <span  className='text-white '>Lunch price</span>
