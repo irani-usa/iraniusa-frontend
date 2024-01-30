@@ -19,13 +19,13 @@ const page = () => {
     <section>
          <OverlayMenu />
       <div className="w-full relative">
-        <Cover background={"/images/profile/Cover.png"} />
+        <Cover background={"/images/profile/ultra/Rcover.png"} />
       </div>
       <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-40 lg:mb-9">
-        <Avatar background={"/images/profile/Prof.png"} Contact={true} />
+        <Avatar background={"/images/profile/ultra/Rprof.png"} Contact={true} />
         <UserTitle
-          fullname={"Amin gholami"}
-          jobtitle={"Product designer"}
+          fullname={"Dark Coffee"}
+          jobtitle={"Restaurant and cafe"}
           city={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
@@ -40,7 +40,9 @@ const page = () => {
        <Intro logo={'/images/profile/business/logo.png'} title={'The taste that makes you feel awesome'} desc={'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys'} cover={'/images/profile/ultra/Cover.png'} />
        <About about={'Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide '} city={'Los angless'} name={'Jason todd'} job={'Founder'} cover={'/images/blog/User.webp'} title={'Who we are?'} />
        <Team />
-       <Menu title={'Special menu'} />
+       <Menu title={'Special Menu'} />
+       <Menu title={'Lunch Menu'} />
+       <Menu title={'Dinner Menu'} />
        <MainMenu title={'Main Menu'} />
        <Gallery />
        <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum "} classes={"lg:pl-5"} />

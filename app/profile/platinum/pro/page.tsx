@@ -39,7 +39,7 @@ const page = () => {
           <Values />
           <Team />
           <Exprince exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide"} />
-          <Gallery img1={"/images/profile/business/photo.png"} img2={"/images/profile/business/photo.png"} img3={"/images/profile/business/photo.png"} img4={"/images/profile/business/photo.png"} />
+          <Gallery img1={"/images/profile/business/Gallery.png"} img2={"/images/profile/business/Gallery4.png"} img3={"/images/profile/business/Gallery2.png"} img4={"/images/profile/business/Gallery3.png"} />
           <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum"} classes={"lg:pl-5"} />
           <Frequent />
           <Social  desc={"description"} />

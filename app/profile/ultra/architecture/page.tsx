@@ -14,7 +14,7 @@ import Team from "@/components/Profile/business/pro/Team";
 import Exprince from "@/components/Profile/business/starter/Exprince";
 import Social from "@/components/Profile/ultra/architecture/Social";
 import { Project } from "@/components/Profile/ultra/architecture/Project";
-import Values from "@/components/Profile/ultra/architecture/Values";
+import Services from "@/components/Profile/business/pro/Services";
 import RentForm from "@/components/Profile/ultra/architecture/RentForm";
 import Gallery from "@/components/Profile/A&E/pro/Gallery";
 import { Frequent } from "@/components/Profile/ultra/architecture/Frequent";
@@ -25,13 +25,13 @@ const page = () => {
     <section>
       <OverlayMenu />
       <div className="w-full relative">
-        <Cover background={"/images/profile/Cover.png"} />
+        <Cover background={"/images/profile/ultra/Acover.png"} />
       </div>
       <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-40 lg:mb-9">
-        <Avatar background={"/images/profile/Prof.png"} Contact={true} />
+        <Avatar background={"/images/profile/ultra/Aprof.png"} Contact={true} />
         <UserTitle
-          fullname={"Amin gholami"}
-          jobtitle={"Product designer"}
+          fullname={"SAP Construction"}
+          jobtitle={"Architecture Company"}
           city={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
@@ -44,11 +44,11 @@ const page = () => {
         <Navigation />
         <section className="lg:border-l lg:border-white-shade-4 ">
           <Intro
-            title={"Magnificent architect design"}
+            title={"SAP Construction Enterprises"}
             desc={
               "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys "
             }
-            cover={"/images/profile/ultra/building.png"}
+            cover={"/images/profile/ultra/Acover2.png"}
           />
           <About
             about={
@@ -67,7 +67,7 @@ const page = () => {
             }
           />
           <Project />
-          <Values />
+          <Services />
           <RentForm desc={"We usually respond before 27 hours"} />
           <Gallery />
           <Social

@@ -17,8 +17,7 @@ import { Frequent } from "@/components/Profile/ultra/architecture/Frequent";
 import Terms from "@/components/Profile/business/pro/Terms";
 import { Company } from "@/components/Profile/Professional/Pro/index";
 import Forms from "@/components/Profile/ultra/exhibition/Forms";
-
-import { Features } from "@/components/Profile/ultra/exhibition/Features";
+import { Service } from '@/components/Profile/ultra/realstate/Service'
 import { Artist } from "@/components/Profile/ultra/exhibition/Artist";
 import { Tickets } from "@/components/Profile/ultra/exhibition/Tickets";
 
@@ -27,13 +26,13 @@ const page = () => {
     <section>
       <OverlayMenu />
       <div className="w-full relative">
-        <Cover background={"/images/profile/Cover.png"} />
+        <Cover background={"/images/profile/ultra/Ecover.png"} />
       </div>
       <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-40 lg:mb-9">
-        <Avatar background={"/images/profile/Prof.png"} Contact={true} />
+        <Avatar background={"/images/profile/ultra/Eprof.png"} Contact={true} />
         <UserTitle
-          fullname={"Amin gholami"}
-          jobtitle={"Product designer"}
+          fullname={"Funner Events"}
+          jobtitle={"Event producer"}
           city={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
@@ -63,10 +62,12 @@ const page = () => {
             title={"What is our company all about?"}
           />
           <Team />
-          <Features />
+          <Service />
           <Artist />
-          <Company title={"Salons we worked with"} />
-          <Tickets title={"Tickets and concerts"} />
+          <Company title={"Venue Partners"} />
+          <Tickets title={"Available Events And Tickets"} />
+          <Tickets title={"Upcoming Events And Tickets"} />
+          <Tickets title={"Additional Events And Tickets"} />
           <Gallery />
           <Forms desc={""} />
           <Social

@@ -21,13 +21,13 @@ const page = () => {
  <section>
           <OverlayMenu />
       <div className="w-full relative">
-        <Cover background={"/images/profile/Cover.png"} />
+        <Cover background={"/images/profile/ultra/Recover.png"} />
       </div>
       <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-40 lg:mb-9">
-        <Avatar background={"/images/profile/Prof.png"} Contact={true} />
+        <Avatar background={"/images/profile/ultra/Reprof.png"} Contact={true} />
         <UserTitle
-          fullname={"Amin gholami"}
-          jobtitle={"Product designer"}
+          fullname={"LOOME"}
+          jobtitle={"Real Estate"}
           city={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
@@ -38,7 +38,7 @@ const page = () => {
       <div className="w-full h-1 border-t border-white-shade-4"></div>
       <section className='lg:flex lg:container lg:pr-0'>
       <Navigation />
-      <section className='lg:border-l lg:border-white-shade-4 '>
+      <section className=' lg:border-l lg:border-white-shade-4 '>
         <Search title={'Find your house for futures life, Dont waste time.'} desc={'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys '} cover={'/images/profile/ultra/apartmant.png'} />
         <About about={'Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide '} city={' Los angless'} name={'Jason todd'} job={'Founder'} cover={'/images/blog/User.webp'} title={'What is our company all about?'} />
         <Honor />
@@ -46,7 +46,10 @@ const page = () => {
         <Service />
         <Exprince exprince={'Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide '} />
         <Project />
-       <HomesCatgeroy title={'For Sale'} classes={''} />
+       <HomesCatgeroy title={'New Listings'} classes={''} />
+       <HomesCatgeroy title={'Pending Sales'} classes={''} />
+       <HomesCatgeroy title={'Sold Properties'} classes={''} />
+
        <Gallery />
        <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum "} classes={"lg:pl-5"} />
       <div className='container lg:px-0'>
