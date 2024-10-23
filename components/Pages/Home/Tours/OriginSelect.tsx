@@ -1,9 +1,7 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import ArrowDown from "../../../Icons/Solid/ArrowDown";
 import ArrowUp from "../../../Icons/Solid/ArrowUp";
-import { Location } from "@/components/Icons/Outline";
+import { Calendar } from "@/components/Icons/Outline";
 
 const OriginSelect = () => {
   const [inputValue, setInputValue] = useState("");
@@ -13,15 +11,15 @@ const OriginSelect = () => {
   return (
     <section className="flex flex-col items-start w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
-        <Location />
-        <span className="text-white-shade-11 font-normal text-lg">
-          Choose your field
+        <Calendar />
+        <span className="text-white-shade-11 font-normal text-sm">
+        Destination or hotel
         </span>
       </div>
       <div className="flex flex-col items-start w-full font-medium  text-black rounded-3xl">
         <div
           onClick={() => setOpen(!open)}
-          className={`bg-white text-xl gap-x-2 font-normal p-2 mt-4 flex items-center mx-4 rounded-2xl ${
+          className={`bg-white  gap-x-2 font-normal p-2 mt-4 flex items-center mx-4 rounded-2xl ${
             !selected && ""
           }`}
         >
@@ -29,7 +27,7 @@ const OriginSelect = () => {
             ? selected?.length > 25
               ? selected?.substring(0, 25) + "..."
               : selected
-            : `Restaurant`}
+            : `Tue, 09 Aug 2023`}
 
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>

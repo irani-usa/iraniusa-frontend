@@ -5,7 +5,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="w-[70%] min-w-[70%]  lg:min-w-[25%] lg:w-full h-18">
+    <div className="w-[70%] min-w-[70%]  lg:min-w-[24%] lg:w-full h-18">
       <div className="flex gap-x-5 w-full py-10 px-8 rounded-2xl bg-white border border-white-shade-4 z-20">
         <Image
           src={"/images/avatars/3.png"}
@@ -23,7 +23,7 @@ const Card = () => {
       </div>
       <div className="w-full items-center flex justify-between px-6 gap-x-2 bg-[#F3F3F3] rounded-b-2xl -mt-6 -z-20 py-2">
         <svg
-          width="58"
+          width="30"
           height="8"
           viewBox="0 0 58 8"
           fill="none"
@@ -35,10 +35,10 @@ const Card = () => {
             stroke-linecap="round"
           />
         </svg>
-        <Link className="text-white bg-red font-outfit py-1 px-2 rounded-full " href="/">
+        <Link className="text-white bg-red font-outfit py-1 px-2 rounded-lg text-[13px]" href="/">
         View Profile
         </Link>
-        <Link className="text-white bg-black font-outfit py-1 px-2 rounded-full" href="/">
+        <Link className="text-white bg-black font-outfit py-1 px-2 rounded-lg text-[13px]" href="/">
         View Profile
         </Link>
       </div>

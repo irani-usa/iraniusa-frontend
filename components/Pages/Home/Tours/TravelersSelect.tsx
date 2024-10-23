@@ -1,26 +1,22 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
-
 import ArrowDown from "../../../Icons/Solid/ArrowDown";
 import ArrowUp from "../../../Icons/Solid/ArrowUp";
+import { Users } from "@/components/Icons/Outline";
 
-import { Home } from "@/components/Icons/Outline";
-
-const DestinationSelect = () => {
+const TravelersSelect = () => {
   const [inputValue, setInputValue] = useState("");
   const [selected, setSelected] = useState("");
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="flex flex-col items-center w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-start w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
-        <Home />
+        <Users />
         <span className="text-white-shade-11 font-normal text-sm">
-        Destination or hotel
+        Travelers
         </span>
       </div>
-      <div className="flex flex-col w-full font-medium  text-black rounded-2xl">
+      <div className="flex flex-col items-start w-full font-medium  text-black rounded-3xl">
         <div
           onClick={() => setOpen(!open)}
           className={`bg-white  gap-x-2 font-normal p-2 mt-4 flex items-center mx-4 rounded-2xl ${
@@ -31,7 +27,7 @@ const DestinationSelect = () => {
             ? selected?.length > 25
               ? selected?.substring(0, 25) + "..."
               : selected
-            : `Hawaii`}
+            : `1adult, 0children`}
 
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>
@@ -53,7 +49,7 @@ const DestinationSelect = () => {
             <li
               className={`p-2 text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
             >
-             Hawaii
+              Restaurant
             </li>
           </div>
         </ul>
@@ -62,4 +58,4 @@ const DestinationSelect = () => {
   );
 };
 
-export default DestinationSelect;
+export default TravelersSelect;

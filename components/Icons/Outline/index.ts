@@ -24,6 +24,9 @@ import Diamonds from "./Diamonds";
 import ArrowUp from "./ArrowUp";
 import ArrowDown from "./ArrowDown";
 
+import Home from "./Home";
+import Calendar from "./Calendar";
+import Users from "./Users";
 export {
   ArrowDown,
   ArrowUp,
@@ -45,4 +48,7 @@ export {
   Gem,
   Music,
   Crown,
+  Home,
+  Calendar,
+  Users
 };

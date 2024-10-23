@@ -12,6 +12,7 @@ import EventCalendar from "@/components/Pages/Home/EventCalendar";
 import PopularWriters from "@/components/Pages/Home/PopularWriters";
 import MediumBannerList from "@/components/Pages/Home/MediumBannerList";
 import Monthlynewusers from "@/components/Pages/Home/NewUsers";
+import MonthlyNnewUsers from "@/components/Pages/Home/MonthlyNnewUsers";
 
 export default function Home() {
   return (
@@ -21,13 +22,13 @@ export default function Home() {
       <StampBG />
       <LargeBannerList />
       <EventCalendar />
+      <MonthlyNnewUsers />
+      <FinancialSummery />
       <MediumBannerList/>
       <ToursSearch />
-      <NormalBannerList />
-      <FinancialSummery />
-      <SmallBannerList />
       <PopularWriters/>
       <Monthlynewusers />
+      <SmallBannerList />
       <PlanInfo />
       <AboutCompany />
     </>
