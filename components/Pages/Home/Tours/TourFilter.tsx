@@ -1,9 +1,8 @@
-"use client"
-import React, { useState } from 'react'
-import OriginSelect from './OriginSelect'
-import DestinationSelect from './DestinationSelect'
-import DateSelect from './DateSelect'
-import TravelersSelect from './TravelersSelect'
+import React from 'react'
+import OriginSelect from './select/OriginSelect'
+import DestinationSelect from './select/DestinationSelect'
+import DateSelect from './select/DateSelect'
+import TravelersSelect from './select/TravelersSelect'
 
 const TourFilter = () => {
 

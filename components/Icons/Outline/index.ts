@@ -27,6 +27,11 @@ import ArrowDown from "./ArrowDown";
 import Home from "./Home";
 import Calendar from "./Calendar";
 import Users from "./Users";
+import StarTour from "./StarTour";
+import Oven from "./Oven";
+import Wifi from "./Wifi";
+import Earth from "./Earth";
+import Swim from "./Swim";
 export {
   ArrowDown,
   ArrowUp,
@@ -50,5 +55,10 @@ export {
   Crown,
   Home,
   Calendar,
-  Users
+  Users,
+  StarTour,
+  Oven,
+  Wifi,
+  Earth,
+  Swim
 };

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ArrowDown from "../../../Icons/Solid/ArrowDown";
-import ArrowUp from "../../../Icons/Solid/ArrowUp";
+import ArrowDown from "../../../../Icons/Solid/ArrowDown";
+import ArrowUp from "../../../../Icons/Solid/ArrowUp";
 import { Calendar } from "@/components/Icons/Outline";
 
-const DateSelect = () => {
+const OriginSelect = () => {
   const [inputValue, setInputValue] = useState("");
   const [selected, setSelected] = useState("");
   const [open, setOpen] = useState(false);
@@ -13,7 +13,7 @@ const DateSelect = () => {
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Calendar />
         <span className="text-white-shade-11 font-normal text-sm">
-        Arrival date
+        Destination or hotel
         </span>
       </div>
       <div className="flex flex-col items-start w-full font-medium  text-black rounded-3xl">
@@ -58,4 +58,4 @@ const DateSelect = () => {
   );
 };
 
-export default DateSelect;
+export default OriginSelect;

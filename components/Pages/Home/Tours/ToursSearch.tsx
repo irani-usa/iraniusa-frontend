@@ -3,9 +3,10 @@
 import React, { ReactNode, useState } from 'react'
 
 
-import ToursCard from './ToursCard'
 import TourFilter from './TourFilter'
 import Star from '../../About/Star'
+import AirplaneCard from './card/AirplaneCard'
+import HotelCard from './card/HotelCard'
 
 const ToursSearch = () => {
   const [openTab, setOpenTab] = useState("Hotel");
@@ -53,10 +54,10 @@ const ToursSearch = () => {
         </div>
       </>
       <TourFilter />
-      <div className='w-full flex flex-col lg:grid lg:grid-cols-3 lg:gap-x-10 gap-y-12 my-8'>
-        <ToursCard image={''} title={'The Geo-Archaeo Face of USA'} summery={'The Most Spectacular Geological and Archaeological Sites of Iran Gate of Nations is'} price={'67$'} score={4.2} location={'San Francisco'} duration={'11 days'} />
-        <ToursCard image={''} title={'Damavand Volcano 5671 meter'} summery={'The Most Spectacular Geological and Archaeological Sites of Iran Gate of Nations is'} price={'11$'} score={5.0} location={'Washington DC'} duration={'2 days'} />
-        <ToursCard image={''} title={'Diving in Persian Gulf'} summery={'The Most Spectacular Geological and Archaeological Sites of Iran Gate of Nations is'} price={'110$'} score={4.8} location={'Tehran'} duration={'6 days'} />
+      <div className='w-full flex flex-col lg:grid lg:grid-cols-3 lg:gap-x-5 gap-y-12 my-8'>       
+        <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'}  price={'11$'}  score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
+        <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'}  price={'11$'}  startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
+        <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'}  price={'4556'}  score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
       </div>
     </section>
   )
