@@ -5,6 +5,7 @@ import Star from "@/components/Pages/About/Star";
 import OverlayMenu from "@/components/Layout/OverlayMenu";
 
 import { Stamp, Plan } from "@/components/Pages/About/index";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -62,6 +63,7 @@ const page = () => {
           voluntary investment into our community’s economic and cultural
           well-being and development.
         </p>
+        <Link href="" className="bg-[#012231]/10 px-10 py-2 my-4 rounded-2xl block mx-auto font-medium">Visit WSA website</Link>
         <div className="flex flex-col gap-y-5 lg:flex-row lg:gap-x-5 mt-9 lg:mt-16">
           <div
             style={{
@@ -116,34 +118,18 @@ const page = () => {
           closer together, to built a reservoir of power and energy, to fuel an
           Iranian renaissance of economic and cultural success.
         </p>
-        <div className="flex flex-row-reverse w-full gap-x-4 overflow-x-scroll py-10 no-scroll ">
+        <div className="flex my-20 lg:grid grid-cols-4 items-center overflow-x-scroll no-scroll gap-x-3 lg:gap-x-4 ">
           <Plan
-            name={"Business Ultra"}
-            info={"Users"}
-            classes={""}
-            quantity={"+200k"}
-            theme={"bg-[#B80042]"}
+           background={'/images/home/plan-backgrounds/platinum.png'} content={'Business Platinum'} info={'Free and pro accounts'} classes={'bg-[#B80042]'} OldPrice={99} NewPrice={89} off={29}
           />
           <Plan
-            name={"Artists & Events"}
-            info={"Users"}
-            classes={"hidden lg:flex flex-col"}
-            quantity={"+200k"}
-            theme={"bg-[#9949FF]"}
+            background={'/images/home/plan-backgrounds/platinum.png'} content={'Business Platinum'} info={'Free and pro accounts'} classes={'bg-[#FFA841]'} OldPrice={99} NewPrice={89} off={29}
           />
           <Plan
-            name={"Professional"}
-            info={"Users"}
-            classes={"hidden lg:flex flex-col"}
-            quantity={"+200k"}
-            theme={"bg-[#9949FF]"}
+           background={'/images/home/plan-backgrounds/platinum.png'} content={'Business Platinum'} info={'Free and pro accounts'} classes={'bg-[#9949FF]'} OldPrice={99} NewPrice={89} off={29}
           />
           <Plan
-            name={"Business Platinum"}
-            info={"Users"}
-            classes={"hidden lg:flex flex-col"}
-            quantity={"+200k"}
-            theme={"bg-[#1F78FF]"}
+          background={'/images/home/plan-backgrounds/platinum.png'} content={'Business Platinum'} info={'Free and pro accounts'} classes={'bg-[#1F78FF]'} OldPrice={99} NewPrice={89} off={29}  
           />
         </div>
       </div>
