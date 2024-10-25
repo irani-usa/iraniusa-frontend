@@ -186,7 +186,7 @@ const page = () => {
               <h3 className="bg-white w-full py-4 text-black text-center text-lg font-medium font-opensans rounded-2xl my-7 lg:w-44">
                 Contact Us
               </h3>
-              <h3 className="font-opensans  text-center ">
+              <h3 className="font-opensans  text-center text-white">
                 Or email us:unreal@outlook.com
               </h3>
             </div>

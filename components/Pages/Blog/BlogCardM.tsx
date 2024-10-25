@@ -93,7 +93,7 @@ const BlogCardM: React.FC<BlogCardMProps> = (props) => {
                 </div>
               </div>
             )}
-            <hr className="h-[1.5px] bg-white-shade-4 w-full" />
+            <span className="h-[1.5px] bg-white-shade-4 w-full" ></span>
             <div className="px-6 pb-6 flex items-center justify-between">
               <div className="flex items-center gap-x-3">
                 <img className="w-10" src="/images/profile/professional/blog-avatar.svg" alt="" />

@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 
 import SmallBanner from "@/components/Banners/SmallBanner";
 import OverlayMenu from "@/components/Layout/OverlayMenu";
@@ -15,16 +16,63 @@ import {
   PopularUser,
   Tag,
 } from "@/components/Pages/Blog/index";
+import { ArrowDown, ArrowUp} from "@/components/Icons/Outline";
 
 const page = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [selected, setSelected] = useState("");
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <OverlayMenu />
       <section>
-        <div className="container py-10 flex flex-col items-center gap-y-5 bg-white-shade-2">
+        <div className="container py-10 flex flex-col items-center gap-y-5 bg-white-shade-2 " >
           <Separator classes={""} />
-          <div className="py-14 w-1/2 bg-white-shade-3 rounded-2xl">
+          <div className="py-2 w-1/2 bg-white-shade-3 rounded-2xl">
+          <section className="flex lg:flex-row flex-col items-center w-full  h-full rounded-3xl justify-between hover:cursor-pointer p-2">
+      <div className="w-full flex gap-x-2 items-center  px-6">      
+        <input
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value.toLowerCase())}
+              placeholder="Search for Blogs,companies,users,topics"
+              className="w-full placeholder:text-white-shade-11 text-lg font-normal font-sans bg-white-shade-3  p-3 rounded-2xl outline-none"
+            />
+      </div>
+      <div className="flex flex-col items-end   font-medium  text-black rounded-3xl w-full">
+        <div
+          onClick={() => setOpen(!open)}
+          className={`bg-white  gap-x-2 font-normal p-4 flex items-center lg:mx-4 rounded-2xl lg:w-max w-full ${
+            !selected && ""
+          }`}
+        >
+          {selected
+            ? selected?.length > 25
+              ? selected?.substring(0, 25) + "..."
+              : selected
+            : `All`}
 
+          {selected ? <ArrowDown /> : <ArrowUp />}
+        </div>
+        <ul
+          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500  ${
+            open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+          } `}
+        >
+          <div className="flex items-center px-2 sticky top-0 bg-white">
+          
+          </div>
+          <div className="flex flex-col gap-y-3 pt-2 p-3">
+            <li
+              className={`p-2 text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
+            >
+              Restaurant
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
           </div>
         </div>
         <div className="container flex flex-col gap-y-6 py-14">
@@ -89,7 +137,69 @@ const page = () => {
             <div className="w-16 bg-black h-full rounded-xl"></div>
           </div>
         </div>
-        <div className="w-full lg:flex container lg:items-start gap-x-2">
+        <div className="w-full lg:flex container lg:items-start gap-x-10">
+        <section className="pl-5 lg:w-1/3">
+            <div>
+              <h1 className="text-black text-xl font-semibold font-outfit">
+                Categories
+              </h1>
+              <div className="flex flex-col py-5">
+                <Category classes={""} content={"Art & Culture"} />
+                <Category classes={""} content={"Destinations"} />
+                <Category classes={""} content={"Must Know"} />
+                <Category classes={""} content={"Top Architectural Sites"} />
+                <Category classes={""} content={"Top Geology Sites"} />
+                <Category classes={""} content={"Top Natural Resorts"} />
+                <Category classes={""} content={"Travel Experiences"} />
+              </div>
+            </div>
+            <div className="my-10">
+              <h1 className="text-black text-xl font-semibold font-outfit py-8">
+                Most active bloggers
+              </h1>
+              <div className="flex flex-col gap-y-6 ">
+                <Bloggers
+                  classes={""}
+                  name={"Darkcafé"}
+                  job={"Coffee shop"}
+                  avatar={"/images/blog/User.webp"}
+                  like={"60k"}
+                />
+                <Bloggers
+                  classes={""}
+                  name={"Darkcafé"}
+                  job={"Coffee shop"}
+                  avatar={"/images/blog/User.webp"}
+                  like={"60k"}
+                />
+                <Bloggers
+                  classes={""}
+                  name={"Darkcafé"}
+                  job={"Coffee shop"}
+                  avatar={"/images/blog/User.webp"}
+                  like={"60k"}
+                />
+              </div>
+            </div>
+            <div>
+              <h1 className="text-black text-xl font-semibold font-outfit py-8">
+                Tags
+              </h1>
+              <div className="flex items-center flex-wrap gap-x-2 gap-y-3">
+                <Tag content={"Avaz"} />
+                <Tag content={"Classic music of iran"} />
+                <Tag content={"Dastgah"} />
+                <Tag content={"Folk music"} />
+                <Tag content={"Radif"} />
+                <Tag content={"setar"} />
+                <Tag content={"tar"} />
+                <Tag content={"tour"} />
+                <Tag content={"traditional music of iran"} />
+                <Tag content={"Museum"} />
+                <Tag content={"International"} />
+              </div>
+            </div>
+          </section>
           <section className="lg:pr-5 lg:border-r border-white-shade-4">
             <div className="flex flex-col gap-y-6 py-14">
               <h1 className="text-black text-xl font-semibold font-outfit">
@@ -279,88 +389,28 @@ const page = () => {
                 <SmallBanner
                   name={"Supplemental income"}
                   jobTitle={"Dentist"}
+                  role=""
                 />
                 <SmallBanner
                   name={"Supplemental income"}
                   jobTitle={"Dentist"}
+                  role=""
                 />
                 <SmallBanner
                   name={"Supplemental income"}
                   jobTitle={"Dentist"}
+                  role=""
                 />
                 <SmallBanner
                   name={"Supplemental income"}
                   jobTitle={"Dentist"}
+                  role=""
                 />
               </section>
             </div>
           </section>
 
-          <section className="pl-5 lg:w-1/3">
-            <div>
-              <h1 className="text-black text-xl font-semibold font-outfit">
-                Categories
-              </h1>
-              <div className="flex flex-col py-5">
-                <Category classes={""} content={"Art & Culture"} />
-                <Category classes={""} content={"Destinations"} />
-                <Category classes={""} content={"Must Know"} />
-                <Category classes={""} content={"Top Architectural Sites"} />
-                <Category classes={""} content={"Top Geology Sites"} />
-                <Category classes={""} content={"Top Natural Resorts"} />
-                <Category classes={""} content={"Travel Experiences"} />
-              </div>
-            </div>
-            <div className="my-10">
-              <h1 className="text-black text-xl font-semibold font-outfit py-8">
-                Most active bloggers
-              </h1>
-              <div className="flex flex-col gap-y-6 ">
-                <Bloggers
-                  classes={""}
-                  name={"Darkcafé"}
-                  job={"Coffee shop"}
-                  avatar={"/images/blog/User.webp"}
-                  cm={"2k"}
-                  like={"60k"}
-                />
-                <Bloggers
-                  classes={""}
-                  name={"Darkcafé"}
-                  job={"Coffee shop"}
-                  avatar={"/images/blog/User.webp"}
-                  cm={"2k"}
-                  like={"60k"}
-                />
-                <Bloggers
-                  classes={""}
-                  name={"Darkcafé"}
-                  job={"Coffee shop"}
-                  avatar={"/images/blog/User.webp"}
-                  cm={"2k"}
-                  like={"60k"}
-                />
-              </div>
-            </div>
-            <div>
-              <h1 className="text-black text-xl font-semibold font-outfit py-8">
-                Tags
-              </h1>
-              <div className="flex items-center flex-wrap gap-x-2 gap-y-3">
-                <Tag content={"Avaz"} />
-                <Tag content={"Classic music of iran"} />
-                <Tag content={"Dastgah"} />
-                <Tag content={"Folk music"} />
-                <Tag content={"Radif"} />
-                <Tag content={"setar"} />
-                <Tag content={"tar"} />
-                <Tag content={"tour"} />
-                <Tag content={"traditional music of iran"} />
-                <Tag content={"Museum"} />
-                <Tag content={"International"} />
-              </div>
-            </div>
-          </section>
+       
         </div>
       </section>
     </>
