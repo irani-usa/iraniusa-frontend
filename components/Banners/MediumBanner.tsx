@@ -11,7 +11,7 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
     <Link
       href={"/"}
       className="relative top-0 left-0 flex flex-col items-center justify-center gap-y-5 w-full h-auto py-9 bg-cover bg-center rounded-3xl hover:cursor-pointer"
-      style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
+      style={{ backgroundImage: `url('/images/banner/2.png')` }}
     >
       <div className="absolute top-4 right-5 flex flex-col gap-y-4">
         <Link href={""}>

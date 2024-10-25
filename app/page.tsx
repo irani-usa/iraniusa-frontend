@@ -13,6 +13,7 @@ import PopularWriters from "@/components/Pages/Home/PopularWriters";
 import MediumBannerList from "@/components/Pages/Home/MediumBannerList";
 import Monthlynewusers from "@/components/Pages/Home/NewUsers";
 import MonthlyNnewUsers from "@/components/Pages/Home/MonthlyNnewUsers";
+import BlogExplore from "@/components/Pages/Home/BlogExplore /Index";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <ToursSearch />
       <PopularWriters/>
       <Monthlynewusers />
+      <BlogExplore />
       <SmallBannerList />
       <PlanInfo />
       <AboutCompany />

@@ -55,9 +55,12 @@ const ToursSearch = () => {
       </>
       <TourFilter />
       <div className='w-full flex flex-col lg:grid lg:grid-cols-3 lg:gap-x-5 gap-y-12 my-8'>       
+       {openTab === "Flight" &&  <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'}  price={'11$'}  startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
+       }
+      {openTab === "Hotel" &&  <>
         <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'}  price={'11$'}  score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-        <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'}  price={'11$'}  startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
         <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'}  price={'4556'}  score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
+      </>}
       </div>
     </section>
   )
