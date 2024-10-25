@@ -46,31 +46,7 @@ const page = () => {
             Get inform from all financial markets like crypto, Precious Metals,
             Commodities, Fiat currency, Stock Market
           </p>
-          <div className="flex gap-x-14">
-            <div className="flex relative">
-              <Image
-                src="/images/financial/usflag.webp"
-                alt={"usflag"}
-                width={50}
-                height={50}
-              />
-              <Image
-                className="absolute left-9 -z-10"
-                src="/images/financial/irflag.webp"
-                alt={"usflag"}
-                width={50}
-                height={50}
-              />
-            </div>
-            <div>
-              <h1 className="text-black font-bold font-opensans text-lg">
-                +2M
-              </h1>
-              <h4 className="text-white-shade-8 font-normal text-base">
-                users from usa
-              </h4>
-            </div>
-          </div>
+         
         </div>
         <div className="lg:flex items-center gap-x-4">
           <div>
@@ -106,11 +82,12 @@ const page = () => {
           />
         </div>
       </section>
+      <section></section>
       <section>
         <div className="container lg:hidden">
           <Chart />
           <div className="flex justify-center items-center">
-            <StampBG classes={"h-[280px] rounded-[20px]"} />
+            <StampBG  />
           </div>
           <div className="mt-14">
             <div className="flex items-center justify-between py-7">
@@ -158,6 +135,16 @@ const page = () => {
             <Chart />
           </div>
         </div>
+
+        <div className="container hidden lg:flex">
+          <div className="w-full flex gap-4">
+             <div className="w-2/5">
+             <StampBG  />
+             </div>
+              <Table />
+          </div>
+        </div>
+        
         <div className="container hidden lg:flex">
           <div className="w-full flex flex-col">
             <div className="flex items-center justify-between py-7">
