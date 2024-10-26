@@ -14,9 +14,13 @@ const PopularConcert: React.FC<PopularConcertProps> = (props) => {
   return (
     <>
       <div
-        className={`${props.classes} group hover:cursor-pointer border-[1px] pl-5 border-white-shade-4 rounded-3xl flex justify-between gap-x-4 lg:gap-x-8 lg:w-1/3   w-full`}
+        className={`${props.classes} group hover:cursor-pointer border-[1px]  border-white-shade-4 rounded-3xl flex flex-col justify-between gap-x-4 lg:gap-x-8 lg:w-1/3   w-full`}
       >
-        <div className="flex flex-col items-start gap-y-2 py-5">
+        <div
+            className="w-full h-60 bg-cover rounded-t-2xl"
+            style={{ backgroundImage: `url(${props.background})` }}
+          ></div>
+        <div className="flex flex-col items-start gap-y-2 py-5 p-4">
           <h1 className="text-black font-semibold font-opensans text-lg ">
             {props.content}
           </h1>
@@ -119,16 +123,22 @@ const PopularConcert: React.FC<PopularConcertProps> = (props) => {
             starting
           </h1>
 
-          <button
+         <div className="flex items-center gap-3 w-full">
+         <button
             type="button"
-            className="bg-[#0112231A] group-hover:bg-black group-hover:text-white transition-all duration-300 text-black rounded-2xl  py-3 font-semibold w-56 mt-4 "
+            className="bg-white-shade-3 hover:bg-black hover:text-white transition-all duration-300 text-black rounded-2xl  py-3 font-semibold w-full mt-4 "
           >
             Book now
           </button>
+          <button
+            type="button"
+            className="bg-white-shade-4 hover:bg-black hover:text-white transition-all duration-300 text-black rounded-2xl  py-3 font-semibold w-full mt-4 "
+          >
+            Artist profill
+          </button>
+         </div>
         </div>
-       <div  style={{ backgroundImage:  `url(${props.background})` }} className="w-32 h-[280px] bg-cover bg-center rounded-tr-3xl rounded-br-3xl">
-        
-       </div>
+     
       </div>
     </>
   );

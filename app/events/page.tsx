@@ -11,6 +11,8 @@ import {
 import Link from "next/link";
 import EventFilter from "@/components/Pages/Events/EventFilter";
 import CircleArrow from "@/components/Icons/Outline/CircleArrow";
+import SmallBanner from "@/components/Banners/SmallBanner";
+import MediumBanner from "@/components/Banners/MediumBanner";
 
 const page = () => {
   return (
@@ -348,7 +350,7 @@ const page = () => {
             city={"Washington DC"}
             classes={""}
             price={"$67"}
-            background={"/images/events/shadmehr.webp"}
+            background={"/images/events/Shadmehr.webp"}
           />
           <PopularConcert
             content={"Shadmehr aghili"}
@@ -357,7 +359,7 @@ const page = () => {
             city={"Washington DC"}
             classes={"hidden lg:flex"}
             price={"$67"}
-            background={"/images/events/shadmehr.webp"}
+            background={"/images/events/Shadmehr.webp"}
           />
           <PopularConcert
             content={"Shadmehr aghili"}
@@ -366,7 +368,7 @@ const page = () => {
             city={"Washington DC"}
             classes={"hidden lg:flex"}
             price={"$67"}
-            background={"/images/events/shadmehr.webp"}
+            background={"/images/events/Shadmehr.webp"}
           />
         </div>
         <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
@@ -406,6 +408,161 @@ const page = () => {
           </div>
         </section>
       </section>
+      <section className="container py-7">
+        <div className="flex items-center justify-between">
+          <h1 className="text-black text-xl font-bold py-7 font-outfit">
+          Popular theater and cinemas
+          </h1>
+          <h1 className="text-white-shade-11 font-opensans font-semibold">
+            See all
+          </h1>
+        </div>
+        <div className="lg:flex gap-x-6">
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={""}
+            price={"$67"}
+            background={"/images/events/1.png"}
+          />
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={"hidden lg:flex"}
+            price={"$67"}
+            background={"/images/events/1.png"}
+          />
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={"hidden lg:flex"}
+            price={"$67"}
+            background={"/images/events/1.png"}
+          />
+        </div>
+        <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                stroke="black"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                stroke="black"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </section>
+      </section>
+      <section className="container py-7">
+        <div className="flex items-center justify-between">
+          <h1 className="text-black text-xl font-bold py-7 font-outfit">
+            Popular concerts
+          </h1>
+          <h1 className="text-white-shade-11 font-opensans font-semibold">
+            See all
+          </h1>
+        </div>
+        <div className="lg:flex gap-x-6">
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={""}
+            price={"$67"}
+            background={"/images/events/2.png"}
+          />
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={"hidden lg:flex"}
+            price={"$67"}
+            background={"/images/events/2.png"}
+          />
+          <PopularConcert
+            content={"Shadmehr aghili"}
+            concert={"Dumbarton concerts"}
+            date={"11/7/16"}
+            city={"Washington DC"}
+            classes={"hidden lg:flex"}
+            price={"$67"}
+            background={"/images/events/2.png"}
+          />
+        </div>
+        <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                stroke="black"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+            <svg
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                stroke="black"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </section>
+      </section>
+      <div className="container flex lg:flex-row flex-col gap-3 my-20">
+      <MediumBanner name={'Supplemental income'} />
+      <MediumBanner name={'Supplemental income'} />
+      <MediumBanner name={'Supplemental income'} />
+      </div>
     </>
   );
 };
