@@ -17,6 +17,7 @@ import {
   Tag,
 } from "@/components/Pages/Blog/index";
 import { ArrowDown, ArrowUp} from "@/components/Icons/Outline";
+import SmallPlan from "@/components/Pages/Plans/SmallPlan";
 
 const page = () => {
   const [inputValue, setInputValue] = useState("");
@@ -199,6 +200,40 @@ const page = () => {
                 <Tag content={"International"} />
               </div>
             </div>
+            <div className="my-10">
+                        <div className='flex justify-between items-center w-full'>
+                        <h1 className="text-black text-xl font-semibold font-outfit py-8">
+                        Plans
+                        </h1>
+                        <Link href="" className="text-white-shade-11">Check all plans</Link>
+                        </div>
+                        <div className="flex flex-col gap-y-4 ">
+                        <SmallPlan
+                                classes={""}
+                                title={"Business Platinum"}
+                                description={"Free and pro accounts"}
+                                avatar={"/images/plans/1.png"}
+                            />
+                            <SmallPlan
+                                classes={""}
+                                title={"Professional"}
+                                description={"Free and pro accounts"}
+                                avatar={"/images/plans/2.png"}
+                            />
+                            <SmallPlan
+                                classes={""}
+                                title={"Artists & Events"}
+                                description={"Free and pro accounts"}
+                                avatar={"/images/plans/1.png"}
+                            />
+                              <SmallPlan
+                                classes={""}
+                                title={"Business Ultra"}
+                                description={"Free and pro accounts"}
+                                avatar={"/images/plans/2.png"}
+                            />
+                        </div>
+                    </div>
           </section>
           <section className="lg:pr-5 lg:border-r border-white-shade-4">
             <div className="flex flex-col gap-y-6 py-14">
