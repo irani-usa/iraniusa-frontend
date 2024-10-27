@@ -19,7 +19,7 @@ interface HotelCardProps {
 
 const HotelCard: React.FC<HotelCardProps> = (props) => {
     return (
-        <div className="relative top-0 left-0 w-full border-white-shade-4 border rounded-2xl hover:shadow-card transition-all duration-300 hover:z-50 hover:-top-5 hover:cursor-pointer h-[115%]">
+        <div className="relative top-0 left-0 w-full border-white-shade-4 border rounded-2xl hover:shadow-card transition-all duration-300 hover:z-50 hover:-top-5 hover:cursor-pointer min-h-[580px]">
             <div className="w-full h-72 bg-cover rounded-t-2xl" style={{ backgroundImage: `url('${props.image}')` }}></div>
             <h4 className="text-black font-outfit font-bold mx-4 mt-6 mb-12 text-xl">
                 {props.title}
