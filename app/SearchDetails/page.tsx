@@ -107,7 +107,7 @@ const page = () => {
 
                 </section>
                 <section className="lg:pr-5  w-full">
-                    <div className='w-full flex justify-between'>
+                    <div className='w-full flex justify-between lg:flex-row flex-col gap-2'>
                         <h4 className='text-2xl font-bold lg:max-w-md'>
                             Showing 1 - 19 of results for “Restaurant” near Los Angles
                         </h4>
