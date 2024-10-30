@@ -2,7 +2,7 @@ import React from "react";
 import Star from "../../About/Star";
 import Card from "./Card";
 
-const BlogExplore  = () => {
+const BlogExplore = () => {
   return (
     <section className="container my-32">
       <div className="w-full flex flex-col items-center mb-10">
@@ -24,4 +24,4 @@ const BlogExplore  = () => {
   );
 };
 
-export default BlogExplore ;
+export default BlogExplore
