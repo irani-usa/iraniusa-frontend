@@ -13,7 +13,7 @@ import PopularWriters from "@/components/Pages/Home/PopularWriters";
 import MediumBannerList from "@/components/Pages/Home/MediumBannerList";
 import Monthlynewusers from "@/components/Pages/Home/NewUsers";
 import MonthlyNnewUsers from "@/components/Pages/Home/MonthlyNnewUsers";
-import BlogExplore from "@/components/Pages/Home/BlogExplore ";
+import BlogExplore from "@/components/Pages/Home/BlogExplore";
 
 export default function Home() {
   return (
