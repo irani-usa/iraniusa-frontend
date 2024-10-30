@@ -10,10 +10,9 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-      <div className="w-full relative container my-10 ">
+      <div className="w-full relative container  mt-10  lg:mb-28 mb-52 mx-auto">
         <Cover background={"/images/profile/Cover.png"} />
-      </div>
-      <div className="container flex relative -top-[100px] left-0 p-10 mb-20 lg:mb-9">
+        <div className="flex absolute top-12 left-0 p-10 mb-20 lg:mb-9 w-full">
         <Avatar background={"/images/profile/Prof.png"} Contact={false} />
         <UserTitle
           fullname={"Amin gholami"}
@@ -25,6 +24,8 @@ const page = () => {
           following={""}
         />
       </div>
+      </div>
+    
       <div className="w-full h-1  border-t border-white-shade-4"></div>
       <section className="flex container">
         <Navigation />

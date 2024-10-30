@@ -1,6 +1,8 @@
 import React from 'react'
 import Jobitems from './Jobitems'
 import Sectiontitle from '../../general/Sectiontitle'
+import IconElement from '../../general/IconElement'
+import JobIcon from '@/components/Icons/Profile/Job'
 
 interface JobProps {
     jobabout:string,
@@ -10,14 +12,16 @@ interface JobProps {
 const Job: React.FC<JobProps> = (props) => {
     return (
         <div className=' w-full border-white-shade-4 border-b pb-8'>
-            <div className=' flex flex-col gap-y-6 mt-8 lg:px-0'>
+            <div className=' flex flex-col gap-y-6 mt-8 lg:px-0 items-center'>
+          
+            <IconElement icon={<JobIcon />}/>
             <Sectiontitle title={"What is my job about?"} classes={''} />
-                <div className="text-white-shade-9 font-opensans lg:max-w-lg flex flex-col gap-y-8">
+                <div className="w-full text-white-shade-9 font-opensans  flex flex-col gap-y-8">
                     <p >
                    {props.jobabout}
                     </p>
         
-                    <ol className='list-decimal pl-4'>
+                    <ol className='list-decimal pl-4 w-full'>
                         <Jobitems jobtitle={'Web design and development.'} />
                         <Jobitems jobtitle={'Software/app design and development.'} />
                         <Jobitems jobtitle={'UX design.'} />
@@ -26,9 +30,6 @@ const Job: React.FC<JobProps> = (props) => {
                         <Jobitems jobtitle={' Written and verbal communication.'} />
                         <Jobitems jobtitle={'Personnel management.'} />
                     </ol>
-                </div>
-                <div className='w-full h-80 bg-cover bg-center rounded-3xl my-3 lg:h-64' style={{ backgroundImage:  `url(${props.jobcover})` }}>
-
                 </div>
             </div>
         </div>

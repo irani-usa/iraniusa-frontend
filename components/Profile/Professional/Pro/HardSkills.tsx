@@ -7,14 +7,18 @@ import { IA } from '@/components/Icons/Profile/IA'
 import { Lightroom } from '@/components/Icons/Profile/Lightroom'
 import { PS } from '@/components/Icons/Profile/PS'
 import { AE } from '@/components/Icons/Profile/AE'
+import IconElement from '../../general/IconElement'
+import HardSkillIcon from '@/components/Icons/Profile/HardSkill'
 
 const HardSkills = () => {
     return (
         <div className=' w-full border-white-shade-4 border-b pb-10'>
-            <div className=' flex flex-col gap-y-6 mt-8 lg:px-0'>
+            <div className=' flex flex-col gap-y-6 mt-8 lg:px-0 items-center'>
+            
+                <IconElement icon={<HardSkillIcon />} />
                 <Sectiontitle title={'Hard skills'} classes={''} />
 
-                <section className='flex gap-x-5 overflow-x-scroll no-scroll lg:grid grid-cols-3 gap-5'>
+                <section className='flex gap-x-5 overflow-x-scroll no-scroll lg:grid grid-cols-3 gap-5 w-full'>
               <Skill title={'Figma'} iconComp={<Figma />} />
               <Skill title={'After Effects'} iconComp={<AE />} />
               <Skill title={'Photoshop'} iconComp={<PS />} />
