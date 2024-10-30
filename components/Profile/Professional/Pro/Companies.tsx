@@ -1,6 +1,6 @@
 import React from "react";
 
-import Company from "./company";
+import Company from "./Company";
 
 import M from "@/components/Icons/Profile/M";
 

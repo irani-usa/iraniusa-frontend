@@ -10,7 +10,7 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-      <div className="w-full relative">
+      <div className="w-full relative container my-10 ">
         <Cover background={"/images/profile/Cover.png"} />
       </div>
       <div className="container flex relative -top-[100px] left-0 p-10 mb-20 lg:mb-9">
@@ -26,7 +26,7 @@ const page = () => {
         />
       </div>
       <div className="w-full h-1  border-t border-white-shade-4"></div>
-      <section className="flex lg:container">
+      <section className="flex container">
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6">
           <AboutMe
@@ -45,12 +45,12 @@ const page = () => {
           />
           <Experinces
             exprince={
-              "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+              "My experience and projects show my expertise and knowledge. "
             }
           />
           <Educations
             desc={
-              "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+              "A brief list of my educational background."
             }
           />
           <Gallery

@@ -10,6 +10,6 @@ import Photo from "./Photo";
 import Socialitme from "./Socialitme";
 import Contactitem from "./Contactitem";
 import Blog from "./Blog";
+import ExperincesCard from "./Experinces";
 
-
-export{Avatar,Cover,Contacts,Navigation,UserTitle,Sectiontitle,Arrowbtn,Education,Photo,Socialitme,Contactitem,Blog}
+export{Avatar,Cover,Contacts,Navigation,UserTitle,Sectiontitle,Arrowbtn,Education,Photo,Socialitme,Contactitem,Blog , ExperincesCard}
