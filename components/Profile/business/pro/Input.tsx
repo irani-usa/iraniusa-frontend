@@ -1,15 +1,27 @@
 import React from 'react'
 
 interface InputProps {
-    placeholder: string,
-    class:string,
-  }
+  placeholder: string,
+  class: string,
+  icon: React.ReactNode,
+  lable: string,
+  isRequired ?:boolean
+}
 
 
 const Input: React.FC<InputProps> = (props) => {
   return (
-    <input className={`${props.class} bg-white-shade-2 border border-white-shade-4 w-full  text-lg 
-    px-6 rounded-lg py-4 hover:bg-white text-black transition-all duration-300`}  placeholder={props.placeholder} type="text" />
+    <div className={`${props.class}`}>
+
+      <label htmlFor={props.lable} className="block mb-2 text-lg font-medium ">{props.lable} {props.isRequired && <span className='text-[#ff0505]'>*</span>}</label>
+      <div className="flex">
+        <span className="inline-flex items-center px-3 rounded-e-0  border-e-0 rounded-s-md bg-white-shade-2 border border-white-shade-4   text-lg ">
+          {props.icon}
+        </span>
+        <input type="text" id={props.lable} className="rounded-none rounded-e-lg block flex-1 min-w-0 w-full p-2.5  bg-white-shade-2 border border-white-shade-4  text-lg " placeholder={props.placeholder} />
+      </div>
+
+    </div>
   )
 }
 

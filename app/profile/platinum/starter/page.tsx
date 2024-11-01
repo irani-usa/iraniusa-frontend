@@ -11,15 +11,13 @@ import About from "@/components/Profile/business/starter/About";
 
 const page = () => {
   return (
-    <section>
-      <div className="w-full border-b border-white-shade-4">
-        <div className="w-full relative">
-          <Cover background={"/images/profile/business/cover.png"} />
-        </div>
-        <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-20 lg:mb-10">
-          <Avatar background={"/images/profile/business/prof.png"} Contact={true} />
-          <UserTitle fullname={"Nima Aleagha"} jobtitle={"Dentist"} city={"Los angelas"} isPro={false} blogLevel={""} follower={""} following={""} />
-        </div>
+    <section>     
+      <div className="w-full relative container  mt-10  lg:mb-28 mb-52 mx-auto">
+        <Cover background={"/images/profile/business/cover.png"} />
+        <div className="flex absolute top-12 left-0 p-10 mb-20 lg:mb-9 w-full">
+        <Avatar background={"/images/profile/business/Prof.png"} Contact={true} />
+        <UserTitle fullname={"Nima Aleagha"} jobtitle={"Dentist"} city={"Los angelas"} isPro={false} blogLevel={""} follower={""} following={""} />
+      </div>
       </div>
       <section className="lg:container relative top-0 left-0 lg:flex  lg:pr-0">
         <Navigation />

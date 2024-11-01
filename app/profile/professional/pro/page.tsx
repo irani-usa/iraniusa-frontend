@@ -7,6 +7,7 @@ import {Cover,UserTitle,Avatar,Blog} from "@/components/Profile/general/index";
 import {AboutMe,Experinces} from "@/components/Profile/Professional/Free/index";
 
 import {Navigation,Educations,Gallery,Social,Company,Job,HardSkills,Project} from "@/components/Profile/Professional/Pro/index";
+import Contact from "@/components/Profile/business/pro/Contact";
 
 const page = () => {
   return (
@@ -41,6 +42,7 @@ const page = () => {
           <Educations courseabout={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} educationabout={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />
           <Gallery />
           <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum"} classes={"lg:pl-0"} />
+          <Contact />
           <Social desc={"is simply dummy text of the printing and typesetting industry. LoremIpsum"} />
         </section>
       </section>
