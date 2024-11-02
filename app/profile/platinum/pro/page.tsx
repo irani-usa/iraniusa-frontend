@@ -16,6 +16,8 @@ import Social from "@/components/Profile/Professional/Pro/Social";
 import Contact from "@/components/Profile/business/pro/Contact";
 import Terms from "@/components/Profile/business/pro/Terms";
 import Navigation from "@/components/Profile/Professional/Pro/Navigation";
+import Subscription from "@/components/Profile/business/pro/Subscription";
+import Project from "@/components/Profile/business/pro/Project";
 
 const page = () => {
   return (
@@ -37,7 +39,9 @@ const page = () => {
           <CompanyAbout about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} city={" Los angless"} name={"Jason todd"} job={"Founder"} cover={"/images/blog/User.webp"} compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"} />
           <Services />
           <Values />
+          <Subscription />          
           <Team />
+          <Project />
           <Exprince exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide"} compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"}/>
           <Gallery img1={"/images/profile/business/Gallery.png"} img2={"/images/profile/business/Gallery4.png"} img3={"/images/profile/business/Gallery2.png"} img4={"/images/profile/business/Gallery3.png"} />
           <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum"} classes={"lg:pl-5"} />
