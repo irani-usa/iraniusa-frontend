@@ -44,7 +44,7 @@ export default function RootLayout({
   if (pathname == '/login') {
     return (
       <html lang="en" className=''>
-        <body className={`${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
+        <body className={`text-black ${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
           {children}
         </body>
       </html>

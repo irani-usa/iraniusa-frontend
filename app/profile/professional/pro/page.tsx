@@ -32,7 +32,7 @@ const page = () => {
       <div className="w-full h-1 border-t border-white-shade-4"></div>
       <section className="flex container">
         <Navigation />
-        <section className="lg:border-l lg:border-white-shade-4 lg:pl-6 w-full">
+        <section className="lg:border-l lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full">
         <AboutMe title={"Product designer with 10 years of  experience"} aboutexprnce={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} about={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/round.png"} exp={"+10"} city={"Los Angelas"} img={"/images/profile/cart.png"} img2={"/images/profile/card.png"} />
         <Experinces exprince={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} />
           < Company title={"Company i worked with"} />

@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = () => {
   return (
-    <ul className="flex-col items-start gap-y-5 font-opensans w-[30%] hidden lg:flex mt-9 pr-5">
+    <ul className="flex-col items-start gap-y-5 font-opensans min-w-[25%] hidden lg:flex mt-9 pr-5">
       <li className="text-black font-bold flex items-center gap-x-3 text-lg border-b border-white-shade-4 pb-5 w-full">
         <svg
           width="22"
