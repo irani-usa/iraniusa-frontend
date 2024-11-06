@@ -6,7 +6,7 @@ import HandHeart from "@/components/Icons/Profile/HandHeart";
 const Services = () => {
   return (
     <section className=" border-b border-white-shade-4 py-7 lg:py-10">
-      <div className="container lg:pl-5 ">
+      <div className=" lg:pl-5 ">
           <IconElement icon={<HandHeart />}/>
           <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl text-center">
             Our Services

@@ -36,7 +36,7 @@ const Company: React.FC<CompanyProps> = (props) => {
   return (
     <section className="border-b border-white-shade-4 py-8 lg:pt-2">
       <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
-        <div className="bg-white  flex flex-col gap-y-5 rounded-3xl lg:w-1/2">
+        <div className="bg-white  flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
 
           <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
             {props.title}

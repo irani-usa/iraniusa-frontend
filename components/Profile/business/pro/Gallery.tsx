@@ -10,7 +10,7 @@ interface CompanyProps {
 const Gallery: React.FC<CompanyProps> = (props) =>  {
   return (
     <section className='w-full border-white-shade-4 border-b pt-6 lg:pb-7'>
-      <div className='container  lg:pl-5'>
+      <div className=' lg:pl-5'>
         <h1 className="text-[26px] font-outfit text-center font-bold text-black lg:text-3xl mt-5 lg:py-8">Gallery</h1>
         <div className='grid grid-cols-2 items-center gap-x-5 gap-y-4 lg:grid-cols-3 py-8 mt-4'>
          

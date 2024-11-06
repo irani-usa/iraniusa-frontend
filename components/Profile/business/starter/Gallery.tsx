@@ -8,7 +8,7 @@ import GalleryIcon from '@/components/Icons/Profile/Gallery'
 const Gallery = () => {
   return (
     <section className='w-full border-white-shade-4 border-b py-8 lg:py-11'>
-      <div className='container  lg:pl-5'>
+      <div className='  lg:pl-5'>
        <IconElement icon={<GalleryIcon />}/>
 
         <Sectiontitle title={'Gallery'} classes={'mt-5'} />

@@ -10,13 +10,15 @@ interface AboutProps {
   job: string,
   cover: string,
   title: string,
+  compimg?:string,
+  compimg2?:string,
 }
 
 
 const About: React.FC<AboutProps> = (props) => {
   return (
     <section className=' border-b border-white-shade-4 py-8 '>
-      <div className='container lg:pl-6'>
+      <div className=' lg:pl-6'>
         <div className="py-7 flex flex-col gap-y-6 items-center">
           <IconElement icon={<AboutMeIcon />} />
 
@@ -52,6 +54,10 @@ const About: React.FC<AboutProps> = (props) => {
           </div>
         </div>
       </div>
+   {props.compimg && props.compimg2 &&    <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5 w-full'>
+    <div style={{ backgroundImage: `url(${props.compimg})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-4 lg:h-44'></div>
+    <div style={{ backgroundImage: `url(${props.compimg2})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-2 lg:h-44'></div>
+    </section>}
     </section>
   )
 }

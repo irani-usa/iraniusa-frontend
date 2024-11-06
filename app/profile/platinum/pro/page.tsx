@@ -23,16 +23,16 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />     
-      <div className="w-full relative container  mt-10  lg:mb-28 mb-72 mx-auto">
-        <Cover background={"/images/profile/business/cover.png"} />
-        <div className="flex absolute top-12 left-0 p-10 mb-20 lg:mb-9 w-full">
-        <Avatar background={'/images/profile/business/Prof.png'} Contact={true} />
-        <UserTitle fullname={"Amin gholami"} jobtitle={"Dentis"} city={"Los angles"} isPro={true} blogLevel={"Active"} follower={"11.2 k"} following={"23"} />
+      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
+      <Cover background={"/images/profile/business/cover.png"} />
+      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
+      <Avatar background={'/images/profile/business/Prof.png'} Contact={true} />
+      <UserTitle fullname={"Amin gholami"} jobtitle={"Dentis"} city={"Los angles"} isPro={true} blogLevel={"Active"} follower={"11.2 k"} following={"23"} />
+          </div>
         </div>
-      </div>
       <div className="w-full h-1 border-t border-white-shade-4"></div>
 
-      <section className="container relative top-0 left-0 lg:flex  lg:pr-0">
+      <section className="lg:container relative top-0 left-0 lg:flex  lg:pr-0">
         <Navigation />
         <section className="lg:w-3/4 w-full">
           <Company  title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/A (2).png"} />
