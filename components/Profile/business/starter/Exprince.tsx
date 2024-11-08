@@ -5,8 +5,8 @@ import { Calendar } from '@/components/Icons/Outline'
 
 interface ExprinceProps {
   exprince: string,
-  compimg: string,
-  compimg2: string,
+  compimg?: string,
+  compimg2?: string,
 }
 
 const Exprince: React.FC<ExprinceProps> = (props) => {

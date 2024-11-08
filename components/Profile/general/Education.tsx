@@ -4,7 +4,7 @@ import React from "react";
 interface EducationProps {
   title: string;
   university: string;
-  date: string;
+  date?: string;
 }
 
 const Education: React.FC<EducationProps> = (props) => {
@@ -20,7 +20,8 @@ const Education: React.FC<EducationProps> = (props) => {
         <span className="text-white-shade-9 font-medium">{props.university}</span>
       </div>
      </div>
-      <span className="bg-white-shade-3 px-4 py-1 rounded-lg font-medium">{props.date}</span>
+     {props.date &&<span className="bg-white-shade-3 px-4 py-1 rounded-lg font-medium">{props.date}</span>
+    }
     </div>
   );
 };

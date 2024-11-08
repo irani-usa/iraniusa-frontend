@@ -32,9 +32,9 @@ const page = () => {
         </div>
       <div className="w-full h-1 border-t border-white-shade-4"></div>
 
-      <section className="lg:container relative top-0 left-0 lg:flex  lg:pr-0">
+      <section className="lg:container lg:flex  lg:pr-0">
         <Navigation />
-        <section className="lg:w-3/4 w-full">
+        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full">
           <Company  title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/A (2).png"} />
           <CompanyAbout about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} city={" Los angless"} name={"Jason todd"} job={"Founder"} cover={"/images/blog/User.webp"} compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"} />
           <Services />

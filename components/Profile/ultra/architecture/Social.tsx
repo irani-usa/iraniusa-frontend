@@ -26,7 +26,7 @@ const Social: React.FC<SocialProps> = (props) => {
           <Socialitme icon={<Telegram />} />
           <Socialitme icon={<W />} />
         </section>
-        <div className="flex  flex-col gap-y-4 mt-6 lg:flex-row lg:gap-x-12 lg:pt-10">
+        <div className="grid grid-cols-1  items-center lg:grid-cols-2 gap-5 w-full mt-6  lg:pt-10">
         <Contactitem title={"E-mail"} content={"unreal@gmail.com"} icon={<Email />} />
           <Contactitem title={"Call"} content={"unreal@gmail.com"} icon={<Call />} />
           <Contactitem title={"Website"} content={"unreal@gmail.com"} icon={<Website />} />

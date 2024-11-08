@@ -36,7 +36,7 @@ const page = () => {
       <div className="w-full h-1 border-t border-white-shade-4"></div>
       <section className='lg:flex lg:container lg:pr-0 px-2'>
         <Navigation />
-        <section className='lg:border-l lg:border-white-shade-4 lg:w-3/4 w-full'>
+        <section className='lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full'>
           <Intro title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/A (2).png"} />
           <About compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"} about={'Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide '} city={'Los angless'} name={'Jason todd'} job={'Founder'} cover={'/images/blog/User.webp'} title={'Who we are?'} />
           <Team />
