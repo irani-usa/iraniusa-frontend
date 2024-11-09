@@ -9,7 +9,7 @@ const TravelersSelect = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="flex flex-col items-start w-full lg:w-1/5 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-start w-full  h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Users />
         <span className="text-white-shade-11 font-normal text-sm">
