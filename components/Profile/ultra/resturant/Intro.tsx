@@ -6,6 +6,7 @@ import Crown from "@/components/Icons/Profile/Crown";
 import ArrowUp from "@/components/Icons/Solid/ArrowUp";
 import ArrowDown from "@/components/Icons/Solid/ArrowDown";
 import Honor from "../../business/starter/Honor";
+import { Button } from "@/components/Forms";
 
 
 interface IntroProps {
@@ -47,10 +48,16 @@ const Intro: React.FC<IntroProps> = (props) => {
             <Honor classes="" title={"10+ Years"} content={"Experience"} />
             <Honor classes="" title={"Tax Services"} content={"New York - USA Arena"} />
           </div>
-          <p className="border border-white-shade-3 rounded-xl px-4 py-3  flex items-center gap-2 font-semibold font-opensans  text-white-shade-11 ">
-            <Location />
-            Besides keeping track of your numbers and reconciling
-          </p>
+          <div className="flex justify-between gap-5">
+          <Button
+              content={"Order Now"}
+              classes={"bg-blue py-4 my-2 text-white"}
+            />
+            <Button
+              content={"Navigate"}
+              classes={"bg-white text-black py-4 my-2 border border-white-shade-4 shadow-sm"}
+            />
+          </div>
           <div className="relative" ref={menuRef}>
             <div onClick={() => setIsOpen(!isOpen)} className="border border-white-shade-3 rounded-xl px-4 py-3  gap-2 font-semibold font-opensans   flex items-center justify-between ">
               <div className="flex flex-col gap-1">
