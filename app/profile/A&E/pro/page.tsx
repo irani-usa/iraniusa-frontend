@@ -24,18 +24,20 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-      <div className="w-full border-b border-white-shade-4 pb-24 lg:pb-0">
-        <div className="w-full relative">
-          <Cover background={"/images/profile/A&E/cover.png"} />
-        </div>
-        <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-20 lg:mb-10">
-          <Avatar />
-          <UserTitle />
+      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
+      <Cover background={"/images/profile/A&E/cover.png"} />
+
+      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
+      <Avatar />
+      <UserTitle />
         </div>
       </div>
-      <section className="lg:flex lg:container lg:pr-0">
+
+      <div className="w-full h-1  border-t border-white-shade-4"></div>
+      
+      <section className="lg:flex lg:container lg:pr-0 px-2">
         <Navigation />
-        <section className="lg:border-l lg:border-white-shade-4 ">
+        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full">
         <Concert cover={"/images/profile/A&E/bg.png"} Musicname={"Ashegh"} date={"September 4, 2020"} artist={" Siavash ghomeyshi"} job={" Artist and song writer"} />
           <Platform />
           <About about={"Siavash Ghomayshi is an Iranian musician, singer and song writer. Siavash studied music in London where he got his master's degree. He left Iran in 1978 and now lives in Los Angeles."} artist={"siavash ghomeyshi"} city={"Los angless"} />

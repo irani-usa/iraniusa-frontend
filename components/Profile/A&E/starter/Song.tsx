@@ -10,7 +10,7 @@ interface AvatarProps {
 const Song: React.FC<AvatarProps> = (props) => {
   return (
     <section
-      className={`${props.class} flex flex-col max-w-[70%] gap-y-5 lg:w-[35%]`}
+      className={`${props.class} flex flex-col min-w-[70%] gap-y-5 `}
     >
       <div
         style={{ backgroundImage: `url(${props.background})` }}

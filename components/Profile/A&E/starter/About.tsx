@@ -11,7 +11,7 @@ interface AboutProps {
 const About: React.FC<AboutProps> = (props) =>  {
   return (
    <section className='border-b border-white-shade-4 pb-11'>
-      <div className="container mt-7 lg:pl-5">
+      <div className=" mt-7 lg:pl-5">
            <h1 className="text-2xl text-black font-outfit font-bold lg:text-3xl">Who is {props.artist}?</h1>
            <p className="text-white-shade-9 mt-7 font-opensans lg:text-lg">{props.about}</p>
            <div className="mt-8 lg:mt-6">

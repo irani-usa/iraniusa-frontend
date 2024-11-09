@@ -11,7 +11,7 @@ interface McardProps {
 
 const Mcard: React.FC<McardProps> = (props) =>   {
   return (
-    <section className={`${props.class} w-[77%] flex flex-col items-start gap-y-4 lg:w-[35%] `}>
+    <section className={`${props.class} min-w-[70%] flex flex-col items-start gap-y-4  `}>
         <div className='w-full h-[280px] rounded-3xl bg-center bg-cover ' style={{ backgroundImage:  `url(${props.background})` }}>
         </div>
         <h1 className='text-black text-xl font-outfit font-semibold mt-3'>{props.trackname}</h1>
