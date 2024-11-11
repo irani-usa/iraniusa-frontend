@@ -55,7 +55,11 @@ export default function RootLayout({
     return (
       <html lang="en" className=''>
         <body className={`${openSans.variable} ${outfit.variable} ${vazirmatn.variable}`}>
+        <MenuProvider>
+          <HeaderBanner />
+          <Navigation />
           {children}
+        </MenuProvider>
         </body>
       </html>
     )
