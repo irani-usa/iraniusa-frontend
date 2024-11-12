@@ -7,6 +7,7 @@ import classNames from "classnames";
 
 import { ArrowDown, ArrowUp, Diamonds } from "@/components/Icons/Outline";
 
+
 interface PlanCardProps {
   planData: any;
 }

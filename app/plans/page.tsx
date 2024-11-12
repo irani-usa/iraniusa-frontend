@@ -5,6 +5,7 @@ import PlanCard from "@/components/Pages/Plans";
 import Separator from "@/components/Separator";
 import { Button, Input } from "@/components/Forms/index";
 import { Diamonds } from "@/components/Icons/Outline";
+import classNames from "classnames";
 
 // تعریف تایپ‌ها برای داده‌ها
 type PlanType = {
@@ -252,6 +253,16 @@ const Page = () => {
     updatePlansWithSelectedPeriod(period);
   };
 
+  const FeatureListClasses = classNames(
+    "[&>*:nth-child(odd)] relative top-0 left-0 w-96 h-12 flex gap-x-6 p-2 justify-evenly text-center items-center  text-base bg-white-shade-3 rounded-xl before:contents-[''] before:absolute before:top-1/2 before:-translate-y-1/2  before:h-[80%] before:bg-white before:rounded-xl before:z-20 tranitaion-all duration-500 before:tranitaion-all before:duration-500 border border-white-shade-3",
+    {
+      "before:left-1  before:w-4/12": selectedPeriod === "1 Year",
+      "before:left-1/3  before:w-4/12 ": selectedPeriod === "3 Years",
+      "before:left-2/3  before:w-4/12 ": selectedPeriod === "5 Years",
+    }
+  );
+
+
   return (
     <section className="container">
       <OverlayMenu />
@@ -262,11 +273,11 @@ const Page = () => {
         </h1>
 
         {/* دکمه برای انتخاب مدت زمان اشتراک */}
-        <div className="flex gap-4 mt-6 bg-white-shade-2 border border-white-shade-3 rounded-xl p-2">
+        <div className={FeatureListClasses}>
           {/* دکمه 1 سال */}
           <span
-            onClick={() => handlePeriodChange("1 Year")}
-            className={`relative z-[2000] w-max px-5 py-2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "1 Year" ? "bg-white text-black shadow" : "text-white-shade-8"}`}
+            onClick={() => handlePeriodChange("1 Year")}            
+            className={`relative z-[2000]  w-1/3 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "1 Year" ? "text-black" : "text-white-shade-8"}`}
           >
             1 Year
           </span>
@@ -274,16 +285,16 @@ const Page = () => {
           {/* دکمه 3 سال */}
           <span
             onClick={() => handlePeriodChange("3 Years")}
-            className={`relative z-[2000] w-max px-5 py-2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "3 Years" ? "bg-white text-black shadow" : "text-white-shade-8"}`}
+            className={`relative z-[2000]  w-1/3 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "3 Years" ? "text-black" : "text-white-shade-8"}`}
           >
-            <span className="absolute -top-5 text-[#7158FF] bg-[#7158FF]/10 px-1 py-0.5 rounded text-sm font-bold">Popular</span>
+            <span className="absolute -top-8 text-[#7158FF] bg-[#7158FF]/10 px-1 py-0.5 rounded text-sm font-bold">Popular</span>
             3 Years
           </span>
 
           {/* دکمه 5 سال */}
           <span
             onClick={() => handlePeriodChange("5 Years")}
-            className={`relative z-[2000] w-max px-5 py-2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "5 Years" ? "bg-white text-black shadow" : "text-white-shade-8"}`}
+           className={`relative z-[2000]  w-1/3 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "5 Years" ? "text-black" : "text-white-shade-8"}`}
           >
             5 Years
           </span>
