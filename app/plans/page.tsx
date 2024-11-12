@@ -1,184 +1,325 @@
-  "use client";
+"use client"
+import React, { useState } from "react";
+import OverlayMenu from "@/components/Layout/OverlayMenu";
+import PlanCard from "@/components/Pages/Plans";
+import Separator from "@/components/Separator";
+import { Button, Input } from "@/components/Forms/index";
+import { Diamonds } from "@/components/Icons/Outline";
 
-  import React, { useState } from "react";
+// تعریف تایپ‌ها برای داده‌ها
+type PlanType = {
+  title: string;
+  subTitle: string;
+  isPopular: boolean;
+  types: {
+    title: string;
+    pricing: string;
+    basePricing: string; // قیمت اصلی که بدون تخفیف است
+    features: string[];
+  }[];
+};
 
-  import OverlayMenu from "@/components/Layout/OverlayMenu";
+type SubscriptionPeriod = "1 Year" | "3 Years" | "5 Years";
 
-  import PlanCard from "@/components/Pages/Plans";
-  import Separator from "@/components/Separator";
+const Page = () => {
+  const [selectedPeriod, setSelectedPeriod] = useState<SubscriptionPeriod>("1 Year");
 
-  import { Button, Input } from "@/components/Forms/index";
+  // لیست پلن‌ها با قیمت‌ها و ویژگی‌ها
+  const [plansList, setPlansList] = useState<PlanType[]>([
+    {
+      title: "Professional",
+      subTitle: "No credit card required",
+      isPopular: false,
+      types: [
+        {
+          title: "Starter",
+          pricing: "Free",
+          basePricing: "Free", // قیمت اصلی را برای Starter نگه می‌داریم
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+          ],
+        },
+        {
+          title: "Pro",
+          pricing: "$18$",
+          basePricing: "$18$", // قیمت اصلی Pro
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+            "Followers Instagram",
+            "What is my job about",
+            "My hard Skills",
+            "Project i have done",
+            "My soft skills ",
+            "Courses i finished",
+            "My blog",
+            "Socials",
+            "Level Blog",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Professional",
+      subTitle: "No credit card required",
+      isPopular: true,
+      types: [
+        {
+          title: "Starter",
+          pricing: "Free",
+          basePricing: "Free", // قیمت اصلی را برای Starter نگه می‌داریم
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+          ],
+        },
+        {
+          title: "Pro",
+          pricing: "$88",
+          basePricing: "$88", // قیمت اصلی Pro
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+            "Followers Instagram",
+            "What is my job about",
+            "My hard Skills",
+            "Project i have done",
+            "My soft skills ",
+            "Courses i finished",
+            "My blog",
+            "Socials",
+            "Level Blog",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Professional",
+      subTitle: "No credit card required",
+      isPopular: false,
+      types: [
+        {
+          title: "Starter",
+          pricing: "Free",
+          basePricing: "Free", // قیمت اصلی را برای Starter نگه می‌داریم
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+          ],
+        },
+        {
+          title: "Pro",
+          pricing: "$300",
+          basePricing: "$300", // قیمت اصلی Pro
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+            "Followers Instagram",
+            "What is my job about",
+            "My hard Skills",
+            "Project i have done",
+            "My soft skills ",
+            "Courses i finished",
+            "My blog",
+            "Socials",
+            "Level Blog",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Professional",
+      subTitle: "No credit card required",
+      isPopular: false,
+      types: [
+        {
+          title: "Starter",
+          pricing: "Free",
+          basePricing: "Free", // قیمت اصلی را برای Starter نگه می‌داریم
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+          ],
+        },
+        {
+          title: "Pro",
+          pricing: "$49",
+          basePricing: "$49", // قیمت اصلی Pro
+          features: [
+            "Profile Pic",
+            "Who am i + 2 Pic",
+            "My Gallery",
+            "Experience & Project",
+            "Educations ",
+            "Contact",
+            "Companies i worked with ",
+            "Followers Instagram",
+            "What is my job about",
+            "My hard Skills",
+            "Project i have done",
+            "My soft skills ",
+            "Courses i finished",
+            "My blog",
+            "Socials",
+            "Level Blog",
+          ],
+        },
+      ],
+    },
+   
+  ]);
 
-  const page = () => {
-    const [plansList, setPlansList] = useState([
-      {
-        title: "Professional",
-        subTitle: "No credit card required",
-        types: [
-          {
-            title: "Starter",
-            pricing: "Free",
-            features: [
-              "Profile Pic",
-              "Who am i + 2 Pic",
-              "My Galley",
-              "Experience & Project",
-              "Educations ",
-              "Contact",
-              "Companies i worked whit ",
-            ],
-          },
-          {
-            title: "Pro",
-            pricing: "$49",
-            features: [
-              "Profile Pic",
-              "Who am i + 2 Pic",
-              "My Galley",
-              "Experience & Project",
-              "Educations ",
-              "Contact",
-              "Companies i worked whit ",
-              "Followers Instagram",
-              "What is my job about",
-              "My hard Skills",
-              "What is my job about",
-              "Project i have done",
-              "My soft skills ",
-              "Courses i finished",
-              "My blog",
-              "Socials",
-              "Level Blog",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Business Platinum",
-        subTitle: "No credit card required",
-        types: [
-          {
-            title: "Starter",
-            pricing: "Free",
-            features: [
-              "Profile Pic",
-              "Who am i + 2 Pic",
-              "My Galley",
-              "Company's experiences ",
-              "Educations ",
-              "Contact",
-              "Companies i worked whit ",
-            ],
-          },
-          {
-            title: "Pro",
-            pricing: "$99",
-            features: [
-              "Profile Pic",
-              "Who am i + 2 Pic",
-              "My Galley",
-              "Experience & Project",
-              "Educations ",
-              "Contact",
-              "Companies i worked whit ",
-              "Followers Instagram",
-              "What is my job about",
-              "My hard Skills",
-              "What is my job about",
-              "Project i have done",
-              "My soft skills ",
-              "Courses i finished",
-              "My blog",
-              "Socials",
-              "Level Blog",
-            ],
-          },
-        ],
-      },
-      {
-        title: "Artist & Events",
-        subTitle: "No credit card required",
-        types: [
-          {
-            title: "Starter",
-            pricing: "Free",
-            features: [
-              "Profile Pic",
-              "Who am i + 2 Pic",
-              "My Galley",
-              "Company's experiences ",
-              "Educations ",
-              "Contact",
-              "Companies i worked whit ",
-            ],
-          },
-          {
-            title: "Pro",
-            pricing: "$199",
-            features: [
-              "Profile Pic",
-              "Who am i + 2 Pic",
-              "My Galley",
-              "Experience & Project",
-              "Educations ",
-              "Contact",
-              "Companies i worked whit ",
-              "Followers Instagram",
-              "What is my job about",
-              "My hard Skills",
-              "What is my job about",
-              "Project i have done",
-              "My soft skills ",
-              "Courses i finished",
-              "My blog",
-              "Socials",
-              "Level Blog",
-            ],
-          },
-        ],
-      },
-    ]);
+  // تابعی برای محاسبه و به روز رسانی قیمت‌ها بر اساس مدت زمان اشتراک
+  const updatePricingBasedOnPeriod = (basePrice: string, period: SubscriptionPeriod): string => {
+    if (basePrice === "Free") return "Free"; // اگر قیمت Free باشد، هیچ تغییری نمی‌دهیم.
 
-    return (
-      <section className="container">
-        <OverlayMenu />
-        <div className="flex flex-col justify-center items-center py-8 gap-y-8">
-          <Separator classes=""/>
-          <h1 className="font-outfit text-2xl text-black font-semibold">
-            Ready to get started?
-          </h1>
+    const basePriceNumber = parseFloat(basePrice.replace("$", ""));
+
+    let discount = 0;
+    switch (period) {
+      case "1 Year":
+        discount = 0; // هیچ تخفیفی برای 1 سال
+        break;
+      case "3 Years":
+        discount = 0.2; // 20% تخفیف برای 3 سال
+        break;
+      case "5 Years":
+        discount = 0.3; // 30% تخفیف برای 5 سال
+        break;
+    }
+
+    // محاسبه قیمت نهایی
+    const finalPrice = basePriceNumber * (1 - discount);
+
+    // جلوگیری از اینکه قیمت به صفر برسد
+    const validPrice = finalPrice > 0 ? finalPrice : basePriceNumber;
+
+    return `$${validPrice.toFixed(2)}`;
+  };
+
+  // به روز رسانی قیمت‌ها و ویژگی‌ها با توجه به مدت زمان اشتراک انتخابی
+  const updatePlansWithSelectedPeriod = (period: SubscriptionPeriod) => {
+    setPlansList((prevPlans) =>
+      prevPlans.map((plan) => ({
+        ...plan,
+        types: plan.types.map((type) => ({
+          ...type,
+          pricing: updatePricingBasedOnPeriod(type.basePricing, period), // قیمت تخفیف‌خورده از basePricing گرفته می‌شود
+        })),
+      }))
+    );
+  };
+
+  // تغییر مدت زمان اشتراک
+  const handlePeriodChange = (period: SubscriptionPeriod) => {
+    setSelectedPeriod(period);
+    updatePlansWithSelectedPeriod(period);
+  };
+
+  return (
+    <section className="container">
+      <OverlayMenu />
+      <div className="flex flex-col justify-center items-center py-8 gap-y-8">
+        <Separator classes="" />
+        <h1 className="font-outfit text-2xl text-black font-semibold">
+          Ready to get started?
+        </h1>
+
+        {/* دکمه برای انتخاب مدت زمان اشتراک */}
+        <div className="flex gap-4 mt-6 bg-white-shade-2 border border-white-shade-3 rounded-xl p-2">
+          {/* دکمه 1 سال */}
+          <span
+            onClick={() => handlePeriodChange("1 Year")}
+            className={`relative z-[2000] w-max px-5 py-2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "1 Year" ? "bg-white text-black shadow" : "text-white-shade-8"}`}
+          >
+            1 Year
+          </span>
+
+          {/* دکمه 3 سال */}
+          <span
+            onClick={() => handlePeriodChange("3 Years")}
+            className={`relative z-[2000] w-max px-5 py-2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "3 Years" ? "bg-white text-black shadow" : "text-white-shade-8"}`}
+          >
+            <span className="absolute -top-5 text-[#7158FF] bg-[#7158FF]/10 px-1 py-0.5 rounded text-sm font-bold">Popular</span>
+            3 Years
+          </span>
+
+          {/* دکمه 5 سال */}
+          <span
+            onClick={() => handlePeriodChange("5 Years")}
+            className={`relative z-[2000] w-max px-5 py-2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "5 Years" ? "bg-white text-black shadow" : "text-white-shade-8"}`}
+          >
+            5 Years
+          </span>
         </div>
-        <section className="flex flex-col lg:flex-row gap-x-4 gap-y-6 w-full overflow-x-scroll no-scroll">
-          {plansList.map((plan) => {
-            return <PlanCard planData={plan} />;
-          })}
-        </section>
-        <div className="border-[1.5px] border-white-shade-4 rounded-2xl p-5 mt-16 lg:flex justify-between lg:rounded-3xl">
-          <div className="flex flex-col gap-y-4">
-            <h1 className="text-black font-outfit text-2xl font-semibold">
-              Cant afford plans? ☹️
-            </h1>
+      </div>
+
+      <section className="lg:grid lg:grid-cols-3 flex flex-col gap-4 w-full overflow-x-scroll no-scroll">
+        {plansList.map((plan) => (
+          <PlanCard key={plan.title} planData={plan} />
+        ))}
+
+        <div className="border-[1.5px] border-white-shade-4 rounded-2xl p-5 flex justify-between lg:rounded-3xl flex-col h-min">
+          <div className="mb-3 w-min p-5 bg-white rounded-full border border-white-shade-4">
+            <Diamonds />
+          </div>
+          <div className="flex flex-col gap-y-2">
+            <h1 className="text-black font-outfit text-2xl font-semibold">Get Coupon</h1>
             <h3 className="text-white-shade-8 font-opensans font-medium">
               Add your email and we will contact you
             </h3>
           </div>
-          <div
-            className="flex  flex-col gap-y-4 lg:flex-row lg:bg-white-shade-3 lg:px-1
-    lg:items-center rounded-2xl lg:justify-between lg:w-2/4"
-          >
+          <div className="flex flex-col gap-y-4 lg:px-1 rounded-2xl">
             <Input
               id={"Email"}
               inputType={"email"}
               placeHolder={"Your email"}
-              classes={"lg:h-auto lg:pb-3"}
+              classes={"lg:h-auto py-1 bg-white-shade-3"}
               label={""}
               iconComp={undefined}
             />
-            <Button content={"Submit"} classes={"bg-black h-16 lg:w-40"} />
+            <Button content={"Submit"} classes={"bg-black py-2 w-full"} />
           </div>
         </div>
       </section>
-    );
-  };
+    </section>
+  );
+};
 
-  export default page;
+export default Page;

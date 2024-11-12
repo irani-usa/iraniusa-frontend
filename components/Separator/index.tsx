@@ -8,7 +8,7 @@ interface SeparatorProps {
 
 const Separator:React.FC<SeparatorProps> = (props) => {
   return (
-    <div className={`${props.classes} w-1/2 flex gap-x-4 justify-center items-center border`}>
+    <div className={`${props.classes} w-1/2 flex gap-x-4 justify-center items-center `}>
       <svg
         width="129"
         height="1"

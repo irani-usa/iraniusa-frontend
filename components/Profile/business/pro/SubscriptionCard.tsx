@@ -22,14 +22,15 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = (props) => {
 
 
 
-  const PricingCardClasses = classNames(
-    "relative top-0 left-0 text-xl list-none list-inside before:contents[''] before:absolute before:w-full h-40   before:h-40 before:left-0 before:bottom-0 before:bg-gradient-to-t before:from-white before:to-white/10 trasnion-all duration-500 before:trasnion-all before:duration-500 p-5 flex flex-col gap-1",
+"relative top-0 left-0 text-xl list-none list-inside before:contents[''] before:absolute before:w-full h-40   before:h-40 before:left-0 before:bottom-0 before:bg-gradient-to-t before:from-white before:to-white/10 trasnion-all duration-500 before:trasnion-all before:duration-500 p-5 flex flex-col gap-1",
+    {
+      "h-auto min-h-[10rem]  before:from-white/10": open,
+      "max-h-40 h-40 overflow-hidden before:from-white": !open,
+    }"relative top-0 left-0 text-xl list-none list-inside before:contents[''] before:absolute before:w-full h-40   before:h-40 before:left-0 before:bottom-0 before:bg-gradient-to-t before:from-white before:to-white/10 trasnion-all duration-500 before:trasnion-all before:duration-500 p-5 flex flex-col gap-1",
     {
       "h-auto min-h-[10rem]  before:from-white/10": open,
       "max-h-40 h-40 overflow-hidden before:from-white": !open,
     }
-  );
-
 
   return (
     <section className=" w-full lg:w-1/3 flex flex-col h-auto items-center transition-all">
