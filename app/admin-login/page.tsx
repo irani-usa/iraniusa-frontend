@@ -6,9 +6,9 @@ import classNames from "classnames";
 // import Loading from "@/components/Icons/Animated/Loading";
 
 const page = () => {
-  const [showErr, setShowErr] = useState(false);
+  const [showErr, setShowErr] = useState(true);
   const ErrBoxClasses = classNames(
-    "transition-all duration-300 ease-in-out absolute bottom-10 w-80 h-16 rounded-xl bg-white ",
+    "transition-all duration-300 bg-black ease-in-out absolute bottom-10 w-80 h-16 rounded-xl bg-white ",
     {
       "left-10": showErr,
       "-left-80": !showErr,
