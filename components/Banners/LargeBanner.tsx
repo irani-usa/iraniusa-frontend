@@ -8,7 +8,7 @@ const LargeBanner = () => {
     <Link
       href={"/"}
       className="flex flex-col lg:flex-row lg:justify-between items-center gap-x-3 gap-y-6 w-full h-auto lg:h-[470px] text-white bg-cover bg-center  rounded-3xl hover:cursor-pointer px-8 py-16"
-      style={{ backgroundImage: `url('/images/banner/sample.jpg')` }}
+      style={{ backgroundImage: `url('/images/banner/sample.png')` }}
     >
       <div className="flex-col items-start justify-between hidden h-[370px]  lg:flex">
         <div className="hidden lg:block">
