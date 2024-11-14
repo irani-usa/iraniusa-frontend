@@ -3,7 +3,7 @@
 interface ButtonProps {
     content:string,
     classes: string,
-    onClick?: () => void;  // افزودن onClick به تایپ
+    onClick?: () => void;  
 
 }
 
