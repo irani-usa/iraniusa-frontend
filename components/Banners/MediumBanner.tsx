@@ -13,6 +13,17 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
       className="relative top-0 left-0 flex flex-col items-center justify-center gap-y-5 w-full h-auto py-9 bg-cover bg-center rounded-3xl hover:cursor-pointer"
       style={{ backgroundImage: `url('/images/banner/3.png')` }}
     >
+      <div className="absolute left-1/2 top-0 -translate-x-1/2 z-5">
+        <svg width="96" height="52" viewBox="0 0 96 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0H96L85.2518 34.4466C81.9936 44.8886 72.3252 52 61.3866 52H34.6134C23.6748 52 14.0064 44.8887 10.7482 34.4466L0 0Z" fill="white" />
+        </svg>
+
+
+      </div>
+      <div
+          className="w-16 h-16 absolute left-1/2 -top-4 -translate-x-1/2 z-5 rounded-full bg-cover bg-center"
+          style={{ backgroundImage: `url('/images/avatars/1.png')` }}
+        ></div>
       <div className="absolute top-4 right-5 flex flex-col gap-y-4">
         <Link href={""}>
           <svg
@@ -87,17 +98,8 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
           </svg>
         </Link>
       </div>
-      <div className="flex">
-        <div
-          className="w-14 h-14 lg:w-20 lg:h-20 rounded-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/avatars/1.png')` }}
-        ></div>
-        <div
-          className="w-14 h-14 lg:w-20 lg:h-20 -ml-6 rounded-full bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/avatars/2.png')` }}
-        ></div>
-      </div>
-      <div className="flex flex-col gap-y-2 justify-center">
+
+      <div className="flex flex-col gap-y-2 justify-center mt-10">
         <h3 className=" flex items-center text-white font-opensans font-medium lg:text-2xl text-center">
           {props.name}
           <Verified />
