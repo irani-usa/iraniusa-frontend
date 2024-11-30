@@ -12,18 +12,12 @@ const SmallBanner: React.FC<SmallBannerProps> = (props) => {
   return (
     <Link
       href={'/'}
-      className="flex items-center  w-[384px] h-[187px] bg-cover bg-center rounded-2xl hover:cursor-pointer relative overflow-hidden"
+      className="flex items-center  w-[384px] h-[187px] bg-cover bg-center rounded-2xl hover:cursor-pointer relative "
       style={{ backgroundImage: `url('/images/banner/3.png')` }}
     >
-      <div className="absolute left-0 z-5">
-        <svg width="52" height="81" viewBox="0 0 52 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 81V0L29.6379 7.80283C42.8158 11.2722 52 23.1873 52 36.8143V40.5V44.1858C52 57.8127 42.8158 69.7278 29.6379 73.1972L0 81Z" fill="#fff" />
-        </svg>
-
-
-      </div>
+      
       <div
-        className="w-12 h-12 rounded-full bg-cover bg-center absolute  z-10 left-0"
+        className="w-12 h-12 rounded-full bg-cover bg-center absolute  z-10 -left-5"
         style={{ backgroundImage: `url('/images/avatars/2.jpg')` }}
       ></div>
 

@@ -9,14 +9,8 @@ const LargeBanner = () => {
       href={"/"}
       className="relative flex flex-col lg:flex-row lg:justify-between items-center gap-x-3 gap-y-6 w-full h-auto lg:h-[470px] text-white bg-cover bg-center  rounded-3xl hover:cursor-pointer px-8 py-16"
       style={{ backgroundImage: `url('/images/banner/sample.png')` }}
-    >
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 z-5">
-        <svg width="187" height="70" viewBox="0 0 187 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0H187L166.023 46.4603C159.553 60.7897 145.289 70 129.567 70H57.4335C41.7113 70 27.4471 60.7897 20.9773 46.4603L0 0Z" fill="white" />
-        </svg>
-
-      </div>
-      <div className="flex absolute left-1/2 top-0 -translate-x-1/2 z-5">
+    >      
+      <div className="flex absolute left-1/2 -top-5 -translate-x-1/2 z-5">
         <div
           className="w-16 h-16 rounded-full bg-cover bg-center"
           style={{ backgroundImage: `url('/images/avatars/1.png')` }}

@@ -12,15 +12,9 @@ const NormallBanner: React.FC<NormallBanner> = (props) => {
   return (
     <Link href={'/'} className='relative flex flex-col items-center justify-center gap-y-5 w-full py-10 h-auto bg-cover bg-center rounded-2xl hover:cursor-pointer' style={{ backgroundImage: `url('/images/banner/3.png')` }}>
       
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 z-5">
-        <svg width="96" height="52" viewBox="0 0 96 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0H96L85.2518 34.4466C81.9936 44.8886 72.3252 52 61.3866 52H34.6134C23.6748 52 14.0064 44.8887 10.7482 34.4466L0 0Z" fill="white" />
-        </svg>
-
-
-      </div>
+     
       <div
-          className="w-16 h-16 absolute left-1/2 -top-4 -translate-x-1/2 z-5 rounded-full bg-cover bg-center"
+          className="w-16 h-16 absolute left-1/2 -top-5 -translate-x-1/2 z-5 rounded-full bg-cover bg-center"
           style={{ backgroundImage: `url('/images/avatars/1.png')` }}
         ></div>
       <div className="absolute top-4 right-5 flex flex-col gap-y-4">
