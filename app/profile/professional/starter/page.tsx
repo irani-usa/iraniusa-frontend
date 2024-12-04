@@ -10,10 +10,10 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-      <div className="w-full relative container  mt-10  lg:mb-28 mb-52 mx-auto">
-        <Cover background={"/images/profile/Cover.png"} />
-        <div className="flex absolute top-12 left-0 p-10 mb-20 lg:mb-9 w-full">
-        <Avatar background={"/images/profile/Prof.png"} Contact={false} />
+     <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
+      <Cover background={"/images/profile/Cover.png"} />
+      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
+      <Avatar background={"/images/profile/Prof.png"} Contact={false} />
         <UserTitle
           fullname={"Amin gholami"}
           jobtitle={"Product designer"}
@@ -23,13 +23,13 @@ const page = () => {
           follower={""}
           following={""}
         />
-      </div>
+        </div>
       </div>
     
       <div className="w-full h-1  border-t border-white-shade-4"></div>
-      <section className="flex container">
+      <section className="lg:flex lg:container lg:pr-0">
         <Navigation />
-        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6">
+        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full ">
           <AboutMe
             title={"Product designer with 10 years of  experience"}
             aboutexprnce={

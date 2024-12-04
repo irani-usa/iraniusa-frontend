@@ -1,6 +1,9 @@
 import React from 'react'
-import { Mainitem } from './Mainitem'
 import { Arrowbtn } from '../../general'
+import IconElement from '../../general/IconElement'
+import ResturantIcon from '@/components/Icons/Profile/Resturant'
+import { Menuitem } from './Menuitem'
+import HumburgerIcon from '@/components/Icons/Profile/Humburger'
 
 
 interface MainMenuProps {
@@ -11,19 +14,54 @@ interface MainMenuProps {
 
 export const MainMenu: React.FC<MainMenuProps> = (props) =>{
   return (
-<section className='relative'>
-    <div className='container  py-9 lg:pl-5 lg:pb-12'>
-    <h1 className='text-black text-2xl font-bold'>{props.title}</h1>
-    <section className='py-7 lg:flex flex-col gap-y-7'>
-      <Mainitem image={'/images/profile/ultra/food.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} rate={'4.9'} islunch={true} desc={'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, '} time={'10-30 min'} delivary={'$20'} classes={''} />
-      <Mainitem image={'/images/profile/ultra/food2.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} rate={'4.9'} islunch={true} desc={'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, '} time={'10-30 min'} delivary={'$20'} classes={'hidden lg:block'} />
-      <Mainitem image={'/images/profile/ultra/food3.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} rate={'4.9'} islunch={true} desc={'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, '} time={'10-30 min'} delivary={'$20'} classes={'hidden lg:block'} />
-    </section>
+    <section className='border-b border-white-shade-4 '>
+    <div className=' py-9 lg:pl-5'>
 
-    <Arrowbtn classes={'mb-9 lg:hidden'} />
+      <div className='flex items-center flex-col w-full gap-7'> 
+    <IconElement icon={<ResturantIcon />}/>
+         <h1 className='text-black text-2xl font-bold'>{props.title}</h1>
+      </div>
+      <div className="flex items-center gap-3 my-8 overflow-x-scroll no-scroll">
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 bg-blue text-white'>
+           <HumburgerIcon isactive/> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+        <span className='flex items-center gap-1 px-3 text-lg rounded-xl py-2 border border-white-shade-4'>
+           <HumburgerIcon /> Lorem
+        </span>
+      </div>
+      <div className='flex gap-x-4 overflow-x-scroll no-scroll mt-9 lg:mt-4'>
+        <Menuitem image={'/images/profile/ultra/food.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} description='With the support of NKF CPA Firm professionals who monitor laws and regulations that ...' islunch={true} />
+        <Menuitem image={'/images/profile/ultra/food2.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} description='With the support of NKF CPA Firm professionals who monitor laws and regulations that ...' islunch={true} />
+        <Menuitem image={'/images/profile/ultra/food3.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} description='With the support of NKF CPA Firm professionals who monitor laws and regulations that ...' islunch={false} />
+
+      </div>
+        <Arrowbtn classes={'hidden lg:flex mt-5'} />
     </div>
-    <div className='bg-white-shade-4 w-full h-[1px] absolute bottom-0'></div>
-<div className='w-full flex  items-center justify-center absolute -bottom-7'>    <button className='text-black text-lg font-medium border bg-white border-white-shade-4 py-4 px-9 rounded-full' type="button">See more foods</button></div>
-</section>
+  </section>
   )
 }

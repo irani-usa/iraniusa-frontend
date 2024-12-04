@@ -44,7 +44,7 @@ export default function RootLayout({
   if (pathname == '/login') {
     return (
       <html lang="en" className=''>
-        <body className={`${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
+        <body className={`text-black ${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
           {children}
         </body>
       </html>
@@ -55,7 +55,11 @@ export default function RootLayout({
     return (
       <html lang="en" className=''>
         <body className={`${openSans.variable} ${outfit.variable} ${vazirmatn.variable}`}>
+        <MenuProvider>
+          <HeaderBanner />
+          <Navigation />
           {children}
+        </MenuProvider>
         </body>
       </html>
     )

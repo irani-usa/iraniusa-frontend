@@ -8,7 +8,7 @@ interface MenuitemProps {
     image:string,
     title:string,
     price:string,
-    rate:string,
+    description:string,
     islunch:boolean,
   }
   
@@ -16,7 +16,7 @@ interface MenuitemProps {
 
 export const Menuitem: React.FC<MenuitemProps> = (props) =>{
   return (
-    <section className='w-[75%] min-w-[75%] rounded-xl border border-white-shade-3 lg:w-[280px] lg:min-w-[280px] cursor-pointer'>
+    <section className='w-[75%] min-w-[75%] rounded-xl border border-white-shade-4 lg:w-[32%] lg:min-w-[32%] cursor-pointer'>
         <div className='w-full h-[200px] rounded-t-xl bg-cover bg-center px-4 py-5' style={{ backgroundImage: `url(${props.image})` }}>
            { props.islunch && <div className='bg-black/25 py-2  rounded-full backdrop-blur-lg flex justify-center w-[130px]'>
             <span  className='text-white '>Lunch price</span>
@@ -24,9 +24,13 @@ export const Menuitem: React.FC<MenuitemProps> = (props) =>{
         </div>
         <div className='px-4 '>
         <h1 className='text-black text-xl font-bold mt-5 font-outfit'>{props.title}</h1>
+        <p className='text-white-shade-8 mt-5'>{props.description}</p>
         <div className='py-7 flex items-center justify-between'>
-            <h1 className='flex items-center gap-x-2 text-lg text-black font-medium'><Dollar />${props.price}</h1>
-            <h1 className='flex items-center gap-x-2 text-lg text-white-shade-8 font-medium'><Star />{props.rate}</h1>
+            <div className="flex itwms-center gap-2">
+            <h1 className='flex items-center gap-x-2 text-lg text-white-shade-8 font-medium line-through'>16$ </h1>
+            <span className=" px-2 rounded-xl py-1 text-sm bg-[#FF6838]/10 text-[#FF6838]">10%</span>
+            </div>
+            <h1 className='text-lg text-black font-medium'>${props.price}</h1>
         </div>
         </div>
         

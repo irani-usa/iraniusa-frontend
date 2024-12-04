@@ -2,7 +2,10 @@
 
 import React, { useState } from "react";
 
-import { ArrowDown, ArrowUp, Location } from "@/components/Icons/Outline";
+import { Location } from "@/components/Icons/Outline";
+import ArrowUp from "@/components/Icons/Solid/ArrowUp";
+import ArrowDown from "@/components/Icons/Solid/ArrowDown";
+
 
 const DateSelect = () => {
   const [inputValue, setInputValue] = useState("");
@@ -10,10 +13,10 @@ const DateSelect = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="flex flex-col items-start w-full lg:w-1/4 h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
+    <section className="flex flex-col items-center w-full  h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Location />
-        <span className="text-white-shade-11 font-normal text-lg">
+        <span className="text-white-shade-11 font-normal text-sm">
           Date
         </span>
       </div>

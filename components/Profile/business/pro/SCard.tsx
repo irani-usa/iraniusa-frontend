@@ -11,12 +11,12 @@ const SCard: React.FC<SCardProps> = (props) => {
   return (
 <div className="flex flex-col items-center relative group max-w-[70%] lg:max-w-[35%]">
 <div
-      className={`${props.class} group cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-5 justify-between rounded-2xl my-6  lg:gap-y-8`}
+      className={`${props.class} group cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6`}
     >
       <span className="text-white-shade-8 flex items-center gap-x-5 text-xl font-semibold pl-3 group-hover:text-black duration-200">
         <svg
-          width="29"
-          height="35"
+          width="20"
+          height="20"
           viewBox="0 0 29 35"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

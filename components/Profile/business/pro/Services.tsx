@@ -1,16 +1,43 @@
 import React from "react";
 import SCard from "./SCard";
+import IconElement from "../../general/IconElement";
+import HandHeart from "@/components/Icons/Profile/HandHeart";
 
 const Services = () => {
   return (
-    <section className=" border-b border-white-shade-4 pb-7 lg:pb-10">
-      <div className="container lg:pl-5 ">
-        <div className="lg:flex lg:items-center lg:justify-between lg:mt-9">
-          <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl">
+    <section className=" border-b border-white-shade-4 py-7 lg:py-10">
+      <div className=" lg:pl-5 ">
+          <IconElement icon={<HandHeart />}/>
+          <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl text-center">
             Our Services
-          </h1>
-
-          <section className="lg:flex justify-center gap-x-3 mt-9 pb-3 hidden  cursor-pointer">
+          </h1>         
+        <section className="flex gap-x-5">
+          <SCard
+            content={"State & local tax"}
+            descreption={
+              "LWith the support of NKF CPA Firm professionals who monitor laws and regulations that ..."
+            }
+            iconComp={undefined}
+            class={""}
+          />
+          <SCard
+            content={"Audits"}
+            descreption={
+              "Our auditing services are intended to assist the public by instilling confidence and trust. "
+            }
+            iconComp={undefined}
+            class={"hidden lg:flex"}
+          />
+          <SCard
+            content={"Compilations "}
+            descreption={
+              "NKF CPA Firm Services produces financial accounts based on financial data provided ..."
+            }
+            iconComp={undefined}
+            class={"hidden lg:flex"}
+          />
+        </section>
+        <section className="lg:flex justify-center gap-x-3 mt-5 pb-3 hidden  cursor-pointer">
             <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
               <svg
                 width="8"
@@ -46,33 +73,6 @@ const Services = () => {
               </svg>
             </div>
           </section>
-        </div>
-        <section className="flex gap-x-5">
-          <SCard
-            content={"State & local tax"}
-            descreption={
-              "LWith the support of NKF CPA Firm professionals who monitor laws and regulations that ..."
-            }
-            iconComp={undefined}
-            class={""}
-          />
-          <SCard
-            content={"Audits"}
-            descreption={
-              "Our auditing services are intended to assist the public by instilling confidence and trust. "
-            }
-            iconComp={undefined}
-            class={"hidden lg:flex"}
-          />
-          <SCard
-            content={"Compilations & Reviews"}
-            descreption={
-              "NKF CPA Firm Services produces financial accounts based on financial data provided ..."
-            }
-            iconComp={undefined}
-            class={"hidden lg:flex"}
-          />
-        </section>
       </div>
     </section>
   );

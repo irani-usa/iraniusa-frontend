@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <OverlayMenu />
       <Hero />
-      <StampBG />
+      <StampBG isHome />
       <LargeBannerList />
       <EventCalendar />
       <MonthlyNnewUsers />

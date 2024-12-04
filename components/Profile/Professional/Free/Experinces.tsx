@@ -22,7 +22,7 @@ const Experinces: React.FC<ExperincesProps> = (props) => {
   return (
     <div className=' w-full border-white-shade-4 border-b pb-8 lg:py-10'>
       <div className=' flex flex-col gap-y-6 mt-8 items-center'>
-        <IconElement icon={<ExperincesIcon />}/>
+        <IconElement icon={<ExperincesIcon />}/>  
         <Sectiontitle title={'Experiences and projects'} classes={'mt-5'} />
         <p className="text-center text-white-shade-9  font-opensans">{props.exprince}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:grid-cols-3 gap-5 w-full">
