@@ -38,13 +38,13 @@ const page = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value.toLowerCase())}
               placeholder="Search for Blogs,companies,users,topics"
-              className="w-full placeholder:text-white-shade-11 text-lg font-normal font-sans bg-white-shade-3  p-3 rounded-2xl outline-none"
+              className="w-full placeholder:text-white-shade-11 text-lg font-normal font-sans bg-white-shade-3  p-1 rounded-2xl outline-none"
             />
       </div>
       <div className="flex flex-col items-end   font-medium  text-black rounded-3xl w-full">
         <div
           onClick={() => setOpen(!open)}
-          className={`bg-white  gap-x-2 font-normal p-4 flex items-center lg:mx-4 rounded-2xl lg:w-max w-full ${
+          className={`bg-white  gap-x-2 font-normal p-1 px-4 flex items-center lg:mx-4 rounded-2xl lg:w-max w-full ${
             !selected && ""
           }`}
         >
@@ -210,26 +210,26 @@ const page = () => {
                         <div className="flex flex-col gap-y-4 ">
                         <SmallPlan
                                 classes={""}
-                                title={"Business Platinum"}
-                                description={"Free and pro accounts"}
+                                title={"Platinum"}
+                                description={"Free and "}
                                 avatar={"/images/plans/1.png"}
                             />
                             <SmallPlan
                                 classes={""}
-                                title={"Professional"}
-                                description={"Free and pro accounts"}
+                                title={"fessional"}
+                                description={"Free and "}
                                 avatar={"/images/plans/2.png"}
                             />
                             <SmallPlan
                                 classes={""}
-                                title={"Artists & Events"}
-                                description={"Free and pro accounts"}
+                                title={" Events"}
+                                description={"Free and "}
                                 avatar={"/images/plans/1.png"}
                             />
                               <SmallPlan
                                 classes={""}
-                                title={"Business Ultra"}
-                                description={"Free and pro accounts"}
+                                title={"Ultra"}
+                                description={"Free and "}
                                 avatar={"/images/plans/2.png"}
                             />
                         </div>
@@ -420,7 +420,7 @@ const page = () => {
               </div>
             </div>
             <div>
-              <section className="w-full my-40 flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-3">
+              <section className="w-full my-40 flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-14">
                 <SmallBanner
                   name={"Supplemental income"}
                   jobTitle={"Dentist"}
