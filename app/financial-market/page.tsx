@@ -13,6 +13,7 @@ import { Chart, Financial, Table } from "@/components/Pages/Financial/index";
 
 import StampBG from "@/components/StampBG";
 import Link from "next/link";
+import MediumBanner from "@/components/Banners/MediumBanner";
 
 const page = () => {
   return (
@@ -282,6 +283,10 @@ const page = () => {
             </Link>
           </div>
         </div>
+      </section>
+      <section className=" container w-full my-20 flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-14">
+        <MediumBanner name="test"/>
+        <MediumBanner name="test"/>
       </section>
     </>
   );

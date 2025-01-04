@@ -80,26 +80,26 @@ const page = () => {
                         <div className="flex flex-col gap-y-4 ">
                             <SmallPlan
                                 classes={""}
-                                title={"Business Platinum"}
-                                description={"Free and pro accounts"}
+                                title={"Platinum"}
+                                description={"Free and pro  "}
                                 avatar={"/images/plans/1.png"}
                             />
                             <SmallPlan
                                 classes={""}
                                 title={"Professional"}
-                                description={"Free and pro accounts"}
+                                description={"Free and pro  "}
                                 avatar={"/images/plans/2.png"}
                             />
                             <SmallPlan
                                 classes={""}
-                                title={"Artists & Events"}
-                                description={"Free and pro accounts"}
+                                title={"Events"}
+                                description={"Free and pro  "}
                                 avatar={"/images/plans/1.png"}
                             />
                             <SmallPlan
                                 classes={""}
-                                title={"Business Ultra"}
-                                description={"Free and pro accounts"}
+                                title={"Ultra"}
+                                description={"Free and pro  "}
                                 avatar={"/images/plans/2.png"}
                             />
                         </div>
@@ -130,7 +130,7 @@ const page = () => {
                             </select>
                         </div>
                     </div>
-                    <div className="no-scroll overflow-x-scroll flex gap-6  py-6 lg:grid lg:grid-cols-2 w-full">
+                    <div className="no-scroll overflow-x-scroll flex gap-10  py-6 lg:grid lg:grid-cols-2 w-full">
                         <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role="" />
                         <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role="" />
 
