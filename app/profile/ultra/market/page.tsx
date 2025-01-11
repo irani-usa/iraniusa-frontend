@@ -21,18 +21,20 @@ import Branches from "@/components/Profile/ultra/architecture/Branches";
 import Values from "@/components/Profile/business/pro/Values";
 import Contact from "@/components/Profile/business/pro/Contact";
 import Gallery from "@/components/Profile/general/Gallery";
+import { Products } from "@/components/Profile/ultra/market/Products";
+import Brands from "@/components/Profile/ultra/market/Brands";
 
 const page = () => {
   return (
     <section>
       <OverlayMenu />
      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
-      <Cover background={"/images/profile/ultra/Acover.png"} />
+      <Cover background={"/images/profile/ultra/addidas.png"} />
       <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
-      <Avatar background={"/images/profile/ultra/Aprof.png"} Contact={true} />
+      <Avatar background={"/images/profile/ultra/Prof.png"} Contact={true} />
         <UserTitle
-          fullname={"SAP Construction"}
-          jobtitle={"Architecture Company"}
+          fullname={"Addidas"}
+          jobtitle={"Addidas@gmail.com"}
           city={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
@@ -45,7 +47,7 @@ const page = () => {
       <section className="lg:flex lg:container lg:pr-0 px-2">
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full ">
-        <Intro title={"Get The Tickets, Now Or Never"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys"} cover={"/images/profile/ultra/Chair.png"} />
+        <Intro title={"Get The Tickets, Now Or Never"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys"} cover={"/images/profile/ultra/Case-Study_ADIDAS_1.png"} />
           <About
           compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"}
             about={
@@ -57,18 +59,19 @@ const page = () => {
             cover={"/images/blog/User.webp"}
             title={"What is our company all about?"}
           />
+           <Team />
           <Branches />
           <Services />
-          <Values />
           <Project />
-          <Project /> 
-          <Team />
+          <Products title="Products"/>
+          <Products title="Products"/>          
+          <Brands />
+          <Values />
           <Exprince
             exprince={
               "Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "
             }
           />
-          <Branches />
           <Gallery />
           <Blog
             title={"Blog"}

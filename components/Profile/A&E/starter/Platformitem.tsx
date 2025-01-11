@@ -8,7 +8,7 @@ interface SectiontitleProps {
 
 export const Platformitem: React.FC<SectiontitleProps> = (props) =>  {
   return (
-    <Link className='bg-white-shade-20 p-6   flex items-center justify-center rounded-full ' href={props.Link}>
+    <Link className='bg-white-shade-20 p-5   flex items-center justify-center rounded-full ' href={props.Link}>
     {props.Icon}
 </Link>
   )

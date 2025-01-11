@@ -4,10 +4,7 @@ import Cover from "@/components/Profile/general/Cover";
 import UserTitle from "@/components/Profile/A&E/starter/UserTitle";
 import React from "react";
 import Concert from "@/components/Profile/A&E/starter/Concert";
-import Platform from "@/components/Profile/A&E/starter/Platform";
-import About from "@/components/Profile/A&E/starter/About";
 import Tracks from "@/components/Profile/A&E/starter/Tracks";
-import Gallery from "@/components/Profile/A&E/pro/Gallery";
 import Social from "@/components/Profile/Professional/Pro/Social";
 import Donate from "@/components/Profile/A&E/starter/Donate";
 import Navigation from "@/components/Profile/general/Navigation";
@@ -19,6 +16,9 @@ import Labels from "@/components/Profile/A&E/pro/Labels";
 import Hskills from "@/components/Profile/A&E/pro/Hskills";
 import Educations from "@/components/Profile/Professional/Free/Educations";
 import Blog from "@/components/Profile/general/Blog";
+import About from "@/components/Profile/business/starter/About";
+import { Gallery } from "@/components/Profile/Professional/Free";
+import { Company } from "@/components/Profile/Professional/Pro";
 
 const page = () => {
   return (
@@ -39,14 +39,23 @@ const page = () => {
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full">
         <Concert cover={"/images/profile/A&E/bg.png"} Musicname={"Ashegh"} date={"September 4, 2020"} artist={" Siavash ghomeyshi"} job={" Artist and song writer"} />
-          <Platform />
-          <About about={"Siavash Ghomayshi is an Iranian musician, singer and song writer. Siavash studied music in London where he got his master's degree. He left Iran in 1978 and now lives in Los Angeles."} artist={"siavash ghomeyshi"} city={"Los angless"} />
+        <About
+          compimg={"/images/profile/A&E/about.png"} compimg2={"/images/profile/A&E/about2.png"}
+            about={
+              "Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "
+            }
+            city={" Los angless"}
+            name={"Jason todd"}
+            job={"Founder"}
+            cover={"/images/blog/User.webp"}
+            title={"What is our company all about?"}
+          />
           <Upcoming />
           <Tracks />
           <Steream artist={"Siavash"} />
           <Ticket />
           <Albums />
-          <Labels />
+          <Company title={"Associates, Parters & Sponsors"} />
           <Hskills />
           <div className="lg:pl-5">
             <Educations desc={""} />

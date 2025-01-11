@@ -6,7 +6,7 @@ const Hskills = () => {
     <section className='border-b border-white-shade-4 pb-11'>
     <div className="container mt-7 lg:pl-5">
          <h1 className="text-2xl text-black font-outfit font-bold lg:text-3xl">Special Talents</h1>
-         <ul className='list-disc mt-7 overflow-x-scroll no-scroll flex items-center gap-x-12 text-lg font-medium  text-black pl-5'>
+         <ul className='grid grid-cols-2 mt-7  items-center gap-2 text-lg font-medium  text-black '>
           <Skillsitem title={'Song writer'} />
           <Skillsitem title={'Composer'} />
           <Skillsitem title={'Musician'} />
