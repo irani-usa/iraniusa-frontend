@@ -1,9 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const Navigation = () => {
   return (
-    <ul className="flex-col items-start gap-y-5 font-opensans min-w-[25%] hidden lg:flex mt-9 pr-5">
-      <li className="text-black font-bold flex items-center gap-x-3 text-lg border-b border-white-shade-4 pb-5 w-full">
+    <ul className=" min-w-[25%] h-full flex-col items-start gap-y-5 font-opensans hidden lg:flex mt-9 pr-5">
+
+    <Link href="#home">
+    <li className="text-black font-bold flex items-center gap-x-3 text-lg border-b border-white-shade-4 pb-5 w-full">
         <svg
           width="22"
           height="22"
@@ -24,6 +27,7 @@ const Navigation = () => {
         </svg>
         Home
       </li>
+    </Link>
       <li
         className="group text-white-shade-9 flex items-center gap-x-3 text-lg border-b border-white-shade-4 pb-5 w-full hover:text-black hover:cursor-pointer  hover:font-semibold
        transition-all"

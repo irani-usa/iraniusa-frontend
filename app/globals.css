@@ -437,3 +437,11 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #F2F2F2 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+
+.rhap_container{
+  @apply bg-primary-shade-11 !important
+}
+.rhap_current-time , .rhap_total-time{
+  @apply text-white !important
+}

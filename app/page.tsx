@@ -14,6 +14,7 @@ import MediumBannerList from "@/components/Pages/Home/MediumBannerList";
 import Monthlynewusers from "@/components/Pages/Home/NewUsers";
 import MonthlyNnewUsers from "@/components/Pages/Home/MonthlyNnewUsers";
 import BlogExplore from "@/components/Pages/Home/BlogExplore";
+import MusicPlayer from "@/components/Pages/Home/MusicPlayer/page";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <SmallBannerList />
       <PlanInfo />
       <AboutCompany />
+      <MusicPlayer/>
     </>
   );
 }

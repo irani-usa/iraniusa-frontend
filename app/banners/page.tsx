@@ -75,6 +75,10 @@ const page = () => {
       </div>
     <div className='w-full flex gap-5'>
       <PlanCard  planData={plan}/>
+      <div className='flex flex-col gap-10 w-full'>
+      <BackgrounBanner />
+      <BackgrounBanner />        
+      </div>
       <MediumBanner name={'Supplemental income'} />
     </div>
     </div>
