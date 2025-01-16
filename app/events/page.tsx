@@ -18,19 +18,19 @@ const page = () => {
   return (
     <>
       <OverlayMenu />
-      <section className="flex flex-col items-center lg:flex-row gap-x-2 container my-32">
-        <div className="flex flex-col gap-y-8">
-          <h1 className="text-black font-outfit text-5xl font-medium leading-[50px]">
+    <div className="flex flex-col my-10">
+    <section className="lg:order-2 flex flex-col items-center lg:flex-row gap-x-2 container justify-center ">
+        <div className="flex flex-col gap-y-8 items-center relative">
+          <h1 className="text-black font-outfit text-5xl font-medium leading-[50px] text-center">
             Find amazing
-            <br />
-            events in your area
+            
+            events in <br /> your area
           </h1>
-          <p className="text-white-shade-9 max-w-lg font-opensans text-lg">
+          <p className="text-white-shade-9 max-w-lg font-opensans text-lg text-center">
             Learn about upcoming events across the US and in your area or post
             your next event!
           </p>
-        </div>
-        <div className="mt-10 lg:mt-0">
+        <div className="mt-10 lg:mt-0 absolute -top-8 -left-20">
           <svg
             width="108"
             height="108"
@@ -128,11 +128,14 @@ const page = () => {
             />
           </svg>
         </div>
+        </div>
       </section>
-      <section className="flex justify-center container">
+
+      <section className="flex justify-center container lg:order-3 my-10">
         <EventFilter />
       </section>
-      <div className="container">
+
+    <div className="container lg:order-1">
         <section
           className="w-full h-96 mb-10 rounded-3xl bg-center bg-cover p-14"
           style={{ backgroundImage: `url('/images/events/ebi-concert.jpg')` }}
@@ -142,7 +145,7 @@ const page = () => {
               Worldwide Ebi concerts
             </h3>
             <div className="flex flex-col gap-y-3 mt-4 mb-10">
-              <div className="flex items-center gap-x-3 font-opensans text-lg">
+              <div className="flex items-center gap-x-3 font-opensans text-lg text-white">
                 <svg
                   width="20"
                   height="20"
@@ -159,7 +162,7 @@ const page = () => {
                 </svg>
                 The World In The Concert Hall
               </div>
-              <div className="flex items-center gap-x-3 font-opensans text-lg">
+              <div className="flex items-center gap-x-3 font-opensans text-lg text-white">
                 <svg
                   width="16"
                   height="20"
@@ -186,6 +189,15 @@ const page = () => {
           </div>
         </section>
       </div>
+     
+    
+    
+
+    
+    </div>
+
+
+     
       <section className="container py-10 lg:flex items-center">
         <div className="border border-white-shade-4 hidden lg:flex flex-col w-60 ">
           <h1 className="text-black py-6 pl-5 pr-28 font-semibold font-opensans">
@@ -298,6 +310,8 @@ const page = () => {
           </section>
         </div>
       </section>
+
+
       <section className="container">
         <h1 className="text-black text-xl font-semibold py-4 lg:py-12">
           Upcoming events
@@ -411,7 +425,7 @@ const page = () => {
       <section className="container py-7">
         <div className="flex items-center justify-between">
           <h1 className="text-black text-xl font-bold py-7 font-outfit">
-          Popular theater and cinemas
+            Popular theater and cinemas
           </h1>
           <h1 className="text-white-shade-11 font-opensans font-semibold">
             See all
@@ -559,9 +573,9 @@ const page = () => {
         </section>
       </section>
       <div className="container flex lg:flex-row flex-col gap-3 my-20">
-      <MediumBanner name={'Supplemental income'} />
-      <MediumBanner name={'Supplemental income'} />
-      <MediumBanner name={'Supplemental income'} />
+        <MediumBanner name={'Supplemental income'} />
+        <MediumBanner name={'Supplemental income'} />
+        <MediumBanner name={'Supplemental income'} />
       </div>
     </>
   );

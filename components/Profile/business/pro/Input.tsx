@@ -3,8 +3,8 @@ import React from 'react'
 interface InputProps {
   placeholder: string,
   class: string,
-  icon: React.ReactNode,
-  lable: string,
+  icon?: React.ReactNode,
+  lable?: string,
   isRequired ?:boolean
 }
 

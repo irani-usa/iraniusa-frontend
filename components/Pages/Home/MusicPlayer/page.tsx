@@ -9,7 +9,8 @@ import Star from '../../About/Star';
 const songs = [
     { id: 1, title: 'barf', artist: 'tijay', src: '/song/music.mp3' },
     { id: 2, title: 'block', artist: 'tijay', src: '/song/1579733546.mp3' },
-    { id: 3, title: '2 Qotbi', artist: 'Danyal', src: '/song/2 Ghotbi (Prod. by Radpro)   None.mp3' },
+    { id: 3, title: 'block', artist: 'tijay', src: '/song/1579733546.mp3' },
+    { id: 4, title: '2 Qotbi', artist: 'Danyal', src: '/song/2 Ghotbi (Prod. by Radpro)   None.mp3' },
 ];
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
                 <div>
                     <h2 className="text-xl font-semibold mb-4">Popular songs</h2>
                     <div className="space-y-4 ">
-                        <div className="h-44 p-4 shadow flex rounded-xl relative text-white">
+                        <div className="h-52 p-4 shadow flex rounded-xl relative text-white">
                             <img src="/artist/tijay.jpg" alt="Ashvan" className="rounded-xl absolute w-full h-full inset-0 -z-20" />
                             <div>
                                 <p className="font-bold">Barf</p>
@@ -43,7 +44,7 @@ export default function Home() {
                             </svg>
 
                         </div>
-                        <div className="p-4 shadow flex rounded-xl relative text-white">
+                        <div className="p-4 h-36 shadow flex rounded-xl relative text-white">
                             <img src="/artist/tijay.jpg" alt="Ashvan" className="rounded-xl absolute w-full h-full inset-0 -z-20" />
                             <div>
                                 <p className="font-bold">Block</p>
@@ -81,7 +82,9 @@ export default function Home() {
                 </div>
 
                 {/* Now Playing */}
-                <div className="flex flex-col items-center">
+                <div>
+                <h2 className="text-xl font-semibold mb-4">Now Playing</h2>
+
                     <div className="bg-primary-shade-11 text-white shadow  p-2 rounded-2xl w-full flex flex-col ">
                         <img
                             src={`/artist/${currentSong.artist.toLowerCase().replace(' ', '-')}.jpg`}

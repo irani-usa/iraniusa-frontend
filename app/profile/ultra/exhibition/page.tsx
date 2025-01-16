@@ -12,7 +12,6 @@ import OverlayMenu from "@/components/Layout/OverlayMenu";
 import  Intro  from "@/components/Profile/ultra/exhibition/Intro";
 import Team from "@/components/Profile/business/pro/Team";
 import Social from "@/components/Profile/ultra/architecture/Social";
-import Gallery from "@/components/Profile/A&E/pro/Gallery";
 import { Frequent } from "@/components/Profile/ultra/architecture/Frequent";
 import Terms from "@/components/Profile/business/pro/Terms";
 import { Artist } from "@/components/Profile/ultra/exhibition/Artist";
@@ -20,6 +19,7 @@ import { Tickets } from "@/components/Profile/ultra/exhibition/Tickets";
 import Services from "@/components/Profile/business/pro/Services";
 import Company from "@/components/Profile/ultra/exhibition/Company";
 import Contact from "@/components/Profile/business/pro/Contact";
+import { Gallery } from "@/components/Profile/Professional/Free";
 
 const page = () => {
   return (

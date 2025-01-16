@@ -130,7 +130,7 @@ const page = () => {
                             </select>
                         </div>
                     </div>
-                    <div className="no-scroll overflow-x-scroll flex gap-10  py-6 lg:grid lg:grid-cols-2 w-full">
+                    <div className="no-scroll overflow-x-scroll flex gap-10  p-6 lg:grid lg:grid-cols-2 w-full justify-between">
                         <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role="" />
                         <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role="" />
 

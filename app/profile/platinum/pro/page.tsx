@@ -9,7 +9,6 @@ import Services from "@/components/Profile/business/pro/Services";
 import Values from "@/components/Profile/business/pro/Values";
 import Team from "@/components/Profile/business/pro/Team";
 import Exprince from "@/components/Profile/business/starter/Exprince";
-import Gallery from "@/components/Profile/business/pro/Gallery";
 import Blog from "@/components/Profile/general/Blog";
 import Frequent from "@/components/Profile/business/pro/Frequent";
 import Social from "@/components/Profile/Professional/Pro/Social";
@@ -18,6 +17,7 @@ import Terms from "@/components/Profile/business/pro/Terms";
 import Navigation from "@/components/Profile/Professional/Pro/Navigation";
 import Subscription from "@/components/Profile/business/pro/Subscription";
 import Project from "@/components/Profile/business/pro/Project";
+import { Gallery } from "@/components/Profile/Professional/Free";
 
 const page = () => {
   return (
@@ -43,7 +43,7 @@ const page = () => {
           <Team />
           <Project />
           <Exprince exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide"} compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"}/>
-          <Gallery img1={"/images/profile/business/Gallery.png"} img2={"/images/profile/business/Gallery4.png"} img3={"/images/profile/business/Gallery2.png"} img4={"/images/profile/business/Gallery3.png"} />
+          <Gallery  />
           <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum"} classes={"lg:pl-5"} />
           <Frequent />
           <Social  desc={"description"} />

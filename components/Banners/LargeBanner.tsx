@@ -9,7 +9,7 @@ const LargeBanner = () => {
       href={"/"}
       className="relative flex flex-col lg:flex-row lg:justify-between items-center gap-x-3 gap-y-6 w-full h-auto lg:h-[470px] text-white bg-cover bg-center  rounded-3xl hover:cursor-pointer px-8 py-16"
       style={{ backgroundImage: `url('/images/banner/sample.png')` }}
-    >      
+    >
       <div className="flex absolute left-1/2 -top-5 -translate-x-1/2 z-5">
         <div
           className="w-16 h-16 rounded-full bg-cover bg-center"
@@ -129,6 +129,14 @@ const LargeBanner = () => {
 
               innovativeconstruction services
             </p>
+            <div className="flex justify-center gap-3 ">
+              <span className="bg-white/5 backdrop-blur text-white flex items-center justify-center rounded-full w-[75px]  py-2 font-medium ">
+                Cafés
+              </span>
+              <span className="bg-white/5 backdrop-blur text-white rounded-full  py-2 font-medium px-5">
+                Restaurants
+              </span>
+            </div>
           </div>
         </div>
         <div className="absolute top-0 right-0 flex flex-col items-center gap-6 lg:hidden">
@@ -153,14 +161,7 @@ const LargeBanner = () => {
           </svg>3.4k
           </span>
         </div>
-        <div className="flex flex-col gap-3">
-          <span className="bg-white text-black flex items-center justify-center rounded-full w-[75px]  py-2 font-medium ">
-            Cafés
-          </span>
-          <span className="bg-white text-black rounded-full  py-2 font-medium px-5">
-            Restaurants
-          </span>
-        </div>
+
       </div>
       <div className=" flex flex-col items-center  justify-between w-full lg:w-1/4 h-full  lg:hidden">
         <div className="hidden lg:block">
@@ -256,14 +257,7 @@ const LargeBanner = () => {
           </svg>3.4k
           </span>
         </div>
-        <div className="flex  flex-col gap-3 lg:flex-row">
-          <span className="bg-white text-black flex items-center justify-center rounded-full w-[75px]  py-2 font-medium ">
-            Cafés
-          </span>
-          <span className="bg-white text-black rounded-full  py-2 font-medium px-5 lg:px-7 ">
-            Restaurants
-          </span>
-        </div>
+
       </div>
     </Link>
   );
