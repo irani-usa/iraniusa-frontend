@@ -5,8 +5,8 @@ const Navigation = () => {
   return (
     <ul className=" min-w-[25%] h-full flex-col items-start gap-y-5 font-opensans hidden lg:flex mt-9 pr-5">
 
-    <Link href="#home">
-    <li className="text-black font-bold flex items-center gap-x-3 text-lg border-b border-white-shade-4 pb-5 w-full">
+    <Link href="#home" className="border-b border-white-shade-4 pb-5 w-full">
+    <li className="text-black font-bold flex items-center gap-x-3 text-lg ">
         <svg
           width="22"
           height="22"

@@ -4,7 +4,7 @@ import { Arrowbtn } from "@/components/Profile/general";
 
 const SmallBannerList = () => {
   return (
-    <section className="container mt-20 flex flex-col gap-y-6 lg:grid lg:grid-cols-3 lg:gap-x-3">
+    <section className="container gap-28 mt-20 flex flex-col gap-y-6 lg:grid lg:grid-cols-3 ">
       <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role=""/>
       <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role=""/>
       <SmallBanner name={"Supplemental income"} jobTitle={"Dentist"} role=""/>
