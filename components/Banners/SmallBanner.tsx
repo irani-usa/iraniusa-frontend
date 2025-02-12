@@ -12,7 +12,7 @@ const SmallBanner: React.FC<SmallBannerProps> = (props) => {
   return (
     <Link
       href={'/'}
-      className="flex items-center  w-[384px] h-[187px] bg-cover bg-center rounded-2xl hover:cursor-pointer relative "
+      className="flex items-center  w-full h-[187px] bg-cover bg-center rounded-2xl hover:cursor-pointer relative "
       style={{ backgroundImage: `url('/images/banner/3.png')` }}
     >
       

@@ -24,7 +24,7 @@ const AirplaneCard: React.FC<AirplaneCardProps> = (props) => {
                 {props.description}
             </div>
 
-            <div className="flex justify-between gap-y-3 font-opensans px-4 absolute w-full bottom-0  border-t border-t-white-shade-4 py-4 items-center">
+            <div className="flex justify-between gap-y-3 font-opensans px-4 static lg:absolute w-full bottom-0  border-t border-t-white-shade-4 py-4 items-center">
                 <div className="flex items-center gap-2 ">
                     <img className="w-10 h-10 rounded-full" src={props.author.img} alt="" />
                     <div className="flex flex-col">

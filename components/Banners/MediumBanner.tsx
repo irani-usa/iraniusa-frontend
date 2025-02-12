@@ -107,7 +107,7 @@ const MediumBanner: React.FC<MediumBanner> = (props) => {
           fill="white"
         />
       </svg>
-     <div className="flex items-center justify-between w-full">
+     <div className="flex items-center justify-between w-full px-4">
       <span className="text-white text-base">On Social Media</span>
      <div className=" flex  gap-4">
         <Link href={""}>
