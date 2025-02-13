@@ -1,6 +1,119 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+  --color-primary: #04366a;
+  --color-blue: #011223;
+  --color-lightblue: #0085ff;
+  --color-white: #ffffff;
+  --color-red: #520017;
+  --color-black: #000000;
+  --color-green: #58bd7d;
+  --color-orange: #ff6838;
+
+  --color-primary-shade-1: #04366a;
+  --color-primary-shade-2: #043263;
+  --color-primary-shade-3: #032f5c;
+  --color-primary-shade-4: #032b55;
+  --color-primary-shade-5: #03284e;
+  --color-primary-shade-6: #032447;
+  --color-primary-shade-7: #022040;
+  --color-primary-shade-8: #021d39;
+  --color-primary-shade-9: #021931;
+  --color-primary-shade-10: #02162a;
+  --color-primary-shade-11: #011223;
+  --color-primary-shade-12: #010e1c;
+  --color-primary-shade-13: #010b15;
+  --color-primary-shade-14: #01070e;
+  --color-primary-shade-15: #000407;
+
+  --color-primary-tint-1: #04366a;
+  --color-primary-tint-2: #054384;
+  --color-primary-tint-3: #06509d;
+  --color-primary-tint-4: #075db7;
+  --color-primary-tint-5: #086ad1;
+  --color-primary-tint-6: #0977ea;
+  --color-primary-tint-7: #1885f6;
+  --color-primary-tint-8: #4ba0f8;
+  --color-primary-tint-10: #65aef9;
+  --color-primary-tint-11: #7fbbfa;
+  --color-primary-tint-12: #98c9fb;
+  --color-primary-tint-13: #b2d6fc;
+  --color-primary-tint-14: #cce4fd;
+  --color-primary-tint-15: #e5f1fe;
+
+  --color-white-shade-1: #ffffff;
+  --color-white-shade-2: #fafafa;
+  --color-white-shade-3: #f2f2f2;
+  --color-white-shade-4: #e6e6e6;
+  --color-white-shade-5: #d9d9d9;
+  --color-white-shade-6: #cccccc;
+  --color-white-shade-7: #bfbfbf;
+  --color-white-shade-8: #b3b3b3;
+  --color-white-shade-9: #a6a6a6;
+  --color-white-shade-10: #999999;
+  --color-white-shade-11: #8c8c8c;
+  --color-white-shade-12: #808080;
+  --color-white-shade-13: #737373;
+  --color-white-shade-14: #666666;
+  --color-white-shade-15: #595959;
+  --color-white-shade-16: #4c4c4c;
+  --color-white-shade-17: #404040;
+  --color-white-shade-18: #333333;
+  --color-white-shade-19: #262626;
+  --color-white-shade-20: #191919;
+  --color-white-shade-21: #0d0d0d;
+
+  --font-opensans: var(--font-opensans);
+  --font-outfit: var(--font-outfit);
+  --font-vazirmatn: var(--font-vazirmatn);
+
+  --shadow-drop-shadow: 46px 23px 73px 0px rgba(0, 0, 0, 0.05);
+  --shadow-drop-2: 0px 4px 29px 0px rgba(0, 0, 0, 0.15);
+  --shadow-soft-shadow: 0px 119px 130px 0px rgba(0, 0, 0, 0.03);
+  --shadow-card: 101px 66px 141px 0px rgba(0, 0, 0, 0.12);
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (width >= theme(--breakpoint-sm)) {
+    padding-inline: 2rem;
+  }
+  @media (width >= theme(--breakpoint-lg)) {
+    padding-inline: 4rem;
+  }
+  @media (width >= theme(--breakpoint-xl)) {
+    padding-inline: 5rem;
+  }
+  @media (width >= theme(--breakpoint-2xl)) {
+    padding-inline: 6rem;
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 *{
   text-rendering: geometricPrecision;
@@ -440,8 +553,8 @@ select:-webkit-autofill:focus {
 
 
 .rhap_container{
-  @apply bg-primary-shade-11 !important
+  @apply bg-primary-shade-11!
 }
 .rhap_current-time , .rhap_total-time{
-  @apply text-white !important
+  @apply text-white!
 }

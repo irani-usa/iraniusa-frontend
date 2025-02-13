@@ -27,7 +27,7 @@ const page = () => {
                 Your Subscription is <br /> Now Active
                 </h1>
                 <p className='text-white-shade-8 text-center font-medium    '>your subscription is active till <span className='text-black'>10/28/12</span></p>
-                <Button content='Go to your dashboard' classes="w-max py-1.5 px-4 text-sm mt-4 !rounded-xl"/>
+                <Button content='Go to your dashboard' classes="w-max py-1.5 px-4 text-sm mt-4 rounded-xl!"/>
             </div>
         </section>)
 }

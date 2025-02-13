@@ -36,7 +36,7 @@ const Select = () => {
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>
         <ul
-          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500 ${
+          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-1000 transition-opacity duration-500 ${
             open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
           } `}
         >
@@ -46,7 +46,7 @@ const Select = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value.toLowerCase())}
               placeholder="Search here"
-              className="w-full placeholder:text-black text-[15px] font-normal font-sans bg-white-shade-3 0 p-3 rounded-2xl outline-none"
+              className="w-full placeholder:text-black text-[15px] font-normal font-sans bg-white-shade-3 0 p-3 rounded-2xl outline-hidden"
             />
           </div>
           <div className="flex flex-col gap-y-3 pt-2 p-3">

@@ -30,13 +30,13 @@ const page = () => {
           <div className={FeatureListClasses}>
             <span
               onClick={() => setSendmethod("pdf")}
-              className={`relative z-[2000]  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm ${sendMethod === "email" && "text-white-shade-8"}`}
+              className={`relative z-2000  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm ${sendMethod === "email" && "text-white-shade-8"}`}
             >
               Send invoice as Pdf
             </span>
             <span
               onClick={() => setSendmethod("email")}
-              className={`relative z-[2000]  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm ${sendMethod === "pdf" && "text-white-shade-8"}`}
+              className={`relative z-2000  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm ${sendMethod === "pdf" && "text-white-shade-8"}`}
             >
               Send invoice as Email
             </span>
@@ -54,7 +54,7 @@ const page = () => {
                 </div>
                 <div className="w-full h-1 border-t border-white-shade-4 "></div>
 
-                <div className='bg-white-shade-1 drop-shadow flex flex-col gap-1 rounded-lg p-2'>
+                <div className='bg-white-shade-1 drop-shadow-sm flex flex-col gap-1 rounded-lg p-2'>
                   <div className="flex items-center justify-between">
                     <span className='text-white-shade-10'>plan</span>
                     <span className='text-black font-medium'>$49</span>
@@ -65,13 +65,13 @@ const page = () => {
                   </div>
                 </div>
                 <div className="flex gap-x-3">
-                  <div className="transition-all bg-white-shade-1 drop-shadow-sm focus-within:border-white-shade-18  focus-within:border-2 flex items-center gap-x focus-within:border-black-2 w-full h-14 rounded-2xl border-2 border-white-shade-4 px-2 py-1">
+                  <div className="transition-all bg-white-shade-1 drop-shadow-xs focus-within:border-white-shade-18  focus-within:border-2 flex items-center gap-x focus-within:border-black-2 w-full h-14 rounded-2xl border-2 border-white-shade-4 px-2 py-1">
 
                     <TicketIcon classes='w-10 pr-1 text-white-shade-8 border-r border-white-shade-4' />
 
                     <input
                       type="password"
-                      className="group w-5/6 ml-3 h-full bg-white/0 rounded-2xl border-none focus:outline-none text-black"
+                      className="group w-5/6 ml-3 h-full bg-white/0 rounded-2xl border-none focus:outline-hidden text-black"
                       placeholder="Passcode"
                     />
                     <button

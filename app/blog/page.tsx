@@ -38,7 +38,7 @@ const page = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value.toLowerCase())}
               placeholder="Search for Blogs,companies,users,topics"
-              className="w-full placeholder:text-white-shade-11 text-lg font-normal font-sans bg-white-shade-3  p-1 rounded-2xl outline-none"
+              className="w-full placeholder:text-white-shade-11 text-lg font-normal font-sans bg-white-shade-3  p-1 rounded-2xl outline-hidden"
             />
       </div>
       <div className="flex flex-col items-end   font-medium  text-black rounded-3xl w-full">
@@ -57,7 +57,7 @@ const page = () => {
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>
         <ul
-          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-[1000] transition-opacity duration-500  ${
+          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-1000 transition-opacity duration-500  ${
             open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
           } `}
         >

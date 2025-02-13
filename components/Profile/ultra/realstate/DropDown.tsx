@@ -14,7 +14,7 @@ const DropDown = () => {
 
     return (
         <div className="text-black">
-            <div className="dropdown z-[10000] w-[400px] relative mx-auto my-10">
+            <div className="dropdown z-10000 w-[400px] relative mx-auto my-10">
                 <div
                     onClick={() => setIsActive(!isActive)}
                     className="dropdown-btn flex items-center justify-between text-[#777] font-medium p-5 rounded-[20px] bg-white-shade-3"

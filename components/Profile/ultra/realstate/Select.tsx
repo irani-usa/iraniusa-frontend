@@ -48,7 +48,7 @@ export const Select = () => {
           />
         </svg>
         <select
-          className="text-black bg-white-shade-3 border-none outline-none focus:outline-none focus:border-none appearance-none lg:text-lg lg:font-medium"
+          className="text-black bg-white-shade-3 border-none outline-hidden focus:outline-hidden focus:border-none appearance-none lg:text-lg lg:font-medium"
           name="selectCity"
           defaultValue={"Los angles"}
         >

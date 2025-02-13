@@ -34,7 +34,7 @@ const Plan: React.FC<PlanProps> = (props) => {
 <path d="M5.99982 10.4998C5.87315 10.4998 5.74646 10.4532 5.64646 10.3532C5.45313 10.1598 5.45313 9.8398 5.64646 9.64647L9.64647 5.64646C9.8398 5.45313 10.1598 5.45313 10.3532 5.64646C10.5465 5.8398 10.5465 6.15984 10.3532 6.35317L6.35317 10.3532C6.25317 10.4532 6.12648 10.4998 5.99982 10.4998Z" fill="#EE4B4B"/>
 </svg>
 {props.off}%</div>
-        <div className={`absolute  bottom-0 left-1/2 w-16 rounded h-1 -translate-x-1/2 ${props.classes}`}></div>
+        <div className={`absolute  bottom-0 left-1/2 w-16 rounded-sm h-1 -translate-x-1/2 ${props.classes}`}></div>
       </div>
     </>
   )

@@ -11,7 +11,7 @@ const UserSearch = () => {
         </span>
       </div>
       <input
-        className="w-full h-16 rounded-2xl bg-white-shade-3 px-4 mt-2 focus:outline-none text-black"
+        className="w-full h-16 rounded-2xl bg-white-shade-3 px-4 mt-2 focus:outline-hidden text-black"
         type="text"
         placeholder="Persons,Companies,Jobs"
       />

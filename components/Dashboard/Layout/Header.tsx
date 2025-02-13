@@ -13,7 +13,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search here"
-            className="focus:z-10 focus:border-blue-500 focus:ring-blue-500 h-full px-4 text-black bg-white-shade-2 focus:outline-none rounded-full focus:border-none"
+            className="focus:z-10 focus:border-blue-500 focus:ring-blue-500 h-full px-4 text-black bg-white-shade-2 focus:outline-hidden rounded-full focus:border-none"
           />
         </div>
         <div className="flex justify-center items-center w-16 h-16 border border-white-shade-4 rounded-full">

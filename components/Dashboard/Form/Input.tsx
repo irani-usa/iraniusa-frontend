@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = (props) => {
         <input
           type="text"
           placeholder={props.placeHolder}
-          className="w-5/6 h-full text-lg rounded-2xl bg-white-shade-2 focus:outline-none"
+          className="w-5/6 h-full text-lg rounded-2xl bg-white-shade-2 focus:outline-hidden"
         />
         <svg
           className="w-1/6"

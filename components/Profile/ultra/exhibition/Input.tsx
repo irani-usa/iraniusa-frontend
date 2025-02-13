@@ -22,7 +22,7 @@ export const Input = () => {
       <input
         type="text"
         placeholder="Search by artist, event or venue"
-        className="text-center w-full h-full rounded-2xl text-white-shade-8 text-[16px] bg-white-shade-3 focus:outline-none focus:shadow-none lg:text-left "
+        className="text-center w-full h-full rounded-2xl text-white-shade-8 text-[16px] bg-white-shade-3 focus:outline-hidden focus:shadow-none lg:text-left "
       />
     </div>
   );

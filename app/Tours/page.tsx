@@ -51,7 +51,7 @@ const ToursSearch = () => {
                                 <li className="text-center">
                                     <a
                                         className={
-                                            "text-base font-medium  p-3 cursor-pointer  rounded block leading-normal " +
+                                            "text-base font-medium  p-3 cursor-pointer  rounded-sm block leading-normal " +
                                             (openTab === item
                                                 ? "text-black bg-white"
                                                 : "text-white-shade-10 bg-white/0")
@@ -105,7 +105,7 @@ const ToursSearch = () => {
                              <h1 className="text-2xl font-bold">New York</h1>
                              <span>United states of america</span>
                              </div>
-                            <div className='w-full rounded-3xl h-1/2 bg-gradient-to-t from-black to-black/0 absolute bottom-0  '></div>
+                            <div className='w-full rounded-3xl h-1/2 bg-linear-to-t from-black to-black/0 absolute bottom-0  '></div>
                            
                         </div>
                         <div
@@ -116,7 +116,7 @@ const ToursSearch = () => {
                              <h1 className="text-2xl font-bold">Dubai</h1>
                              <span>United Arab Emirates</span>
                              </div>
-                            <div className='w-full rounded-3xl h-1/2 bg-gradient-to-t from-black to-black/0 absolute bottom-0  '></div>
+                            <div className='w-full rounded-3xl h-1/2 bg-linear-to-t from-black to-black/0 absolute bottom-0  '></div>
                         </div>
                          <div
                             className="w-full h-56   rounded-3xl  relative   bg-cover bg-center  text-white  lg:col-start-4 lg:col-end-5"
@@ -126,7 +126,7 @@ const ToursSearch = () => {
                              <h1 className="text-2xl font-bold">Stockholm</h1>
                              <span>Sweden</span>
                              </div>
-                            <div className='w-full rounded-3xl h-1/2 bg-gradient-to-t from-black to-black/0 absolute bottom-0  '></div>
+                            <div className='w-full rounded-3xl h-1/2 bg-linear-to-t from-black to-black/0 absolute bottom-0  '></div>
                         </div>
                          <div
                             className="w-full h-56   rounded-3xl  relative   bg-cover bg-center  text-white  lg:col-start-2 lg:col-end-5"
@@ -137,7 +137,7 @@ const ToursSearch = () => {
                              <span>Tehran
                              Iran</span>
                              </div>
-                            <div className='w-full rounded-3xl h-1/2 bg-gradient-to-t from-black to-black/0 absolute bottom-0  '></div>
+                            <div className='w-full rounded-3xl h-1/2 bg-linear-to-t from-black to-black/0 absolute bottom-0  '></div>
                         </div>
                     </div>
             </div>

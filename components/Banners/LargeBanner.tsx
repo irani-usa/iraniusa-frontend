@@ -130,10 +130,10 @@ const LargeBanner = () => {
               innovativeconstruction services
             </p>
             <div className="flex justify-center gap-3 ">
-              <span className="bg-white/5 backdrop-blur text-white flex items-center justify-center rounded-full w-[75px]  py-2 font-medium ">
+              <span className="bg-white/5 backdrop-blur-sm text-white flex items-center justify-center rounded-full w-[75px]  py-2 font-medium ">
                 Cafés
               </span>
-              <span className="bg-white/5 backdrop-blur text-white rounded-full  py-2 font-medium px-5">
+              <span className="bg-white/5 backdrop-blur-sm text-white rounded-full  py-2 font-medium px-5">
                 Restaurants
               </span>
             </div>

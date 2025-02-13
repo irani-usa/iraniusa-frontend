@@ -6,7 +6,7 @@ export const Input = () => {
       <input
         type="text"
         placeholder="Advance search"
-        className="text-center w-full h-full rounded-3xl bg-white-shade-3 focus:outline-none focus:shadow-none "
+        className="text-center w-full h-full rounded-3xl bg-white-shade-3 focus:outline-hidden focus:shadow-none "
       />
       <svg
         className="absolute right-[60px]"

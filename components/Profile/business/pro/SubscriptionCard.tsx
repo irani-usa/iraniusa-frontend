@@ -18,7 +18,7 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = (props) => {
   };
 
   const pricingCardClasses = classNames(
-    "relative top-0 left-0 text-xl list-none list-inside before:contents[''] before:absolute before:w-full h-40 before:h-40 before:left-0 before:bottom-0 before:bg-gradient-to-t before:from-white before:to-white/10 transition-all duration-500 before:transition-all before:duration-500 p-5 flex flex-col gap-1",
+    "relative top-0 left-0 text-xl list-none list-inside before:contents[''] before:absolute before:w-full h-40 before:h-40 before:left-0 before:bottom-0 before:bg-linear-to-t before:from-white before:to-white/10 transition-all duration-500 before:transition-all before:duration-500 p-5 flex flex-col gap-1",
     {
       "h-auto min-h-[10rem] before:from-white/10": open,
       "max-h-40 h-40 overflow-hidden before:from-white": !open,
@@ -48,7 +48,7 @@ const SubscriptionCard: React.FC<SubscriptionCardProps> = (props) => {
       </div>
       <span
         onClick={openCardHandler}
-        className="z-[1000] inline-block p-2 -mt-5 bg-white rounded-full border border-white-shade-4 hover:cursor-pointer hover:deep-shadow"
+        className="z-1000 inline-block p-2 -mt-5 bg-white rounded-full border border-white-shade-4 hover:cursor-pointer hover:deep-shadow"
       >
         {open ? <ArrowUp /> : <ArrowDown />}
       </span>

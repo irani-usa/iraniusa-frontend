@@ -182,7 +182,7 @@ const page = () => {
             </div>
             <Link
               href={"/"}
-              className="inlien-flex px-12 py-4 rounded-2xl bg-white text-black font-opensans text-lg focus:outline-none hover: bg-transparent border border-white transition-all"
+              className="inlien-flex px-12 py-4 rounded-2xl bg-white text-black font-opensans text-lg focus:outline-hidden hover: bg-transparent border border-white transition-all"
             >
               Book now
             </Link>

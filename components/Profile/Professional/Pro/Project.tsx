@@ -28,7 +28,7 @@ const Project: React.FC<ProjectProps> = (props) => {
           <h1 className="text-[26px] font-outfit font-bold mt-9 text-black lg:text-3xl">Other Skills & Languages</h1>
           <p className=" text-white-shade-9  font-opensans">{props.softskillabout}</p>
           <span className='text-xl text-start block w-full font-bold'>- Other skills</span>
-            <ul className=' text-black grid grid-cols-1 ml-5 text-lg font-medium gap-y-6 lg:grid-cols-3 lg:grid-rows-5 w-full list-none'>
+            <ul className=' text-black grid grid-cols-1 ml-5 text-lg font-medium gap-6 lg:grid-cols-3 lg:grid-rows-5 w-full list-none'>
           <Skillsitem title={'Stress managemnet'} />
           <Skillsitem title={'Creativity, Responsible'} />
           <Skillsitem title={'Speech in public'} />
@@ -44,7 +44,7 @@ const Project: React.FC<ProjectProps> = (props) => {
             </ul>
           <span className='text-xl text-start block w-full font-bold'>- Languages</span>
 
-            <ul className=' text-black grid grid-cols-1 ml-5 text-lg font-medium gap-y-4 lg:grid-cols-3 lg:grid-rows-5 w-full list-none'>
+            <ul className=' text-black grid grid-cols-1 ml-5 text-lg font-medium gap-4 lg:grid-cols-3 lg:grid-rows-5 w-full list-none'>
        
          
           <Skillsitem title={'German'} />

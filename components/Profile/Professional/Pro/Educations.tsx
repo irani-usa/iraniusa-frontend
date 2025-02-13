@@ -26,7 +26,7 @@ const Educations: React.FC<EducationsProps> = (props) => {
       <Sectiontitle title={"Courses completed"} classes={''} />
         <p className=" text-white-shade-9  font-opensans">{props.courseabout}</p>
 
-        <div className='grid grid-cols-1 gap-y-7 mt-6 lg:grid-cols-2 mb-20'>
+        <div className='grid grid-cols-1 gap-7 mt-6 lg:grid-cols-2 mb-20'>
 
           <Course iconComp={<C />} name={'Google Data Analytics  Professional Certificate'} date={'Coursera - Oct 2022'} />
      

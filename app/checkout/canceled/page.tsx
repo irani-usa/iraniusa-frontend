@@ -29,7 +29,7 @@ const page = () => {
                 Oops! Your Payment <br /> Didn't Go Through
                 </h1>
                 <p className='text-white-shade-8 text-center font-medium    '>yTry using a different payment method or make another payment</p>
-                <Button content='Go back to checkout' classes="w-max py-1.5 px-4 text-sm mt-4 !rounded-xl" />
+                <Button content='Go back to checkout' classes="w-max py-1.5 px-4 text-sm mt-4 rounded-xl!" />
             </div>
         </section>)
 }

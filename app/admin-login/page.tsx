@@ -42,7 +42,7 @@ const page = () => {
 
             <input
               type="password"
-              className="group w-5/6 ml-3 h-full bg-white/0 rounded-2xl border-none focus:outline-none text-black"
+              className="group w-5/6 ml-3 h-full bg-white/0 rounded-2xl border-none focus:outline-hidden text-black"
               placeholder="Passcode"
             />
           </div>

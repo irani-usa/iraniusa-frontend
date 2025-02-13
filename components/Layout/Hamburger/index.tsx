@@ -15,7 +15,7 @@ const HamburgerNav = () => {
     }
 
     const HamburgerClasses = classNames('hamburger hamburger-inner',{
-        'z-[1000] white-bar absolute': menuVisibilty.menu,
+        'z-1000 white-bar absolute': menuVisibilty.menu,
         'z-1': !menuVisibilty.menu,
     })
 

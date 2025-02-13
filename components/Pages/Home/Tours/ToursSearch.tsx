@@ -34,7 +34,7 @@ const ToursSearch = () => {
                 <li className="text-center">
                   <a
                     className={
-                      "text-base font-medium  p-3 cursor-pointer  rounded block leading-normal " +
+                      "text-base font-medium  p-3 cursor-pointer  rounded-sm block leading-normal " +
                       (openTab === item
                         ? "text-black bg-white"
                         : "text-white-shade-10 bg-white/0")

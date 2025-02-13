@@ -58,7 +58,7 @@ const Intro: React.FC<IntroProps> = (props) => {
             />
             <Button
               content={"Navigate"}
-              classes={"bg-white !text-blue py-4 my-2 border border-white-shade-4 shadow-sm"}
+              classes={"bg-white text-blue! py-4 my-2 border border-white-shade-4 shadow-xs"}
             />
           </div>
           <div className="relative" ref={menuRef}>

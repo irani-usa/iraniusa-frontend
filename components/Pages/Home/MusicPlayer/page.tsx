@@ -28,12 +28,12 @@ export default function Home() {
                 <p className="text-white-shade-11 mt-4 text-lg">
                     Listen to the newest hit music with a live music player        </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full container mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full container mt-10">
                 {/* Popular Songs */}
-                <div>
+                <div className='md:col-span-3 lg:col-span-1'>
                     <h2 className="text-xl font-semibold mb-4">Popular songs</h2>
                     <div className="space-y-4 ">
-                        <div className="h-64 p-4 shadow flex rounded-2xl relative text-white">
+                        <div className="h-64 p-4 shadow-sm flex rounded-2xl relative text-white">
                         <div className='rounded-2xl absolute w-full h-full inset-0 bg-cover bg-center -z-20' style={{ backgroundImage: `url(/artist/danyal.jpg)` }}></div>
                             <div>
                                 <p className="font-bold">2 Qotbi</p>
@@ -45,7 +45,7 @@ export default function Home() {
                             </svg>
 
                         </div>
-                        <div className="p-4 h-28 shadow flex rounded-2xl relative text-white">
+                        <div className="p-4 h-28 shadow-sm flex rounded-2xl relative text-white">
                             <div className='rounded-2xl absolute w-full h-full inset-0 bg-cover bg-center -z-20' style={{ backgroundImage: `url(/artist/tijay.jpg)` }}></div>
                             <div>
                                 <p className="font-bold">Block</p>
@@ -63,7 +63,7 @@ export default function Home() {
                 {/* Monthly Hits */}
                 <div>
                     <h2 className="text-xl font-semibold mb-4">Monthly hits</h2>
-                    <div className="bg-primary-shade-11 text-white rounded-2xl shadow  flex flex-col gap-3 p-2">
+                    <div className="bg-primary-shade-11 text-white rounded-2xl shadow-sm  flex flex-col gap-3 p-2">
                         {songs.map((song, index) => (
                             <div
                                 key={song.id}
@@ -92,7 +92,7 @@ export default function Home() {
                 {/* Now Playing */}
                 <div>
 
-                    <div className="bg-primary-shade-11 text-white shadow  h-full p-2 rounded-2xl w-full flex flex-col justify-between">
+                    <div className="bg-primary-shade-11 text-white shadow-sm  h-full p-2 rounded-2xl w-full flex flex-col justify-between">
                         <div className='h-48 w-full rounded-2xl mb-4 bg-cover bg-center' style={{ backgroundImage: `url(/artist/${currentSong.artist.toLowerCase().replace(' ', '-')}.jpg)` }}>
                             
                         </div>
