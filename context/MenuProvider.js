@@ -10,7 +10,7 @@ export function MenuProvider({ children }) {
 
     useEffect(() => {
         setMenu(menu)
-    }, menu)
+    }, [menu])
 
     return (
         <MenuContext.Provider value={{menu, setMenu}}>

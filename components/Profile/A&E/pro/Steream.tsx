@@ -25,7 +25,7 @@ const Steream: React.FC<StereamProps> = (props) => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_1336_10517)">
+              <g clipPath="url(#clip0_1336_10517)">
                 <path
                   d="M24 11.9973C24 5.36992 18.6274 -0.00266075 12 -0.00266075C5.37258 -0.00266075 0 5.36992 0 11.9973C0 17.9869 4.38823 22.9513 10.125 23.8516V15.4661H7.07813V11.9973H10.125V9.35359C10.125 6.34609 11.9165 4.68484 14.6576 4.68484C15.9705 4.68484 17.3438 4.91921 17.3438 4.91921V7.87234H15.8306C14.3399 7.87234 13.875 8.79735 13.875 9.74633V11.9973H17.2031L16.6711 15.4661H13.875V23.8516C19.6118 22.9513 24 17.9869 24 11.9973Z"
                   fill="black"
@@ -50,7 +50,7 @@ const Steream: React.FC<StereamProps> = (props) => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_1336_10522)">
+              <g clipPath="url(#clip0_1336_10522)">
                 <mask
                   id="mask0_1336_10522"
                   maskUnits="userSpaceOnUse"
@@ -148,7 +148,7 @@ const Steream: React.FC<StereamProps> = (props) => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_1336_10548)">
+              <g clipPath="url(#clip0_1336_10548)">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -171,7 +171,7 @@ const Steream: React.FC<StereamProps> = (props) => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_1336_10552)">
+              <g clipPath="url(#clip0_1336_10552)">
                 <path
                   d="M12.0094 24.0187C18.6419 24.0187 24.0187 18.6419 24.0187 12.0094C24.0187 5.37677 18.6419 0 12.0094 0C5.37677 0 0 5.37677 0 12.0094C0 18.6419 5.37677 24.0187 12.0094 24.0187Z"
                   fill="black"

@@ -91,11 +91,11 @@ const EventCalendar = () => {
           <div className="w-full py-4 border-b border-white-shade-4">
             <div className="flex items-center justify-center gap-x-[85px]">
               <svg className="cursor-pointer" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 13.5L1 7.5L7 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 13.5L1 7.5L7 1.5" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span className="text-white-shade-10 font-medium text-xl">Month year</span>
               <svg  className="cursor-pointer" width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 13.5L7 7.5L1 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1 13.5L7 7.5L1 1.5" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
 
             </div>

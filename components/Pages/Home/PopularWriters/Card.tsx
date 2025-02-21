@@ -32,7 +32,7 @@ const Card = () => {
           <path
             d="M1 7.5L56.75 7.5L50.25 0.999998"
             stroke="black"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
         </svg>
         <Link className="text-white bg-red font-outfit py-1 px-2 rounded-lg text-[13px]" href="/">

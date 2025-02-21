@@ -84,7 +84,7 @@ const NormallBanner: React.FC<NormallBanner> = (props) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_1420_27016)">
+            <g clipPath="url(#clip0_1420_27016)">
               <path
                 d="M12.0094 24.0187C18.6419 24.0187 24.0187 18.6419 24.0187 12.0094C24.0187 5.37677 18.6419 0 12.0094 0C5.37677 0 0 5.37677 0 12.0094C0 18.6419 5.37677 24.0187 12.0094 24.0187Z"
                 fill="white"

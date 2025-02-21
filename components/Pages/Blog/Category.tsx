@@ -14,7 +14,7 @@ const Category: React.FC<CategoryProps> = (props) => {
           <span className="flex items-center  justify-between font-opensans ">
             {props.content}{" "}
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.5 15.8333L12.5 10L7.5 4.16666" stroke="#A6A6A6" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.5 15.8333L12.5 10L7.5 4.16666" stroke="#A6A6A6" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 
           </span>
