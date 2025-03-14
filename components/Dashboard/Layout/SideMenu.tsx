@@ -20,9 +20,9 @@ const SideMenu = () => {
     <>
       <nav className="flex flex-col justify-between w-1/5 h-screen py-8  border-r border-white-shade-4">
         <div className="w-full flex flex-col">
-          <Link href={"/"} className="px-12">
+          <div  className="px-12">
             <Logo />
-          </Link>
+          </div>
           <div className="w-full border-b py-4 border-[#EDEDED] mt-4">
             <div className="px-12">
               <span className="inline-block mb-6 text-white-shade-8">Menu</span>

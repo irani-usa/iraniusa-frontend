@@ -25,14 +25,13 @@ const OverlayMenu = () => {
         }}
       >
         <div className="container h-24">
-          <Link
-            href={"/"}
+          <div
             onClick={() => {
               menuVisibilty.setMenu(!menuVisibilty.menu);
             }}
           >
             <Logo width={80} height={200} />
-          </Link>
+          </div>
         </div>
         <ul className="container flex flex-col items-center gap-y-6 font-opensans text-xl font-medium text-white-shade-10 mt-20">
           <li className="font-semibold text-black">

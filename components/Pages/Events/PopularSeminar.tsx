@@ -54,7 +54,7 @@ const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
 
             {props.organizer}
           </h1>
-          <div className="flex items-center gap-x-5 pl-1">
+          <div className="flex flex-col gap-2 pl-1">
             <h1 className="text-white-shade-9 flex items-center gap-x-3 font-opensans">
               <svg
                 width="17"
@@ -128,8 +128,7 @@ const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
               </svg>
               {props.date}
             </h1>
-          </div>
-          <h1 className="text-white-shade-9 flex items-center gap-x-3 pl-1 font-opensans">
+            <h1 className="text-white-shade-9 flex items-center gap-x-3 pl-1 font-opensans">
             <svg
               width="14"
               height="18"
@@ -146,6 +145,8 @@ const PopularSeminar: React.FC<PopularSeminarProps> = (props) => {
             </svg>
             {props.city}
           </h1>
+          </div>
+        
           <button
             type="button"
             className="bg-[#0112231A] group-hover:bg-black group-hover:text-white transition-all duration-300 text-black rounded-2xl py-3 font-semibold"

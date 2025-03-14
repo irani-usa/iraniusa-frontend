@@ -3,16 +3,16 @@ import React from "react";
 
 interface BrandProps {
     content: string;
-    descreption: string;
+   
     iconComp: React.ReactNode;
     class: string;
 }
 
 const Brand: React.FC<BrandProps> = (props) => {
     return (
-        <div className="flex flex-col items-center relative group max-w-[70%] lg:max-w-[35%]">
+        <div className="flex flex-col items-center relative group w-full max-w-[70%] lg:max-w-[35%]">
             <div
-                className={`${props.class} group cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6`}
+                className={`${props.class} group cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6 w-full`}
             >
                 <div className="w-full h-36 flex items-center justify-center bg-black rounded-xl">
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,16 @@ const Brand: React.FC<BrandProps> = (props) => {
                 <span className=" flex items-center gap-x-5 text-xl font-semibold pl-3 text-black duration-200">
                     {props.content}
                 </span>
-                <p className=" text-black duration-200 ">{props.descreption}</p>
+                <p className=" text-white-shade-8 duration-200 flex items-center gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.16699 5.83398L6.66699 14.1673" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.333 5.83398L10.833 14.1673" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.9997 8.33398H5.83301" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.1667 11.666H5" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.66699 9.99935C1.66699 6.07098 1.66699 4.10679 2.88738 2.8864C4.10777 1.66602 6.07195 1.66602 10.0003 1.66602C13.9287 1.66602 15.8929 1.66602 17.1133 2.8864C18.3337 4.10679 18.3337 6.07098 18.3337 9.99935C18.3337 13.9277 18.3337 15.8919 17.1133 17.1123C15.8929 18.3327 13.9287 18.3327 10.0003 18.3327C6.07195 18.3327 4.10777 18.3327 2.88738 17.1123C1.66699 15.8919 1.66699 13.9277 1.66699 9.99935Z" stroke="#B3B3B3" stroke-width="1.2"/>
+</svg>
+Home Decor
+                </p>
                 <Button content="Navigate" classes="py-3"/>
             </div>
         </div>

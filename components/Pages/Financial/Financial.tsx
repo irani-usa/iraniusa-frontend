@@ -23,7 +23,7 @@ const Financial: React.FC<FinancialProps> = (props) => {
               <div className={`${props.frame} bg-white p-3 rounded-full`}>
                 {props.iconComp}
               </div>
-              <h1 className="font-semibold text-xl font-outfit">{props.title}</h1>
+              <h1 className="font-semibold text-xl font-outfit text-black">{props.title}</h1>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

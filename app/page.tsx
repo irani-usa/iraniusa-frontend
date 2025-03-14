@@ -26,7 +26,7 @@ export default function Home() {
       <EventCalendar />
       <MonthlyNnewUsers />
       <FinancialSummery />
-      <MediumBannerList/>
+      <NormalBannerList />
       <ToursSearch />
       <PopularWriters/>
       <Monthlynewusers />

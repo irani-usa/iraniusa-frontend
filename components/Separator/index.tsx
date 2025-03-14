@@ -1,8 +1,10 @@
 import React from "react";
 import Achaemenes from "../Symbols/Achaemenes";
+import Triangle from "../Symbols/Triangle";
 
 interface SeparatorProps {
   classes: string,
+  isBlog? : boolean,
 
 }
 
@@ -19,7 +21,8 @@ const Separator:React.FC<SeparatorProps> = (props) => {
         <line y1="0.5" x2="129" y2="0.5" stroke="#D9D9D9" />
       </svg>
 
-      <Achaemenes classes={"w-10"} />
+      {props.isBlog ? <Triangle classes="w-10"/> : <Achaemenes classes={"w-10"} />}
+      
       <svg
         width="129"
         height="1"

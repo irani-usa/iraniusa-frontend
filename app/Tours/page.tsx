@@ -49,7 +49,7 @@ const ToursSearch = () => {
                         >
                             {tabs.map((item: string): JSX.Element => (
                                 <li className="text-center">
-                                    <a
+                                    <span
                                         className={
                                             "text-base font-medium  p-3 cursor-pointer  rounded-sm block leading-normal " +
                                             (openTab === item
@@ -63,7 +63,7 @@ const ToursSearch = () => {
 
                                     >
                                         {item}
-                                    </a>
+                                    </span>
                                 </li>
                             ))}
                         </ul>

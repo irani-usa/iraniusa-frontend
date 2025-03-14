@@ -23,10 +23,10 @@ const Companies: React.FC<CompaniesProps> = (props) => {
       <h1 className=" text-[27px] font-outfit font-bold text-black text-center lg:text-3xl">
         {props.title}
   </h1>
-        <section className="flex items-center gap-x-7 py-5 flex-col w-full">
-          <Company classes={"bg-blue"} iconComp={<M />} title="Riv Design Sweden"/>
-          <Company classes={"bg-blue"} iconComp={<M />} title="Riv Design Sweden"/>
-          <Company classes={"bg-blue"} iconComp={<M />} title="Riv Design Sweden"/>
+        <section className="flex items-center gap-7 py-5 flex-col w-full">
+          <Company classes={"bg-blue"} iconComp={<M />} date={2021} title="Riv Design Sweden"/>
+          <Company classes={"bg-blue"} iconComp={<M />} date={2021} title="Riv Design Sweden"/>
+          <Company classes={"bg-blue"} iconComp={<M />} date={2021} title="Riv Design Sweden"/>
         </section>
       </div>
     </div>

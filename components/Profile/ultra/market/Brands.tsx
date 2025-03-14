@@ -14,9 +14,9 @@ const Brands = () => {
              Brands
           </h1>
         <section className='flex gap-x-5'>
-          <Brand content={'Lorem Ipsum'} descreption={'Lorem ipsum textLorem ipsum textLorem ipsum textLorem ipsum text'} iconComp={undefined} class={''} />
-          <Brand content={'Lorem Ipsum'} descreption={'Lorem ipsum textLorem ipsum textLorem ipsum textLorem ipsum text'} iconComp={undefined} class={'hidden lg:flex'} />
-          <Brand content={'Lorem Ipsum'} descreption={'Lorem ipsum textLorem ipsum textLorem ipsum textLorem ipsum text'} iconComp={undefined} class={'hidden lg:flex'} />
+          <Brand content={'Lorem Ipsum'} iconComp={undefined} class={''} />
+          <Brand content={'Lorem Ipsum'} iconComp={undefined} class={'hidden lg:flex'} />
+          <Brand content={'Lorem Ipsum'} iconComp={undefined} class={'hidden lg:flex'} />
         </section>
        <Arrowbtn classes={'hidden lg:flex'} />
       </div>

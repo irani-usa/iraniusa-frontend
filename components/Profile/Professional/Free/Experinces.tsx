@@ -25,7 +25,7 @@ const Experinces: React.FC<ExperincesProps> = (props) => {
         <IconElement icon={<ExperincesIcon />}/>  
         <Sectiontitle title={'Experiences and projects'} classes={'mt-5'} />
         <p className="text-center text-white-shade-9  font-opensans">{props.exprince}</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:grid-cols-3 gap-5 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:grid-cols-3 gap-8 w-full">
         {Experinces.map((item, id) => {
             return (
               <ExperincesCard 

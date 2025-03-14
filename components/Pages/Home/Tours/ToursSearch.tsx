@@ -1,6 +1,6 @@
 
 "use client"
-import React, { ReactNode, useState } from 'react'
+import React, { ReactNode, useEffect, useState } from 'react'
 
 
 import TourFilter from './TourFilter'
@@ -10,7 +10,13 @@ import HotelCard from './card/HotelCard'
 
 const ToursSearch = () => {
   const [openTab, setOpenTab] = useState("Hotel");
-  const tabs: string[] = ["Hotel", "Flight", "Tour", "Bus", "Train", "Villa and residence"]
+
+  useEffect(() => {
+    // فقط تو کلاینت اجرا می‌شه
+    setOpenTab("Hotel"); // یا هر منطق دیگه‌ای
+  }, []);
+
+  const tabs = ["Hotel", "Flight", "Tour", "Bus", "Train", "Villa and residence"];
 
   return (
     <section className='container my-36'>
@@ -28,13 +34,13 @@ const ToursSearch = () => {
         <div className="flex flex-wrap mt-20 bg-white-shade-3 min-w-xl max-w-fit mx-auto rounded-lg px-2 ">
           <div className="w-full">
             <ul
-              className="flex mb-0 list-none  gap-4 py-3 flex-row flex-wrap"
+              className="flex mb-0 list-none  gap-4 py-2 flex-row flex-wrap"
             >
               {tabs.map((item: string): JSX.Element => (
-                <li className="text-center">
-                  <a
+                <li key={item} className="text-center">
+                  <span
                     className={
-                      "text-base font-medium  p-3 cursor-pointer  rounded-sm block leading-normal " +
+                      "text-base font-medium  py-1.5 px-3 cursor-pointer  rounded-lg block leading-normal " +
                       (openTab === item
                         ? "text-black bg-white"
                         : "text-white-shade-10 bg-white/0")
@@ -46,7 +52,7 @@ const ToursSearch = () => {
 
                   >
                     {item}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>

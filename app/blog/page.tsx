@@ -29,7 +29,7 @@ const page = () => {
       <OverlayMenu />
       <section>
         <div className="container py-10 flex flex-col items-center gap-y-5 bg-white-shade-2 " >
-          <Separator classes={""} />
+          <Separator classes={""} isBlog/>
           <div className="py-2 w-1/2 bg-white-shade-3 rounded-2xl">
           <section className="flex lg:flex-row flex-col items-center w-full  h-full rounded-3xl justify-between hover:cursor-pointer p-2">
       <div className="w-full flex gap-x-2 items-center  px-6">      
@@ -387,7 +387,7 @@ const page = () => {
             </div>
             <div>
               <div className="w-full bg-blue my-28 rounded-3xl lg:flex items-center">
-                <div className="flex flex-col py-10 px-7 gap-y-7 lg:px-14 lg:gap-y-9">
+                <div className="flex flex-col  px-7 gap-y-3 lg:px-14 lg:gap-y-6">
                   <h1 className="text-white font-outfit text-2xl font-medium  lg:text-3xl">
                     Want to be a blogger? its not that hard 😌
                   </h1>
@@ -398,14 +398,14 @@ const page = () => {
                     Log in to your account or create one and start posting and
                     get viral
                   </p>
-                  <div className="flex items-center gap-x-14">
-                    <Link className="w-2/4" href={"/register"}>
-                      <h3 className="bg-white  py-4 text-black text-center text-lg font-medium font-opensans rounded-2xl lg:w-44">
+                  <div className="flex items-center gap-5">
+                    <Link className="" href={"/register"}>
+                      <h3 className="bg-white  py-2 text-black text-center text-lg font-medium font-opensans rounded-2xl lg:w-32">
                         Sign up
                       </h3>
                     </Link>
                     <Link href={"/login"}>
-                      <h3 className="font-opensans  text-center ">Log in</h3>
+                      <h3 className="font-opensans  text-center text-white font-bold">Log in</h3>
                     </Link>
                   </div>
                 </div>

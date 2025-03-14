@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Star from "../../About/Star";
-import Companies from './Companies';
 import People from './People';
 
 const Monthlynewusers = () => {
@@ -19,7 +18,7 @@ const Monthlynewusers = () => {
         </p>
       </div>
       <div className='py-20'>
-        <Companies />
+      
         <People />
       </div>
     </section>

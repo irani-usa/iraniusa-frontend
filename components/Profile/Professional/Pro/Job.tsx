@@ -16,7 +16,7 @@ const Job: React.FC<JobProps> = (props) => {
           
             <IconElement icon={<JobIcon />}/>
             <Sectiontitle title={"What is my job about?"} classes={''} />
-                <div className="w-full text-white-shade-9 font-opensans  flex flex-col gap-y-8">
+                <div className="w-full text-white-shade-9 font-opensans bg-white-shade-2 p-3 rounded-xl  flex flex-col gap-y-8">
                     <p >
                    {props.jobabout}
                     </p>

@@ -12,7 +12,7 @@ interface Cardchart {
   }
 const Cardchart: React.FC<Cardchart> = (props) => {
   return (
-    <div  className='flex items-center justify-between w-full pt-5 px-6 font-opensans my-6'>
+    <div  className='flex items-center justify-between w-full pt-5 px-6 font-opensans my-3'>
         <span className='flex items-center gap-x-3 text-white-shade-11'>
             <Rstar />
             {props.number}

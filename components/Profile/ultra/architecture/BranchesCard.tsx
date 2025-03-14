@@ -17,7 +17,7 @@ const BranchesCard: React.FC<BranchesCardProps> = (props) => {
            <section className='border-[1.5px] p-4 bg-white  border-white-shade-4 rounded-2xl '>
                   
                <div className='flex flex-col justify-center '>
-                 <div className="flex w-full my-5 justify-center">
+                 <div className="flex w-full my-10 justify-center">
                  <Location />
                  </div>
                    <h1 className='text-black font-semibold text-xl mb-4'>{props.title}</h1>

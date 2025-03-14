@@ -51,9 +51,7 @@ const Navigation = () => {
     <nav className="w-full h-24 border-b border-white-shade-4">
       <div className="container flex justify-between items-center h-full">
         <div className="flex h-full items-center gap-x-10">
-          <Link href={"/"}>
             <Logo width={80} height={200} />
-          </Link>
           <ul className="navigation hidden h-full lg:flex items-center gap-x-10 text-black font-opensans font-medium">
             {menuItems.map((link) => {
               return (

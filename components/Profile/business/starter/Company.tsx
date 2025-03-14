@@ -41,7 +41,7 @@ const Company: React.FC<CompanyProps> = (props) => {
           <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
             {props.title}
           </h1>
-          <p className=" text-white-shade-9  font-opensans">
+          <p className=" text-white-shade-9  font-opensans mb-32">
             {props.desc}
           </p>
           <div className=" grid grid-cols-1 lg:grid-cols-2 items-start w-full  gap-6">

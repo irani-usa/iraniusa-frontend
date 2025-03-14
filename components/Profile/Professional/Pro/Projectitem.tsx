@@ -9,7 +9,7 @@ interface ProjectitemProps {
 
 const Projectitem: React.FC<ProjectitemProps> = (props) => {
   return (
-    <div className='flex flex-col gap-y-4 mt-5 lg:w-[40%]'>
+    <div className='flex flex-col gap-y-4 mt-5 lg:w-[40%] bg-white-shade-2 border border-white-shade-4 p-3 rounded-xl'>
     <div className='bg-cover bg-center w-full h-[240px] rounded-2xl mt-3 lg:w-full' style={{ backgroundImage:  `url(${props.cover})` }}>
 
     </div>

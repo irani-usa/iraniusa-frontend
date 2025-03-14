@@ -9,10 +9,10 @@ import About from '@/components/Profile/business/starter/About'
 import Team from '@/components/Profile/business/pro/Team'
 import { Menu } from '@/components/Profile/ultra/resturant/Menu'
 import { MainMenu } from '@/components/Profile/ultra/resturant/MainMenu'
-import Gallery from '@/components/Profile/A&E/pro/Gallery'
 import Contact from '@/components/Profile/business/pro/Contact'
 import { Social } from '@/components/Profile/Professional/Pro'
 import Services from '@/components/Profile/business/pro/Services'
+import { Gallery } from '@/components/Profile/Professional/Free'
 
 
 const page = () => {

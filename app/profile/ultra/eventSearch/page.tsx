@@ -154,8 +154,8 @@ const page = () => {
 
                     <ol className="flex justify-center gap-1 text-xs font-medium">
                         <li>
-                            <a
-                                href="#"
+                            <span
+                                
                                 className="inline-flex  w-10 h-10 items-center justify-center rounded-lg border border-white-shade-4 bg-white text-white-shade-8 rtl:rotate-180"
                             >
                                 <span className="sr-only">Prev Page</span>
@@ -163,16 +163,16 @@ const page = () => {
                                     <path d="M10.5469 11.9466L10.5469 7.79329L10.5469 4.05329C10.5469 3.41329 9.77354 3.09329 9.32021 3.54662L5.86688 6.99995C5.31354 7.55329 5.31354 8.45329 5.86688 9.00662L7.18021 10.32L9.32021 12.46C9.77354 12.9066 10.5469 12.5866 10.5469 11.9466Z" fill="black" />
                                 </svg>
 
-                            </a>
+                            </span>
                         </li>
 
                         <li>
-                            <a
-                                href="#"
+                            <span
+                                
                                 className="block  w-10 h-10 rounded-lg border border-white-shade-4 bg-white text-center leading-8 text-white-shade-8"
                             >
                                 1
-                            </a>
+                            </span>
                         </li>
 
                         <li className="block  w-10 h-10 rounded-lg border-blue bg-blue text-center leading-8 text-white">
@@ -180,26 +180,26 @@ const page = () => {
                         </li>
 
                         <li>
-                            <a
-                                href="#"
+                            <span
+                                
                                 className="block  w-10 h-10 rounded-lg border border-white-shade-4 bg-white text-center leading-8 text-white-shade-8"
                             >
                                 3
-                            </a>
+                            </span>
                         </li>
 
                         <li>
-                            <a
-                                href="#"
+                            <span
+                                
                                 className="block  w-10 h-10 rounded-lg border border-white-shade-4 bg-white text-center leading-8 text-white-shade-8"
                             >
                                 4
-                            </a>
+                            </span>
                         </li>
 
                         <li>
-                            <a
-                                href="#"
+                            <span
+                                
                                 className="inline-flex  w-10 h-10 items-center justify-center rounded-lg border border-white-shade-4 bg-white text-white-shade-8 rtl:rotate-180"
                             >
                                 <span className="sr-only">Next Page</span>
@@ -207,7 +207,7 @@ const page = () => {
                                     <path d="M5.45312 4.05338L5.45312 8.20671L5.45312 11.9467C5.45312 12.5867 6.22646 12.9067 6.67979 12.4534L10.1331 9.00005C10.6865 8.44671 10.6865 7.54671 10.1331 6.99338L8.81979 5.68005L6.67979 3.54005C6.22646 3.09338 5.45312 3.41338 5.45312 4.05338Z" fill="black" />
                                 </svg>
 
-                            </a>
+                            </span>
                         </li>
                     </ol>
                 </section>

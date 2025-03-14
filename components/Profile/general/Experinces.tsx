@@ -14,7 +14,7 @@ interface ExperincesProps {
 const ExperincesCard: React.FC<ExperincesProps> = (props) => {
   return (
 
-    <div className="flex gap-3 justify-center">
+    <div className="flex gap-2 bg-white-shade-2 p-4 rounded-xl">
       <div className="border border-white-shade-4 h-min p-2 rounded-lg">
        <ExperincesIcon />
       </div>
