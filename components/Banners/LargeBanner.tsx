@@ -5,23 +5,25 @@ import { WhatsApp } from "../Icons/Socials";
 
 const LargeBanner = () => {
   return (
-    <Link
-      href={"/"}
-      className="relative flex flex-col lg:flex-row lg:justify-between items-center gap-x-3 gap-y-6 w-full h-auto lg:h-[470px] text-white bg-cover bg-center  rounded-3xl hover:cursor-pointer px-8 py-16 box" 
-      style={{ backgroundImage: `url('/images/banner/sample.png')` }}
-    >
-      
-     <div className="flex absolute left-1/2 -top-5 -translate-x-1/2 z-5 overflow-visible">
-  <div
-    className="w-16 h-16 rounded-full bg-cover bg-center"
-    style={{ backgroundImage: `url('/images/avatars/1.png')` }}
-  ></div>
-  <div
-    className="w-16 h-16 -ml-6 rounded-full bg-cover bg-center"
-    style={{ backgroundImage: `url('/images/avatars/2.png')` }}
-  ></div>
-</div>
+    <div className="relative flex justify-center">
+      {/* آواتارها رو اینجا بیرون از Link می‌ذاریم که کاملاً آزاد باشن */}
+      <div className="flex absolute -top-5 z-10">
+        <div
+          className="w-14 h-14 rounded-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/avatars/1.png')" }}
+        ></div>
+        <div
+          className="w-14 h-14 -ml-6 rounded-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/avatars/2.png')" }}
+        ></div>
+      </div>
 
+      <Link
+        href={"/"}
+        className="flex flex-col lg:flex-row lg:justify-between items-center gap-x-3 gap-y-6 w-full h-auto lg:h-[470px] text-white bg-cover bg-center rounded-3xl hover:cursor-pointer px-8 py-16 box"
+        style={{ backgroundImage: "url('/images/banner/sample.png')" }}
+      >
+       
       <div className="flex-col items-start justify-between hidden h-[370px]  lg:flex">
         <div className="hidden lg:block">
           <span className="txert-white font-outfit text-xl font-medium">
@@ -261,7 +263,8 @@ const LargeBanner = () => {
         </div>
 
       </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

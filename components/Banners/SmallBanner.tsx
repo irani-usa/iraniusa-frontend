@@ -10,16 +10,19 @@ interface SmallBannerProps {
 
 const SmallBanner: React.FC<SmallBannerProps> = (props) => {
   return (
+    <div className="relative flex justify-center">
+    {/* آواتارها رو اینجا بیرون از Link قرار می‌دیم */}
+    <div
+        className="w-14 h-14 rounded-full bg-cover bg-center absolute  z-10 -left-5 top-0 bottom-0 m-auto"
+        style={{ backgroundImage: `url('/images/avatars/2.jpg')` }}
+      ></div>
     <Link
       href={'/'}
-      className="flex items-center  w-full h-[187px] bg-cover bg-center rounded-2xl hover:cursor-pointer relative "
+      className="flex items-center  w-full h-[187px] bg-cover bg-center rounded-2xl hover:cursor-pointer relative box2"
       style={{ backgroundImage: `url('/images/banner/3.png')` }}
     >
       
-      <div
-        className="w-12 h-12 rounded-full bg-cover bg-center absolute  z-10 -left-5"
-        style={{ backgroundImage: `url('/images/avatars/2.jpg')` }}
-      ></div>
+    
 
 
       <div className="flex flex-col gap-y-[7px] z-10 items-center w-full">
@@ -31,6 +34,7 @@ const SmallBanner: React.FC<SmallBannerProps> = (props) => {
         <h4 className="text-white-shade-8 ">{props.role}</h4>
       </div>
     </Link>
+    </div>
   );
 };
 
