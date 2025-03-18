@@ -20,7 +20,7 @@ const Experinces: React.FC<ExperincesProps> = (props) => {
     { id: 1, title: "Developer", date: "Oct 2021- Sep 2022" , data:{project:"Star Project ",company:"Riv design Company" , location : "Stockholm, Sweden"} },
   ]);
   return (
-    <div className=' w-full border-white-shade-4 border-b pb-8 lg:py-10'>
+    <div className=' w-full border-white-shade-4 border-b pb-8 lg:py-10 px-2'>
       <div className=' flex flex-col gap-y-6 mt-8 items-center'>
         <IconElement icon={<ExperincesIcon />}/>  
         <Sectiontitle title={'Experiences and projects'} classes={'mt-5'} />

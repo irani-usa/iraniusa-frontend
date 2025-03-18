@@ -16,7 +16,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = (props) => {
   return (
     <>
-      <div className='min-w-[80%]  w-[80%]
+      <div className='text-black min-w-[80%]  w-[80%]
      lg:min-w-[25%] lg:w-[100%]  relative py-5'>
         <section className='border-[1.5px]  bg-white  border-white-shade-4 
      flex p-7 py-10 gap-x-5 rounded-2xl hover:bg-blue transition-all duration-200 group flex-col gap-y-3 hover:text-white'>

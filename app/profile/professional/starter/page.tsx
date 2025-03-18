@@ -10,19 +10,18 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-     <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
+     <div className="w-full relative   mt-10  lg:mb-36 mb-72 mx-auto">
       <Cover background={"/images/profile/Cover.png"} />
       <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
-      <Avatar background={"/images/profile/Prof.png"} Contact={false} />
-        <UserTitle
-          fullname={"Amin gholami"}
-          jobtitle={"Product designer"}
-          city={"Los angles"}
-          isPro={false}
-          blogLevel={""}
-          follower={""}
-          following={""}
-        />
+       <Avatar background={"/images/profile/Prof.png"}  />
+           <UserTitle
+             fullname={"Amin gholami"}
+             gmail="arashdevarts@gmail.com"
+             jobtitle={"Product designer"}
+             isPro={false}
+             blogLevel={"Active"}
+             Contact={false}
+           />
         </div>
       </div>
     

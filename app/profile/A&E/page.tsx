@@ -1,7 +1,5 @@
 import OverlayMenu from "@/components/Layout/OverlayMenu";
-import Avatar from "@/components/Profile/A&E/starter/Avatar";
 import Cover from "@/components/Profile/general/Cover";
-import UserTitle from "@/components/Profile/A&E/starter/UserTitle";
 import React from "react";
 import Concert from "@/components/Profile/A&E/starter/Concert";
 import Tracks from "@/components/Profile/A&E/starter/Tracks";
@@ -19,6 +17,7 @@ import Blog from "@/components/Profile/general/Blog";
 import About from "@/components/Profile/business/starter/About";
 import { Gallery } from "@/components/Profile/Professional/Free";
 import { Company } from "@/components/Profile/Professional/Pro";
+import { Avatar, UserTitle } from "@/components/Profile/general";
 
 const page = () => {
   return (
@@ -28,8 +27,16 @@ const page = () => {
       <Cover background={"/images/profile/A&E/cover.png"} />
 
       <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
-      <Avatar />
-      <UserTitle />
+ 
+      <Avatar background={"/images/profile/A&E/profile.png"}  />
+        <UserTitle
+          fullname={"Siavash Ghomeishi"}
+          gmail="arashdevarts@gmail.com"
+          jobtitle={"rtist and song writer"}
+          isPro={true}
+          blogLevel={"Active"}
+          Contact={true}
+        />
         </div>
       </div>
 

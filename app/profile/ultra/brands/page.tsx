@@ -29,15 +29,15 @@ const page = () => {
      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
       <Cover background={"/images/profile/ultra/Acover.png"} />
       <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
-      <Avatar background={"/images/profile/ultra/Aprof.png"} Contact={true} />
+      <Avatar background={"/images/profile/ultra/Aprof.png"} />
         <UserTitle
           fullname={"SAP Construction"}
           jobtitle={"Architecture Company"}
-          city={"Product designer"}
+          gmail={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
-          follower={"11.2 k"}
-          following={"23"}
+   
+          Contact={true} 
         />
         </div>
       </div>

@@ -13,7 +13,7 @@ const Input: React.FC<InputProps> = (props) => {
   return (
     <div className={`${props.class}`}>
 
-      <label htmlFor={props.lable} className="block mb-2 text-lg font-medium ">{props.lable} {props.isRequired && <span className='text-[#ff0505]'>*</span>}</label>
+      <label htmlFor={props.lable} className="block mb-2 text-lg font-medium text-black">{props.lable} {props.isRequired && <span className='text-[#ff0505]'>*</span>}</label>
       <div className="flex">
         <span className="inline-flex items-center px-3 rounded-e-0  border-e-0 rounded-s-xl  border border-white-shade-4   text-lg ">
           {props.icon}

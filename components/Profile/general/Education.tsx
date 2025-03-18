@@ -9,7 +9,7 @@ interface EducationProps {
 
 const Education: React.FC<EducationProps> = (props) => {
   return (
-    <div className="flex  w-full items-center justify-between px-5 py-2 rounded-xl border border-white-shade-4 ">
+    <div className="flex text-black  w-full items-center justify-between px-5 py-2 rounded-xl border border-white-shade-4 ">
      <div className="flex items-center gap-5">
      <div className="bg-white-shade-3 p-2 rounded-lg">
      <EducationsIcon />

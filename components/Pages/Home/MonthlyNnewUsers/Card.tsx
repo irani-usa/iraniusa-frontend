@@ -35,7 +35,7 @@ export const Card: React.FC<CardProps> = (props) => {
                     <span className='text-white-shade-11'>{props.address}</span>
                 </div>
             </section>
-            <Link className='bg-[#f3f3f3] w-full flex rounded-b-2xl justify-center items-center py-3 -mt-1   cursor-pointer' href={props.link}>View Profile</Link>
+            <Link className='bg-[#f3f3f3] w-full flex rounded-b-2xl justify-center items-center py-3 -mt-1   cursor-pointer text-black' href={props.link}>View Profile</Link>
         </div>
 
     )

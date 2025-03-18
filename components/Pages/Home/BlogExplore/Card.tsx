@@ -20,7 +20,7 @@ const AirplaneCard: React.FC<AirplaneCardProps> = (props) => {
             <h4 className="text-black font-outfit font-bold mx-4 mt-6 mb-12 text-xl">
                 {props.title}
             </h4>
-            <div className="mx-4  text-shade mt-6 mb-12 flex justify-between items-center ">
+            <div className="mx-4  text-black text-shade mt-6 mb-12 flex justify-between items-center ">
                 {props.description}
             </div>
 

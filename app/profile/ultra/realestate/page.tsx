@@ -24,15 +24,15 @@ const page = () => {
         <Cover background={"/images/profile/ultra/Recover.png"} />
       </div>
       <div className="w-full container flex relative -top-[100px] left-0 p-10 mb-40 lg:mb-9">
-        <Avatar background={"/images/profile/ultra/Reprof.png"} Contact={true} />
+        <Avatar background={"/images/profile/ultra/Reprof.png"}  />
         <UserTitle
           fullname={"LOOME"}
           jobtitle={"Real Estate"}
-          city={"Product designer"}
+          gmail={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
-          follower={"11.2 k"}
-          following={"23"}
+ 
+          Contact={true}
         />
       </div>
       <div className="w-full h-1 border-t border-white-shade-4"></div>

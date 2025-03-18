@@ -561,17 +561,20 @@ select:-webkit-autofill:focus {
 
 
 .box {
-  --r: 40px;
-  --s: 60px;
-  --a: 32deg;
-  --_m:0/calc(2*var(--r)) calc(2*var(--r)) no-repeat
-    radial-gradient(50% 50%,#000 calc(100% - 1px),#0000);
-  --_d:(var(--s) + var(--r))*cos(var(--a));
-  mask:
-    calc(50% + var(--_d)) var(--_m),calc(50% - var(--_d)) var(--_m),
-    radial-gradient(var(--s) at 50% calc(-1*sin(var(--a))*var(--s)),
-      #0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(1 - sin(var(--a)))) no-repeat,
-    linear-gradient(90deg,#000 calc(50% - var(--_d)),#0000 0 calc(50% + var(--_d)),#000 0);
+    --r: 40px;  /* control the rounded part */
+    --s: 60px;  /* control the size of the cut */
+    --a: 32deg; /* control the depth of the curvature */
+    --p: 50%;   /* control the position */ 
+    
+    --_m:var(--r),#000 calc(100% - 1px),#0000;
+    --_d:(var(--s) + var(--r))*cos(var(--a));
+    mask:
+      radial-gradient(var(--r) at calc(var(--p) + var(--_d)) var(--_m)),
+      radial-gradient(var(--r) at calc(var(--p) - var(--_d)) var(--_m)),
+      radial-gradient(var(--s) at var(--p) calc(-1*sin(var(--a))*var(--s)),
+        #0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(1 - sin(var(--a)))) no-repeat,
+      linear-gradient(90deg,#000 calc(var(--p) - var(--_d)),#0000 0 calc(var(--p) + var(--_d)),#000 0);
+  
 }
 
 .box2 {
@@ -592,3 +595,33 @@ select:-webkit-autofill:focus {
 
 
 
+.box3 {
+  --r: 40px;
+  --s: 100px;
+  --a: 24deg;
+  --p: 22%;
+  
+  --_m:calc(100% - var(--r)),#000 calc(100% - 1px),#0000;
+  --_d:(var(--s) + var(--r))*cos(var(--a));
+  mask:
+    radial-gradient(var(--r) at calc(var(--p) + var(--_d)) var(--_m)),
+    radial-gradient(var(--r) at calc(var(--p) - var(--_d)) var(--_m)),
+    radial-gradient(var(--s) at var(--p) calc(100% + sin(var(--a))*var(--s)),
+      #0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(sin(var(--a)) - 1)) no-repeat,
+    linear-gradient(90deg,#000 calc(var(--p) - var(--_d)),#0000 0 calc(var(--p) + var(--_d)),#000 0);
+}
+.box4 {
+  --r: 40px;
+  --s: 60px;
+  --a: 25deg;
+  --p: 50%;
+  
+  --_m:calc(100% - var(--r)),#000 calc(100% - 1px),#0000;
+  --_d:(var(--s) + var(--r))*cos(var(--a));
+  mask:
+    radial-gradient(var(--r) at calc(var(--p) + var(--_d)) var(--_m)),
+    radial-gradient(var(--r) at calc(var(--p) - var(--_d)) var(--_m)),
+    radial-gradient(var(--s) at var(--p) calc(100% + sin(var(--a))*var(--s)),
+      #0000 100%,#000 calc(100% + 1px)) 0 calc(var(--r)*(sin(var(--a)) - 1)) no-repeat,
+    linear-gradient(90deg,#000 calc(var(--p) - var(--_d)),#0000 0 calc(var(--p) + var(--_d)),#000 0);
+}

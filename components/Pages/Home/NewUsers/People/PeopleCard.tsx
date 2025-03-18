@@ -23,7 +23,7 @@ export const PeopleCard: React.FC<PeopleCardProps> = (props) => {
   <span className='text-white-shade-11'>{props.joindate}</span>
 </div>
   </div>
-      <Link className='bg-[#f3f3f3] w-full flex rounded-b-2xl justify-center items-center py-3 -mt-1   cursor-pointer' href="">View Profile</Link>
+      <Link className='bg-[#f3f3f3] w-full flex rounded-b-2xl justify-center items-center py-3 -mt-1   cursor-pointer text-black' href="">View Profile</Link>
     </section>
   )
 }

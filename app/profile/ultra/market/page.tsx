@@ -31,15 +31,14 @@ const page = () => {
      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
       <Cover background={"/images/profile/ultra/addidas.png"} />
       <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
-      <Avatar background={"/images/profile/ultra/Prof.png"} Contact={true} />
+      <Avatar background={"/images/profile/ultra/Prof.png"}  />
         <UserTitle
           fullname={"Addidas"}
-          jobtitle={"Addidas@gmail.com"}
-          city={"Product designer"}
+          jobtitle={" Product designer"}
+          gmail={"Addidas@gmail.com"}
           isPro={true}
-          blogLevel={"Active"}
-          follower={"11.2 k"}
-          following={"23"}
+          blogLevel={"Active"}          
+          Contact={true}
         />
         </div>
       </div>
