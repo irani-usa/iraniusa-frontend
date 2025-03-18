@@ -36,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`${vazirmatn.variable} ${openSans.variable} ${outfit.variable}`}>
+      <body className={`${vazirmatn.variable} ${openSans.variable} ${outfit.variable} !text-black`}>
         <MenuProvider>
           <ClientLayout>{children}</ClientLayout>
         </MenuProvider>
