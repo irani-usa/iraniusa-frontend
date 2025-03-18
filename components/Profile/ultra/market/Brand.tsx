@@ -10,7 +10,7 @@ interface BrandProps {
 
 const Brand: React.FC<BrandProps> = (props) => {
     return (
-        <div className="flex flex-col items-center relative group w-full max-w-[70%] lg:max-w-[35%]">
+        <div className="flex flex-col items-center relative group w-full">
             <div
                 className={`${props.class} group cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6 w-full`}
             >

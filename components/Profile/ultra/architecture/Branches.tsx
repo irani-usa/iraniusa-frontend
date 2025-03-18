@@ -5,7 +5,7 @@ import { Location } from "@/components/Icons/Outline";
 
 const Branches = () => {
   return (
-    <section className=" border-b border-white-shade-4 py-7  ">
+    <section className=" border-b border-white-shade-4 py-7  container">
       <div className=" lg:pl-5 lg:px-0 ">
         <IconElement icon={<Location />}/>
         <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-center lg:text-3xl">

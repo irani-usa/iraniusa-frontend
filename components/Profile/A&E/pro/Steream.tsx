@@ -6,7 +6,7 @@ interface StereamProps {
 
 const Steream: React.FC<StereamProps> = (props) => {
   return (
-    <div className=" w-full border-white-shade-4 border-b pb-8 lg:pb-12">
+    <div className=" w-full border-white-shade-4 border-b pb-8 container lg:pb-12">
       <div className="container flex flex-col lg:items-center gap-y-6 mt-10 lg:px-0">
         <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl lg:mt-9">
           {" "}

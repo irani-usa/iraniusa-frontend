@@ -13,7 +13,7 @@ interface MenuProps {
 
 export const Menu: React.FC<MenuProps> = (props) => {
   return (
-    <section className='border-b border-white-shade-4 '>
+    <section className='border-b border-white-shade-4 container'>
       <div className=' py-9 lg:pl-5'>
 
         <div className='flex items-center flex-col w-full gap-7'> 

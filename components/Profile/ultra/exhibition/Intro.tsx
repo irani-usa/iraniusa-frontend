@@ -74,7 +74,7 @@ const Intro: React.FC<IntroProps> = (props) => {
                 {isOpen ? <ArrowUp /> : <ArrowDown />}
               </div>
             </div>
-            <div onBlur={() => setIsOpen(false)} className={`bg-white rounded-xl border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
+            <div onBlur={() => setIsOpen(false)} className={`bg-white z-10 rounded-xl border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
               <ul className="w-full flex flex-col gap-2 p-4">
                 <li className="flex items-center justify-between"><span>Wednesday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
                 <li className="flex items-center justify-between"><span>Thursday</span><span className="text-white-shade-11">Open 24 hours</span></li>

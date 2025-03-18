@@ -5,7 +5,7 @@ import { PopularSeminar } from '@/components/Pages/Events'
 
 const Ticket = () => {
   return (
-   <section className='w-full border-white-shade-4 border-b pb-8 lg:pb-12'>
+   <section className='w-full border-white-shade-4 border-b pb-8 container lg:pb-12'>
     <div className=' lg:pl-5'>
 
     <div className=' lg:flex lg:items-center lg:justify-between lg:mt-8'>

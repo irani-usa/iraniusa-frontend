@@ -14,7 +14,7 @@ interface BlogProps {
 
 const Blog: React.FC<BlogProps> = (props) =>   {
   return (
-    <div className=' w-full border-white-shade-4 border-b pb-8'>
+    <div className=' w-full border-white-shade-4 border-b pb-8 container'>
       <div className={`${props.classes}  flex flex-col gap-y-6 mt-8 `}>
       <IconElement icon={<BlogIcon />}/>
 

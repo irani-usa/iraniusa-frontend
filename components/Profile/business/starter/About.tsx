@@ -17,7 +17,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = (props) => {
   return (
-    <section className=' border-b border-white-shade-4 py-8 '>
+    <section className=' border-b border-white-shade-4 py-8 container'>
       <div className=' lg:pl-6'>
         <div className="py-7 flex flex-col gap-y-6 items-center">
           <IconElement icon={<AboutMeIcon />} />

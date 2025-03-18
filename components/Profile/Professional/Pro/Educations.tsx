@@ -20,7 +20,7 @@ interface EducationsProps {
 
 const Educations: React.FC<EducationsProps> = (props) => {
   return (
-    <section className='w-full border-white-shade-4 border-b py-8'>
+    <section className='w-full border-white-shade-4 border-b py-8 container'>
       <div className=' flex flex-col gap-y-6 lg:px-0 '>
       <IconElement icon={<CoursesIcon />}/>
       <Sectiontitle title={"Courses completed"} classes={''} />

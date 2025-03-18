@@ -11,7 +11,7 @@ interface ExprinceProps {
 
 const Exprince: React.FC<ExprinceProps> = (props) => {
   return (
-    <section className='w-full border-b border-white-shade-4 py-8 lg:py-11'>
+    <section className='w-full border-b border-white-shade-4 py-8 lg:py-11 container'>
       <div className=' lg:pl-6 flex flex-col items-center'>
         <IconElement icon={<ExperincesIcon />} />
         <h1 className="text-black font-bold text-2xl font-outfit mt-5 lg:text-3xl">Company's experiences </h1>

@@ -16,8 +16,8 @@ interface AboutMeProps {
 
 const AboutMe: React.FC<AboutMeProps> = (props) => {
   return (
-    <div id="home" className="w-full   border-white-shade-4 border-b pb-10   py-9">
-      <div className="container flex flex-col gap-y-7 items-center lg:px-0">
+    <div id="home" className="w-full   border-white-shade-4 border-b pb-10   py-9 container">
+      <div className=" flex flex-col gap-y-7 items-center ">
         <div className="flex justify-center lg:justify-between lg:flex-row flex-col gap-10  w-full items-center">
           <div className="flex flex-col gap-5">
             <h1 className="text-2xl font-outfit font-bold  lg:text-[35px] text-black max-w-xl">

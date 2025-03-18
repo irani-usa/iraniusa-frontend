@@ -70,7 +70,7 @@ const Subscription = () => {
   ]);
 
   return (
-    <section className="border-b border-white-shade-4 py-8">
+    <section className="border-b border-white-shade-4 py-8 container">
       <div className="flex flex-col justify-center items-center  py-8">
         <IconElement icon={<HandHeart />} />
 

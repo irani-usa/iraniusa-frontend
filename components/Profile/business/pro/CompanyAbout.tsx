@@ -18,7 +18,7 @@ interface CompanyAboutProps {
 
 const CompanyAbout: React.FC<CompanyAboutProps> = (props) => {
   return (
-    <section className=" border-b border-white-shade-4 ">
+    <section className=" border-b border-white-shade-4 container">
     <div className=" lg:pl-5 py-7 flex flex-col gap-y-6 items-center">
     <IconElement icon={<AboutMeIcon />} />
 

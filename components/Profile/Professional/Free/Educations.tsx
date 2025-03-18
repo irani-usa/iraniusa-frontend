@@ -17,8 +17,8 @@ const Educations: React.FC<EducationsProps> = (props) => {
     { id: 1, title: "Art", univercity: "Leonardo University", date: "2003" },
   ]);
   return (
-    <section className="w-full border-white-shade-4 border-b py-8">
-      <div className="container flex flex-col gap-y-6 lg:px-0 lg:py-8 items-center">
+    <section className="w-full border-white-shade-4 border-b py-8 container">
+      <div className=" flex flex-col gap-y-6 lg:px-0 lg:py-8 items-center">
       <IconElement icon={<EducationsIcon />}/>
       
         <Sectiontitle title={" Educations"} classes={"text-center"} />

@@ -3,7 +3,7 @@ import MembersCard from "./MembersCard";
 
 const Team = () => {
   return (
-    <section className=" border-b border-white-shade-4 pb-7  ">
+    <section className=" border-b border-white-shade-4 pb-7  container">
       <div className=" lg:pl-5 lg:px-0 ">
         <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-center lg:text-3xl">
           Our team members

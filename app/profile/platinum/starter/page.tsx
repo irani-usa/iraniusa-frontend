@@ -12,7 +12,7 @@ import About from "@/components/Profile/business/starter/About";
 const page = () => {
   return (
     <section>
-       <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
+       <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto container">
           <Cover background={"/images/profile/business/cover.png"} />
           <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
           <Avatar background={"/images/profile/Prof.png"}  />
@@ -20,7 +20,7 @@ const page = () => {
           fullname={"Amin gholami"}
           gmail="arashdevarts@gmail.com"
           jobtitle={"Product designer"}
-          isPro={true}
+          isPro={false}
           blogLevel={"Active"}
           Contact={false}
         />

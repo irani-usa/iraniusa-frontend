@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = (props) => {
   return (
-    <div className=' w-full border-white-shade-4 border-b pb-8'>
+    <div className=' w-full border-white-shade-4 border-b pb-8 container'>
     <div className=' flex flex-col gap-y-6 mt-8 lg:px-0 items-center'>
     <IconElement icon={<ProjectIcon />}/>
     <Sectiontitle title={'projects Completed'} classes={''} />

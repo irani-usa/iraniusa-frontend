@@ -23,7 +23,7 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />     
-      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto">
+      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto container">
       <Cover background={"/images/profile/business/cover.png"} />
       <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
       <Avatar background={"/images/profile/Prof.png"}  />
@@ -33,7 +33,7 @@ const page = () => {
           jobtitle={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
-          Contact={false}
+          Contact={true}
         />
           </div>
         </div>

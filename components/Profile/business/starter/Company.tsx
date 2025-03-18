@@ -34,8 +34,8 @@ const Company: React.FC<CompanyProps> = (props) => {
   }, []);
   
   return (
-    <section className="border-b border-white-shade-4 py-8 lg:pt-2">
-      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
+    <section className="border-b border-white-shade-4 py-8 lg:pt-2 container">
+      <div className=" w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
         <div className="bg-white  flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
 
           <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
@@ -61,7 +61,7 @@ const Company: React.FC<CompanyProps> = (props) => {
                 {isOpen ? <ArrowUp /> : <ArrowDown />}
               </div>
             </div>
-            <div onBlur={() => setIsOpen(false)} className={`bg-white rounded-xl border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
+            <div onBlur={() => setIsOpen(false)} className={`bg-white rounded-xl z-10 border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
               <ul className="w-full flex flex-col gap-2 p-4">
                 <li className="flex items-center justify-between"><span>Wednesday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
                 <li className="flex items-center justify-between"><span>Thursday</span><span className="text-white-shade-11">Open 24 hours</span></li>

@@ -4,7 +4,7 @@ import AboutMeIcon from '@/components/Icons/Profile/AboutMe'
 
 const Terms = () => {
   return (
-    <section className='w-full border-b border-white-shade-4 py-8 lg:py-11'>
+    <section className='w-full border-b border-white-shade-4 py-8 lg:py-11 container'>
     <div className='lg:pl-5 flex flex-col gap-y-6 lg:gap-y-0'>
     <IconElement icon={<AboutMeIcon />}/>
     <h1 className="text-black font-bold  font-outfit mt-5 text-[28px] lg:text-3xl text-center">Terms and privacy</h1>

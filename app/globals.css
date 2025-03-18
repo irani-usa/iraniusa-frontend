@@ -599,7 +599,7 @@ select:-webkit-autofill:focus {
   --r: 40px;
   --s: 100px;
   --a: 24deg;
-  --p: 22%;
+  --p: 20.5%;
   
   --_m:calc(100% - var(--r)),#000 calc(100% - 1px),#0000;
   --_d:(var(--s) + var(--r))*cos(var(--a));
