@@ -31,11 +31,10 @@ const Navigation = () => {
     { value: "Home", slug: "/" },
     { value: "Events", slug: "/events" },
     { value: "Blog", slug: "/blog" },
-    { value: "Financial market", slug: "/financial-market" },
-    { value: "ADS reservation", slug: "/ads-reservationt" },
-    { value: "Music player", slug: "/music-player" },
+    { value: "Financial market", slug: "/financial-market" },   
     { value: "Plans", slug: "/plans" },
     { value: "About", slug: "/about" },
+    { value: "Links", slug: "/links" },
   ]);
 
   const currentRoute = usePathname();
