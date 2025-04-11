@@ -25,12 +25,12 @@ const page = () => {
         { value: "SearchDetails", slug: "/SearchDetails" },
         { value: "terms", slug: "/terms" },
         { value: "Tours", slug: "/Tours" },
-        { value: "ToursSearch", slug: "/login" },
+        { value: "ToursSearch", slug: "/ToursSearch" },
         { value: "profile A&E", slug: "/profile/A&E" },
         { value: "profile platinum starter", slug: "/profile/platinum/starter" },
         { value: "profile platinum pro", slug: "/profile/platinum/pro" },
         { value: "profile professional starter", slug: "/profile/professional/starter" },
-        { value: "profile professional starter", slug: "/profile/professional/starter" },
+        { value: "profile professional pro", slug: "/profile/professional/pro" },
         { value: "profile ultra brands", slug: "/profile/ultra/brands" },
         { value: "profile ultra eventSearch", slug: "/profile/ultra/eventSearch" },
         { value: "profile ultra exhibition", slug: "/profile/ultra/exhibition" },
@@ -46,7 +46,7 @@ const page = () => {
 
     
   return (
-    <div className='container py-5 flex flex-wrap gap-12'>
+    <div className='container flex-col p-5 flex flex-wrap gap-12'>
          {menuItems.map((link) => {
               return (
                 <li

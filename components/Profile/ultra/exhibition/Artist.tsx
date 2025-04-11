@@ -12,7 +12,7 @@ export const Artist = () => {
         <h1 className="mt-5   text-[27px] font-outfit font-bold text-black lg:text-center lg:text-3xl">
         Featured Artists
                 </h1>
-                <div className='w-full grid grid-cols-1 gap-6 mt-5 lg:grid-cols-3 lg:mt-8'>
+                <div className='w-full grid grid-cols-1 gap-6 mt-5 lg:grid-cols-3 lg:mt-8 mb-6'>
                     <ArtistCard ArtistName={'Siavash ghomeyshi '} Image={'/images/profile/ultra/Artist.png'}  />
                     <ArtistCard ArtistName={'Siavash ghomeyshi '} Image={'/images/profile/ultra/Artist.png'}  />
                     <ArtistCard ArtistName={'Siavash ghomeyshi '} Image={'/images/profile/ultra/Artist.png'}  />

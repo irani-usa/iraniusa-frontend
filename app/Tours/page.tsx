@@ -42,10 +42,10 @@ const ToursSearch = () => {
                 </div>
             </div>
             <>
-                <div className="flex flex-wrap mt-20 bg-white-shade-3 min-w-xl max-w-fit mx-auto rounded-lg px-2 ">
+                <div className="flex flex-wrap mt-20 bg-white-shade-3 mx-auto rounded-lg px-2 ">
                     <div className="w-full">
                         <ul
-                            className="flex mb-0 list-none  gap-4 py-3 flex-row flex-wrap"
+                            className="flex mb-0 list-none  gap-4 py-3 flex-wrap"
                         >
                             {tabs.map((item: string): JSX.Element => (
                                 <li className="text-center">

@@ -9,7 +9,7 @@ import { Glory } from './Glory'
 
 const Platform = () => {
     return (
-        <section className='w-full '>
+        <section className='w-full mb-10'>
             <div className=' mt-5 '>
                 <section className='py-2 relative bg-black w-full py-2 px-4 rounded-3xl flex flex-col items-center gap-y-9 lg:flex-row  lg:pl-12 lg:pr-2 lg:justify-between'>
                     <span className='text-white font-bold text-lg'>Stream <br />

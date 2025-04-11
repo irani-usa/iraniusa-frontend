@@ -52,7 +52,7 @@ const Company: React.FC<CompanyProps> = (props) => {
             <Location />
             Besides keeping track of your numbers and reconciling
           </p>
-          <div className="relative" ref={menuRef}>
+          <div className="relative mb-5" ref={menuRef}>
             <div onClick={() => setIsOpen(!isOpen)} className="border border-white-shade-3 rounded-xl   gap-2 font-semibold font-opensans   flex items-center justify-between ">
               <div className="flex flex-col gap-1">
                 <span className="text-green">Open</span>

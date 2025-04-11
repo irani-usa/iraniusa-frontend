@@ -24,7 +24,7 @@ const Concert: React.FC<ConcertProps> = (props) => {
 
   return (
     <section className="border-b border-white-shade-4 py-8 lg:pt-2">
-      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
+      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-16">
         <div className="bg-white  flex flex-col gap-y-2 rounded-3xl lg:w-1/2">
 
           <span className="text-white-shade-9">Artist Name</span>

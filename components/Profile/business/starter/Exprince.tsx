@@ -21,10 +21,10 @@ const Exprince: React.FC<ExprinceProps> = (props) => {
             <Calendar /> Founded in: Sep 2024
           </p>
         </div>
-        <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5 w-full'>
+        {props.compimg && props.compimg2 &&    <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5 w-full'>
     <div style={{ backgroundImage: `url(${props.compimg})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-4 lg:h-44'></div>
     <div style={{ backgroundImage: `url(${props.compimg2})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-2 lg:h-44'></div>
-  </section>        
+  </section>   }      
         <button className='text-lg text-black font-semibold font-opensans border border-white-shade-4 w-max px-5 py-1 rounded-3xl'>see more</button>
 
       </div>
