@@ -41,7 +41,7 @@ const page = () => {
           <div className="w-full h-[1px] bg-white-shade-4"></div>
         </div>
         <p className="font-opensans text-white-shade-9  text-lg py-3 max-w-6xl">
-          ur company is a collection of designers, artists, developers,
+          Our company is a collection of designers, artists, developers,
           laborers, legal scholars, and business people with the desire to bring
           the Iranian community closer together. Our company has engaged the
           best designers and developers in the industry to create a modern
