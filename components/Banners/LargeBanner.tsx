@@ -100,11 +100,11 @@ const LargeBanner = () => {
       <div className="w-full relative">
         <div className=" flex flex-col items-center w-full  h-full gap-y-5">
 
-          <div className="flex items-center flex-col gap-y-2 justify-center">
-            <h3 className="flex items-center text-white font-opensans text-lg font-medium lg:text-3xl text-center">
+          <div className="flex items-center gap-2 justify-center">
+            <h3 className="flex items-center text-white font-inter text-3xl font-semibold lg:text-3xl text-center">
               Supplemental income
-              <Verified />
             </h3>
+              <Verified />
           </div>
           <svg
             width="298"
@@ -127,8 +127,8 @@ const LargeBanner = () => {
             />
           </svg>
           <div className="flex flex-col gap-y-3 text-center items-center text-white-shade-8">
-            <h4 className="text-xl lg:text-3xl font-vazirmatn">کمک های دولتی دریافت کنید</h4>
-            <p className=" font-opensans">
+            <h4 className="text-3hxl lg:text-3xl font-bold font-vazirmatn">کمک های دولتی دریافت کنید</h4>
+            <p className=" font-inter font-medium text-lg">
               Medium constructions represent
 
               innovativeconstruction services

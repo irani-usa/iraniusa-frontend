@@ -2,9 +2,9 @@ import React from "react";
 
 const Verified = () => {
   return (
-    <svg
-      width="21"
-      height="21"
+    <svg className="mt-2"
+      width="25"
+      height="25"
       viewBox="0 0 21 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
