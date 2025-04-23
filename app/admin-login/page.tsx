@@ -29,7 +29,7 @@ const page = () => {
 
         </div>
         <h1 className="font-outfit font-semibold text-5xl text-black">Admins login</h1>
-        <p className="font-inter text-sm text-white-shade-10 max-w-xs text-center mb-4">
+        <p className="font-inter font-medium text-sm text-white-shade-10 max-w-xs text-center mb-4">
           Admins only. Log in for system management. Regular users, use standard
           login.
         </p>
