@@ -81,7 +81,7 @@ const page = () => {
           </div>
         </div>
         <div className="container flex flex-col gap-y-6 py-14">
-          <h1 className="flex items-center gap-1.5 text-black text-xl font-semibold font-inter">
+          <h1 className="flex items-center gap-x-1.5 text-black text-xl font-semibold font-inter">
           <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/>
           </svg>
@@ -111,7 +111,7 @@ const page = () => {
           </div>
         </div>
         <div className="container py-7 flex flex-col items-center gap-y-12 w-full">
-          <div className="flex no-scroll w-full gap-x-10 overflow-x-scroll lg:flex items-center">
+          <div className="flex no-scroll w-full gap-x-10 overflow-x-auto whitespace-normal lg:flex items-center">
             <BlogCard
               classes={"lg:flex"}
               readingTime={"  3 min read"}
@@ -244,7 +244,9 @@ const page = () => {
           </section>
           <section className="lg:pr-5 lg:border-r border-white-shade-4">
             <div className="flex flex-col gap-y-6 py-14">
-              <h1 className="text-black text-xl font-semibold font-outfit">
+              <h1 className="flex items-center gap-x-1.5 text-black text-xl font-semibold font-inter">
+              <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/></svg>
                 Lawyars pick
               </h1>
               <div className="flex flex-col gap-y-6 lg:flex-row gap-x-6">
@@ -254,68 +256,22 @@ const page = () => {
                   author={"Anna Rosé"}
                   publish={"Posted just now"}
                   avatar={"/images/blog/User.webp"}
-                  cover={"/images/blog/Lawyer.webp"}
+                  cover={"/images/blog/lawyer.png"}
+                />
+              </div>
+              <div className="flex flex-col gap-y-6 lg:flex-row gap-x-6">
+                <LawyarsCard
+                  classes={""}
+                  title={"Visiting Tomb of Saadi, the Shirazi Poet"}
+                  author={"Anna Rosé"}
+                  publish={"Posted just now"}
+                  avatar={"/images/blog/User.webp"}
+                  cover={"/images/blog/lawyer.png"}
                 />
               </div>
             </div>
             <div>
-              <div className="lg:flex items-center gap-x-6">
-                <BlogCardM
-                  classes={""}
-                  readingTime={"3 min read"}
-                  title={
-                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
-                  }
-                  summery={
-                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
-                  }
-                  author={"Anna Rosé"}
-                  publish={"Posted just now"}
-                  avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"}
-                  info={true}
-                  isview={false}
-                  view={""}
-                  like={""}
-                  cm={""}
-                />
-                <BlogCardM
-                  classes={""}
-                  readingTime={"3 min read"}
-                  title={
-                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
-                  }
-                  summery={
-                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
-                  }
-                  author={"Anna Rosé"}
-                  publish={"Posted just now"}
-                  avatar={""}
-                  cover={"/images/blog/UsaFlag.webp"}
-                  info={true}
-                  isview={false}
-                  view={""}
-                  like={""}
-                  cm={""}
-                />
-              </div>
-
-              <div className="flex flex-col gap-y-6 py-14">
-                <h1 className="text-black text-xl font-semibold font-outfit">
-                  Lawyars pick
-                </h1>
-                <div className="flex flex-col gap-y-6 lg:flex-row gap-x-6">
-                  <LawyarsCard
-                    classes={""}
-                    title={"Visiting Tomb of Saadi, the Shirazi Poet"}
-                    author={"Anna Rosé"}
-                    publish={"Posted just now"}
-                    avatar={"/images/blog/User.webp"}
-                    cover={"/images/blog/Lawyer.webp"}
-                  />
-                </div>
-              </div>
-              <div className="lg:flex items-center gap-x-6">
+              <div className="flex no-scroll overflow-x-auto w-full whitespace-normal lg:flex items-center gap-x-6">
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
