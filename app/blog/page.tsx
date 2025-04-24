@@ -28,23 +28,27 @@ const page = () => {
     <>
       <OverlayMenu />
       <section>
-        <div className="container py-10 flex flex-col items-center gap-y-5 bg-white-shade-2 " >
+        <div className="container py-9 flex flex-col items-center gap-y-5 bg-white-shade-2 " >
           <Separator classes={""} isBlog/>
-          <div className="py-2 w-1/2 bg-white-shade-3 rounded-2xl">
-          <section className="flex lg:flex-row flex-col items-center w-full  h-full rounded-3xl justify-between hover:cursor-pointer p-2">
-      <div className="w-full flex gap-x-2 items-center  px-6">      
+          <div className="w-full bg-white-shade-3 rounded-2xl lg:w-1/2">
+          <section className="flex lg:flex-row flex-col items-center w-full  h-full rounded-3xl justify-between hover:cursor-pointer px-1 lg:pt-1">
+      <div className="w-full flex gap-x-2 items-center px-5 py-7">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11.5" cy="11.5" r="9.5" stroke="#8C8C8C" stroke-width="1.5"/>
+<path d="M18.5 18.5L22 22" stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
         <input
               type="text"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value.toLowerCase())}
               placeholder="Search for Blogs,companies,users,topics"
-              className="w-full placeholder:text-white-shade-11 text-lg font-normal font-sans bg-white-shade-3  p-1 rounded-2xl outline-hidden"
+              className="w-full placeholder:text-white-shade-11 text-[17px] font-medium font-inter bg-white-shade-3 rounded-2xl outline-hidden"
             />
       </div>
-      <div className="flex flex-col items-end   font-medium  text-black rounded-3xl w-full">
+      <div className="flex flex-col gap-1 items-end font-medium text-black rounded-3xl w-full lg:w-1/2">
         <div
           onClick={() => setOpen(!open)}
-          className={`bg-white  gap-x-2 font-normal p-1 px-4 flex items-center lg:mx-4 rounded-2xl lg:w-max w-full ${
+          className={`text-lg text-center font-medium font-inter bg-white gap-x-2 py-6 px-10 flex justify-center items-center rounded-2xl lg:w-max w-full ${
             !selected && ""
           }`}
         >
@@ -57,16 +61,16 @@ const page = () => {
           {selected ? <ArrowDown /> : <ArrowUp />}
         </div>
         <ul
-          className={`w-[90%] self-center bg-white mt-2 overflow-y-auto shadow-drop-shadow rounded-2xl z-1000 transition-opacity duration-500  ${
+          className={`w-[50%] bg-white overflow-y-auto shadow-drop-shadow rounded-2xl z-1000 transition-opacity duration-500  ${
             open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
           } `}
         >
-          <div className="flex items-center px-2 sticky top-0 bg-white">
+          <div className="flex items-center px-2 sticky top-0">
           
           </div>
-          <div className="flex flex-col gap-y-3 pt-2 p-3">
+          <div className="flex flex-col gap-y-3 p-3">
             <li
-              className={`p-2 text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
+              className={`self-center p-2 text-center text-lg font-light text-white-shade-10 hover:text-black transition-all duration-200`}
             >
               Restaurant
             </li>
@@ -77,7 +81,10 @@ const page = () => {
           </div>
         </div>
         <div className="container flex flex-col gap-y-6 py-14">
-          <h1 className="text-black text-2xl font-medium font-outfit">
+          <h1 className="flex items-center gap-1.5 text-black text-xl font-semibold font-inter">
+          <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/>
+          </svg>
             Most popular users/companies
           </h1>
           <div className="no-scroll flex items-center gap-x-5 w-full overflow-x-scroll">
@@ -103,8 +110,8 @@ const page = () => {
             />
           </div>
         </div>
-        <div className="container py-7 flex flex-col items-center gap-y-12">
-          <div className="lg:flex items-center gap-x-5">
+        <div className="container py-7 flex flex-col items-center gap-y-12 w-full">
+          <div className="flex no-scroll w-full gap-x-10 overflow-x-scroll lg:flex items-center">
             <BlogCard
               classes={"lg:flex"}
               readingTime={"  3 min read"}
@@ -141,10 +148,10 @@ const page = () => {
         <div className="w-full lg:flex container lg:items-start gap-x-10">
         <section className="pl-5 lg:w-1/3">
             <div>
-              <h1 className="text-black text-xl font-semibold font-outfit">
+              <h1 className="text-black text-xl font-semibold font-inter">
                 Categories
               </h1>
-              <div className="flex flex-col py-5">
+              <div className="flex flex-col pb-5 pt-2 px-1">
                 <Category classes={""} content={"Art & Culture"} />
                 <Category classes={""} content={"Destinations"} />
                 <Category classes={""} content={"Must Know"} />
@@ -155,35 +162,35 @@ const page = () => {
               </div>
             </div>
             <div className="my-10">
-              <h1 className="text-black text-xl font-semibold font-outfit py-8">
+              <h1 className="text-black text-xl font-semibold font-inter py-8">
                 Most active bloggers
               </h1>
-              <div className="flex flex-col gap-y-6 ">
+              <div className="flex flex-col gap-y-6 px-1">
                 <Bloggers
                   classes={""}
                   name={"Darkcafé"}
                   job={"Coffee shop"}
                   avatar={"/images/blog/User.webp"}
-                  like={"60k"}
+                  like={"2k"}
                 />
                 <Bloggers
                   classes={""}
                   name={"Darkcafé"}
                   job={"Coffee shop"}
                   avatar={"/images/blog/User.webp"}
-                  like={"60k"}
+                  like={"2k"}
                 />
                 <Bloggers
                   classes={""}
                   name={"Darkcafé"}
                   job={"Coffee shop"}
                   avatar={"/images/blog/User.webp"}
-                  like={"60k"}
+                  like={"2k"}
                 />
               </div>
             </div>
             <div>
-              <h1 className="text-black text-xl font-semibold font-outfit py-8">
+              <h1 className="text-black text-xl font-semibold font-inter py-8">
                 Tags
               </h1>
               <div className="flex items-center flex-wrap gap-x-2 gap-y-3">
@@ -202,12 +209,12 @@ const page = () => {
             </div>
             <div className="my-10">
                         <div className='flex justify-between items-center w-full'>
-                        <h1 className="text-black text-xl font-semibold font-outfit py-8">
+                        <h1 className="text-black text-xl font-semibold font-inter py-8">
                         Plans
                         </h1>
-                        <Link href="" className="text-white-shade-11">Check all plans</Link>
+                        <Link href="" className="font-semibold font-inter text-white-shade-11">Check all plans</Link>
                         </div>
-                        <div className="flex flex-col gap-y-4 ">
+                        <div className="flex flex-col gap-y-3 ">
                         <SmallPlan
                                 classes={""}
                                 title={"Platinum"}

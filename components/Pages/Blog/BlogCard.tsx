@@ -19,9 +19,9 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
     <>
       <Link href={"#"}>
         <div
-          className={`${props.classes} border-[1.5px] border-white-shade-3 rounded-2xl p-1 hover:shadow-card transition-all duration-300 `}
+          className={`${props.classes} w-[100%] border-[1.5px] border-white-shade-3 rounded-2xl px-1 pb-14 lg:p-1 hover:shadow-card transition-all duration-300 `}
         >
-          <div className="flex flex-col gap-y-5 p-5 lg:w-2/3">
+          <div className="w-full flex flex-col gap-y-5 p-5 lg:w-2/3">
             <span className="w-[105px] h-10 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg">
             {props.readingTime}
             </span>

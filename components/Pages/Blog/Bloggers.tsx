@@ -14,7 +14,7 @@ const Bloggers: React.FC<BloggersProps> = (props) => {
     <>
       <Link href={"#"}>
         <div className="flex items-center justify-between">
-          <div className="w-full flex gap-x-4 rounded-3xl ">
+          <div className="w-full flex rounded-3xl ">
             <div className='w-14 h-14 rounded-full bg-cover bg-center mr-7' style={{ backgroundImage: `url(${props.avatar})` }}>
             </div>
             <div className="flex flex-col items-start gap-y-1">
