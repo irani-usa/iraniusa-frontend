@@ -217,27 +217,27 @@ const page = () => {
                         <div className="flex flex-col gap-y-3 ">
                         <SmallPlan
                                 classes={""}
-                                title={"Platinum"}
-                                description={"Free and "}
+                                title={"Professional"}
+                                description={"Free and pro accounts"}
                                 avatar={"/images/plans/1.png"}
                             />
                             <SmallPlan
                                 classes={""}
-                                title={"fessional"}
-                                description={"Free and "}
+                                title={"Business Platinum"}
+                                description={"Free and pro accounts"}
                                 avatar={"/images/plans/2.png"}
                             />
                             <SmallPlan
                                 classes={""}
-                                title={" Events"}
-                                description={"Free and "}
-                                avatar={"/images/plans/1.png"}
+                                title={"Business Ultra"}
+                                description={"Free and pro accounts"}
+                                avatar={"/images/plans/3.png"}
                             />
                               <SmallPlan
                                 classes={""}
-                                title={"Ultra"}
-                                description={"Free and "}
-                                avatar={"/images/plans/2.png"}
+                                title={"Artists & Events"}
+                                description={"Free and pro accounts"}
+                                avatar={"/images/plans/4.png"}
                             />
                         </div>
                     </div>
