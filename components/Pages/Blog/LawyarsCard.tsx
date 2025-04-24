@@ -15,7 +15,7 @@ interface LawyarsCardProps {
 const LawyarsCard: React.FC<LawyarsCardProps> = (props) => {
   return (
     <>
-      <div className='border-[2px] border-white-shade-3 rounded-2xl flex items-center gap-x-5 lg:w-[48%] pr-5 h-40 '>
+      <div className='border-[2px] border-white-shade-3 rounded-2xl flex items-center gap-x-5 lg:w-full h-40'>
         <div
           className="w-[140px] h-full  bg-cover bg-center rounded-tl-2xl rounded-bl-2xl lg:w-52"
           style={{ backgroundImage: `url(${props.cover})` }}></div>

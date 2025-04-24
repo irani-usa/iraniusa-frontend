@@ -111,7 +111,7 @@ const page = () => {
           </div>
         </div>
         <div className="container py-7 flex flex-col items-center gap-y-12 w-full">
-          <div className="flex no-scroll w-full gap-x-10 overflow-x-auto whitespace-normal lg:flex items-center">
+          <div className="flex no-scroll w-full gap-x-10 overflow-x-auto whitespace-normal lg:flex items-center lg:gap-x-5">
             <BlogCard
               classes={"lg:flex"}
               readingTime={"  3 min read"}
@@ -145,13 +145,13 @@ const page = () => {
             <div className="w-16 bg-black h-full rounded-xl"></div>
           </div>
         </div>
-        <div className="w-full lg:flex container lg:items-start gap-x-10">
-        <section className="pl-5 lg:w-1/3">
+        <div className="w-full lg:flex container lg:items-start gap-x-3">
+        <section className="w-full lg:w-full">
             <div>
               <h1 className="text-black text-xl font-semibold font-inter">
                 Categories
               </h1>
-              <div className="flex flex-col pb-5 pt-2 px-1">
+              <div className="w-full flex flex-col pb-5 pt-2 px-1 lg:px-0">
                 <Category classes={""} content={"Art & Culture"} />
                 <Category classes={""} content={"Destinations"} />
                 <Category classes={""} content={"Must Know"} />
@@ -165,7 +165,7 @@ const page = () => {
               <h1 className="text-black text-xl font-semibold font-inter py-8">
                 Most active bloggers
               </h1>
-              <div className="flex flex-col gap-y-6 px-1">
+              <div className="flex flex-col gap-y-6 px-1 bg-black w-full">
                 <Bloggers
                   classes={""}
                   name={"Darkcafé"}
@@ -242,14 +242,14 @@ const page = () => {
                         </div>
                     </div>
           </section>
-          <section className="lg:pr-5 lg:border-r border-white-shade-4">
-            <div className="flex flex-col gap-y-6 py-14">
+          <section className="lg:pr-5 lg:border-l lg:w-[75%] border-white-shade-4 lg:pl-7">
               <h1 className="flex items-center gap-x-1.5 text-black text-xl font-semibold font-inter">
               <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/></svg>
                 Lawyars pick
               </h1>
-              <div className="flex flex-col gap-y-6 lg:flex-row gap-x-6">
+            <div className="flex flex-col gap-y-6 py-14 lg:flex-row lg:items-center lg:py-7 lg:justify-center lg:max-w-fit lg:gap-6 lg:pb-12 lg:mx-5">
+              <div className="w-full flex flex-col gap-y-6 lg:flex-row gap-x-6">
                 <LawyarsCard
                   classes={""}
                   title={"Visiting Tomb of Saadi, the Shirazi Poet"}
@@ -259,7 +259,7 @@ const page = () => {
                   cover={"/images/blog/lawyer.png"}
                 />
               </div>
-              <div className="flex flex-col gap-y-6 lg:flex-row gap-x-6">
+              <div className="w-full flex flex-col gap-y-6 lg:flex-row gap-x-6">
                 <LawyarsCard
                   classes={""}
                   title={"Visiting Tomb of Saadi, the Shirazi Poet"}
@@ -270,8 +270,7 @@ const page = () => {
                 />
               </div>
             </div>
-            <div>
-              <div className="flex no-scroll overflow-x-auto w-full whitespace-normal lg:flex items-center gap-x-6">
+              <div className="flex no-scroll overflow-x-auto w-full whitespace-normal lg:w-full lg:flex items-center gap-x-6">
                 <BlogCardM
                   classes={""}
                   readingTime={"3 min read"}
@@ -347,27 +346,23 @@ const page = () => {
                   </svg>
                 </div>
               </section>
-            </div>
             <div>
-              <div className="w-full bg-blue my-28 rounded-3xl lg:flex items-center">
-                <div className="flex flex-col  px-7 gap-y-3 lg:px-14 lg:gap-y-6">
-                  <h1 className="text-white font-outfit text-2xl font-medium  lg:text-3xl">
+              <div className="w-full bg-blue my-28 pt-6 rounded-3xl lg:flex items-center">
+                <div className="flex flex-col  px-7 gap-y-4 lg:px-14 lg:gap-y-6">
+                  <h1 className="text-white font-outfit text-2xl font-semibold  lg:text-3xl">
                     Want to be a blogger? its not that hard 😌
                   </h1>
-                  <p
-                    className="text-white-shade-8 font-opensans lg:
-                                text-lg"
-                  >
+                  <p className="text-white-shade-9 text-lg font-inter font-medium lg:text-lg">
                     Log in to your account or create one and start posting and
                     get viral
                   </p>
-                  <div className="flex items-center gap-5">
-                    <Link className="" href={"/register"}>
+                  <div className="flex items-center gap-5 w-full py-2">
+                    <Link className="w-full" href={"/register"}>
                       <h3 className="bg-white  py-2 text-black text-center text-lg font-medium font-opensans rounded-2xl lg:w-32">
                         Sign up
                       </h3>
                     </Link>
-                    <Link href={"/login"}>
+                    <Link className="w-full" href={"/login"}>
                       <h3 className="font-opensans  text-center text-white font-bold">Log in</h3>
                     </Link>
                   </div>

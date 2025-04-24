@@ -19,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
     <>
       <Link className="w-full" href={"#"}>
         <div
-          className={`${props.classes} max-w-full w-screen inline-block border-[1.5px] border-white-shade-3 rounded-2xl px-1 pb-14 lg:p-1 hover:shadow-card transition-all duration-300 `}
+          className={`${props.classes} max-w-full w-screen inline-block border-[1.5px] border-white-shade-3 rounded-2xl px-1 pb-14 lg:p-1 hover:shadow-card transition-all duration-300 lg:w-full `}
         >
           <div className="w-full flex flex-col gap-y-5 p-5 lg:w-2/3">
             <span className="w-[105px] h-10 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg">
@@ -73,11 +73,11 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
             </div>
           </div>
           <div
-            className="w-full  bg-cover bg-center rounded-2xl lg:hidden h-44"
+            className="w-full bg-cover bg-center rounded-2xl lg:hidden h-56"
             style={{ backgroundImage:  `url(${props.cover})` }}
           ></div>
           <div
-            className="w-64  bg-cover bg-center rounded-2xl"
+            className="w-1/2 bg-cover bg-center rounded-2xl"
             style={{ backgroundImage:  `url(${props.cover})` }}
           ></div>
         </div>
