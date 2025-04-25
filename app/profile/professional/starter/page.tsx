@@ -28,7 +28,7 @@ const page = () => {
       <div className="w-full h-1  border-t border-white-shade-4"></div>
       <section className="lg:flex lg:container lg:pr-0">
         <Navigation />
-        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full ">
+        <section className="lg:border-l  lg:border-white-shade-4 lg:px-6 w-full ">
           <AboutMe
             title={"Product designer with 10 years of  experience"}
             aboutexprnce={
