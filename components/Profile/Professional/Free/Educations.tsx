@@ -17,13 +17,13 @@ const Educations: React.FC<EducationsProps> = (props) => {
     { id: 1, title: "Art", univercity: "Leonardo University", date: "2003" },
   ]);
   return (
-    <section className="w-full border-white-shade-4 border-b py-8 container">
-      <div className=" flex flex-col gap-y-6 lg:px-0 lg:py-8 items-center">
+    <section className="w-full border-white-shade-4 border-b py-16 lg:py-8 container ">
+      <div className=" flex flex-col gap-y-2 lg:px-0 lg:py-8 lg:gap-y-2 items-center">
       <IconElement icon={<EducationsIcon />}/>
       
-        <Sectiontitle title={" Educations"} classes={"text-center"} />
+        <Sectiontitle title={" Educations"} classes={"text-center mt-2"} />
         <p className=" text-white-shade-9  font-opensans text-center">{props.desc} </p>
-        <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-3 w-full">
+        <div className="grid grid-cols-1 items-center mt-9 lg:mt-7 lg:grid-cols-2 gap-3 w-full">
           {educations.map((item, id) => {
             return (
               <Education

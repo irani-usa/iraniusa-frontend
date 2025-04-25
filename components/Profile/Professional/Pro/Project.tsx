@@ -6,6 +6,8 @@ import { Sectiontitle } from '../../general'
 import IconElement from '../../general/IconElement'
 import ProjectIcon from '@/components/Icons/Profile/Project'
 import OtherSkill from '@/components/Icons/Profile/OtherSkill'
+import { Location } from '@/components/Icons/Outline'
+import { Lang } from '@/components/Icons/Profile/Lang'
 
 interface ProjectProps {
   softskillabout:string,
@@ -13,46 +15,49 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = (props) => {
   return (
-    <div className=' w-full border-white-shade-4 border-b pb-8 container'>
-    <div className=' flex flex-col gap-y-6 mt-8 lg:px-0 items-center'>
+    <div className=' w-full border-white-shade-4 border-b py-14 container'>
+    <div className=' flex flex-col gap-y-6  lg:px-0 items-center'>
     <IconElement icon={<ProjectIcon />}/>
     <Sectiontitle title={'projects Completed'} classes={''} />
-          <section className='lg:flex items-center gap-x-7 w-full'>
+          <section className='lg:flex flex-wrap 2xl:grid grid-cols-3 lg:mt-7 items-center gap-5 w-full'>
  
-         <Projectitem title={'Upsket (device management)'} skill={['UI/UX design' , "html / css"]} cover={'/images/profile/Project.png'} />
-       
+         <Projectitem title={'Upsket (device management)'} skill={['UI/UX design', "html / css","USA"]} cover={'/images/profile/Project.png'} subtitle={'UI/UX design'} icon={<Location />} />
+    
           </section>
           
-        <Arrowbtn classes={'lg:hidden'} />
+        <Arrowbtn classes={'mt-5 lg:mt-0 pb-8'} />
+
+          <div className='w-full border-t border-white-shade-4 pt-14'>
           <IconElement icon={<OtherSkill />}/>
-          <h1 className="text-[26px] font-outfit font-bold mt-9 text-black lg:text-3xl">Other Skills & Languages</h1>
-          <p className=" text-white-shade-9  font-opensans">{props.softskillabout}</p>
-          <span className='text-xl text-start block w-full font-bold'>- Other skills</span>
-            <ul className=' text-black grid grid-cols-1 ml-5 text-lg font-medium gap-6 lg:grid-cols-3 lg:grid-rows-5 w-full list-none'>
-          <Skillsitem title={'Stress managemnet'} />
-          <Skillsitem title={'Creativity, Responsible'} />
-          <Skillsitem title={'Speech in public'} />
-          <Skillsitem title={'Speech in public'} />
-          <Skillsitem title={'Creativity, Responsible'} />
-          <Skillsitem title={'Creativity, Responsible'} />
-          <Skillsitem title={'Team player'} />
-          <Skillsitem title={'Team player'} />
-          <Skillsitem title={'Problem solving'} />
-          <Skillsitem title={'Problem solving'} />
+          <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl mt-5">Other Skills & Languages</h1>
+          <p className=" text-white-shade-9  font-opensans text-center mt-4">{props.softskillabout}</p>
+          <span className='text-xl text-start block w-full font-bold mt-10'>- Other skills</span>
+            <ul className=' text-black grid grid-cols-1 mt-6  text-lg font-medium gap-6 lg:grid-cols-3 w-full list-none'>
+          <Skillsitem title={'Stress managemnet'} icon={undefined} />
+          <Skillsitem title={'Creativity, Responsible'} icon={undefined} />
+          <Skillsitem title={'Speech in public'} icon={undefined} />
+          <Skillsitem title={'Speech in public'} icon={undefined} />
+          <Skillsitem title={'Creativity, Responsible'} icon={undefined} />
+          <Skillsitem title={'Creativity, Responsible'} icon={undefined} />
+          <Skillsitem title={'Team player'} icon={undefined} />
+          <Skillsitem title={'Team player'} icon={undefined} />
+          <Skillsitem title={'Problem solving'} icon={undefined} />
+          <Skillsitem title={'Problem solving'} icon={undefined} />
 
           
             </ul>
-          <span className='text-xl text-start block w-full font-bold'>- Languages</span>
+          <span className='text-xl text-start block w-full font-bold mt-9'>- Languages</span>
 
-            <ul className=' text-black grid grid-cols-1 ml-5 text-lg font-medium gap-4 lg:grid-cols-3 lg:grid-rows-5 w-full list-none'>
+            <ul className=' text-black grid grid-cols-1 mt-6 text-lg font-medium gap-4 lg:grid-cols-3  w-full list-none'>
        
          
-          <Skillsitem title={'German'} />
-          <Skillsitem title={'English'} />
-          <Skillsitem title={'Persian'} />
-          <Skillsitem title={'Spanish'} />
+          <Skillsitem title={'German'} icon={<Lang />} />
+          <Skillsitem title={'English'} icon={<Lang />} />
+          <Skillsitem title={'Persian'} icon={<Lang />} />
+          <Skillsitem title={'Spanish'} icon={<Lang />} />
           
             </ul>
+          </div>
     </div>
   </div>
   )

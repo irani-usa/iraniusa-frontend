@@ -4,8 +4,9 @@ interface IconElementProps {
 
 const IconElement: React.FC<IconElementProps> = (props) => {
   return (
-      <div className="border border-white-shade-4 h-min p-2 rounded-full mx-auto w-min">
+      <div className="border border-white-shade-4 h-min p-4  rounded-full mx-auto w-min">
        {props.icon}
+       
       </div>    
   );
 };

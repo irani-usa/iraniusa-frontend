@@ -11,12 +11,12 @@ interface JobProps {
 
 const Job: React.FC<JobProps> = (props) => {
     return (
-        <div className=' w-full border-white-shade-4 border-b pb-8 container'>
-            <div className=' flex flex-col gap-y-6 mt-8 lg:px-0 items-center'>
+        <div className=' w-full border-white-shade-4 border-b  py-14 container'>
+            <div className=' flex flex-col gap-y-3  lg:px-0 items-center'>
           
             <IconElement icon={<JobIcon />}/>
-            <Sectiontitle title={"What is my job about?"} classes={''} />
-                <div className="w-full text-white-shade-9 font-opensans bg-white-shade-2 p-3 rounded-xl  flex flex-col gap-y-8">
+            <Sectiontitle title={"Roles & Duties"} classes={''} />
+                <div className="w-full text-white-shade-9 font-opensans bg-white-shade-2 p-3 rounded-xl lg:mt-5  flex flex-col gap-y-8">
                     <p >
                    {props.jobabout}
                     </p>

@@ -8,7 +8,7 @@ interface GalleryItemProps {
 const GalleryItem: React.FC<GalleryItemProps>  = (props) => {
   return (
     <div
-      className={`w-full h-[220px] bg-center bg-cover rounded-2xl lg:h-[190px]`}
+      className={`w-full h-[220px] bg-center bg-cover rounded-2xl `}
       style={{ backgroundImage: `url(${props.imgUrl})` }}
     >
     </div>

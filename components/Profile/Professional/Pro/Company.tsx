@@ -10,14 +10,14 @@ interface CompanyProps {
 
 const Company: React.FC<CompanyProps> = (props) =>{
   return (
-    <div className={`${props.classes} justify-between relative bg-white-shade-2 py-5 px-3 flex items-center gap-5 rounded-2xl w-full  `}>
+    <div className={`${props.classes} justify-between relative bg-white-shade-2 py-3 px-3 flex items-center gap-5 rounded-2xl w-full  `}>
     <div className="flex items-center gap-5">
-    <div className="bg-white-shade-3 p-2 rounded-lg">
+    <div className="bg-white  p-3 rounded-lg border-white-shade-4 border">
         {props.iconComp}  
       </div>
-      <span>{props.title}</span> 
+      <span className='font-medium text-black text-lg'>{props.title}</span> 
     </div>
-      <span className='bg-white-shade-3 rounded-lg px-1'>{props.date}</span>      
+      <span className='bg-white-shade-3 rounded-lg px-2 py-1 lg:px-1.5 lg:py-0.5 font-medium'>{props.date}</span>      
   </div>
   )
 }

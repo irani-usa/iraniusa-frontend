@@ -7,14 +7,17 @@ import { Call, Email, Telegram } from '@/components/Icons/Profile'
 import CountryIcon from '@/components/Icons/Profile/Country'
 import TelegramForm from '@/components/Icons/Profile/TelegramForm'
 import Pen from '@/components/Icons/Profile/Pen'
+import IconElement from '../../general/IconElement'
+import { Cont } from '@/components/Icons/Outline/Cont'
 
 const Contact = () => {
   return (
-    <section className='w-full border-b border-white-shade-4 py-8 lg:py-11'>
+    <section className='w-full border-b border-white-shade-4 py-8 py-16'>
     <div className='container lg:flex lg:flex-col items-center'>
+    <IconElement icon={<Cont />}/>
     <h1 className="text-black text-center font-bold text-2xl font-outfit mt-5 lg:text-3xl">Contact us</h1>
-            <p className=" text-white-shade-9 text-center font-opensans py-4 mt-3 lg:mt-1 lg:text-lg lg:font-medium">We usually respond before 27 hours</p>
-            <div className='grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:gap-x-6 lg:mt-9 lg:w-[800px]'>
+            <p className=" text-white-shade-9 text-center font-opensans mt-2 lg:text-lg lg:font-medium">We usually respond before 27 hours</p>
+            <div className='grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:gap-x-6 mt-9 lg:w-[800px]'>
                 <Input placeholder={'Jason james'} class={''} lable='Full name' icon={<UserIcon />} isRequired />
                 <Input placeholder={'Example@gmail.com'} class={''} lable='Email' icon={<Email />} isRequired />
                 <Input placeholder={'USA'} class={''} lable='Country' icon={<CountryIcon />} />
