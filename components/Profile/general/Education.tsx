@@ -5,7 +5,7 @@ interface EducationProps {
   title: string;
   university: string;
   date?: string;
-  city:string
+  city?:string
 }
 
 const Education: React.FC<EducationProps> = (props) => {
