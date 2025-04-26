@@ -17,9 +17,8 @@ const LawyarsCard: React.FC<LawyarsCardProps> = (props) => {
     <>
       <div className='border-[2px] border-white-shade-3 rounded-2xl flex items-center gap-x-5 lg:w-full h-40'>
         <div
-          className="w-[140px] h-full  bg-cover bg-center rounded-tl-2xl rounded-bl-2xl lg:w-52"
+          className="w-[120px] h-full  bg-cover bg-center rounded-tl-2xl rounded-bl-2xl lg:w-40"
           style={{ backgroundImage: `url(${props.cover})` }}></div>
-
         <div className='flex flex-col gap-y-4 '>
           <h1 className='text-black font-outfit font-semibold text-lg lg:pt-6'>{props.title}</h1>
           <svg width="215" height="1" viewBox="0 0 215 1" fill="none" xmlns="http://www.w3.org/2000/svg">

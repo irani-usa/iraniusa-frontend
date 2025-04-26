@@ -20,7 +20,7 @@ interface BlogCardMProps {
 const BlogCardM: React.FC<BlogCardMProps> = (props) => {
   return (
     <>
-      <Link className={`${props.classes} w-full lg:w-[50%]`} href={"#"}>
+      <Link className={`${props.classes} w-full lg:w-[50%] lg:pb-11 lg:rounded-full`} href={"#"}>
         <div className="max-w-full w-screen inline-block rounded-2xl border-[1.5px] border-white-shade-3 hover:shadow-card transition-all duration-300 lg:w-full">
           <div
             className="w-full h-60 bg-cover bg-center rounded-t-2xl"
