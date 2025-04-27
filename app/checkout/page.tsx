@@ -18,10 +18,10 @@ const page = () => {
 
 
   const FeatureListClasses = classNames(
-    "[&>*:nth-child(odd)] relative top-0 left-0 w-full h-12 flex gap-x-4 p-2 justify-evenly text-center items-center  text-base bg-white-shade-3 rounded-xl before:contents-[''] before:absolute before:top-1/2 before:-translate-y-1/2  before:h-[80%] before:bg-white before:rounded-xl before:z-20 tranitaion-all duration-500 before:tranitaion-all before:duration-500 border border-white-shade-3",
+    "[&>*:nth-child(odd)] relative top-0 left-0 w-full h-16 flex gap-x-4 p-4 my-7 justify-evenly text-center items-center  text-base bg-white-shade-3 rounded-xl before:contents-[''] before:absolute before:top-1/2 before:-translate-y-1/2  before:h-[85%] before:bg-white before:rounded-xl before:z-20 tranitaion-all duration-500 before:tranitaion-all before:duration-500 border border-white-shade-3",
     {
-      "before:left-[48%]  before:w-6/12": sendMethod === "email",
-      "before:left-2  before:w-6/12": sendMethod === "pdf",
+      "before:left-[49%]  before:w-6/12": sendMethod === "email",
+      "before:left-1  before:w-6/12": sendMethod === "pdf",
     }
   );
   const PaymentMethodClasses = classNames(
@@ -37,27 +37,27 @@ const page = () => {
   return (
     <section className="container">
       <OverlayMenu />
-      <div className="flex flex-col lg:flex-row justify-center  py-8 gap-10 w-full">
-        <div className='lg:w-1/3 w-full '>
+      <div className="flex flex-col lg:flex-row justify-center py-8 gap-10 w-full">
+        <div className='lg:w-1/3 w-full'>
           <h1 className='text-lg font-semibold'>Preview</h1>
           <div className="w-full h-1 border-t border-white-shade-4 my-4"></div>
           <div className={FeatureListClasses}>
             <span
               onClick={() => setSendmethod("pdf")}
-              className={`relative z-2000  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm ${sendMethod === "email" && "text-white-shade-8"}`}
+              className={`relative z-2000  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm font-medium text-shadow-white-shade-19 ${sendMethod === "email" && "text-white-shade-8"}`}
             >
               Send invoice as Pdf
             </span>
             <span
               onClick={() => setSendmethod("email")}
-              className={`relative z-2000  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm ${sendMethod === "pdf" && "text-white-shade-8"}`}
+              className={`relative z-2000  w-1/2 flex items-center justify-center hover:cursor-pointer h-full rounded-xl text-sm font-medium text-shadow-white-shade-19 ${sendMethod === "pdf" && "text-white-shade-8"}`}
             >
               Send invoice as Email
             </span>
           </div>
           <div className='w-full h-auto border border-white-shade-4 bg-white-shade-2 rounded-2xl my-4 p-4'>
-            <span className='text-sm font-semibold mb-4 block'><span className='text-white-shade-11'>Subscribe to</span> Irani USA</span>
-            <div className="flex gap-4">
+            <span className='text-sm font-semibold mb-4 text-blue'><span className='text-white-shade-11 font-semibold'>Subscribe to</span> Irani USA</span>
+            <div className="flex gap-4 py-4">
               <div className='border border-white-shade-4 rounded-xl p-2 h-min'>
                 <Crown />
               </div>
@@ -109,6 +109,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        
         <div className='lg:w-2/3 w-full'>
           <section className='w-full border-b border-white-shade-4  '>
             <div className=''>
