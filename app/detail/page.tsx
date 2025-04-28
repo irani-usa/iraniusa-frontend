@@ -89,7 +89,9 @@ const page = () => {
         </div>
       </section>
     </div>
-    <div className="lg:flex items-center gap-x-6 container mt-32">
+    <div className="flex flex-col items-center pt-9">  
+      <h1 className="text-2xl font-outfit font-semibold py-8">More Popular Blogs</h1>  
+    <div className="lg:flex items-center gap-x-6 container">
        <BlogCardM
          classes={""}
          readingTime={"3 min read"}
@@ -147,6 +149,7 @@ const page = () => {
          like={""}
          cm={""}
        />
+     </div>
      </div>
     </section>
  </>
