@@ -9,8 +9,24 @@ import React from 'react'
 const page = () => {
   return (  
     <>
-    <div className="w-full lg:flex container lg:items-start gap-x-10 mt-10">
-    <section className="pl-5 lg:w-1/3">
+    <section className="container flex flex-col">    
+    <div className="w-full lg:flex flex-row-reverse lg:items-start gap-x-10 mt-10">
+    <section className="lg:pl-5 lg:border-l border-white-shade-4">
+      <div>
+            <h1 className='text-black text-2xl font-semibold'>Why should you use and invest time in the Irani.World platform?</h1>
+            <div>
+              <div className='flex items-center gap-x-4 mt-10'> 
+              <Date date={'September 4, 2020'} />
+              <Author name={'sajjadezati'} avatar={'/images/blog/User.webp'}  />
+              </div>
+              <Info view={'20k'} like={'23'} dislike={'6'} />
+            </div>
+            <div className='w-full h-[400px] rounded-2xl bg-center bg-cover' style={{ backgroundImage:`url('/images/blog/FreedomBanner.png')` }}>
+
+            </div>
+          </div>
+      </section>
+      <section className="pl-5 lg:w-1/3">
         <div>
           <h1 className="text-black text-xl font-semibold font-outfit">
             Categories
@@ -72,25 +88,8 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="lg:pr-5 lg:border-r border-white-shade-4">
-      <div>
-            <h1 className='text-black text-2xl font-semibold'>Why should you use and invest time in the Irani.World platform?</h1>
-            <div>
-              <div className='flex items-center gap-x-4 mt-10'> 
-              <Date date={'September 4, 2020'} />
-              <Author name={'sajjadezati'} avatar={'/images/blog/User.webp'}  />
-              </div>
-              <Info view={'20k'} like={'23'} dislike={'6'} />
-            </div>
-            <div className='w-full h-[400px] rounded-2xl bg-center bg-cover' style={{ backgroundImage:`url('/images/blog/FreedomBanner.png')` }}>
-
-            </div>
-          </div>
-      </section>
-
-   
     </div>
-       <div className="lg:flex items-center gap-x-6 container mt-32">
+    <div className="lg:flex items-center gap-x-6 container mt-32">
        <BlogCardM
          classes={""}
          readingTime={"3 min read"}
@@ -149,6 +148,7 @@ const page = () => {
          cm={""}
        />
      </div>
+    </section>
  </>
   )
 }
