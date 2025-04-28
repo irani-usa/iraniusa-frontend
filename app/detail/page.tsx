@@ -10,12 +10,12 @@ const page = () => {
   return (  
     <>
     <section className="container flex flex-col">    
-    <div className="w-full lg:flex flex-row-reverse lg:items-start gap-x-10 mt-10">
-    <section className="lg:pl-5 lg:border-l border-white-shade-4">
+    <div className="w-full lg:flex flex-row-reverse lg:items-start gap-x-10 mt-20">
+    <section className="w-full lg:pl-5 lg:border-l border-white-shade-4">
       <div>
-            <h1 className='text-black text-2xl font-semibold'>Why should you use and invest time in the Irani.World platform?</h1>
-            <div>
-              <div className='flex items-center gap-x-4 mt-10'> 
+            <h1 className='text-[26px] text-black lg:text-3xl font-outfit font-semibold lg:w-[52%]'>Why should you use and invest time in the Irani.World platform?</h1>
+            <div className='flex-col lg:flex lg:flex-row-reverse items-center justify-between gap-y-4 w-full'>
+              <div className='flex items-center justify-between gap-x-4 mt-10 py-3'> 
               <Date date={'September 4, 2020'} />
               <Author name={'sajjadezati'} avatar={'/images/blog/User.webp'}  />
               </div>
@@ -26,7 +26,7 @@ const page = () => {
             </div>
           </div>
       </section>
-      <section className="pl-5 lg:w-1/3">
+      <section className="pl-0 py-4 lg:pl-5 lg:w-1/3">
         <div>
           <h1 className="text-black text-xl font-semibold font-outfit">
             Categories
