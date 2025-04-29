@@ -26,9 +26,13 @@ const page = () => {
             </div>
           </div>
       </section>
-      <section className="pl-0 py-4 lg:pl-5 lg:w-1/3">
+      <section className="pb-4 lg:w-1/3">
+      <div className="flex items-center justify-between border border-white-shade-4 rounded-2xl py-1 px-1 w-full">
+        <input className="w-[60%] text-white-shade-15 font-semibold focus:outline-none" type="text" placeholder="Search blogs, authors.."/>
+        <button className="text-white bg-blue h-full w-24 rounded-2xl py-3" type="button">Search</button>
+      </div>
         <div>
-          <h1 className="text-black text-xl font-semibold font-outfit">
+          <h1 className="text-black text-xl font-semibold font-outfit pt-8">
             Categories
           </h1>
           <div className="flex flex-col py-5">
