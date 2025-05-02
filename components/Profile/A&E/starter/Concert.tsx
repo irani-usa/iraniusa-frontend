@@ -13,8 +13,8 @@ interface ConcertProps {
   artist: string,
   job: string,
   cover: string,
-  Musicname:string,
-  date:string,
+  Musicname: string,
+  date: string,
 }
 
 
@@ -23,25 +23,25 @@ const Concert: React.FC<ConcertProps> = (props) => {
 
 
   return (
-    <section className="border-b border-white-shade-4 py-8 lg:pt-2">
-      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-16">
-        <div className="bg-white  flex flex-col gap-y-2 rounded-3xl lg:w-1/2">
+    <section className="border-b border-white-shade-4 pb-16 pt-8 lg:pl-4">
+      <div className=" p-3 w-full bg-white-shade-2 pb-10 rounded-3xl lg:flex lg:pb-2 h-auto gap-16">
+        <div className=" p-5 pb-0 flex flex-col gap-y-1 rounded-3xl lg:w-1/2">
 
-          <span className="text-white-shade-9">Artist Name</span>
+          <span className="text-white-shade-14">Artist Name</span>
           <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
             {props.artist}
           </h1>
-          <p className=" text-white-shade-9  font-opensans">
+          <p className=" text-white-shade-11 font-medium  font-opensans">
             {props.job}
           </p>
 
-          <div className="flex items-center  gap-8 my-5 border-b border-white-shade-4 pb-4">
-            <Link href=""><svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex items-center  gap-3 mt-9  border-b border-white-shade-4 pb-7">
+            <Link href="" className="bg-white p-4 rounded-xl"><svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22 11.0047C22 4.92958 17.0751 0.00471878 11 0.00471878C4.92486 0.00471878 0 4.92958 0 11.0047C0 16.4951 4.02254 21.0459 9.28125 21.8711V14.1844H6.48828V11.0047H9.28125V8.58128C9.28125 5.82441 10.9235 4.3016 13.4361 4.3016C14.6396 4.3016 15.8984 4.51644 15.8984 4.51644V7.22347H14.5114C13.1449 7.22347 12.7188 8.07139 12.7188 8.9413V11.0047H15.7695L15.2818 14.1844H12.7188V21.8711C17.9775 21.0459 22 16.4951 22 11.0047Z" fill="black" />
               <path d="M15.2838 14.1797L15.7715 11H12.7207V8.93658C12.7207 8.06667 13.1468 7.21875 14.5133 7.21875H15.9004V4.51172C15.9004 4.51172 14.6416 4.29688 13.4381 4.29688C10.9254 4.29688 9.2832 5.81969 9.2832 8.57656V11H6.49023V14.1797H9.2832V21.8664C9.84324 21.9542 10.4172 22 11.002 22C11.5867 22 12.1607 21.9542 12.7207 21.8664V14.1797H15.2838Z" fill="white" />
             </svg>
             </Link>
-            <Link href=""><svg width="28" height="28" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Link href="" className="bg-white p-4 rounded-xl"><svg width="28" height="28" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_6325_18957)">
                 <path d="M15.3114 4.20927C14.1993 3.47182 13.3974 2.29137 13.1468 0.916021C13.0929 0.618933 13.0629 0.31289 13.0629 0H9.51437L9.50867 14.4688C9.44913 16.0891 8.13823 17.3896 6.53171 17.3896C6.0321 17.3896 5.562 17.2627 5.14781 17.0409C4.19829 16.5326 3.54854 15.5202 3.54854 14.355C3.54854 12.6815 4.88688 11.3199 6.53119 11.3199C6.83821 11.3199 7.1328 11.3715 7.41134 11.46V7.77432C7.12296 7.73429 6.82992 7.70953 6.53119 7.70953C2.92985 7.70953 0 10.6904 0 14.355C0 16.6032 1.10381 18.5927 2.78851 19.7958C3.84934 20.5538 5.14005 21 6.53171 21C10.1331 21 13.0629 18.0191 13.0629 14.355V7.01791C14.4546 8.03401 16.16 8.63293 18 8.63293V5.02257C17.0091 5.02257 16.0859 4.72285 15.3114 4.20927Z" fill="black" />
               </g>
@@ -52,29 +52,29 @@ const Concert: React.FC<ConcertProps> = (props) => {
               </defs>
             </svg>
             </Link>
-            <Link href=""><svg width="28" height="28" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Link href="" className="bg-white p-4 rounded-xl"><svg width="28" height="28" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.9396 2.46349C17.2822 2.74708 16.5668 2.95118 15.8299 3.03067C16.595 2.57614 17.1679 1.85805 17.4412 1.01114C16.7233 1.43823 15.9368 1.73771 15.1166 1.8963C14.7738 1.52983 14.3592 1.23789 13.8987 1.03866C13.4381 0.839428 12.9414 0.737182 12.4396 0.73829C10.4094 0.73829 8.77656 2.38399 8.77656 4.40352C8.77656 4.68712 8.81094 4.97071 8.8668 5.24356C5.82676 5.08458 3.11543 3.63224 1.31289 1.4086C0.984449 1.96959 0.812334 2.60835 0.814453 3.25841C0.814453 4.53028 1.46113 5.65177 2.44727 6.31134C1.86612 6.28845 1.29859 6.12872 0.79082 5.84513V5.89024C0.79082 7.6713 2.0498 9.14727 3.72773 9.48673C3.41268 9.56856 3.08859 9.61043 2.76309 9.61134C2.52461 9.61134 2.29902 9.5877 2.07129 9.55548C2.53535 11.0078 3.88672 12.0627 5.4959 12.0971C4.23691 13.0832 2.65996 13.6633 0.947656 13.6633C0.64043 13.6633 0.356836 13.6525 0.0625 13.6182C1.68672 14.6602 3.61387 15.2617 5.68926 15.2617C12.4268 15.2617 16.1135 9.68009 16.1135 4.83536C16.1135 4.67638 16.1135 4.51739 16.1027 4.35841C16.816 3.83634 17.4412 3.18966 17.9396 2.46349Z" fill="black" />
             </svg>
             </Link>
-            <Link href=""><svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.0007 8.02148C10.2105 8.02148 9.45276 8.33536 8.89406 8.89406C8.33536 9.45276 8.02148 10.2105 8.02148 11.0007C8.02148 11.7908 8.33536 12.5485 8.89406 13.1072C9.45276 13.6659 10.2105 13.9798 11.0007 13.9798C11.7908 13.9798 12.5485 13.6659 13.1072 13.1072C13.6659 12.5485 13.9798 11.7908 13.9798 11.0007C13.9798 10.2105 13.6659 9.45276 13.1072 8.89406C12.5485 8.33536 11.7908 8.02148 11.0007 8.02148Z" fill="black"/>
-<path fillRule="evenodd" clipRule="evenodd" d="M6.20624 2.82935C9.39259 2.47616 12.6082 2.47616 15.7946 2.82935C17.5353 3.02368 18.9387 4.3941 19.1432 6.14126C19.521 9.3722 19.521 12.6362 19.1432 15.8671C18.9387 17.6143 17.5353 18.9847 15.7955 19.1799C12.6088 19.5332 9.39289 19.5332 6.20624 19.1799C4.46549 18.9847 3.06207 17.6143 2.85766 15.868C2.47974 12.6368 2.47974 9.3725 2.85766 6.14126C3.06207 4.3941 4.46549 3.02368 6.20624 2.82935ZM15.5837 5.50418C15.3406 5.50418 15.1075 5.60076 14.9356 5.77267C14.7636 5.94457 14.6671 6.17773 14.6671 6.42085C14.6671 6.66396 14.7636 6.89712 14.9356 7.06903C15.1075 7.24094 15.3406 7.33751 15.5837 7.33751C15.8269 7.33751 16.06 7.24094 16.2319 7.06903C16.4038 6.89712 16.5004 6.66396 16.5004 6.42085C16.5004 6.17773 16.4038 5.94457 16.2319 5.77267C16.06 5.60076 15.8269 5.50418 15.5837 5.50418ZM6.64624 11.0042C6.64624 9.84938 7.10498 8.74188 7.92154 7.92532C8.73811 7.10876 9.84561 6.65001 11.0004 6.65001C12.1552 6.65001 13.2627 7.10876 14.0793 7.92532C14.8958 8.74188 15.3546 9.84938 15.3546 11.0042C15.3546 12.159 14.8958 13.2665 14.0793 14.083C13.2627 14.8996 12.1552 15.3583 11.0004 15.3583C9.84561 15.3583 8.73811 14.8996 7.92154 14.083C7.10498 13.2665 6.64624 12.159 6.64624 11.0042Z" fill="black"/>
-</svg>
+            <Link href="" className="bg-white p-4 rounded-xl"><svg width="28" height="28" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.0007 8.02148C10.2105 8.02148 9.45276 8.33536 8.89406 8.89406C8.33536 9.45276 8.02148 10.2105 8.02148 11.0007C8.02148 11.7908 8.33536 12.5485 8.89406 13.1072C9.45276 13.6659 10.2105 13.9798 11.0007 13.9798C11.7908 13.9798 12.5485 13.6659 13.1072 13.1072C13.6659 12.5485 13.9798 11.7908 13.9798 11.0007C13.9798 10.2105 13.6659 9.45276 13.1072 8.89406C12.5485 8.33536 11.7908 8.02148 11.0007 8.02148Z" fill="black" />
+              <path fillRule="evenodd" clipRule="evenodd" d="M6.20624 2.82935C9.39259 2.47616 12.6082 2.47616 15.7946 2.82935C17.5353 3.02368 18.9387 4.3941 19.1432 6.14126C19.521 9.3722 19.521 12.6362 19.1432 15.8671C18.9387 17.6143 17.5353 18.9847 15.7955 19.1799C12.6088 19.5332 9.39289 19.5332 6.20624 19.1799C4.46549 18.9847 3.06207 17.6143 2.85766 15.868C2.47974 12.6368 2.47974 9.3725 2.85766 6.14126C3.06207 4.3941 4.46549 3.02368 6.20624 2.82935ZM15.5837 5.50418C15.3406 5.50418 15.1075 5.60076 14.9356 5.77267C14.7636 5.94457 14.6671 6.17773 14.6671 6.42085C14.6671 6.66396 14.7636 6.89712 14.9356 7.06903C15.1075 7.24094 15.3406 7.33751 15.5837 7.33751C15.8269 7.33751 16.06 7.24094 16.2319 7.06903C16.4038 6.89712 16.5004 6.66396 16.5004 6.42085C16.5004 6.17773 16.4038 5.94457 16.2319 5.77267C16.06 5.60076 15.8269 5.50418 15.5837 5.50418ZM6.64624 11.0042C6.64624 9.84938 7.10498 8.74188 7.92154 7.92532C8.73811 7.10876 9.84561 6.65001 11.0004 6.65001C12.1552 6.65001 13.2627 7.10876 14.0793 7.92532C14.8958 8.74188 15.3546 9.84938 15.3546 11.0042C15.3546 12.159 14.8958 13.2665 14.0793 14.083C13.2627 14.8996 12.1552 15.3583 11.0004 15.3583C9.84561 15.3583 8.73811 14.8996 7.92154 14.083C7.10498 13.2665 6.64624 12.159 6.64624 11.0042Z" fill="black" />
+            </svg>
 
             </Link>
           </div>
-          <div className="flex justify-between items-center border-b border-white-shade-4 pb-4">
-              <div className="flex flex-col gap-1">
-                <span className="text-2xl font-bold">{props.Musicname}</span>
-                <span className="text-white-shade-11">{props.date}</span>
-              </div>
-              <svg width="32" height="32" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 19.5C9 21.1569 7.65685 22.5 6 22.5C4.34315 22.5 3 21.1569 3 19.5C3 17.8431 4.34315 16.5 6 16.5C7.65685 16.5 9 17.8431 9 19.5Z" stroke="black" strokeWidth="1.5"/>
-<path d="M21 17.5C21 19.1569 19.6569 20.5 18 20.5C16.3431 20.5 15 19.1569 15 17.5C15 15.8431 16.3431 14.5 18 14.5C19.6569 14.5 21 15.8431 21 17.5Z" stroke="black" strokeWidth="1.5"/>
-<path d="M9 19.5V8.5" stroke="black" strokeWidth="1.5"/>
-<path d="M21 17.5V6.5" stroke="black" strokeWidth="1.5"/>
-<path d="M15.7351 4.25564L11.7351 5.58897C10.4151 6.02898 9.75503 6.24899 9.37752 6.77276C9 7.29654 9 7.99226 9 9.3837V12.5007L21 8.50067V8.05037C21 5.51791 21 4.25168 20.1694 3.65303C19.3388 3.05439 18.1376 3.4548 15.7351 4.25564Z" stroke="black" strokeWidth="1.5" strokeLinecap="round"/>
-</svg>
+          <div className="flex justify-between items-center border-b border-white-shade-4 py-4">
+            <div className="flex flex-col gap-1.5">
+              <span className="text-2xl font-bold">{props.Musicname}</span>
+              <span className="text-white-shade-11">{props.date}</span>
+            </div>
+            <svg width="32" height="32" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 19.5C9 21.1569 7.65685 22.5 6 22.5C4.34315 22.5 3 21.1569 3 19.5C3 17.8431 4.34315 16.5 6 16.5C7.65685 16.5 9 17.8431 9 19.5Z" stroke="black" strokeWidth="1.5" />
+              <path d="M21 17.5C21 19.1569 19.6569 20.5 18 20.5C16.3431 20.5 15 19.1569 15 17.5C15 15.8431 16.3431 14.5 18 14.5C19.6569 14.5 21 15.8431 21 17.5Z" stroke="black" strokeWidth="1.5" />
+              <path d="M9 19.5V8.5" stroke="black" strokeWidth="1.5" />
+              <path d="M21 17.5V6.5" stroke="black" strokeWidth="1.5" />
+              <path d="M15.7351 4.25564L11.7351 5.58897C10.4151 6.02898 9.75503 6.24899 9.37752 6.77276C9 7.29654 9 7.99226 9 9.3837V12.5007L21 8.50067V8.05037C21 5.51791 21 4.25168 20.1694 3.65303C19.3388 3.05439 18.1376 3.4548 15.7351 4.25564Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
 
           </div>
 
@@ -82,11 +82,11 @@ const Concert: React.FC<ConcertProps> = (props) => {
 
         </div>
         <div
-          className="w-full lg:w-1/2  bg-cover bg-center rounded-xl flex flex-col justify-end items-center p-4 h-96 lg:h-auto"
+          className="w-full lg:w-1/2  bg-cover px-7 bg-center rounded-3xl flex flex-col justify-end items-center p-4 h-96 lg:h-auto"
           style={{ backgroundImage: `url('${props.cover}')` }}
         >
-          <div className="flex items-center  gap-3 mt-6">
-            <div className="bg-black/5 backdrop-blur-lg  rounded-2xl px-5 py-3">
+          <div className="grid grid-cols-4 w-full gap-3 ">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10  rounded-2xl flex items-center justify-center px-6 py-5 w-full">
               <svg
                 width="17"
                 height="24"
@@ -102,7 +102,7 @@ const Concert: React.FC<ConcertProps> = (props) => {
                 />
               </svg>
             </div>
-            <div className="bg-black/5 backdrop-blur-lg px-5 py-3 rounded-2xl ">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10  rounded-2xl flex items-center justify-center px-6 py-5 w-full">
               <svg
                 width="24"
                 height="24"
@@ -118,7 +118,7 @@ const Concert: React.FC<ConcertProps> = (props) => {
                 />
               </svg>
             </div>
-            <div className="bg-black/5 backdrop-blur-lg  rounded-2xl px-5 py-3">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10  rounded-2xl flex items-center justify-center px-6 py-5 w-full">
               <svg
                 width="17"
                 height="24"
@@ -134,7 +134,7 @@ const Concert: React.FC<ConcertProps> = (props) => {
                 />
               </svg>
             </div>
-            <div className="bg-black/5 backdrop-blur-lg  rounded-2xl px-5 py-3">
+            <div className="bg-white/5 backdrop-blur-lg border border-white/10  rounded-2xl flex items-center justify-center px-6 py-5 w-full">
               <svg
                 width="18"
                 height="21"

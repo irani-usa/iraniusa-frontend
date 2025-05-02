@@ -18,6 +18,8 @@ import About from "@/components/Profile/business/starter/About";
 import { Gallery } from "@/components/Profile/Professional/Free";
 import { Company } from "@/components/Profile/Professional/Pro";
 import { Avatar, UserTitle } from "@/components/Profile/general";
+import MusicPlayer from "@/components/Profile/A&E/starter/MusicPlayer";
+
 
 const page = () => {
   return (
@@ -47,16 +49,12 @@ const page = () => {
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full">
         <Concert cover={"/images/profile/A&E/bg.png"} Musicname={"Ashegh"} date={"September 4, 2020"} artist={" Siavash ghomeyshi"} job={" Artist and song writer"} />
         <About
-          compimg={"/images/profile/A&E/about.png"} compimg2={"/images/profile/A&E/about2.png"}
-            about={
-              "Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "
-            }
+           
+            about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "}
             city={" Los angless"}
-            name={"Jason todd"}
-            job={"Founder"}
             cover={"/images/blog/User.webp"}
-            title={"What is our company all about?"}
-          />
+            title={"What is our company all about?"} img={"/images/profile/A&E/about.png"} img2={"/images/profile/A&E/about2.png"} author={"Jason todd"} publish={"Founder"} singer={"Saeed Sayam"}          />
+          <MusicPlayer/>
           <Upcoming />
           <Tracks />
           <Steream artist={"Siavash"} />
