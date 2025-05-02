@@ -5,7 +5,7 @@ interface EducationProps {
   title: string;
   university: string;
   date?: string;
-  city:string
+  city?:string
 }
 
 const Education: React.FC<EducationProps> = (props) => {
@@ -23,7 +23,7 @@ const Education: React.FC<EducationProps> = (props) => {
 
       </div>
      </div>
-     {props.date &&<span className="bg-white-shade-3 px-4 mt-3 lg:mt-0 py-1 w-[42%] max-w-[50%] lg:ml-0 ml-[54px] lg:w-full lg:max-w-full rounded-lg font-medium">{props.date}</span>
+     {props.date &&<span className="bg-white-shade-3 px-4 mt-3 lg:mt-0 py-1   lg:ml-0 ml-[54px] w-max  lg:max-w-full rounded-lg font-medium">{props.date}</span>
     }
     
     </div>

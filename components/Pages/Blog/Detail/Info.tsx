@@ -8,7 +8,7 @@ interface InfoProps {
 
 export const Info: React.FC<InfoProps> = (props) => {
   return (
-    <div className="flex items-center gap-x-7 font-medium py-7">
+    <div className="flex items-center justify-between gap-x-7 font-medium py-3">
       <span className="text-green flex items-center gap-x-2">
         <div className="w-5 h-5 rounded-full flex items-center justify-center border-[2px] border-green">
           <div className="w-[5px] h-[5px] rounded-full border-[2px]  border-green"></div>

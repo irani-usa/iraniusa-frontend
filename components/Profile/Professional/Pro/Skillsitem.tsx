@@ -2,7 +2,7 @@ import React from 'react'
 
 interface SkillsitemProps {
     title:string,
-      icon:React.ReactNode
+      icon?:React.ReactNode
   }
 
 const Skillsitem: React.FC<SkillsitemProps> = (props) =>  {

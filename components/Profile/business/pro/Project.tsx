@@ -14,7 +14,7 @@ const Project: React.FC = () => {
     <Sectiontitle title={'projects Completed'} classes={''} />
           <section className='lg:flex items-center gap-x-7 w-full'>
  
-         <Projectitem title={'Upsket (device management)'} skill={['UI/UX design' , "html / css"]} cover={'/images/profile/Project.png'} />
+         <Projectitem title={'Upsket (device management)'} skill={['UI/UX design' , "html / css"]} cover={'/images/profile/Project.png'} subtitle='' icon="" />
        
           </section>
           

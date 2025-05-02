@@ -10,5 +10,4 @@ const Crown = () => {
     
   )
 }
-
 export default Crown

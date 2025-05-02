@@ -165,7 +165,7 @@ const page = () => {
               <h1 className="text-black text-xl font-semibold font-inter py-8">
                 Most active bloggers
               </h1>
-              <div className="flex flex-col gap-y-6 px-1 bg-black w-full">
+              <div className="flex flex-col gap-y-6 px-1 w-full">
                 <Bloggers
                   classes={""}
                   name={"Darkcafé"}
@@ -248,8 +248,7 @@ const page = () => {
               <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/></svg>
                 Lawyars pick
               </h1>
-            <div className="flex flex-col gap-y-6 py-14 lg:flex-row lg:items-center lg:py-7 lg:justify-center lg:max-w-fit lg:gap-6 lg:pb-12 lg:mx-5">
-              <div className="w-full flex flex-col gap-y-6 lg:flex-row gap-x-6">
+            <div className="flex flex-col gap-y-6 py-14 lg:flex-row lg:items-center lg:py-7 lg:justify-center lg:w-full lg:gap-6 lg:pb-12">
                 <LawyarsCard
                   classes={""}
                   title={"Visiting Tomb of Saadi, the Shirazi Poet"}
@@ -258,8 +257,6 @@ const page = () => {
                   avatar={"/images/blog/User.webp"}
                   cover={"/images/blog/lawyer.png"}
                 />
-              </div>
-              <div className="w-full flex flex-col gap-y-6 lg:flex-row gap-x-6">
                 <LawyarsCard
                   classes={""}
                   title={"Visiting Tomb of Saadi, the Shirazi Poet"}
@@ -268,7 +265,6 @@ const page = () => {
                   avatar={"/images/blog/User.webp"}
                   cover={"/images/blog/lawyer.png"}
                 />
-              </div>
             </div>
               <div className="flex no-scroll overflow-x-auto w-full whitespace-normal lg:w-full lg:flex items-center gap-x-6">
                 <BlogCardM
@@ -310,7 +306,70 @@ const page = () => {
                   cm={""}
                 />
               </div>
-              <section className="flex justify-center gap-x-3 mt-12 lg:hidden">
+              <h1 className="flex items-center gap-x-1.5 text-black text-xl font-semibold font-inter pt-10">
+              <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/></svg>
+                Lawyars pick
+              </h1>
+            <div className="flex flex-col gap-y-6 py-14 lg:flex-row lg:items-center lg:py-7 lg:justify-center lg:w-full lg:gap-6 lg:pb-12">
+                <LawyarsCard
+                  classes={""}
+                  title={"Visiting Tomb of Saadi, the Shirazi Poet"}
+                  author={"Anna Rosé"}
+                  publish={"Posted just now"}
+                  avatar={"/images/blog/User.webp"}
+                  cover={"/images/blog/lawyer.png"}
+                />
+                <LawyarsCard
+                  classes={""}
+                  title={"Visiting Tomb of Saadi, the Shirazi Poet"}
+                  author={"Anna Rosé"}
+                  publish={"Posted just now"}
+                  avatar={"/images/blog/User.webp"}
+                  cover={"/images/blog/lawyer.png"}
+                />
+            </div>
+              <div className="flex no-scroll overflow-x-auto w-full whitespace-normal lg:w-full lg:flex items-center gap-x-6">
+                <BlogCardM
+                  classes={""}
+                  readingTime={"3 min read"}
+                  title={
+                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
+                  }
+                  summery={
+                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
+                  }
+                  author={"Anna Rosé"}
+                  publish={"Posted just now"}
+                  avatar={""}
+                  cover={"/images/blog/UsaFlag.webp"}
+                  info={true}
+                  isview={false}
+                  view={""}
+                  like={""}
+                  cm={""}
+                />
+                <BlogCardM
+                  classes={""}
+                  readingTime={"3 min read"}
+                  title={
+                    "Exploring Shirez Canyon in the Heart of Zagros Mountains"
+                  }
+                  summery={
+                    "Shirez Canyon: A Natural Wonder in the Heart of Zagros Mountains"
+                  }
+                  author={"Anna Rosé"}
+                  publish={"Posted just now"}
+                  avatar={""}
+                  cover={"/images/blog/UsaFlag.webp"}
+                  info={true}
+                  isview={false}
+                  view={""}
+                  like={""}
+                  cm={""}
+                />
+              </div>
+              <section className="flex justify-center gap-x-3 my-12 lg:hidden">
                 <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
                   <svg
                     width="8"
@@ -346,43 +405,12 @@ const page = () => {
                   </svg>
                 </div>
               </section>
-            <div>
-              <div className="w-full bg-blue my-28 pt-6 rounded-3xl lg:flex items-center">
-                <div className="flex flex-col  px-7 gap-y-4 lg:px-14 lg:gap-y-6">
-                  <h1 className="text-white font-outfit text-2xl font-semibold  lg:text-3xl">
-                    Want to be a blogger? its not that hard 😌
-                  </h1>
-                  <p className="text-white-shade-9 text-lg font-inter font-medium lg:text-lg">
-                    Log in to your account or create one and start posting and
-                    get viral
-                  </p>
-                  <div className="flex items-center gap-5 w-full py-2">
-                    <Link className="w-full" href={"/register"}>
-                      <h3 className="bg-white  py-2 text-black text-center text-lg font-medium font-opensans rounded-2xl lg:w-32">
-                        Sign up
-                      </h3>
-                    </Link>
-                    <Link className="w-full" href={"/login"}>
-                      <h3 className="font-opensans  text-center text-white font-bold">Log in</h3>
-                    </Link>
-                  </div>
-                </div>
-                <img
-                  src="images/blog/Girl.webp"
-                  className="rounded-b-3xl mt-10 lg:hidden"
-                />
-                <img
-                  src="images/blog/Girl (2).webp"
-                  className="rounded-e-3xl w-80  hidden lg:flex"
-                />
-              </div>
-            </div>
-            <div>
-              <section className="w-full my-40 flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-14">
+            <div className="hidden lg:block lg:pb-6">
+              <section className="w-full pb-16 gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-14">
                 <SmallBanner
                   name={"Supplemental income"}
                   jobTitle={"Dentist"}
-                  role=""
+                  role="Your Trusted Accountant"
                 />
                 <SmallBanner
                   name={"Supplemental income"}
@@ -401,9 +429,29 @@ const page = () => {
                 />
               </section>
             </div>
+            <div className="w-full bg-blue rounded-3xl lg:flex items-center gap-6">
+                <div className="flex flex-col items-start  px-5 gap-y-4 lg:px-14 lg:gap-y-3.5 w-[65%]">
+                  <h1 className="text-white font-outfit text-xl font-semibold lg:w-80 lg:text-2xl">
+                    Want to be a blogger? its not that hard 😌
+                  </h1>
+                  <p className="text-white-shade-9 text-lg font-inter font-medium lg:text-sm">
+                    Log in to your account or create one and start posting and
+                    get viral
+                  </p>
+                  <div className="flex items-center gap-7 w-auto py-2">
+                    <Link className="w-full" href={"/register"}>
+                      <h3 className="bg-white  py-2 text-black text-center text-sm font-medium font-inter rounded-xl text-nowrap lg:px-8">
+                        Sign up
+                      </h3>
+                    </Link>
+                    <Link className="w-full" href={"/login"}>
+                      <h3 className="text-sm text-center text-white font-medium font-inter">Login</h3>
+                    </Link>
+                  </div>
+                </div>
+                <img src="images/blog/Girl.webp" className="rounded-b-3xl w-full lg:w-[40%] lg:h-full lg:rounded-l-none lg:rounded-r-3xl"/>
+            </div>
           </section>
-
-       
         </div>
       </section>
     </>

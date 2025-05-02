@@ -21,7 +21,7 @@ const SmallPlan: React.FC<SmallPlanProps> = (props) => {
               <span className="text-white-shade-7 font-opensans text-xs">{props.description}</span>
             </div>
           </div>
-            <button type="button" className="w-1/3 bg-black py-2 rounded-lg text-white text-xs font-medium">Get Started</button>
+            <button type="button" className="w-1/3 bg-black py-2 rounded-lg text-white text-xs font-medium lg:px-2 lg:w-1/2">Get Started</button>
         </div>
       </Link>
     </>
