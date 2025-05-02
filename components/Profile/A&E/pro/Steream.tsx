@@ -6,8 +6,8 @@ interface StereamProps {
 
 const Steream: React.FC<StereamProps> = (props) => {
   return (
-    <div className=" w-full border-white-shade-4 border-b pb-8 container lg:pb-12">
-      <div className="container flex flex-col lg:items-center gap-y-6 mt-10 lg:px-0">
+    <div className=" w-full border-white-shade-4 border-b  container py-16">
+      <div className="container flex flex-col lg:items-center gap-y-6  lg:px-0">
         <h1 className="text-[26px] font-outfit font-bold text-center text-black lg:text-3xl lg:mt-9">
           {" "}
           Stream {props.artist} works{" "}
@@ -16,7 +16,7 @@ const Steream: React.FC<StereamProps> = (props) => {
           You can listen to all of Siavash's songs and albums through these
           platforms
         </p>
-        <section className="grid grid-cols-4 gap-y-4 mt-3 lg:grid-cols-6 lg:w-[500px] gap-x-5">
+        <section className="grid grid-cols-4  gap-y-4 mt-3 lg:grid-cols-6 lg:w-[500px] gap-x-5">
           <div className="w-[70px] h-[70px] flex items-center justify-center border border-white-shade-4 rounded-full ">
             <svg
               width="24"

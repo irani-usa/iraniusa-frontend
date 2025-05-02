@@ -9,7 +9,6 @@ import ArrowDown from "@/components/Icons/Solid/ArrowDown";
 import Platform from "./Platform";
 
 
-
 interface ConcertProps {
   artist: string,
   job: string,
