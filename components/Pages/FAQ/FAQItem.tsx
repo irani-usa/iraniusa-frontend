@@ -13,8 +13,8 @@ const FAQItem:React.FC<FAQItemProps> = (props) => {
 
     return (
         <div className='flex flex-col w-full m-auto p-8 bg-white text-black hover:cursor-pointer leading-8 rounded-xl hover:bg-blue hover:text-white duration-300 group'>
-            <div className='flex justify-between ' onClick={() => setIsActive(!isActive)}>
-                <h4 className='text-sm lg:text-base font-opensans font-semibold'>
+            <div className='flex items-center justify-between ' onClick={() => setIsActive(!isActive)}>
+                <h4 className='text-lg font-inter font-semibold'>
                     {props.title}
                 </h4>
                 <div>

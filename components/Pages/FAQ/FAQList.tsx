@@ -4,8 +4,9 @@ import FAQItem from './FAQItem'
 
 const FAQList = () => {
   return (
-    <section className='flex flex-col items-center my-20 px-16'>
-      <div className="w-full  bg-white-shade-2 flex flex-col gap-y-4 lg:gap-6 rounded-xl px-12 py-12">
+    <section className='flex flex-col items-center my-20 -z-50 lg:px-16'>
+      <div className="w-full  bg-white-shade-2 flex flex-col gap-y-4 lg:gap-6 rounded-xl px-2 lg:px-12 py-12">
+        <h1 className='pb-2 text-black text-2xl font-outfit font-semibold'>General Questions</h1>
         <FAQItem
           title={"What is White Snail American all about?"}
           content={"Our platform is designed for Iranian people who have any business ideas. Business owners can use our platform to reach their target audience and promote their products or services. Students and educators can use our platform to access educational resources and opportunities. Producers can use this platform to sell their products."}
