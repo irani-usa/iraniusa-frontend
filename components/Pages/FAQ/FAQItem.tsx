@@ -32,7 +32,7 @@ const FAQItem:React.FC<FAQItemProps> = (props) => {
             </div>
             {
                 <div className={`px-6 overflow-hidden transition-[max-height] duration-300 ease-in ${isActive ? "max-h-40" : "max-h-0"}`}>
-                    <p>
+                    <p className="text-white-shade-9">
                         <br />
                         {props.content}
                     </p>

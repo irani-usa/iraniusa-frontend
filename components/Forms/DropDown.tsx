@@ -31,7 +31,7 @@ const DropDown = () => {
                     )}
                 </div>
                 {isActive && (
-                    <div className="z-50 dropdown-content rounded-2xl absolute w-full shadow-[0_0_10px_5px_rgba(0,0,0,0.07)] mt-2 flex flex-col gap-2 p-1.5">
+                    <div className="bg-white z-50 dropdown-content rounded-2xl absolute w-full shadow-[0_0_10px_5px_rgba(0,0,0,0.07)] mt-2 flex flex-col gap-2 p-1.5">
                         <div onClick={handleSelect} className="text-white-shade-9 text-lg font-medium font-inter text-center py-4 cursor-pointer hover:bg-white-shade-4 hover:text-black transition-all rounded-xl item">General</div>
                         <div onClick={handleSelect} className="text-white-shade-9 text-lg font-medium font-inter text-center py-4 cursor-pointer hover:bg-white-shade-4 hover:text-black transition-all rounded-xl item">Payment</div>
                         <div onClick={handleSelect} className="text-white-shade-9 text-lg font-medium font-inter text-center py-4 cursor-pointer hover:bg-white-shade-4 hover:text-black transition-all rounded-xl item">Platform</div>
