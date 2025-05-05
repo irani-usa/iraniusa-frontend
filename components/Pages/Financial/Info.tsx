@@ -8,7 +8,7 @@ interface FinancialInfoProps {
 const FinancialInfo: React.FC<FinancialInfoProps> = (props) => {
   return (
     <div className="flex items-start flex-col gap-y-1">
-      <span className="text-white-shade-11 font-opensans text-xs lg:text-[#353945] lg:text-sm lg:font-semibold">
+      <span className="text-white-shade-11 font-opensans font-medium text-xs lg:text-[#353945] lg:text-sm lg:font-semibold">
         {props.name}
       </span>
       <div className="flex items-center gap-x-3">

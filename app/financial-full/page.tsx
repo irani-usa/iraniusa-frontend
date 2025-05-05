@@ -34,7 +34,7 @@ const page = () => {
               <h1 className="text-black text-4xl font-outfit font-bold lg:text-3xl">
                 Fiat and Spot
               </h1>
-              <div className="w-full h-auto p-5 border-2 border-white-shade-4 rounded-2xl  items-center gap-x-5 hidden lg:flex lg:w-48 ">
+              <div className="h-auto p-5 border-2 border-white-shade-4 rounded-2xl items-center gap-x-5 hidden lg:flex lg:w-48 ">
                 <span className="text-white-shade-10 font-opensans font-bold">
                   Fiat and Spot
                 </span>
