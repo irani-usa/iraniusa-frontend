@@ -16,14 +16,14 @@ interface MenuitemProps {
 
 export const Menuitem: React.FC<MenuitemProps> = (props) =>{
   return (
-    <section className='w-[75%] min-w-[75%] rounded-xl border border-white-shade-4 lg:w-[32%] lg:min-w-[32%] cursor-pointer'>
+    <section className='w-[75%] min-w-[75%] rounded-xl border border-white-shade-4 lg:w-[32%] lg:min-w-[32%] cursor-pointer p-2'>
         <div className='w-full h-[200px] rounded-t-xl bg-cover bg-center px-4 py-5' style={{ backgroundImage: `url(${props.image})` }}>
            { props.islunch && <div className='bg-black/25 py-2  rounded-full backdrop-blur-lg flex justify-center w-[130px]'>
             <span  className='text-white '>Lunch price</span>
             </div>}
         </div>
         <div className='px-4 '>
-        <h1 className='text-black text-xl font-bold mt-5 font-outfit'>{props.title}</h1>
+        <h1 className='text-black text-xl font-medium mt-5 font-outfit'>{props.title}</h1>
         <p className='text-white-shade-8 mt-5'>{props.description}</p>
         <div className='py-7 flex items-center justify-between'>
             <div className="flex itwms-center gap-2">
