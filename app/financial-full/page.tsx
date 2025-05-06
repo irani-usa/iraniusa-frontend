@@ -78,7 +78,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex overflow-x-scroll no-scroll items-center gap-x-5">
+        <div className="flex overflow-x-scroll no-scroll items-center gap-x-4">
           <Financial
             content={"Price"}
             content2={"24h%"}
