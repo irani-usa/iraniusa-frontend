@@ -41,7 +41,7 @@ const FinancialSummery = () => {
       <div
         ref={ref}
         {...events}
-        className="lg:container ml-0 flex overflow-x-auto no-scroll items-center gap-x-5 my-6"
+        className="container ml-0 flex overflow-x-auto no-scroll items-center gap-x-5 my-6"
       >
         <Financial
           content={"Price"}
