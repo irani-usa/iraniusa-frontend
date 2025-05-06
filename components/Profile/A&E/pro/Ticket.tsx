@@ -5,10 +5,10 @@ import TicketCard from '../starter/TicketCard'
 
 const Ticket = () => {
   return (
-   <section className='w-full border-white-shade-4 border-b pb-11 py-16 px-3 '>
+   <section className='w-full border-white-shade-4 border-b py-16 px-3 '>
   
 
-    <div className=' lg:flex lg:items-center lg:justify-between lg:mt-8'>
+    <div className=' lg:flex lg:items-center lg:justify-between '>
     <h1 className='text-black text-xl font-bold lg:text-2xl'>Tickets and concerts</h1>
     <Arrowbtn classes={'hidden lg:flex'} />
       
