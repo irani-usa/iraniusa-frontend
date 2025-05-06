@@ -18,7 +18,7 @@ export const Menu: React.FC<MenuProps> = (props) => {
 
         <div className='flex items-center flex-col w-full gap-7'> 
       <IconElement icon={<ResturantIcon />}/>
-           <h1 className='text-black text-2xl font-bold'>{props.title}</h1>
+           <h1 className='text-black text-2xl font-bold mb-12'>{props.title}</h1>
         </div>
         <div className='flex gap-x-4 overflow-x-scroll no-scroll mt-9 lg:mt-4'>
           <Menuitem image={'/images/profile/ultra/food.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} description='With the support of NKF CPA Firm professionals who monitor laws and regulations that ...' islunch={true} />
@@ -26,7 +26,7 @@ export const Menu: React.FC<MenuProps> = (props) => {
           <Menuitem image={'/images/profile/ultra/food3.png'} title={'Chicken burger with spicy mixed seafood'} price={'800'} description='With the support of NKF CPA Firm professionals who monitor laws and regulations that ...' islunch={false} />
 
         </div>
-          <Arrowbtn classes={'hidden lg:flex mt-5'} />
+          <Arrowbtn classes={'hidden lg:flex mt-10'} />
       </div>
     </section>
   )
