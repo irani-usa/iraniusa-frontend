@@ -23,7 +23,7 @@ export const Product: React.FC<ProductProps> = (props) =>{
         <div className='px-4 '>
         <h1 className='text-black text-xl font-bold mt-5 font-outfit'>{props.title}</h1>
         <p className='text-white-shade-8 mt-5'>{props.description}</p>
-        <div className='py-7 flex items-center gap-5'>
+        <div className='pt-7 pb-2 flex items-center gap-2'>
             <h1 className='flex items-center gap-x-2 text-lg text-white-shade-8 font-medium line-through'>{props.beforePrice} </h1>
             <h1 className='text-black font-medium text-3xl'>${props.price}</h1>
         </div>
