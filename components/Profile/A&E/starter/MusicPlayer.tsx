@@ -45,7 +45,7 @@ export default function Home() {
                             }
                         </div>
                     ))}
-                </div>  
+                </div>      
                     <div className="bg-primary-shade-11 text-white shadow-sm  h-full p-2 rounded-3xl w-full flex flex-col justify-between">
                         <div className='h-48 w-full rounded-3xl mb-4 bg-cover bg-center' style={{ backgroundImage: `url(/artist/${currentSong.artist.toLowerCase().replace(' ', '-')}.jpg)` }}>
 
