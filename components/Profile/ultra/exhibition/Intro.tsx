@@ -35,15 +35,15 @@ const Intro: React.FC<IntroProps> = (props) => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-  
-  return (
-    <section className="border-b border-white-shade-4 py-8 lg:pt-2">
-      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
-        <div className="bg-white  flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
 
-          <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
-            {props.title}
-          </h1>
+  return (
+    <section className="border-b border-white-shade-4 py-8 lg:pt-2 w-full">
+      <div className="  w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-5 p-2">
+        <div className="bg-white p-8  flex flex-col gap-y-5 rounded-3xl lg:w-7/12">
+
+        <h1 className="text-black font-semibold text-2xl font-outfit lg:text-3xl ">
+              {props.title}
+            </h1>
           <p className=" text-white-shade-9  font-opensans">
             {props.desc}
           </p>
@@ -52,13 +52,13 @@ const Intro: React.FC<IntroProps> = (props) => {
             <Honor classes="" title={"Tax Services"} content={"New York - USA Arena"} />
           </div>
           <div className="flex justify-between gap-5">
-          <Button
+            <Button
               content={"Order Now"}
-              classes={"bg-blue py-4 my-2 text-white"}
+              classes={"bg-blue py-4 my-2 text-white w-full"}
             />
             <Button
               content={"Navigate"}
-              classes={"bg-white text-blue! py-4 my-2 border border-white-shade-4 shadow-xs"}
+              classes={"bg-white text-blue! py-4 my-2 border border-white-shade-4 shadow-lg w-full"}
             />
           </div>
           <div className="relative" ref={menuRef}>
@@ -88,7 +88,7 @@ const Intro: React.FC<IntroProps> = (props) => {
 
         </div>
         <div
-          className="w-full lg:w-2/5  bg-cover bg-center rounded-xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
+          className="w-full lg:w-5/12  bg-cover bg-center rounded-xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
           style={{ backgroundImage: `url('${props.cover}')` }}
         >
           <div className="flex items-center  gap-3 mt-6">
@@ -164,18 +164,18 @@ const Intro: React.FC<IntroProps> = (props) => {
         </div>
       </div>
       <section className="flex flex-col gap-y-8 justify-center items-center my-16 rounded-2xl">
-  
-  <div className="flex  flex-col gap-1 gap-y-3 p-2 w-full h-auto  bg-white-shade-3 rounded-3xl">
-   <div className="flex lg:flex-row flex-col gap-2">
-   <DestinationSelect />
-    <DateSelect />
-    <OriginSelect />
-   </div>
-    <button className="w-full  h-16  font-opensans text-xl rounded-3xl bg-black text-white flex items-center justify-center border-2 border-black hover:bg-black/0 transition-all duration-300 hover:text-black">
-      Search
-    </button>
-  </div>
-</section>
+
+        <div className="flex  flex-col gap-1 gap-y-3 p-2 w-full h-auto  bg-white-shade-3 rounded-3xl">
+          <div className="flex lg:flex-row flex-col gap-2">
+            <DestinationSelect />
+            <DateSelect />
+            <OriginSelect />
+          </div>
+          <button className="w-full  h-18  font-opensans text-xl rounded-3xl bg-black text-white flex items-center justify-center border-2 border-black hover:bg-black/0 transition-all duration-300 hover:text-black">
+            Search
+          </button>
+        </div>
+      </section>
     </section>
   );
 };

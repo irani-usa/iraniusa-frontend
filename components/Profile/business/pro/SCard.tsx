@@ -32,7 +32,7 @@ const SCard: React.FC<SCardProps> = (props) => {
       </div>
         {props.content}
       </span>
-      <p className=" text-black duration-200 ">{props.descreption}</p>
+      <p className=" text-white-shade-8  duration-200 ">{props.descreption}</p>
     </div>
   
 </div>
