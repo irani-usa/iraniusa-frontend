@@ -18,30 +18,11 @@ export default function Home() {
     const [currentSong, setCurrentSong] = useState(songs[0]);
 
     return (
-        <div className="flex flex-col items-center py-16 border-b border-b-white-shade-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2  gap-8 w-full container ">
+        <div className="flex flex-col  py-16 border-b border-b-white-shade-4">
                 <h2 className="text-xl  font-bold">Music Player</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2  gap-8 w-full mt-5 ">
 
-             
-                    <div className="bg-primary-shade-11 text-white shadow-sm  h-full p-2 rounded-3xl w-full flex flex-col justify-between">
-                        <div className='h-48 w-full rounded-3xl mb-4 bg-cover bg-center' style={{ backgroundImage: `url(/artist/${currentSong.artist.toLowerCase().replace(' ', '-')}.jpg)` }}>
-
-                        </div>
-
-                        <div className='flex flex-col gap-1 mb-4'>
-                            <p className="pl-4 font-bold text-lg">{currentSong.title}</p>
-                            <p className="pl-4 text-white-shade-11 ">{currentSong.artist}</p>
-                        </div>
-                        <AudioPlayer
-                            src={currentSong.src}
-                            onEnded={() => {
-                                const nextIndex = (songs.indexOf(currentSong) + 1) % songs.length;
-                                setCurrentSong(songs[nextIndex]);
-                            }}
-                            className="w-full"
-                        />
-                    </div>
-                    <div className="bg-primary-shade-11 text-white rounded-3xl shadow-sm  flex flex-col gap-3 p-2">
+            <div className="bg-primary-shade-11 text-white rounded-3xl shadow-sm  flex flex-col gap-3 p-2">
                     {songs.map((song, index) => (
                         <div
                             key={song.id}
@@ -64,7 +45,26 @@ export default function Home() {
                             }
                         </div>
                     ))}
-                </div>
+                </div>  
+                    <div className="bg-primary-shade-11 text-white shadow-sm  h-full p-2 rounded-3xl w-full flex flex-col justify-between">
+                        <div className='h-48 w-full rounded-3xl mb-4 bg-cover bg-center' style={{ backgroundImage: `url(/artist/${currentSong.artist.toLowerCase().replace(' ', '-')}.jpg)` }}>
+
+                        </div>
+
+                        <div className='flex flex-col gap-1 mb-4'>
+                            <p className="pl-4 font-bold text-lg">{currentSong.title}</p>
+                            <p className="pl-4 text-white-shade-11 ">{currentSong.artist}</p>
+                        </div>
+                        <AudioPlayer
+                            src={currentSong.src}
+                            onEnded={() => {
+                                const nextIndex = (songs.indexOf(currentSong) + 1) % songs.length;
+                                setCurrentSong(songs[nextIndex]);
+                            }}
+                            className="w-full"
+                        />
+                    </div>
+                  
         
 
 
