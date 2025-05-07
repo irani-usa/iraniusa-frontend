@@ -10,7 +10,7 @@ const Values = () => {
       <div className="lg:pl-5 ">
       <IconElement icon={<HandHeart />}/>
 
-          <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl text-center">
+          <h1 className="text-black font-medium text-2xl font-outfit my-7 lg:text-3xl text-center">
             The core company values
           </h1>
         <section className='flex gap-x-5'>

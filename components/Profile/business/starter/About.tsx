@@ -22,10 +22,10 @@ const About: React.FC<AboutProps> = (props) => {
         <div className=" flex flex-col  items-center">
           <IconElement icon={<AboutMeIcon />} />
 
-          <h1 className="text-black font-semibold mt-3 text-2xl lg:text-3xl font-outfit ">
+          <h1 className="text-black font-medium my-3 text-2xl lg:text-3xl font-outfit ">
             {props.title}
           </h1>
-          <p className=" text-white-shade-9  font-opensans text-center">
+          <p className=" text-white-shade-9  font-opensans text-center mx-12 mt-5">
             {props.about}
           </p>
           <p className="text-lg  text-black font-semibold font-opensans text-center border border-white-shade-4 w-max px-5 py-2 rounded-lg my-8 flex items-center gap-2">
@@ -38,10 +38,10 @@ const About: React.FC<AboutProps> = (props) => {
           <div className=" flex items-center gap-x-7 mt-2 lg:mt-0 w-full justify-between lg:justify-center">
             <div className="flex items-center gap-x-4">
               <div
-                className="bg-cover bg-center w-12 h-12 rounded-full lg:w-16 lg:h-16"
+                className="bg-cover bg-center w-12 h-12 rounded-full lg:w-14 lg:h-14"
                 style={{ backgroundImage: `url(${props.cover})` }}
               ></div>
-              <h1 className="text-black font-medium text-lg font-opensans flex flex-col items-start gap-y-2 lg:text-xl lg:font-semibold">
+              <h1 className="text-black font-medium text-lg font-opensans flex flex-col items-start gap-y-1 lg:text-xl lg:font-semibold">
                 {props.name}
                 <span className="font-opensans text-white-shade-8 font-normal text-sm">
                   {props.job}
@@ -57,7 +57,7 @@ const About: React.FC<AboutProps> = (props) => {
           </div>
         </div>
       </div>
-      {props.compimg && props.compimg2 && <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5 w-full'>
+      {props.compimg && props.compimg2 && <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5 w-full mt-10'>
         <div style={{ backgroundImage: `url(${props.compimg})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-4 lg:h-44'></div>
         <div style={{ backgroundImage: `url(${props.compimg2})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-2 lg:h-44'></div>
       </section>}

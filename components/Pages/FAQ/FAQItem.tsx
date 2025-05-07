@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import { isatty } from 'tty';
 
 interface FAQItemProps {
     title: string,
@@ -12,14 +13,15 @@ const FAQItem:React.FC<FAQItemProps> = (props) => {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <div  onClick={() => setIsActive(!isActive)} className='flex flex-col w-full m-auto py-4 px-8 bg-white text-black hover:cursor-pointer leading-8 rounded-xl hover:bg-blue hover:text-white duration-300 group border border-white-shade-3'>
+        <div  onClick={() => setIsActive(!isActive)} className={`flex flex-col w-full m-auto py-4 px-8 hover:cursor-pointer leading-8 rounded-xl hover:bg-blue hover:text-white duration-300 group border border-white-shade-4
+         ${isActive ? 'bg-blue text-white' : ' bg-white text-black '}`}>
             <div className='flex items-center justify-between '>
                 <h4 className='text-lg font-inter font-semibold'>
                     {props.title}
                 </h4>
                 <div>
                     {
-                        isActive ? <svg  className='group-hover:fill-white fill-black' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        isActive ? <svg  className='fill-white ' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.9326 6.81668H9.74097L5.06597 6.81668C4.26597 6.81668 3.86597 7.78335 4.43264 8.35001L8.7493 12.6667C9.44097 13.3583 10.566 13.3583 11.2576 12.6667L12.8993 11.025L15.5743 8.35001C16.1326 7.78335 15.7326 6.81668 14.9326 6.81668Z"  />
                         </svg>
                         

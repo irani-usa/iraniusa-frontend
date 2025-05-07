@@ -4,7 +4,7 @@ import FAQItem from './FAQItem'
 
 const FAQList = () => {
   return (
-    <section className='flex flex-col items-center my-20 '>
+    <section className='flex flex-col items-center my-5 '>
       <div className="w-full  bg-white-shade-2 flex flex-col gap-y-4 lg:gap-6 rounded-xl px-2  py-12">
         
         <FAQItem

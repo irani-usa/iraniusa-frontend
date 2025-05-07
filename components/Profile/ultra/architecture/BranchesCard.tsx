@@ -20,11 +20,11 @@ const BranchesCard: React.FC<BranchesCardProps> = (props) => {
                  <div className="flex w-full my-10 justify-center">
                  <Location />
                  </div>
-                   <h1 className='text-black font-semibold text-xl mb-4'>{props.title}</h1>
+                   <h1 className='text-black font-medium text-lg mb-4'>{props.title}</h1>
                    {props.item.map(item => (
                    <span className='text-white-shade-11 flex gap-1 mb-2'><Location />{item}</span>
                    ))}
-                   <Button content='Navigate' classes='text-white py-3 mt-4' />       
+                   <Button content='Navigate' classes='text-white py-3 mt-4 w-full' />       
                </div>
            </section>
        </div>
