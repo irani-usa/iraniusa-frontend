@@ -430,22 +430,22 @@ const page = () => {
               </section>
             </div>
             <div className="w-full bg-blue rounded-3xl lg:flex items-center gap-6">
-                <div className="flex flex-col items-start  px-5 gap-y-4 lg:px-14 lg:gap-y-3.5 w-[65%]">
-                  <h1 className="text-white font-outfit text-xl font-semibold lg:w-80 lg:text-2xl">
+                <div className="w-full flex flex-col items-start  px-5 gap-y-4 lg:px-14 lg:gap-y-3.5">
+                  <h1 className="w-[77%] pt-4 text-white font-outfit text-xl font-semibold lg:w-80 lg:text-2xl">
                     Want to be a blogger? its not that hard 😌
                   </h1>
                   <p className="text-white-shade-9 text-lg font-inter font-medium lg:text-sm">
                     Log in to your account or create one and start posting and
                     get viral
                   </p>
-                  <div className="flex items-center gap-7 w-auto py-2">
+                  <div className="w-full flex items-center gap-7 py-2">
                     <Link className="w-full" href={"/register"}>
-                      <h3 className="bg-white  py-2 text-black text-center text-sm font-medium font-inter rounded-xl text-nowrap lg:px-8">
+                      <h3 className="w-full bg-white py-2 text-black text-center text-sm font-medium font-inter rounded-xl text-nowrap lg:px-8">
                         Sign up
                       </h3>
                     </Link>
                     <Link className="w-full" href={"/login"}>
-                      <h3 className="text-sm text-center text-white font-medium font-inter">Login</h3>
+                      <h3 className="w-full text-sm text-center text-white font-medium font-inter">Login</h3>
                     </Link>
                   </div>
                 </div>
