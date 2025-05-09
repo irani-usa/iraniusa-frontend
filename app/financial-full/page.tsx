@@ -212,6 +212,11 @@ const page = () => {
           />
         </div>
       </section>
+      <section className="w-full flex flex-col gap-6 py-4 lg:flex items-center justify-between">
+        <div className="">
+
+        </div>
+      </section>
       <section className="container py-10">
         <TockenList />
       </section>
