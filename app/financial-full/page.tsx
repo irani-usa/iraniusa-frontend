@@ -34,7 +34,7 @@ const page = () => {
               <h1 className="text-black text-4xl font-outfit font-bold lg:text-3xl">
                 Fiat and Spot
               </h1>
-              <div className="h-auto p-5 border-2 border-white-shade-4 rounded-2xl items-center gap-x-5 hidden lg:flex lg:w-48 ">
+              <div className="h-auto py-4 px-3 border-2 border-white-shade-4 rounded-2xl lg:items-center justify-center gap-x-5 hidden lg:flex lg:w-48 ">
                 <span className="text-white-shade-10 font-opensans font-bold">
                   Fiat and Spot
                 </span>
@@ -212,10 +212,21 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="w-full flex flex-col gap-6 py-4 lg:flex items-center justify-between">
-        <div className="">
-
-        </div>
+      <section className="container w-full flex flex-col gap-9 py-4 lg:flex lg:flex-row-reverse items-center justify-between">
+      <div className="w-full h-auto p-5 bg-white-shade-2 border border-white-shade-4 rounded-xl flex items-center justify-between lg:w-[25%] lg:border-none lg:bg-transparent lg:justify-end lg:gap-3">
+            <span className="text-blue text-sm font-inter font-semibold">
+            Crypto currency
+            </span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4401 6.13501H8.76755L4.56006 6.13501C3.84006 6.13501 3.48006 7.00501 3.99006 7.51501L7.87506 11.4C8.49756 12.0225 9.51006 12.0225 10.1326 11.4L11.6101 9.92251L14.0176 7.51501C14.5201 7.00501 14.1601 6.13501 13.4401 6.13501Z" fill="black"/>
+            </svg>
+          </div>
+          <div className="flex items-center justify-between px-6 py-4 w-full border border-white-shade-4 rounded-3xl  lg:w-[25%]">
+            <input className="focus:outline-none w-[90%] font-inter font-semibold text-sm text-white-shade-9" type="text" placeholder="Search coin"/>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.4217 13.5998C11.2928 14.4774 9.87425 15 8.33366 15C4.65176 15 1.66699 12.0152 1.66699 8.33329C1.66699 4.65139 4.65176 1.66663 8.33366 1.66663C12.0156 1.66663 15.0003 4.65139 15.0003 8.33329C15.0003 9.87389 14.4778 11.2924 13.6002 12.4213L18.0896 16.9107C18.415 17.2361 18.415 17.7638 18.0896 18.0892C17.7641 18.4147 17.2365 18.4147 16.9111 18.0892L12.4217 13.5998ZM13.3337 8.33329C13.3337 11.0947 11.0951 13.3333 8.33366 13.3333C5.57224 13.3333 3.33366 11.0947 3.33366 8.33329C3.33366 5.57187 5.57224 3.33329 8.33366 3.33329C11.0951 3.33329 13.3337 5.57187 13.3337 8.33329Z" fill="#A6A6A6"/>
+            </svg>
+          </div>
       </section>
       <section className="container py-10">
         <TockenList />
