@@ -258,8 +258,11 @@ const page = () => {
         <div className="container hidden lg:flex">
           <div className="w-full flex flex-col">
             <div className="flex items-center justify-between py-7">
-              <h1 className="font-outfit text-black font-semibold text-2xl">
-                Commodities
+            <h1 className="flex items-center gap-2 font-outfit text-black font-semibold text-2xl">
+              <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/>
+              </svg>
+              Commodities
               </h1>
               <span className="font-opensans text-white-shade-11 font-medium">
                 See all
@@ -271,8 +274,11 @@ const page = () => {
         <div className="container hidden lg:flex">
           <div className="w-full flex flex-col">
             <div className="flex items-center justify-between py-7">
-              <h1 className="font-outfit text-black font-semibold text-2xl">
-                Fiat Currency
+            <h1 className="flex items-center gap-2 font-outfit text-black font-semibold text-2xl">
+              <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/>
+              </svg>
+              Fiat Currency
               </h1>
               <span className="font-opensans text-white-shade-11 font-medium">
                 See all
@@ -284,8 +290,11 @@ const page = () => {
         <div className="container hidden lg:flex">
           <div className="w-full flex flex-col">
             <div className="flex items-center justify-between py-7">
-              <h1 className="font-outfit text-black font-semibold text-2xl">
-                Stock Market
+            <h1 className="flex items-center gap-2 font-outfit text-black font-semibold text-2xl">
+              <svg width="21" height="1" viewBox="0 0 21 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="21" y2="0.5" stroke="#D9D9D9"/>
+              </svg>
+              Stock Market
               </h1>
               <span className="font-opensans text-white-shade-11 font-medium">
                 See all
@@ -324,8 +333,6 @@ const page = () => {
               <path d="M16.875 11.9375C16.7084 11.9375 16.5521 11.8854 16.4063 11.7813L12.5 8.84375L8.59379 11.7813C8.25004 12.0417 7.76046 11.9687 7.50004 11.625C7.23962 11.2812 7.31254 10.7917 7.65629 10.5312L12.0313 7.25C12.3125 7.04167 12.6875 7.04167 12.9688 7.25L17.3438 10.5312C17.6875 10.7917 17.7605 11.2812 17.5 11.625C17.3542 11.8333 17.1146 11.9375 16.875 11.9375Z" fill="white" />
               <path d="M12.5 23.4376C11.6666 23.4376 10.8541 23.0418 10.2812 22.3334L6.67704 17.9272C5.97913 17.073 5.95829 15.9063 6.62496 15.0209C7.29162 14.1355 8.42704 13.8543 9.43745 14.3022L11.1145 15.0522C11.9895 15.4376 12.9895 15.4376 13.8645 15.0522L15.5416 14.3022C16.552 13.8543 17.6875 14.1459 18.3541 15.0209C19.0312 15.9063 19.0104 17.073 18.302 17.9272L14.6979 22.3334C14.1458 23.0418 13.3333 23.4376 12.5 23.4376ZM8.47912 15.6668C8.15621 15.6668 7.94787 15.8959 7.87495 15.9793C7.79162 16.0938 7.53121 16.5001 7.89579 16.948L11.5 21.3543C12.052 22.0313 12.9583 22.0313 13.5104 21.3543L17.1145 16.948C17.4791 16.5001 17.2187 16.0938 17.1354 15.9793C17.052 15.8647 16.7187 15.5105 16.1979 15.7397L14.5208 16.4897C13.2395 17.0522 11.7812 17.0522 10.5 16.4897L8.82287 15.7397C8.68746 15.6876 8.57287 15.6668 8.47912 15.6668Z" fill="white" />
             </svg>
-
-
           </div>
           <div className="bg-white/5 flex items-center justify-center w-14 h-14 backdrop-blur-lg rounded-full absolute top-[285px] right-5 lg:top-80 lg:left-[330px] lg:right-8">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,13 +348,13 @@ const page = () => {
               </defs>
             </svg>
           </div>
-          <div className="bg-white/5 flex items-center justify-center w-20 h-20 backdrop-blur-lg rounded-full absolute top-[420px] left-24">
+          <div className="bg-white/5 flex items-center justify-center w-20 h-20 backdrop-blur-lg rounded-full absolute top-[360px] left-24">
             <svg width="33" height="33" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M23.8751 23.95C24.6126 22.825 24.8876 22.25 25.4501 20.9875C21.3001 19.4125 20.6376 13.5 24.7376 11.2375C23.4876 9.66249 21.7251 8.75 20.0626 8.75C18.8626 8.75 18.0376 9.06251 17.3001 9.35001C16.6751 9.58751 16.1126 9.8 15.4126 9.8C14.6626 9.8 14.0001 9.56252 13.3001 9.31252C12.5376 9.03752 11.7376 8.75 10.7376 8.75C8.87508 8.75 6.88758 9.8875 5.62508 11.8375C3.85008 14.5875 4.16259 19.7375 7.02509 24.1375C8.05009 25.7125 9.42508 27.475 11.2126 27.5C11.9626 27.5125 12.4501 27.2875 12.9876 27.05C13.6001 26.775 14.2626 26.475 15.4251 26.475C16.5876 26.4625 17.2376 26.775 17.8501 27.05C18.3751 27.2875 18.8501 27.5125 19.5876 27.5C21.4001 27.475 22.8501 25.525 23.8751 23.95Z" fill="white" />
               <path fillRule="evenodd" clipRule="evenodd" d="M19.7998 2.5C19.9998 3.875 19.4373 5.23752 18.6998 6.18752C17.9123 7.21252 16.5373 8.01249 15.2123 7.96249C14.9748 6.63749 15.5873 5.27499 16.3373 4.36249C17.1748 3.36249 18.5873 2.5875 19.7998 2.5Z" fill="white" />
             </svg>
           </div>
-          <div className="bg-white/5 flex items-center justify-center w-20 h-20   backdrop-blur-lg rounded-full absolute top-[400px] right-20">
+          <div className="bg-white/5 flex items-center justify-center w-20 h-20   backdrop-blur-lg rounded-full absolute top-[335px] right-25">
             <svg width="33" height="33" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26 14.6125C26 13.7068 25.9205 12.836 25.7727 12H14V16.9405H20.7273C20.4375 18.537 19.5568 19.8897 18.233 20.7954V24H22.2727C24.6364 21.7765 26 18.5022 26 14.6125Z" fill="#4285F4" />
               <path d="M14.4904 26C17.962 26 20.8726 24.8945 23 23.009L18.8445 19.9113C17.6932 20.6521 16.2203 21.0898 14.4904 21.0898C11.1414 21.0898 8.30684 18.9181 7.29573 16H3V19.1987C5.11572 23.2334 9.46406 26 14.4904 26Z" fill="#58BD7D" />
@@ -355,13 +362,13 @@ const page = () => {
               <path d="M14.4369 5.91021C16.3159 5.91021 18.0029 6.53311 19.3293 7.75645L23 4.21549C20.7836 2.22334 17.8866 1 14.4369 1C9.43397 1 5.10588 3.76655 3 7.80135L7.27574 11C8.28214 8.08193 11.1035 5.91021 14.4369 5.91021Z" fill="#EA4335" />
             </svg>
           </div>
-          <div className="container flex flex-col items-center gap-y-7">
-            <span className="text-white-shade-9 text-lg">Financial markets</span>
-            <h1 className="text-white text-3xl font-medium lg:text-5xl">Check market values daily</h1>
-            <p className="text-white-shade-9 text-center max-w-[320px] lg:max-w-[500px]">
+          <div className="container flex flex-col items-center gap-y-3">
+            <span className="text-white-shade-9 text-sm font-semibold font-inter">Financial markets</span>
+            <h1 className="text-white text-3xl font-semibold font-outfit lg:text-5xl">Check market values daily</h1>
+            <p className="text-white-shade-9 font-medium font-inter text-sm text-center max-w-[320px] lg:max-w-[500px]">
               Get data from financial markets like crypto, precious metals, commodities, fiat currency, and the US stock market
             </p>
-            <Link className="bg-white text-black w-40 h-14 font-medium text-lg rounded-[16px]  flex items-center justify-center " href={'/'}>
+            <Link className="bg-white text-black w-40 h-14 font-medium font-inter text-lg rounded-[16px]  flex items-center justify-center " href={'/'}>
               See all
             </Link>
           </div>
