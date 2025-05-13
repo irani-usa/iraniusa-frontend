@@ -12,23 +12,23 @@ import Logo from "@/components/Logo";
 const page = () => {
   return (
     <>
-      <section className="container py-12 lg:flex justify-between h-screen">
+      <section className="container py-6 lg:flex justify-around h-screen">
         <section className="lg:w-[420px]">
-          <div className="hidden lg:flex ">
+          <div className="flex justify-center lg:justify-start">
             <Logo width={90} height={90} />
           </div>
           <h1 className="text-black text-2xl font-bold font-outfit mt-12">
             Welcome to Irani USA 👋🏻
           </h1>
           <h2 className="text-white-shade-8  text-lg py-2 font-opensans">
-            Enter your details
+            Please Enter your details
           </h2>
           <form action="#">
             <Input
               id={"email"}
               inputType={"email"}
               placeHolder={"Example@gmail.com"}
-              classes={"bg-white-shade-2"}
+              classes={""}
               label={"Email"}
               iconComp={<Email />}
             />
@@ -36,7 +36,7 @@ const page = () => {
               id={"password"}
               inputType={"password"}
               placeHolder={"* * * * * * * * "}
-              classes={"bg-white-shade-2"}
+              classes={""}
               label={"Password"}
               iconComp={<Password />}
             />
@@ -47,7 +47,7 @@ const page = () => {
               id={"password"}
               inputType={"password"}
               placeHolder={"* * * * * * * * "}
-              classes={"bg-white-shade-2"}
+              classes={""}
               label={"Re-Password"}
               iconComp={<Password />}
             />
