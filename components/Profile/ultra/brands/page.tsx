@@ -15,7 +15,7 @@ import Exprince from "@/components/Profile/business/starter/Exprince";
 import Social from "@/components/Profile/ultra/architecture/Social";
 import { Project } from "@/components/Profile/ultra/architecture/Project";
 import Services from "@/components/Profile/business/pro/Services";
-import { Frequent } from "@/components/Profile/ultra/architecture/Frequent";
+import  Frequent  from "@/components/Profile/ultra/architecture/Frequent";
 import Terms from "@/components/Profile/business/pro/Terms";
 import Branches from "@/components/Profile/ultra/architecture/Branches";
 import Values from "@/components/Profile/business/pro/Values";
