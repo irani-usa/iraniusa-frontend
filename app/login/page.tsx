@@ -10,16 +10,16 @@ import Logo from "@/components/Logo";
 const page = () => {
   return (
     <>
-      <section className="container py-12 lg:flex justify-between h-screen">
+      <section className="container py-12 lg:flex justify-around h-screen">
         <section className="lg:w-[420px]">
           <div className="hidden lg:flex">
             <Logo width={90} height={90} />
           </div>
-          <h1 className="text-black text-2xl font-medium font-outfit mt-12">
+          <h1 className="text-blue text-3xl font-semibold font-outfit mt-12">
             Welcome back 👋🏻
           </h1>
           <h2 className="text-white-shade-8  text-lg py-2 font-opensans">
-            Enter your details
+            Please Enter your details
           </h2>
           <form action="#">
             <Input
