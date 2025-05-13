@@ -27,7 +27,7 @@ const Contact = () => {
                 <Input placeholder={'Technical issues'} class={'lg:col-span-2'} lable='Subject' icon={<Pen />} />       
                 <label htmlFor={"message"} className="block  text-lg font-medium mt-5">Message</label>        
                 <textarea placeholder='Write your message here...' className='bg-white-shade-2 border border-white-shade-4 w-full rounded-xl max-h-72 h-44 text-black font-medium text-lg px-6 py-4 lg:col-span-2 hover:bg-white duration-300 transition-all' name="" id="message" cols={20} rows={30}></textarea>
-                <Button content={'Submit'} classes={'py-4 rounded-xl lg:col-span-2 bg-blue'} />
+                <Button content={'Submit'} classes={'py-4 rounded-xl lg:col-span-2  w-full bg-blue'} />
             </div>
     </div>
 </section>

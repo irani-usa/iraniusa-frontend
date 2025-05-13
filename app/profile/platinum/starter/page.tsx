@@ -28,7 +28,7 @@ const page = () => {
         </div>
       <section className="lg:container border-white-shade-4 border-t  relative top-0 left-0 lg:flex  lg:pr-0">
         <Navigation />
-        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full">
+        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 w-full">
           <Company title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/A (2).png"} />
           <About about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} city={"Los Angelas"} name={"Jason todd"} job={"Founder"} cover={"/images/blog/User.webp"} title={"Who we are?"} />
           <Exprince compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"} exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} />

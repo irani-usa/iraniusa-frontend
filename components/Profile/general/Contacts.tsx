@@ -16,7 +16,7 @@ const Contacts: React.FC<ContactsProps> = (props) =>  {
       
         <IconElement icon={<ContactIcon />}/>
 
-        <h1 className="text-[26px] font-outfit font-bold text-black text-center">
+        <h1 className="text-[26px] font-outfit font-medium text-black text-center">
           Contact
         </h1>
         <p className="text-white-shade-9 text-center font-opensans ">

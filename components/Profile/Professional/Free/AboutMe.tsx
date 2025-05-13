@@ -103,10 +103,11 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
               </div>
             </div>
           </div>
-          <div
-            className="w-full h-[400px] bg-center bg-cover rounded-t-full relative mt-7 lg:w-[500px] 2xl:w-[450px] 2xl:h-[500px]"
-            style={{ backgroundImage: `url(${props.cover})` }}
+          <div 
+            className="w-full h-[400px] bg-center bg-cover rounded-t-full relative mt-7 lg:w-[500px] 2xl:w-[450px] 2xl:h-[500px] border border-white-shade-4 p-2"
+            
           >
+            <img src={props.cover} alt="" className="w-full h-full  rounded-t-full" />
           </div>
         </div>
 

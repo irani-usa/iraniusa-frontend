@@ -17,7 +17,7 @@ const Company: React.FC<CompanyProps> = (props) =>{
       </div>
       <span className='font-medium text-black text-lg'>{props.title}</span> 
     </div>
-      <span className='bg-white-shade-3 rounded-lg px-2 py-1 lg:px-1.5 lg:py-0.5 font-medium'>{props.date}</span>      
+      <span className='bg-white-shade-3 rounded-lg px-2 py-1 lg:px-2 lg:py-1 font-medium'>{props.date}</span>      
   </div>
   )
 }

@@ -16,7 +16,7 @@ interface UserTitleProps {
 
 const UserTitle: React.FC<UserTitleProps> = (props) => {
   return (
-    <section className="absolute left-0 right-0 m-auto   lg:left-[28%] 2xl:left-[26%] top-[110px] lg:top-[130px] lg:flex  ">
+    <section className="absolute left-0 right-0 m-auto   lg:left-[27%] 2xl:left-[25%] top-[110px] lg:top-[120px] lg:flex  ">
       <div className=" flex  flex-col gap-y-2  lg:w-[75%] 2xl:w-[53%]  ">
         <h1 className="flex items-center justify-center lg:justify-start gap-x-3 text-black font-outfit font-semibold text-xl ">
           {props.fullname}

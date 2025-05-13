@@ -32,7 +32,7 @@ const Social: React.FC<SocialProps> = (props) => {
 
         <div className="border-t border-t-white-shade-4 w-full pt-16">
         <IconElement icon={<ContactIcon />}/>
-        <h1 className="text-[26px] font-outfit font-bold mt-3 text-black text-center">
+        <h1 className="text-[26px] font-outfit font-medium mt-3 text-black text-center">
           Contact
         </h1>
         <p className="text-white-shade-9 text-center font-opensans mt-2">
