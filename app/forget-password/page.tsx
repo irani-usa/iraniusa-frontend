@@ -29,7 +29,7 @@ const page = () => {
                 id={"email"}
                 inputType={"email"}
                 placeHolder={"Example@gmail.com"}
-                classes={"bg-white-shade-2"}
+                classes={""}
                 label={"Email"}
                 iconComp={<Email />}
               />
