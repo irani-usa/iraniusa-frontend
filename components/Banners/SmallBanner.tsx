@@ -10,7 +10,7 @@ interface SmallBannerProps {
 
 const SmallBanner: React.FC<SmallBannerProps> = (props) => {
   return (
-    <div className="relative lg:flex justify-center">
+    <div className="relative w-full lg:flex justify-center">
     {/* آواتارها رو اینجا بیرون از Link قرار می‌دیم */}
     <div
         className="w-14 h-14 rounded-full bg-cover bg-center absolute  z-10 -left-5 top-0 bottom-0 m-auto"
