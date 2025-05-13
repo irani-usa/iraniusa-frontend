@@ -18,7 +18,7 @@ const page = () => {
 
 
   const FeatureListClasses = classNames(
-    "[&>*:nth-child(odd)] relative top-0 left-0 w-full h-16 flex gap-x-4 p-4 my-7 justify-evenly text-center items-center  text-base bg-white-shade-3 rounded-xl before:contents-[''] before:absolute before:top-1/2 before:-translate-y-1/2  before:h-[85%] before:bg-white before:rounded-xl before:z-20 tranitaion-all duration-500 before:tranitaion-all before:duration-500 border border-white-shade-3",
+    "[&>*:nth-child(odd)] relative top-0 left-0 w-full h-14 flex gap-x-4 p-4 my-7 justify-evenly text-center items-center  text-base bg-white-shade-3 rounded-xl before:contents-[''] before:absolute before:top-1/2 before:-translate-y-1/2  before:h-[85%] before:bg-white before:rounded-xl before:z-20 tranitaion-all duration-500 before:tranitaion-all before:duration-500 border border-white-shade-3",
     {
       "before:left-[49%]  before:w-6/12": sendMethod === "email",
       "before:left-1  before:w-6/12": sendMethod === "pdf",
@@ -37,8 +37,8 @@ const page = () => {
   return (
     <section className="container">
       <OverlayMenu />
-      <div className="flex flex-col lg:flex-row justify-center py-8 gap-10 w-full">
-        <div className='lg:w-1/3 w-full'>
+      <div className="flex flex-col lg:flex-row justify-center py-8 gap-10 w-full container">
+        <div className='lg:w-1/2 w-full'>
           <h1 className='text-lg font-semibold'>Preview</h1>
           <div className="w-full h-1 border-t border-white-shade-4 my-4"></div>
           <div className={FeatureListClasses}>
@@ -58,12 +58,12 @@ const page = () => {
           <div className='w-full h-auto border border-white-shade-4 bg-white-shade-2 rounded-2xl my-4 p-4'>
             <span className='text-sm font-semibold mb-4 text-blue'><span className='text-white-shade-11 font-semibold'>Subscribe to</span> Irani USA</span>
             <div className="flex gap-4 py-4">
-              <div className='border border-white-shade-4 rounded-xl p-2 h-min'>
+              <div className='border border-white-shade-4 rounded-xl p-4 h-min'>
                 <Crown />
               </div>
               <div className='flex flex-col gap-4 w-full'>
-                <div className='flex items-center justify-between w-full'>
-                  <h2 className='text-white-shade-11'>Professional <br /> <span className='text-black text-2xl font bold'>$49</span> / yearly</h2>
+                <div className='flex items-center justify-between w-full font-medium'>
+                  <h2 className='text-white-shade-11'>Professional <br /> <span className='text-black text-2xl font '>$49</span> / yearly</h2>
                   <button className='bg-white-shade-1 border border-white-shade-3 rounded-lg px-3 py-1'>Change plan</button>
                 </div>
                 <div className="w-full h-1 border-t border-white-shade-4 "></div>
@@ -81,7 +81,7 @@ const page = () => {
                 <div className="flex gap-x-3">
                   <div className="transition-all bg-white-shade-1 drop-shadow-xs focus-within:border-white-shade-18  focus-within:border-2 flex items-center gap-x focus-within:border-black-2 w-full h-14 rounded-2xl border-2 border-white-shade-4 px-2 py-1">
 
-                    <TicketIcon classes='w-10 pr-1 text-white-shade-8 border-r border-white-shade-4' />
+                    <TicketIcon classes='w-7 pr-0.5 stroke-white-shade-8 ' />
 
                     <input
                       type="password"
@@ -110,7 +110,7 @@ const page = () => {
           </div>
         </div>
         
-        <div className='lg:w-2/3 w-full'>
+        <div className='lg:w-1/2 w-full'>
           <section className='w-full border-b border-white-shade-4  '>
             <div className=''>
               <div className="flex items-center gap-3 ">
@@ -165,7 +165,7 @@ const page = () => {
                   Google Pay
                 </span>
               </div>
-              <div className='grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:gap-x-6 lg:mt-5 '>
+              <div className='grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-6 lg:mt-10 '>
                 <Input placeholder={'Example@gmail.com'} class={''} lable='Email address' icon={<Email />}  />
                 <Input placeholder={'Jason james'} class={''} lable='Cardholder name' icon={<UserIcon />}  />
                 <Input placeholder={'xxx xxx xxx xxx'} class={'lg:col-span-2'} lable='Credit card number' icon={<CartIcon />}  />
@@ -174,7 +174,7 @@ const page = () => {
                 <Input placeholder={'xxxx'} class={''} lable='CVV2' icon={<CartIcon />} />
                 <Input placeholder={'123456'} class={''} lable='Zip code' icon={<Website />} />
 
-                <Button content={'Purchase'} classes={'py-4 rounded-xl lg:col-span-2 bg-blue'} />
+                <Button content={'Purchase'} classes={'py-4 rounded-xl col-span-2  w-full bg-blue'} />
               </div>
             </div>
           </section>
