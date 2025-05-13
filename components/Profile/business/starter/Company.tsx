@@ -35,15 +35,9 @@ const Company: React.FC<CompanyProps> = (props) => {
   
   return (
     <section className="border-b border-white-shade-4 py-8 lg:pt-2 container">
-<<<<<<< HEAD
-      <div className="px-3 pb-9 lg:flex gap-14">
-      <div className=" w-full bg-white-shade-2 p-5  rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
-        <div className=" flex flex-col gap-y-5 rounded-3xl">
-=======
       <div className="px-3 pb-9">
       <div className=" w-full bg-white-shade-2 p-5  rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
         <div className=" flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
->>>>>>> 4fb8055402b1bca4585a55a40d169e0abe657c59
 
           <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
             {props.title}
@@ -94,11 +88,7 @@ const Company: React.FC<CompanyProps> = (props) => {
         </div>
         </div>
         <div
-<<<<<<< HEAD
-          className="w-full lg:w-[60%] mt-5  bg-cover bg-center rounded-2xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
-=======
           className="w-full lg:w-2/5 mt-5  bg-cover bg-center rounded-2xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
->>>>>>> 4fb8055402b1bca4585a55a40d169e0abe657c59
           style={{ backgroundImage: `url('${props.cover}')` }}
         >
           <div className="flex items-center  gap-3 mt-6">
