@@ -12,7 +12,7 @@ import OverlayMenu from "@/components/Layout/OverlayMenu";
 import  Intro  from "@/components/Profile/ultra/exhibition/Intro";
 import Team from "@/components/Profile/business/pro/Team";
 import Social from "@/components/Profile/ultra/architecture/Social";
-import { Frequent } from "@/components/Profile/ultra/architecture/Frequent";
+import  Frequent  from "@/components/Profile/ultra/architecture/Frequent";
 import Terms from "@/components/Profile/business/pro/Terms";
 import { Artist } from "@/components/Profile/ultra/exhibition/Artist";
 import { Tickets } from "@/components/Profile/ultra/exhibition/Tickets";
