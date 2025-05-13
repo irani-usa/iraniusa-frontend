@@ -287,7 +287,7 @@ const Page = () => {
             onClick={() => handlePeriodChange("3 Years")}
             className={`relative z-2000  w-1/3 flex items-center justify-center hover:cursor-pointer h-full rounded-xl ${selectedPeriod === "3 Years" ? "text-black" : "text-white-shade-8"}`}
           >
-            <span className="absolute -top-8 text-[#7158FF] bg-[#7158FF]/10 px-1 py-0.5 rounded-sm text-sm font-bold">Popular</span>
+            <span className="absolute -top-8 text-[#7158FF] bg-[#7158FF]/10 px-1.5 py-0.5 rounded-sm text-sm font-bold">Popular</span>
             3 Years
           </span>
 
