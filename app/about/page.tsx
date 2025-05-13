@@ -37,7 +37,7 @@ const page = () => {
       <div className="container flex flex-col lg:pt-20 py-12">
         <div className="flex items-center gap-x-3">
           <div className="w-full h-[1px] bg-white-shade-4"></div>
-          <Star content={"Company"} />
+          <Star content={"WSA Company"} />
           <div className="w-full h-[1px] bg-white-shade-4"></div>
         </div>
         <p className="font-opensans text-white-shade-9  text-lg py-3 max-w-6xl">
@@ -63,7 +63,7 @@ const page = () => {
           voluntary investment into our community’s economic and cultural
           well-being and development.
         </p>
-        <Link href="" className="bg-[#012231]/10 px-10 py-2 my-4 rounded-2xl block mx-auto font-medium">Visit WSA website</Link>
+        <Link href="" className="bg-[#012231]/10 px-16 py-2 my-4 rounded-2xl block mx-auto font-medium">Visit WSA website</Link>
         <div className="flex flex-col gap-y-5 lg:flex-row lg:gap-x-5 mt-9 lg:mt-16">
           <div
             style={{
@@ -194,7 +194,7 @@ const page = () => {
           <img
             src="images/about/man.webp"
             alt="man"
-            className="w-1/2 h-[500px] hidden lg:flex"
+            className="w-1/2 h-[0] lg:h-[500px]"
           />
         </div>
         <img

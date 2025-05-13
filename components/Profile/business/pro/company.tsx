@@ -34,9 +34,9 @@ const Company: React.FC<CompanyProps> = (props) => {
   }, []);
   
   return (
-    <section className="border-b border-white-shade-4 py-8 lg:pt-2 container">
-      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
-        <div className="bg-white  flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
+    <section className="border-b  border-white-shade-4 py-8 lg:pt-2 container">
+      <div className=" p-3 bg-white-shade-2 w-full rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
+        <div className=" p-4 flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
 
           <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
             {props.title}
@@ -44,27 +44,39 @@ const Company: React.FC<CompanyProps> = (props) => {
           <p className=" text-white-shade-9  font-opensans">
             {props.desc}
           </p>
-          <div className=" grid grid-cols-1 lg:grid-cols-2 items-start w-full  gap-6">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 items-start w-full mt-8 gap-6">
             <Honor classes="" title={"10+ Years"} content={"Experience"} />
             <Honor classes="" title={"Tax Services"} content={"New York - USA Arena"} />
           </div>
-          <p className="border border-white-shade-3 rounded-xl px-4 py-3  flex items-center gap-2 font-semibold font-opensans  text-white-shade-11 ">
+          <p className="border text-sm border-white-shade-3 rounded-xl px-4 py-3  flex items-center gap-2 font-semibold font-opensans  text-white-shade-11 ">
             <Location />
             Besides keeping track of your numbers and reconciling
           </p>
           <div className="relative mb-5" ref={menuRef}>
-            <div onClick={() => setIsOpen(!isOpen)} className="border border-white-shade-3 rounded-xl   gap-2 font-semibold font-opensans   flex items-center justify-between ">
+        <div className="relative bg-white" ref={menuRef}>
+            <div onClick={() => setIsOpen(!isOpen)} className="border gap-y-3 lg:flex-row border-white-shade-3 rounded-xl px-4 py-3 flex-col gap-2 font-semibold font-opensans lg:justify-between flex ">
               <div className="flex flex-col gap-1">
                 <span className="text-green">Open</span>
                 <span>Business hours</span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="cursor-pointer border border-white-shade-3 py-2 px-4 rounded-lg flex items-center gap-1">
+              <div className="flex items-center w-full lg:w-auto gap-3">
+                <div className="cursor-pointer border bg-white-shade-2 w-full lg:w-auto  border-white-shade-3 py-2 px-4 rounded-lg flex items-center gap-1">
                   <span className="text-orange"> Closes soon</span> • 18:00
                 </div>
                 {isOpen ? <ArrowUp /> : <ArrowDown />}
               </div>
             </div>
+            <div onBlur={() => setIsOpen(false)} className={`bg-white rounded-xl z-10 border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
+              <ul className="w-full flex flex-col gap-2 p-4">
+                <li className="flex items-center justify-between"><span>Wednesday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
+                <li className="flex items-center justify-between"><span>Thursday</span><span className="text-white-shade-11">Open 24 hours</span></li>
+                <li className="flex items-center justify-between"><span>Friday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
+                <li className="flex items-center justify-between"><span>Saturday</span><span className="text-[#FF4651]">Closed</span></li>
+                <li className="flex items-center justify-between"><span>Sunday</span><span className="text-[#FF4651]">Closed</span></li>
+                <li className="flex items-center justify-between"><span>Monday</span><span className="text-white-shade-11">Business hours</span></li>
+              </ul>
+            </div>
+          </div>
             <div onBlur={() => setIsOpen(false)} className={`bg-white z-10 rounded-xl border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
               <ul className="w-full flex flex-col gap-2 p-4">
                 <li className="flex items-center justify-between"><span>Wednesday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>

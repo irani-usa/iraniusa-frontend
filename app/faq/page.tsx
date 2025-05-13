@@ -40,7 +40,7 @@ const page = () => {
           />
         </svg>
       </h1>
-      <p className="text-center text-lg  max-w-lg text-white-shade-9 my-6">
+      <p className="text-center text-sm font-inter max-w-lg text-white-shade-9 my-5">
         Have any question about platform or us? check the most frequently
         questions down below
       </p>

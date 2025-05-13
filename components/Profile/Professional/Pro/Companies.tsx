@@ -16,8 +16,8 @@ interface CompaniesProps {
 
 const Companies: React.FC<CompaniesProps> = (props) => {
   return (
-    <div className=" w-full border-white-shade-4 border-b py-10 container">
-      <div className=" flex flex-col gap-y-3 mt-8 lg:px-0 items-center">
+    <div className=" w-full border-white-shade-4 border-b py-16 container">
+      <div className=" flex flex-col gap-y-3  lg:px-0 items-center">
     
       <IconElement icon={<CompanyIcon />}/>
       <h1 className=" text-[27px] font-outfit font-bold text-black text-center lg:text-3xl">

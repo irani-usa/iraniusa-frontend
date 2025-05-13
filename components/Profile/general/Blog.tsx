@@ -18,7 +18,7 @@ const Blog: React.FC<BlogProps> = (props) =>   {
       <div className={`${props.classes}  flex flex-col `}>
       <IconElement icon={<BlogIcon />}/>
 
-      <h1 className="text-[26px] font-outfit text-center font-bold text-black lg:text-3xl  py-3">{props.title}</h1>
+      <h1 className="text-[26px] font-outfit text-center font-medium text-black lg:text-3xl  py-3">{props.title}</h1>
         <p className="text-center text-lg text-white-shade-9  font-opensans">{props.desc}</p>
 
       <div className='lg:flex gap-5 overflow-x-scroll no-scroll mt-14 lg:mt-4'>

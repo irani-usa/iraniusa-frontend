@@ -13,8 +13,9 @@ const SCard: React.FC<SCardProps> = (props) => {
 <div
       className={`${props.class}  cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6`}
     >
-      <span className=" flex items-center gap-x-5 text-xl font-semibold pl-3 text-black duration-200">
-        <svg
+      <span className=" flex items-center gap-x-5 text-xl font-semibold pl-3 text-black duration-200 ">
+      <div className="bg-white-shade-3 p-2 rounded">
+      <svg
           width="20"
           height="20"
           viewBox="0 0 29 35"
@@ -28,9 +29,10 @@ const SCard: React.FC<SCardProps> = (props) => {
             fill="#B3B3B3"
           />
         </svg>
+      </div>
         {props.content}
       </span>
-      <p className=" text-black duration-200 ">{props.descreption}</p>
+      <p className=" text-white-shade-8  duration-200 ">{props.descreption}</p>
     </div>
   
 </div>

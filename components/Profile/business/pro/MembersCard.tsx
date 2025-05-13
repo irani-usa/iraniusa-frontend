@@ -15,14 +15,14 @@ const MembersCard: React.FC<MembersCardProps> = (props) => {
        <div className={`w-full
       ${props.class} flex-col`}>
            <section className='border-[1.5px] p-4 bg-white  border-white-shade-4 
-    flex items-center gap-x-2 rounded-2xl hover:bg-blue transition-all duration-200 group '>
+    flex  gap-x-4 rounded-2xl hover:bg-blue transition-all duration-200 group '>
                    <div
                        className="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-cover bg-center"
                        style={{ backgroundImage: `url(${props.background})` }}
                    ></div>                 
-               <div className='flex flex-col justify-center mb-5'>
-                   <h1 className='text-black font-semibold text-xl group-hover:text-white'>{props.fullname}</h1>
-                   <h3 className='text-white-shade-8 text-lg  font-medium'>{props.job}</h3>
+               <div className='flex flex-col justify-center mb-5 gap-1'>
+                   <h1 className='text-black font-medium text-xl group-hover:text-white'>{props.fullname}</h1>
+                   <h3 className='text-white-shade-8 text-base  font-medium'>{props.job}</h3>
                    <span className='text-white-shade-11'>{props.address}</span>
                </div>
            </section>

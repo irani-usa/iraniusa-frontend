@@ -14,7 +14,7 @@ import Labels from "@/components/Profile/A&E/pro/Labels";
 import Hskills from "@/components/Profile/A&E/pro/Hskills";
 import Educations from "@/components/Profile/Professional/Free/Educations";
 import Blog from "@/components/Profile/general/Blog";
-import About from "@/components/Profile/business/starter/About";
+import About from "@/components/Profile/A&E/pro/About";
 import { Gallery } from "@/components/Profile/Professional/Free";
 import { Company } from "@/components/Profile/Professional/Pro";
 import { Avatar, UserTitle } from "@/components/Profile/general";
@@ -34,7 +34,7 @@ const page = () => {
         <UserTitle
           fullname={"Siavash Ghomeishi"}
           gmail="arashdevarts@gmail.com"
-          jobtitle={"rtist and song writer"}
+          jobtitle={"song writer"}
           isPro={true}
           blogLevel={"Active"}
           Contact={true}
@@ -53,7 +53,7 @@ const page = () => {
             about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "}
             city={" Los angless"}
             cover={"/images/blog/User.webp"}
-            title={"What is our company all about?"} img={"/images/profile/A&E/about.png"} img2={"/images/profile/A&E/about2.png"} author={"Jason todd"} publish={"Founder"} singer={"Saeed Sayam"}          />
+            title={"Who We Are?"} author={"Jason todd"} publish={"Founder"} singer={"Saeed Sayam"} name={"jason todd"} job={"Founder"} img={"/images/profile/A&E/about.png"} img2={"/images/profile/A&E/about2.png"}          />
           <MusicPlayer/>
           <Upcoming />
           <Tracks />

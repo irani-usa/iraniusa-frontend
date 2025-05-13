@@ -15,7 +15,7 @@ export const Tickets: React.FC<TicketsProps> = (props) => {
     <section className='border-b border-b-white-shade-4 pt-4 pb-8 lg:py-10'>
       <div className=' lg:px-0 lg:pl-5'>
         <div className='flex items-center flex-col'>
-          <IconElement icon={<TicketIcon />}/>
+          <IconElement icon={<TicketIcon classes='stroke-black' />}/>
           <h1 className="text-black text-xl font-bold py-7 font-outfit lg:text-[27px]">
             {props.title}
           </h1>

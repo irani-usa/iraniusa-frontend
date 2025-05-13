@@ -14,7 +14,7 @@ import Frequent from "@/components/Profile/business/pro/Frequent";
 import Social from "@/components/Profile/Professional/Pro/Social";
 import Contact from "@/components/Profile/business/pro/Contact";
 import Terms from "@/components/Profile/business/pro/Terms";
-import Navigation from "@/components/Profile/Professional/Pro/Navigation";
+import Navigation from "@/components/Profile/general/Navigation";
 import Subscription from "@/components/Profile/business/pro/Subscription";
 import Project from "@/components/Profile/business/pro/Project";
 import { Gallery } from "@/components/Profile/Professional/Free";

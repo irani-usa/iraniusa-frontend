@@ -7,7 +7,7 @@ const Terms = () => {
     <section className='w-full border-b border-white-shade-4 py-8 lg:py-11 container'>
     <div className='lg:pl-5 flex flex-col gap-y-6 lg:gap-y-0'>
     <IconElement icon={<AboutMeIcon />}/>
-    <h1 className="text-black font-bold  font-outfit mt-5 text-[28px] lg:text-3xl text-center">Terms and privacy</h1>
+    <h1 className="text-black font-medium  font-outfit mt-5 text-[28px] lg:text-3xl text-center">Terms and privacy</h1>
     <h1 className='text-[#151B24] text-lg font-opensans font-semibold lg:text-2xl lg:mt-12'>What are Terms and Conditions?</h1>
     <p className='font-opensans text-white-shade-9 font-medium lg:mt-12  '>
     Terms and conditions outline what users can and cannot do with your website, <span className='text-[#151B24] '>

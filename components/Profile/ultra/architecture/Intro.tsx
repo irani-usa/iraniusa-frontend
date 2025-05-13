@@ -9,7 +9,6 @@ import Honor from "../../business/starter/Honor";
 import { Button } from "@/components/Forms";
 
 
-
 interface IntroProps {
   title: string,
   desc: string,
@@ -35,11 +34,11 @@ const Intro: React.FC<IntroProps> = (props) => {
   }, []);
   
   return (
-    <section className="border-b border-white-shade-4 py-8 lg:pt-2">
-      <div className=" p-2 w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
-        <div className="bg-white  flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
+    <section className="border-b border-white-shade-4 py-8 lg:pt-2 w-full">
+      <div className="  w-full pb-16 rounded-3xl lg:flex lg:pb-2 h-auto gap-5 p-2">
+        <div className="bg-white p-8  flex flex-col gap-y-5 rounded-3xl lg:w-7/12">
 
-          <h1 className="text-black font-bold text-2xl font-outfit lg:text-3xl ">
+          <h1 className="text-black font-semibold text-2xl font-outfit lg:text-3xl ">
             {props.title}
           </h1>
           <p className=" text-white-shade-9  font-opensans">
@@ -52,26 +51,38 @@ const Intro: React.FC<IntroProps> = (props) => {
           <div className="flex justify-between gap-5">
           <Button
               content={"Order Now"}
-              classes={"bg-blue py-4 my-2 text-white"}
+              classes={"bg-blue py-4 my-2 text-white w-full"}
             />
             <Button
               content={"Navigate"}
-              classes={"bg-white  text-blue! py-4 my-2 border border-white-shade-4 shadow-xs"}
+              classes={"bg-white text-blue! py-4 my-2 border border-white-shade-4 shadow-lg w-full"}
             />
           </div>
-          <div className="relative" ref={menuRef}>
-            <div onClick={() => setIsOpen(!isOpen)} className="border border-white-shade-3 rounded-xl px-4 py-3  gap-2 font-semibold font-opensans   flex items-center justify-between ">
+        <div className="relative mb-5" ref={menuRef}>
+        <div className="relative bg-white" ref={menuRef}>
+            <div onClick={() => setIsOpen(!isOpen)} className="border gap-y-3 lg:flex-row border-white-shade-3 rounded-xl px-4 py-3 flex-col gap-2 font-semibold font-opensans lg:justify-between flex ">
               <div className="flex flex-col gap-1">
                 <span className="text-green">Open</span>
                 <span>Business hours</span>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="cursor-pointer border border-white-shade-3 py-2 px-4 rounded-lg flex items-center gap-1">
+              <div className="flex items-center w-full lg:w-auto gap-3">
+                <div className="cursor-pointer border bg-white-shade-2 w-full lg:w-auto  border-white-shade-3 py-2 px-4 rounded-lg flex items-center gap-1">
                   <span className="text-orange"> Closes soon</span> • 18:00
                 </div>
                 {isOpen ? <ArrowUp /> : <ArrowDown />}
               </div>
             </div>
+            <div onBlur={() => setIsOpen(false)} className={`bg-white rounded-xl z-10 border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
+              <ul className="w-full flex flex-col gap-2 p-4">
+                <li className="flex items-center justify-between"><span>Wednesday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
+                <li className="flex items-center justify-between"><span>Thursday</span><span className="text-white-shade-11">Open 24 hours</span></li>
+                <li className="flex items-center justify-between"><span>Friday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
+                <li className="flex items-center justify-between"><span>Saturday</span><span className="text-[#FF4651]">Closed</span></li>
+                <li className="flex items-center justify-between"><span>Sunday</span><span className="text-[#FF4651]">Closed</span></li>
+                <li className="flex items-center justify-between"><span>Monday</span><span className="text-white-shade-11">Business hours</span></li>
+              </ul>
+            </div>
+          </div>
             <div onBlur={() => setIsOpen(false)} className={`bg-white z-10 rounded-xl border border-white-shade-3 absolute w-full shadow-drop-2 transition-all duration-200 ease-in-out lg:mt-2 ${isOpen ? 'opacity-100 min-h-max' : 'opacity-0 h-0'}`}>
               <ul className="w-full flex flex-col gap-2 p-4">
                 <li className="flex items-center justify-between"><span>Wednesday</span><span className="text-white-shade-11">9:00 - 18:00</span></li>
@@ -85,8 +96,7 @@ const Intro: React.FC<IntroProps> = (props) => {
           </div>
 
         </div>
-        <div
-          className="w-full lg:w-2/5  bg-cover bg-center rounded-xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
+        <div className="w-full lg:w-5/12  bg-cover bg-center rounded-xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
           style={{ backgroundImage: `url('${props.cover}')` }}
         >
           <div className="flex items-center  gap-3 mt-6">
@@ -161,7 +171,6 @@ const Intro: React.FC<IntroProps> = (props) => {
 
         </div>
       </div>
-  
     </section>
   );
 };

@@ -12,7 +12,7 @@ const Brand: React.FC<BrandProps> = (props) => {
     return (
         <div className="flex flex-col items-center relative group w-full">
             <div
-                className={`${props.class} group cursor-pointer  p-5 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6 w-full`}
+                className={`${props.class} group cursor-pointer  p-2 border border-white-shade-4 flex flex-col gap-y-4 justify-between rounded-2xl my-6  lg:gap-y-6 w-full`}
             >
                 <div className="w-full h-36 flex items-center justify-center bg-black rounded-xl">
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ const Brand: React.FC<BrandProps> = (props) => {
 </svg>
 Home Decor
                 </p>
-                <Button content="Navigate" classes="py-3"/>
+                <Button content="Navigate" classes="py-3 w-full"/>
             </div>
         </div>
     );

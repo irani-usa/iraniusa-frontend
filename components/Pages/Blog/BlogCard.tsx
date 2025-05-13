@@ -3,15 +3,15 @@ import React from "react";
 
 interface BlogCardProps {
   classes: string;
-  readingTime:string,
-  title:string,
-  summery:string,
-  author:string,
-  publish:string,
-  avatar:string,
-  cover:string,
-  cm:string,
-  like:string,
+  readingTime: string,
+  title: string,
+  summery: string,
+  author: string,
+  publish: string,
+  avatar: string,
+  cover: string,
+  cm: string,
+  like: string,
 }
 
 const BlogCard: React.FC<BlogCardProps> = (props) => {
@@ -23,13 +23,13 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
         >
           <div className="w-full flex flex-col gap-y-5 p-5 lg:w-2/3">
             <span className="w-[105px] h-10 flex items-center justify-center bg-white-shade-3 text-black font-medium font-opensans text-sm rounded-lg">
-            {props.readingTime}
+              {props.readingTime}
             </span>
             <h1 className="text-black text-xl font-outfit font-semibold lg:max-w-sm lg:text-2xl">
-             {props.title}
+              {props.title}
             </h1>
             <p className="font-opensans text-white-shade-11 font-medium  lg:max-w-xs">
-           {props.summery}
+              {props.summery}
             </p>
             <div>
               <div className="flex items-center gap-x-5 py-5 lg:py-0 lg:pt-7">
@@ -44,12 +44,12 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
                 </div>
                 <div className="flex items-center gap-x-3">
                   <span className=" flex items-center text-green gap-x-2 font-opensans font-semibold">
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.99984 18.7017C5.28829 18.7017 1.45817 14.8715 1.45817 10.16C1.45817 5.44845 5.28829 1.61833 9.99984 1.61833C14.7114 1.61833 18.5415 5.44845 18.5415 10.16C18.5415 14.8715 14.7114 18.7017 9.99984 18.7017ZM9.99984 2.03499C5.51972 2.03499 1.87484 5.67987 1.87484 10.16C1.87484 14.6401 5.51972 18.285 9.99984 18.285C14.48 18.285 18.1248 14.6401 18.1248 10.16C18.1248 5.67987 14.48 2.03499 9.99984 2.03499Z" fill="black" stroke="#58BD7D" strokeWidth="0.833333"/>
-<path d="M10.0002 12.035C8.96361 12.035 8.12516 11.1966 8.12516 10.16C8.12516 9.12347 8.96361 8.28501 10.0002 8.28501C11.0367 8.28501 11.8752 9.12347 11.8752 10.16C11.8752 11.1966 11.0367 12.035 10.0002 12.035ZM10.0002 8.70168C9.19504 8.70168 8.54183 9.35489 8.54183 10.16C8.54183 10.9651 9.19504 11.6183 10.0002 11.6183C10.8053 11.6183 11.4585 10.9651 11.4585 10.16C11.4585 9.35489 10.8053 8.70168 10.0002 8.70168Z" fill="black" stroke="#58BD7D" strokeWidth="0.833333"/>
-</svg>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.99984 18.7017C5.28829 18.7017 1.45817 14.8715 1.45817 10.16C1.45817 5.44845 5.28829 1.61833 9.99984 1.61833C14.7114 1.61833 18.5415 5.44845 18.5415 10.16C18.5415 14.8715 14.7114 18.7017 9.99984 18.7017ZM9.99984 2.03499C5.51972 2.03499 1.87484 5.67987 1.87484 10.16C1.87484 14.6401 5.51972 18.285 9.99984 18.285C14.48 18.285 18.1248 14.6401 18.1248 10.16C18.1248 5.67987 14.48 2.03499 9.99984 2.03499Z" fill="black" stroke="#58BD7D" strokeWidth="0.833333" />
+                      <path d="M10.0002 12.035C8.96361 12.035 8.12516 11.1966 8.12516 10.16C8.12516 9.12347 8.96361 8.28501 10.0002 8.28501C11.0367 8.28501 11.8752 9.12347 11.8752 10.16C11.8752 11.1966 11.0367 12.035 10.0002 12.035ZM10.0002 8.70168C9.19504 8.70168 8.54183 9.35489 8.54183 10.16C8.54183 10.9651 9.19504 11.6183 10.0002 11.6183C10.8053 11.6183 11.4585 10.9651 11.4585 10.16C11.4585 9.35489 10.8053 8.70168 10.0002 8.70168Z" fill="black" stroke="#58BD7D" strokeWidth="0.833333" />
+                    </svg>
 
-                   {props.cm}
+                    {props.cm}
                   </span>
                   <span className="text-black flex items-center gap-x-2 font-opensans font-semibold">
                     <svg
@@ -66,7 +66,7 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
                         fill="black"
                       />
                     </svg>
-                  {props.like}
+                    {props.like}
                   </span>
                 </div>
               </div>
@@ -74,11 +74,11 @@ const BlogCard: React.FC<BlogCardProps> = (props) => {
           </div>
           <div
             className="w-full bg-cover bg-center rounded-2xl lg:hidden h-56"
-            style={{ backgroundImage:  `url(${props.cover})` }}
+            style={{ backgroundImage: `url(${props.cover})` }}
           ></div>
           <div
             className="w-1/2 bg-cover bg-center rounded-2xl"
-            style={{ backgroundImage:  `url(${props.cover})` }}
+            style={{ backgroundImage: `url(${props.cover})` }}
           ></div>
         </div>
       </Link>
