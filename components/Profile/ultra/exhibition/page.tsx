@@ -40,7 +40,7 @@ const page = () => {
       </div>
       
       <div className="w-full h-1 border-t border-white-shade-4"></div>
-      <section className="lg:flex lg:container lg:pr-0 px-2">
+      <section className="xl:flex lg:container lg:pr-0 px-2">
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 lg:w-3/4 w-full ">
           <Intro title={"Get The Tickets, Now Or Never"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys"} cover={"/images/profile/ultra/Chair.png"} />

@@ -4,7 +4,7 @@ import Cover from "@/components/Profile/general/Cover";
 import UserTitle from "@/components/Profile/general/UserTitle";
 import React from "react";
 import Company from "@/components/Profile/business/pro/company";
-import CompanyAbout from "@/components/Profile/business/pro/CompanyAbout";
+
 import Services from "@/components/Profile/business/pro/Services";
 import Values from "@/components/Profile/business/pro/Values";
 import Team from "@/components/Profile/business/pro/Team";
@@ -18,14 +18,15 @@ import Navigation from "@/components/Profile/general/Navigation";
 import Subscription from "@/components/Profile/business/pro/Subscription";
 import Project from "@/components/Profile/business/pro/Project";
 import { Gallery } from "@/components/Profile/Professional/Free";
+import About from "@/components/Profile/business/starter/About";
 
 const page = () => {
   return (
     <section>
       <OverlayMenu />     
-      <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto container">
+      <div className="w-full relative   mt-10  xl:mb-28 mb-72 mx-auto container">
       <Cover background={"/images/profile/business/cover.png"} />
-      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
+      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 xl:mb-9 w-full container">
       <Avatar background={"/images/profile/Prof.png"}  />
         <UserTitle
           fullname={"Amin gholami"}
@@ -37,13 +38,22 @@ const page = () => {
         />
           </div>
         </div>
-      <div className="w-full h-1 border-t border-white-shade-4"></div>
-
-      <section className="lg:container lg:flex  lg:pr-0">
+        <div className="w-full h-1 border-t border-white-shade-4"></div>
+      <section className="xl:flex lg:container lg:pr-0 px-2">
         <Navigation />
-        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6  w-full">
+        <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6  w-full ">
           <Company  title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/A (2).png"} />
-          <CompanyAbout about={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "} city={" Los angless"} name={"Jason todd"} job={"Founder"} cover={"/images/blog/User.webp"} compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"} />
+<About
+          compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"}
+            about={
+              "Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide "
+            }
+            city={" Los angless"}
+            name={"Jason todd"}
+            job={"Founder"}
+            cover={"/images/blog/User.webp"}
+            title={"What is our company all about?"}
+          />
           <Services />
           <Values />
           <Subscription />          
