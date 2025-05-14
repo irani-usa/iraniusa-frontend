@@ -12,7 +12,7 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = (props) => {
     return (
-        <div className='min-w-[70%]  w-[70%]
+        <div className='cursor-pointer min-w-[70%]  w-[70%]
      lg:min-w-[25%] lg:w-[100%]  '>
             <section className='border-[1.5px] py-6 bg-white  border-white-shade-4 
      flex items-center gap-x-5 rounded-2xl hover:bg-blue transition-all duration-200 group flex-col relative'>
