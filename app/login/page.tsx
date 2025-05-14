@@ -10,43 +10,48 @@ import Logo from "@/components/Logo";
 const page = () => {
   return (
     <>
-      <section className="container py-12 lg:flex justify-between h-screen">
+      <section className="container py-12 lg:flex justify-around h-screen">
         <section className="lg:w-[420px]">
-          <div className="hidden lg:flex">
+          <div className="w-full flex items-center justify-center lg:justify-start">
             <Logo width={90} height={90} />
           </div>
-          <h1 className="text-black text-2xl font-medium font-outfit mt-12">
+          <h1 className="text-blue text-3xl font-semibold font-outfit mt-12">
             Welcome back 👋🏻
           </h1>
           <h2 className="text-white-shade-8  text-lg py-2 font-opensans">
-            Enter your details
+            Please Enter your details
           </h2>
           <form action="#">
             <Input
               id={"email"}
               inputType={"email"}
               placeHolder={"Example@gmail.com"}
-              classes={"bg-white-shade-2"}
+              classes={""}
               label={"Email"}
               iconComp={<Email />}
             />
             <Input
               id={"password"}
               inputType={"password"}
-              placeHolder={"* * * * * * * * "}
-              classes={"bg-white-shade-2"}
+              placeHolder={"Password"}
+              classes={""}
               label={"Password"}
               iconComp={<Password />}
             />
             <h3 className="text-[#DE000D] font-opensans font-semibold text-sm py-2">
               password should be at least 8 characters{" "}
             </h3>
-            <Link
-              href="/forget-password"
-              className="block text-[#2E81FF] cursor-pointer font-opensans font-semibold text-end text-base py-4  lg:text-black"
-            >
-              Forgot password
-            </Link>
+            <Input
+              id={"password"}
+              inputType={"password"}
+              placeHolder={"Re-Password"}
+              classes={""}
+              label={"Re-Password"}
+              iconComp={<Password />}
+            />
+            <h3 className="text-[#DE000D] font-opensans font-semibold text-sm py-2">
+              password should be at least 8 characters{" "}
+            </h3>
             <Button
               content={"Log in"}
               classes={"bg-blue py-4 my-2 lg:bg-black"}
@@ -88,15 +93,15 @@ const page = () => {
               <Dots />
             </div>
           </section>
-          <h1 className="text-black font-opensans py-8 font-medium text-lg text-center">
-            registrera dig gratis?{" "}
-            <Link href="/register" className="text-white-shade-8">
+          <h1 className="text-white-shade-8 font-opensans py-8 font-medium text-lg text-center">
+            Already have an account?{" "}
+            <Link href="/register" className="text-black">
               register for free
             </Link>
           </h1>
         </section>
         <div
-          className="w-2/4 h-full p-8 bg-cover rounded-3xl hidden lg:flex items-end"
+          className="w-2/4 h-screen p-8 bg-cover rounded-3xl hidden lg:flex items-end"
           style={{
             backgroundImage: `url('/images/auth/login-background.webp')`,
           }}

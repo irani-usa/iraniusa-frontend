@@ -37,10 +37,6 @@ const page = () => {
         { value: "profile ultra brmarketands", slug: "/profile/ultra/market" },
         { value: "profile ultra realestate", slug: "/profile/ultra/realestate" },
         { value: "profile ultra resturant", slug: "/profile/ultra/resturant" },
-      
-        
-       
-
       ];
   const currentRoute = usePathname();
 
