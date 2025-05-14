@@ -190,16 +190,12 @@ const ToursSearch = () => {
                 </div>
                 <p className='font-inter font-medium text-sm text-white-shade-10'>Lorem ipsum dolor sit amet consectetur. Iaculis est vitae quam augue elementum in non. Arcu arcu dignissim donec in ut tristique turpis. Semper.</p>
                 <div className='w-full flex flex-col lg:grid lg:grid-cols-3 gap-5 my-8'>
-
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
-
-
-
                 </div>
 
             </div>
