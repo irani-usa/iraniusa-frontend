@@ -20,30 +20,30 @@ interface HotelCardProps {
 const HotelCard: React.FC<HotelCardProps> = (props) => {
     return (
         <div className="relative top-0 left-0 w-full border-white-shade-4 border rounded-2xl hover:shadow-card transition-all duration-300 hover:z-50 hover:-top-5 hover:cursor-pointer min-h-[580px] text-black">
-            <div className="w-full h-72 bg-cover rounded-t-2xl" style={{ backgroundImage: `url('${props.image}')` }}></div>
+            <div className="w-full h-60 bg-cover rounded-t-2xl" style={{ backgroundImage: `url('${props.image}')` }}></div>
             <h4 className="text-black font-outfit font-bold mx-4 mt-6 mb-12 text-xl">
                 {props.title}
             </h4>
-            <div className="mx-10 border px-4 p-2 rounded-lg border-white-shade-4 mt-6 mb-12  flex flex-wrap gap-2 justify-between items-center ">
+            <div className="mx-10 border px-4 p-2 rounded-lg border-white-shade-4 mt-6 flex flex-col lg:flex-row flex-wrap gap-2 justify-between items-start ">
                 {props.Star &&
-                    <div className="flex items-start gap-1">
+                    <div className="flex items-center gap-1">
                         <StarTour />
                         5 star
                     </div>}
                 {props.Oven &&
-                    <div className="flex items-start gap-1">
+                    <div className="flex items-center gap-1">
                         <Oven />
                         Restaurant
                     </div>}
-                {props.Wifi && <div className="flex items-start gap-1">
+                {props.Wifi && <div className="flex items-center gap-1">
                     <Wifi />
                     Free Wifi
                 </div>}
-                {props.Earth && <div className="flex items-start gap-1">
+                {props.Earth && <div className="flex items-center gap-1">
                     <Earth />
                     Istanbul - shishli
                 </div>}
-                {props.Swim && <div className="flex items-start gap-1">
+                {props.Swim && <div className="flex items-center gap-1">
                     <Swim />
                     Swimming pool
                 </div>}
