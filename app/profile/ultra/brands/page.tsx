@@ -26,9 +26,9 @@ const page = () => {
   return (
     <section>
       <OverlayMenu />
-     <div className="w-full relative   mt-10  lg:mb-28 mb-72 mx-auto container">
+     <div className="w-full relative   mt-10  xl:mb-28 mb-72 mx-auto container">
       <Cover background={"/images/profile/ultra/Acover.png"} />
-      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
+      <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 xl:mb-9 w-full container">
       <Avatar background={"/images/profile/ultra/Aprof.png"} />
         <UserTitle
           fullname={"SAP Construction"}
@@ -42,7 +42,7 @@ const page = () => {
         </div>
       </div>
       <div className="w-full h-1 border-t border-white-shade-4"></div>
-      <section className="lg:flex lg:container lg:pr-0 px-2">
+      <section className="xl:flex lg:container lg:pr-0 px-2">
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 w-full ">
         <Intro title={"Get The Tickets, Now Or Never"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys"} cover={"/images/profile/ultra/Chair.png"} />

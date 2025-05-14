@@ -12,9 +12,9 @@ import About from "@/components/Profile/business/starter/About";
 const page = () => {
   return (
     <section>
-       <div className="w-full relative  mt-10  lg:mb-28 mb-48 mx-auto container">
+       <div className="w-full relative  mt-10  xl:mb-28 mb-48 mx-auto container">
           <Cover background={"/images/profile/business/cover.png"} />
-          <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 lg:mb-9 w-full container">
+          <div className="flex absolute top-12 left-1/2 -translate-x-1/2 p-10 mb-20 xl:mb-9 w-full container">
           <Avatar background={"/images/profile/Prof.png"}  />
         <UserTitle
           fullname={"Amin gholami"}
@@ -26,7 +26,7 @@ const page = () => {
         />
           </div>
         </div>
-      <section className="lg:container border-white-shade-4 border-t  relative top-0 left-0 lg:flex  lg:pr-0">
+      <section className="lg:container border-white-shade-4 border-t  relative top-0 left-0 xl:flex  lg:pr-0">
         <Navigation />
         <section className="lg:border-l  lg:border-white-shade-4 lg:pl-6 w-full">
           <Company title={"Feel the comfort with newst shoes and sweaters "} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "} cover={"/images/profile/business/A (2).png"} />

@@ -5,7 +5,7 @@ import UserGroup from "@/components/Icons/Profile/UserGroup";
 
 const Team = () => {
   return (
-    <section className=" border-b border-white-shade-4 pb-7  container">
+    <section className=" border-b border-white-shade-4 py-7  container">
       <div className=" lg:pl-5 lg:px-0 mt-12">
       <IconElement icon={<UserGroup />}/>
 

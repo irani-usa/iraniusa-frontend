@@ -9,7 +9,7 @@ const Avatar: React.FC<AvatarProps> = (props) => {
   return (
     <>
       <div
-        className="w-24 h-24 rounded-full bg-cover absolute lg:top-[50%] -top-1 left-0 right-0 m-auto lg:w-36 lg:h-36  lg:left-[13.2%] lg:right-auto 2xl:left-[14%]"
+        className="w-24 h-24 rounded-full bg-cover absolute xl:top-[50%] -top-1 left-0 right-0 m-auto xl:w-36 xl:h-36  xl:left-[13.2%] xl:right-auto 2xl:left-[14%]"
         style={{ backgroundImage: `url(${props.background})` }}
       ></div>
 

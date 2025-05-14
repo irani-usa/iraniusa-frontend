@@ -3,7 +3,7 @@ import React from "react";
 
 const Navigation = () => {
   return (
-    <ul className=" min-w-[20%] 2xl:min-w-[15%] h-full flex-col items-start gap-y-5 font-opensans hidden lg:flex mt-9 pr-5">
+    <ul className=" min-w-[20%] 2xl:min-w-[15%] h-full flex-col items-start gap-y-5 font-opensans hidden xl:flex mt-9 pr-5">
 
     <Link href="#home" className="border-b border-white-shade-4 pb-5 w-full">
     <li className="text-black font-bold flex items-center gap-x-3 text-lg ">

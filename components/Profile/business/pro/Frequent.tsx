@@ -8,7 +8,7 @@ const Frequent = () => {
     <section className='w-full border-b border-white-shade-4 py-8 lg:py-11'>
       <div className='container lg:pl-5 flex flex-col items-center'>
         <IconElement icon={<FaqIcon/>}/>
-        <h1 className="text-black font-bold text-2xl font-outfit mt-5 lg:text-3xl">Most frequent questions </h1>
+        <h1 className="text-black font-medium text-2xl font-outfit mt-5 lg:text-3xl">Most frequent questions </h1>
         <FAQList />
       </div>
     </section>
