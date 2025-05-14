@@ -197,7 +197,6 @@ const ToursSearch = () => {
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                 </div>
-
             </div>
             <div className="my-36">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
