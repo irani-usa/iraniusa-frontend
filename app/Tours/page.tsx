@@ -296,7 +296,6 @@ const ToursSearch = () => {
          <MediumBanner name={"Supplemental income"} />
          <MediumBanner name={"Supplemental income"} />  
                 </div>
-
         </section>
     )
 }
