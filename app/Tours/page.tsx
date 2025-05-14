@@ -95,7 +95,7 @@ const ToursSearch = () => {
                     <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'999$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
 
                 </div>
-              <section className="flex justify-center gap-x-3 my-12 lg:hidden">
+              <section className="flex justify-center gap-x-3 my-12">
                 <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
                   <svg
                     width="8"
@@ -198,6 +198,42 @@ const ToursSearch = () => {
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                 </div>
             </div>
+                <section className="flex justify-center gap-x-3 my-2">
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </section>
             <div className="my-36">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.25926 0L9.17936 4.7234L14.1632 5.13221L10.366 8.46024L11.5261 13.4363L7.25926 10.7697L2.99237 13.4363L4.15247 8.46024L0.355293 5.13221L5.33916 4.7234L7.25926 0Z" fill="#520017" />
@@ -216,8 +252,6 @@ const ToursSearch = () => {
                     <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'} price={'4556'} score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
                     <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'} price={'4556'} score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
                     <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'} price={'4556'} score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
-
-
                 </div>
 
             </div>

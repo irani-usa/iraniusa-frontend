@@ -58,7 +58,7 @@ const HotelCard: React.FC<HotelCardProps> = (props) => {
             </div>
 
             <div className="absolute top-0 left-0 p-4 flex gap-2 item-center">
-                <div className="flex gap-1 items-start  bg-white/10 backdrop-blur-3xl text-white px-3 py-1 rounded-full">
+                <div className="flex gap-1 items-center  bg-white/10 backdrop-blur-3xl text-white px-3 py-1 rounded-full">
                     <YellowStar /> {props.score}
                 </div>
 
