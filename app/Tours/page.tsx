@@ -15,16 +15,19 @@ const ToursSearch = () => {
     const tabs: string[] = ["Hotel", "Flight", "Tour", "Bus", "Train", "Villa and residence"]
 
     return (
-        <section className='container my-36'>
+        <section className='container my-7 lg:my-36'>
             <div className="w-full flex flex-col items-center">
-                <div className="w-full flex items-center justify-center flex-col gap-2">
-                    <span className="text-white-shade-8">- Find your special tour today With</span>
-                    <h1 className='font-bold font-outfit text-xl py-3 lg:text-5xl w-max'>IRANI USA TRAVEL</h1>
+                <div className="w-full flex items-start lg:items-center justify-center flex-col gap-2">
+                    <span className="flex items-center gap-2 text-white-shade-8 text-lg font-semibold font-inter"><svg width="17" height="3" viewBox="0 0 17 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="17" height="3" rx="1.5" fill="#B3B3B3"/>
+</svg>
+ Find your special tour today With</span>
+                    <h1 className='font-bold font-outfit text-3xl py-3 lg:text-5xl w-max'>IRANI USA TRAVEL</h1>
                 </div>
-                <p className="text-white-shade-11 mt-4 text-lg">
+                <p className="text-white-shade-8 font-medium mt-4 text-lg">
                     Book plans for lodging and travel by airplane, train, boat, and bus, anywhere in the US
                 </p>
-                <div className="flex mt-5 items-center gap-3">
+                <div className="hidden lg:flex mt-5 items-center gap-3">
                     <div className="flex">
                         <div
                             className="w-14 h-14  rounded-full bg-cover bg-center"
@@ -84,16 +87,50 @@ const ToursSearch = () => {
                 </div>
                 <div className='w-full flex flex-col lg:grid lg:grid-cols-3 gap-5 my-8'>
 
-                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
-
+                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'554$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
+                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'654$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
+                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'865$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
+                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'233$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
+                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'798$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
+                    <HotelCard image={'/images/tours/4.png'} title={'Damavand Volcano 5671 meter'} price={'999$'} score={5} off={24} days='9 nights,1 adult' Star Oven Wifi Earth Swim={false} />
 
                 </div>
-
+              <section className="flex justify-center gap-x-3 my-12">
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </section>
             </div>
             <div className="my-36">
             <div className="grid lg:grid-cols-4 lg:grid-rows-2 grid-cols-1 grid-rows-1 w-full gap-4">
@@ -151,20 +188,52 @@ const ToursSearch = () => {
                         Popular Flights
                     </h2>
                 </div>
+                <p className='font-inter font-medium text-sm text-white-shade-10'>Lorem ipsum dolor sit amet consectetur. Iaculis est vitae quam augue elementum in non. Arcu arcu dignissim donec in ut tristique turpis. Semper.</p>
                 <div className='w-full flex flex-col lg:grid lg:grid-cols-3 gap-5 my-8'>
-
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
                     <AirplaneCard image={'/images/tours/2.png'} title={'Damavand Volcano 5671 meter'} price={'11$'} startTime="18:00" endTime='20:00' startPlace='tehran' endPlace='shiraz' ticketCount={3} travelers='1 adult, 2 children' loadWeight={30} />
-
-
-
                 </div>
-
             </div>
+                <section className="flex justify-center gap-x-3 my-2">
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </section>
             <div className="my-36">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.25926 0L9.17936 4.7234L14.1632 5.13221L10.366 8.46024L11.5261 13.4363L7.25926 10.7697L2.99237 13.4363L4.15247 8.46024L0.355293 5.13221L5.33916 4.7234L7.25926 0Z" fill="#520017" />
@@ -183,18 +252,50 @@ const ToursSearch = () => {
                     <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'} price={'4556'} score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
                     <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'} price={'4556'} score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
                     <HotelCard image={'/images/tours/3.png'} title={'Paradise hotel'} price={'4556'} score={5} off={47} days='9 nights,1 adult' Star Oven={false} Wifi Earth={false} Swim />
-
-
                 </div>
 
             </div>
-         <div className='w-full flex flex-col lg:grid lg:grid-cols-3 gap-5 my-8'>
+                          <section className="flex justify-center gap-x-3 my-12">
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.59961 13.0667L1.39961 6.99998L6.59961 0.933317"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.40039 0.93335L6.60039 7.00002L1.40039 13.0667"
+                      stroke="black"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </section>
+         <div className='w-full flex flex-col gap-y-16 lg:grid lg:grid-cols-3 gap-5 my-8'>
          <MediumBanner name={"Supplemental income"} />
          <MediumBanner name={"Supplemental income"} />
          <MediumBanner name={"Supplemental income"} />  
-           
                 </div>
-
         </section>
     )
 }
