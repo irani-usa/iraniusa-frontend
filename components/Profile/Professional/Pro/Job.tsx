@@ -31,6 +31,7 @@ const Job: React.FC<JobProps> = (props) => {
                         <Jobitems jobtitle={'Personnel management.'} />
                     </ol>
                 </div>
+                <button className='text-lg text-black font-semibold font-opensans border border-white-shade-4 w-max px-5 py-1 rounded-3xl'>see more</button>
             </div>
         </div>
     )

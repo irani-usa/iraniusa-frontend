@@ -18,7 +18,7 @@ const Projectitem: React.FC<ProjectitemProps> = (props) => {
    <div className='px-2'>
    <h1 className='text-black font-medium text-lg w-full mt-2'>{props.title}</h1>
     <h2 className='text-white-shade-11 mt-2 font-medium'>{props.subtitle}</h2>
-    <div className='flex flex-col gap-2 mt-3'>
+    <div className='flex flex-col gap-2 my-3'>
       {props.skill.map(item => (
         <div className='flex items-center gap-x-2'>
         <div className=''>{props.icon}</div>

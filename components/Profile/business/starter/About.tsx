@@ -58,7 +58,7 @@ const About: React.FC<AboutProps> = (props) => {
         </div>
       </div>
       {props.compimg && props.compimg2 && <section className='grid grid-cols-1 gap-y-5 py-5 lg:grid-cols-6 gap-x-5 w-full mt-10'>
-        <div style={{ backgroundImage: `url(${props.compimg})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-4 lg:h-64'></div>
+        <div style={{ backgroundImage: `url(${props.compimg})` }} className='bg-cover bg-center w-full h-96 rounded-2xl  lg:col-span-4 lg:h-64'></div>
         <div style={{ backgroundImage: `url(${props.compimg2})` }} className='bg-cover bg-center w-full h-48 rounded-2xl  lg:col-span-2 lg:h-64'></div>
       </section>}
     </section>
