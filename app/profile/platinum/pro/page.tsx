@@ -59,7 +59,12 @@ const page = () => {
           <Subscription />          
           <Team />
           <Project />
-          <Exprince exprince={"Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide"} compimg={"/images/profile/business/about.png"} compimg2={"/images/profile/business/about.png"}/>
+       
+          <Exprince
+            exprince={
+              "Adidas has more than 20 years of experience in athletics industry through designing shoes and clothes also more than 20 collaborations wordwide designing shoes and clothes also more than 20 collaborations wordwide designing shoes and clothes also more than 20 collaborations wordwide"
+            }
+          />
           <Gallery  />
           <Blog title={"Blog"} desc={"is simply dummy text of the printing and typesetting industry. Lorem Ipsum"} classes={"lg:pl-5"} />
           <Frequent />

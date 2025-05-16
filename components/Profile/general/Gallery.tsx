@@ -6,7 +6,7 @@ import GalleryItem from "./GalleryItem";
 
 const Gallery = () => {
   return (
-    <section className="w-full border-white-shade-4 border-b py-8 lg:py-20 container">
+    <section className="w-full border-white-shade-4 border-b py-16 container">
       <div className="flex flex-col items-center w-full">
         
         <IconElement icon={<GalleryIcon />}/>

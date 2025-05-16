@@ -6,7 +6,7 @@ import HandHeart from '@/components/Icons/Profile/HandHeart'
 
 const Values = () => {
   return (
-    <section className=" border-b border-white-shade-4 py-7 lg:py-10 container">
+    <section className=" border-b border-white-shade-4 py-16 container">
       <div className="lg:pl-5 ">
       <IconElement icon={<HandHeart />}/>
 

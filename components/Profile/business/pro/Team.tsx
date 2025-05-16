@@ -5,11 +5,11 @@ import UserGroup from "@/components/Icons/Profile/UserGroup";
 
 const Team = () => {
   return (
-    <section className=" border-b border-white-shade-4 py-7  container">
+    <section className=" border-b border-white-shade-4 py-16  container">
       <div className=" lg:pl-5 lg:px-0 mt-12">
       <IconElement icon={<UserGroup />}/>
 
-        <h1 className="text-black font-medium my-5 text-2xl font-outfit  lg:text-center lg:text-3xl">
+        <h1 className="text-black font-medium my-5 text-2xl font-outfit  text-center lg:text-3xl">
         Team Members 
         </h1>
         <section className="grid grid-cols-1 lg:grid-cols-3 items-center gap-3 lg:items-center py-11">

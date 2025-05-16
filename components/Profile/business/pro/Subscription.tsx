@@ -71,10 +71,10 @@ const Subscription = () => {
 
   return (
     <section className="border-b border-white-shade-4 py-8 container">
-      <div className="flex flex-col justify-center items-center  py-8">
+      <div className="flex flex-col justify-center items-center  py-16">
         <IconElement icon={<HandHeart />} />
 
-        <h1 className="text-black font-bold text-2xl font-outfit mt-7 lg:text-3xl text-center">
+        <h1 className="text-black font-medium text-2xl font-outfit mt-7 lg:text-3xl text-center">
         Subscription
         </h1>
         <p className="text-white-shade-9  font-opensans  mt-3">Get a clean car monthly with Zwart Gas Station's subscription. Join online now.</p>

@@ -6,7 +6,7 @@ import ProjectIcon from '@/components/Icons/Profile/Project'
 
 export const Project = () => {
   return (
-    <section className='w-full  border-white-shade-4 border-b py-8'>
+    <section className='w-full  border-white-shade-4 border-b py-16'>
        <div className='lg:pl-5'>
         <IconElement icon={<ProjectIcon />}/>
         <Sectiontitle title={'Popular Products'} classes={'text-center mt-5'} />

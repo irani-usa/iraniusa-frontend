@@ -5,7 +5,7 @@ import { Location } from "@/components/Icons/Outline";
 
 const Branches = () => {
   return (
-    <section className=" border-b border-white-shade-4 py-7  container">
+    <section className=" border-b border-white-shade-4 py-16  container">
       <div className=" lg:pl-5 lg:px-0 ">
         <IconElement icon={<Location />}/>
         <h1 className="text-black font-medium text-2xl font-outfit mt-7 lg:text-center lg:text-3xl">
@@ -31,7 +31,7 @@ const Branches = () => {
           
         </section>
 
-        <section className="flex justify-center gap-x-3 mt-9 pb-3 lg:hidden  cursor-pointer">
+        <section className="flex justify-center gap-x-3 mt-9 pb-3   cursor-pointer">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
             <svg
               width="8"
