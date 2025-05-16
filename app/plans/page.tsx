@@ -11,6 +11,7 @@ import classNames from "classnames";
 type PlanType = {
   title: string;
   subTitle: string;
+  type:string;
   isPopular: boolean;
   types: {
     title: string;
@@ -30,6 +31,7 @@ const Page = () => {
     {
       title: "Professional",
       subTitle: "No credit card required",
+      type:"simple",
       isPopular: false,
       types: [
         {
@@ -74,6 +76,7 @@ const Page = () => {
     {
       title: "Professional",
       subTitle: "No credit card required",
+      type:"simple",
       isPopular: true,
       types: [
         {
@@ -118,6 +121,7 @@ const Page = () => {
     {
       title: "Professional",
       subTitle: "No credit card required",
+      type:"simple",
       isPopular: false,
       types: [
         {
@@ -162,6 +166,7 @@ const Page = () => {
     {
       title: "Professional",
       subTitle: "No credit card required",
+      type:"curve",
       isPopular: false,
       types: [
         {
