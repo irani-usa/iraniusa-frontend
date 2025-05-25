@@ -70,8 +70,8 @@ const Subscription = () => {
   ]);
 
   return (
-    <section className="border-b border-white-shade-4 py-8 container">
-      <div className="flex flex-col justify-center items-center  py-16">
+    <section className="border-b border-white-shade-4 py-16 container">
+      <div className="flex flex-col justify-center pb-14 items-center ">
         <IconElement icon={<HandHeart />} />
 
         <h1 className="text-black font-medium text-2xl font-outfit mt-7 lg:text-3xl text-center">

@@ -11,7 +11,7 @@ const Branches = () => {
         <h1 className="text-black font-medium text-2xl font-outfit mt-7 lg:text-center lg:text-3xl">
            Branches 
         </h1>
-        <section className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 lg:items-center py-11">
+        <section className="grid grid-cols-1 lg:grid-cols-3 items-center gap-10 lg:items-center lg:mt-12">
           <BranchesCard           
             title={"Lorem ipsum dolor sit amet"}
             item={["test" , "test"]}

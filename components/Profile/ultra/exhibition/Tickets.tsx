@@ -4,6 +4,7 @@ import { Arrowbtn } from '../../general'
 import IconElement from '../../general/IconElement'
 import TicketIcon from '@/components/Icons/Profile/Ticket'
 import { PopularSeminar } from '@/components/Pages/Events'
+import MusicIcon from '@/components/Icons/Profile/Music'
 
 interface TicketsProps {
   title: string,
@@ -12,10 +13,10 @@ interface TicketsProps {
 
 export const Tickets: React.FC<TicketsProps> = (props) => {
   return (
-    <section className='border-b border-b-white-shade-4 pt-4 pb-8 lg:py-10'>
+    <section className='border-b border-b-white-shade-4  pb-8 py-16'>
       <div className=' lg:px-0 lg:pl-5'>
         <div className='flex items-center flex-col'>
-          <IconElement icon={<TicketIcon classes='stroke-black' />}/>
+          <IconElement icon={<MusicIcon /> }/>
           <h1 className="text-black text-xl font-bold py-7 font-outfit lg:text-[27px]">
             {props.title}
           </h1>
@@ -45,7 +46,7 @@ export const Tickets: React.FC<TicketsProps> = (props) => {
             />
         </div>
         
-        <Arrowbtn classes={''} />
+        <Arrowbtn classes={'lg:mt-6 lg:mb-6'} />
       </div>
     </section>
   )

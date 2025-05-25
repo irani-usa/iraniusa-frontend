@@ -14,7 +14,7 @@ interface MenuProps {
 export const Menu: React.FC<MenuProps> = (props) => {
   return (
     <section className='border-b border-white-shade-4 container py-16'>
-      <div className=' py-9 lg:pl-5'>
+      <div className=' lg:pl-5'>
 
         <div className='flex items-center flex-col w-full gap-7'> 
       <IconElement icon={<ResturantIcon />}/>

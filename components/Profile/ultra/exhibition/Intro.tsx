@@ -175,7 +175,7 @@ const Intro: React.FC<IntroProps> = (props) => {
 
         </div>
       </div>
-      <section className="flex flex-col gap-y-8 justify-center items-center my-16 rounded-2xl">
+      <section className="flex flex-col gap-y-8 justify-center items-center my-16 rounded-2xl lg:max-w-[97%] mx-auto">
 
         <div className="flex  flex-col gap-1 gap-y-3 p-2 w-full h-auto  bg-white-shade-3 rounded-3xl">
           <div className="flex lg:flex-row flex-col gap-2">

@@ -12,7 +12,7 @@ const OriginSelect = () => {
     <section className="flex flex-col items-start w-full  h-full bg-white rounded-3xl pt-5 hover:cursor-pointer">
       <div className="w-full flex gap-x-2 items-center mt-2 px-6">
         <Calendar />
-        <span className="text-white-shade-11 font-normal text-sm">
+        <span className="text-white-shade-11 font-normal text-sm lg:text-base">
         Destination or hotel
         </span>
       </div>

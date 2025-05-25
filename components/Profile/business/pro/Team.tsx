@@ -6,7 +6,7 @@ import UserGroup from "@/components/Icons/Profile/UserGroup";
 const Team = () => {
   return (
     <section className=" border-b border-white-shade-4 py-16  container">
-      <div className=" lg:pl-5 lg:px-0 mt-12">
+      <div className=" lg:pl-5 lg:px-0 ">
       <IconElement icon={<UserGroup />}/>
 
         <h1 className="text-black font-medium my-5 text-2xl font-outfit  text-center lg:text-3xl">
@@ -36,7 +36,7 @@ const Team = () => {
           />            
         </section>
 
-        <section className="flex justify-center gap-x-3 mt-9 pb-3 lg:hidden  cursor-pointer">
+        <section className="flex justify-center gap-x-3 mt-9 lg:mt-2 pb-3  cursor-pointer">
           <div className="flex items-center justify-center border-[1px] border-white-shade-4 py-5 px-6 rounded-full">
             <svg
               width="8"

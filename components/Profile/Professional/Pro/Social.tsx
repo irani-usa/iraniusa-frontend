@@ -21,7 +21,7 @@ const Social: React.FC<SocialProps> = (props) => {
         <p className="text-center text-lg text-white-shade-9 mt-4 font-opensans">
           {props.desc}
         </p>
-        <section className="grid grid-cols-4  gap-y-4 mt-16 lg:grid-cols-6 lg:w-[500px] gap-x-5 pb-16">
+        <section className="grid grid-cols-4  gap-y-4 mt-12 lg:grid-cols-6 lg:w-[500px] gap-x-5 pb-16">
           <Socialitme icon={<Facebook />} />
           <Socialitme icon={<Instagram />} />
           <Socialitme icon={<Twitter />} />

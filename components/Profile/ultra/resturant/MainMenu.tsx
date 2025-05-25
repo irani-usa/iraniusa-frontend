@@ -12,7 +12,7 @@ interface MainMenuProps {
 export const MainMenu: React.FC<MainMenuProps> = ({ title }) => {
   return (
     <section className='border-b border-white-shade-4 py-16'>
-      <div className='py-9 container w-full'>
+      <div className='container w-full'>
 
         <div className='flex items-center flex-col w-full gap-7'>
           <IconElement icon={<ResturantIcon />} />

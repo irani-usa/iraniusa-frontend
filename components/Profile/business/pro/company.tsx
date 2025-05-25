@@ -34,7 +34,7 @@ const Company: React.FC<CompanyProps> = (props) => {
   }, []);
   
   return (
-    <section className="border-b  border-white-shade-4 py-8 lg:pt-2 container">
+    <section className="border-b  border-white-shade-4 py-8 lg:pt-6 lg:pl-1  container">
       <div className=" p-3 bg-white-shade-2 w-full rounded-3xl lg:flex lg:pb-2 h-auto gap-4">
         <div className=" p-4 flex flex-col gap-y-5 rounded-3xl lg:w-3/5">
 
@@ -91,7 +91,7 @@ const Company: React.FC<CompanyProps> = (props) => {
 
         </div>
         <div
-          className="w-full lg:w-2/5  bg-cover bg-center rounded-xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
+          className="w-full lg:w-2/5  bg-cover bg-center rounded-2xl flex flex-col justify-between items-center p-4 h-96 lg:h-auto"
           style={{ backgroundImage: `url('${props.cover}')` }}
         >
           <div className="flex items-center  gap-3 mt-6">

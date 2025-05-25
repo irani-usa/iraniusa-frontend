@@ -1,4 +1,4 @@
-import Company from "@/components/Profile/business/starter/Company";
+import Company from "@/components/Profile/business/pro/company";
 import Avatar from "@/components/Profile/general/Avatar";
 import Cover from "@/components/Profile/general/Cover";
 import UserTitle from "@/components/Profile/general/UserTitle";

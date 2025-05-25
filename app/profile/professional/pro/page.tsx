@@ -19,7 +19,7 @@ const page = () => {
       <Avatar background={"/images/profile/Prof.png"}  />
         <UserTitle
           fullname={"Amin gholami"}
-          gmail="arashdevarts@gmail.com"
+          gmail="arash@gmail.com"
           jobtitle={"Product designer"}
           isPro={true}
           blogLevel={"Active"}
